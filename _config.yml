@@ -1,5 +1,8 @@
-title: Minimal theme
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
+title: Aaron's Personal Wiki
+description: Hello, thanks for visiting my personal wiki. My name is Aaron Zhao,
+a Master student at the Computer Lab of Univeristy of Cambridge.
+This Wiki contains my research projects, paper reviews and code reviews.
+show_downloads: false
+is_user_page: true 
 google_analytics:
-theme: 
+theme:
