@@ -5,7 +5,7 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 [](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#nn)Neural Networks$/;"	function	line:5
-[Network Models](/papers/nn_models/model_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Models](\/papers\/nn_models\/model_summary.html)$/;"	function	line:6
-[Network Pruning](/papers/pruning/pruning_summarym.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Pruning](\/papers\/pruning\/pruning_summarym.html)$/;"	function	line:9
+[Network Models](/blog/papers/nn_models/model_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Models](\/blog\/papers\/nn_models\/model_summary.html)$/;"	function	line:6
+[Network Pruning](/blog/papers/pruning/pruning_summarym.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Pruning](\/blog\/papers\/pruning\/pruning_summarym.html)$/;"	function	line:9
 [](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#fpga)FPGAs$/;"	function	line:11
 [](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#fpga)Others$/;"	function	line:12

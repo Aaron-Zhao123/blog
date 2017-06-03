@@ -3,10 +3,10 @@ layout: default
 ---
 
 # [](#nn)Neural Networks
-## [Network Models](/papers/nn_models/model_summary.html)
+## [Network Models](/blog/papers/nn_models/model_summary.html)
 
 A collection of Neural Network models.
-## [Network Pruning](/papers/pruning/pruning_summarym.html)
+## [Network Pruning](/blog/papers/pruning/pruning_summarym.html)
 
 # [](#fpga)FPGAs
 # [](#fpga)Others
