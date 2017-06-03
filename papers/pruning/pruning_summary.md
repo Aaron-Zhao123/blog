@@ -2,7 +2,7 @@
 layout: default
 ---
 #Coarse-grained Pruning
-## []Pruning Filters for Efficient ConvNets
+**Paper Name**:Pruning Filters for Efficient ConvNets
 **Review**([Paper link](https://arxiv.org/pdf/1608.08710))
 
 
@@ -24,7 +24,7 @@ layout: default
   bibsource = {dblp computer science bibliography, http://dblp.org}
 }
 ```
-## []Learning Structured Sparsity in Deep Neural Networks
+**Paper Name**: Learning Structured Sparsity in Deep Neural Networks
 **Review**([Paper link](https://arxiv.org/pdf/1608.08710))
 
 
