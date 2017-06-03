@@ -4,6 +4,8 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-Coarse-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#Coarse-grained Pruning$/;"	function	line:4
-[]Pruning Filters for Efficient ConvNets	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## []Pruning Filters for Efficient ConvNets$/;"	function	line:5
-[]Learning Structured Sparsity in Deep Neural Networks	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## []Learning Structured Sparsity in Deep Neural Networks$/;"	function	line:27
+[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#nn)Neural Networks$/;"	function	line:5
+[Network Models](/papers/nn_models/model_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Models](\/papers\/nn_models\/model_summary.html)$/;"	function	line:6
+[Network Pruning](/papers/pruning/pruning_summarym.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Pruning](\/papers\/pruning\/pruning_summarym.html)$/;"	function	line:9
+[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#fpga)FPGAs$/;"	function	line:11
+[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#fpga)Others$/;"	function	line:12
