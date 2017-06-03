@@ -5,5 +5,6 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 [](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^# [](#header-1)Popular CNN Models$/;"	function	line:4
-[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#alexnet)AlexNet$/;"	function	line:17
-[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#vgg)VGG$/;"	function	line:34
+[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#alexnet)AlexNet$/;"	function	line:18
+[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#vgg)VGG$/;"	function	line:35
+[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#googlenet)GoogLeNet$/;"	function	line:57

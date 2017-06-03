@@ -9,6 +9,7 @@ layout: default
 | [AlexNet](#alexnet)      | 8     | 40.7/18.2            | 240MB | 2012 |
 | [VGG16](#vgg)        | 16    | 27/7.4               | 528MB | 2014 |
 | [VGG19](#vgg)        | 19    | 27.3/7.3               | 548MB | 2014 |
+| GoogleLeNet(#googlenet)  | 22    | 22/6.67              | 96MB  | 2015 |
 | InceptionV1  | 22    | 22/10.07             | 96MB  | 2015 |
 | InceptionV3  | 22    | 22/10.07             | 96MB  | 2015 |
 | ResNet-50    | 50    | 24.01/7.02           | 102MB | 2015 |
@@ -53,7 +54,30 @@ Normally train with a decaying learning rate and around 70 epochs.
 }
 }
 ```
-
+## [](#googlenet)GoogLeNet
+**Review**([Paper link]https://arxiv.org/pdf/1409.4842))
+**Bibtex**
+```
+@article{DBLP:journals/corr/SzegedyLJSRAEVR14,
+  author    = {Christian Szegedy and
+               Wei Liu and
+               Yangqing Jia and
+               Pierre Sermanet and
+               Scott E. Reed and
+               Dragomir Anguelov and
+               Dumitru Erhan and
+               Vincent Vanhoucke and
+               Andrew Rabinovich},
+  title     = {Going Deeper with Convolutions},
+  journal   = {CoRR},
+  volume    = {abs/1409.4842},
+  year      = {2014},
+  url       = {http://arxiv.org/abs/1409.4842},
+  timestamp = {Tue, 31 May 2016 18:15:20 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/SzegedyLJSRAEVR14},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+```
 
 
 
