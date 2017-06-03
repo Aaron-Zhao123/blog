@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# [](#Introduction)
+# [](#Introduction)Introduction
 Hello, thanks for visiting my personal wiki.
 My name is Aaron Zhao, a Master student at the Computer Laboratory of University of Cambridge.
 

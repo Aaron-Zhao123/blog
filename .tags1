@@ -4,33 +4,6 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-html	/Users/aaron/Projects/blog/_layouts/default.html	/^<html lang="{{ site.lang | default: "en-US" }}">$/;"	function	line:2
-head	/Users/aaron/Projects/blog/_layouts/default.html	/^  <head>$/;"	function	line:3
-meta	/Users/aaron/Projects/blog/_layouts/default.html	/^    <meta charset="utf-8">$/;"	function	line:4
-meta	/Users/aaron/Projects/blog/_layouts/default.html	/^    <meta http-equiv="X-UA-Compatible" content="chrome=1">$/;"	function	line:5
-title	/Users/aaron/Projects/blog/_layouts/default.html	/^    <title>{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}<\/title>$/;"	function	line:6
-link	/Users/aaron/Projects/blog/_layouts/default.html	/^    <link rel="stylesheet" href="{{ '\/assets\/css\/style.css?v=' | append: site.github.build_revision | relative_url }}">$/;"	function	line:8
-meta	/Users/aaron/Projects/blog/_layouts/default.html	/^    <meta name="viewport" content="width=device-width">$/;"	function	line:9
-script	/Users/aaron/Projects/blog/_layouts/default.html	/^    <script src="\/\/html5shiv.googlecode.com\/svn\/trunk\/html5.js"><\/script>$/;"	function	line:11
-body	/Users/aaron/Projects/blog/_layouts/default.html	/^  <body>$/;"	function	line:14
-div	/Users/aaron/Projects/blog/_layouts/default.html	/^    <div class="wrapper">$/;"	function	line:15
-header	/Users/aaron/Projects/blog/_layouts/default.html	/^      <header>$/;"	function	line:16
-h	/Users/aaron/Projects/blog/_layouts/default.html	/^        <h1>{{ site.title | default: site.github.repository_name }}<\/h1>$/;"	function	line:17
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p class="view"><a href="\/blog\/projects\/projects_sum.html">Projects<\/a><\/p>$/;"	function	line:20
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p class="view"><a href="\/blog\/papers\/papers_index.html">Paper Reviews<\/a><\/p>$/;"	function	line:21
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p class="view"><a href="\/blog\/books\/papers_index.html">Book Reviews<\/a><\/p>$/;"	function	line:22
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p class="view"><a href="\/blog\/coding\/coding_index.html">Coding\/APIs<\/a><\/p>$/;"	function	line:23
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p class="view"><a href="{{ site.github.owner_url }}">Python<\/a><\/p>$/;"	function	line:27
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p class="view"><a href="{{ site.github.owner_url }}">C++<\/a><\/p> -->$/;"	function	line:28
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^          <p class="view"><a href="{{ site.github.repository_url }}">View My GitHub Profile <small>{{ github_name }}<\/small><\/a><\/p>$/;"	function	line:31
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^          <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile<\/a><\/p>$/;"	function	line:35
-ul	/Users/aaron/Projects/blog/_layouts/default.html	/^          <ul>$/;"	function	line:39
-li	/Users/aaron/Projects/blog/_layouts/default.html	/^            <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File<\/strong><\/a><\/li>$/;"	function	line:40
-li	/Users/aaron/Projects/blog/_layouts/default.html	/^            <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball<\/strong><\/a><\/li>$/;"	function	line:41
-li	/Users/aaron/Projects/blog/_layouts/default.html	/^            <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub<\/strong><\/a><\/li>$/;"	function	line:42
-section	/Users/aaron/Projects/blog/_layouts/default.html	/^      <section>$/;"	function	line:46
-footer	/Users/aaron/Projects/blog/_layouts/default.html	/^      <footer>$/;"	function	line:51
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}<\/a><\/p>$/;"	function	line:53
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https:\/\/github.com\/orderedlist">orderedlist<\/a><\/small><\/p>$/;"	function	line:55
-script	/Users/aaron/Projects/blog/_layouts/default.html	/^    <script src="{{ '\/assets\/js\/scale.fix.js' | relative_url }}"><\/script>$/;"	function	line:58
-script	/Users/aaron/Projects/blog/_layouts/default.html	/^    <script>$/;"	function	line:62
+[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#nn)Neural Networks$/;"	function	line:5
+[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#fpga)FPGAs$/;"	function	line:7
+[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#fpga)Others$/;"	function	line:8

@@ -1,18 +1,3 @@
-[](	/Users/aaron/Projects/blog/index.md	/^# [](#Introduction)$/;"	function	line:5
-[](	/Users/aaron/Projects/blog/index.md	/^# [](#projects)Projects$/;"	function	line:9
-[](	/Users/aaron/Projects/blog/index.md	/^## [](#header-2)Header 2$/;"	function	line:21
-[](	/Users/aaron/Projects/blog/index.md	/^### [](#header-3)Header 3$/;"	function	line:27
-Ruby code with syntax highlighting	/Users/aaron/Projects/blog/index.md	/^# Ruby code with syntax highlighting$/;"	function	line:38
-[](	/Users/aaron/Projects/blog/index.md	/^#### [](#header-4)Header 4$/;"	function	line:44
-[](	/Users/aaron/Projects/blog/index.md	/^##### [](#header-5)Header 5$/;"	function	line:50
-[](	/Users/aaron/Projects/blog/index.md	/^###### [](#header-6)Header 6$/;"	function	line:56
-There's a horizontal rule below this.	/Users/aaron/Projects/blog/index.md	/^### There's a horizontal rule below this.$/;"	function	line:65
-Here is an unordered list:	/Users/aaron/Projects/blog/index.md	/^### Here is an unordered list:$/;"	function	line:69
-And an ordered list:	/Users/aaron/Projects/blog/index.md	/^### And an ordered list:$/;"	function	line:76
-And a nested list:	/Users/aaron/Projects/blog/index.md	/^### And a nested list:$/;"	function	line:83
-Small image	/Users/aaron/Projects/blog/index.md	/^### Small image$/;"	function	line:99
-Large image	/Users/aaron/Projects/blog/index.md	/^### Large image$/;"	function	line:103
-Definition lists can be used with HTML syntax.	/Users/aaron/Projects/blog/index.md	/^### Definition lists can be used with HTML syntax.$/;"	function	line:108
 [](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^# [](#header-1)Popular CNN Models$/;"	function	line:4
 [](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#alexnet)AlexNet$/;"	function	line:18
 [](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#vgg)VGG$/;"	function	line:35
@@ -31,21 +16,40 @@ body	/Users/aaron/Projects/blog/_layouts/default.html	/^  <body>$/;"	function	li
 div	/Users/aaron/Projects/blog/_layouts/default.html	/^    <div class="wrapper">$/;"	function	line:15
 header	/Users/aaron/Projects/blog/_layouts/default.html	/^      <header>$/;"	function	line:16
 h	/Users/aaron/Projects/blog/_layouts/default.html	/^        <h1>{{ site.title | default: site.github.repository_name }}<\/h1>$/;"	function	line:17
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p class="view"><a href="\/blog\/projects\/projects_sum.html">Projects<\/a><\/p>$/;"	function	line:20
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p class="view"><a href="\/blog\/papers\/papers_index.html">Paper Reviews<\/a><\/p>$/;"	function	line:21
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p class="view"><a href="\/blog\/books\/papers_index.html">Book Reviews<\/a><\/p>$/;"	function	line:22
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p class="view"><a href="\/blog\/coding\/coding_index.html">Coding\/APIs<\/a><\/p>$/;"	function	line:23
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p class="view"><a href="{{ site.github.owner_url }}">Python<\/a><\/p>$/;"	function	line:27
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p class="view"><a href="{{ site.github.owner_url }}">C++<\/a><\/p> -->$/;"	function	line:28
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^          <p class="view"><a href="{{ site.github.repository_url }}">View My GitHub Profile <small>{{ github_name }}<\/small><\/a><\/p>$/;"	function	line:31
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^          <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile<\/a><\/p>$/;"	function	line:35
-ul	/Users/aaron/Projects/blog/_layouts/default.html	/^          <ul>$/;"	function	line:39
-li	/Users/aaron/Projects/blog/_layouts/default.html	/^            <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File<\/strong><\/a><\/li>$/;"	function	line:40
-li	/Users/aaron/Projects/blog/_layouts/default.html	/^            <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball<\/strong><\/a><\/li>$/;"	function	line:41
-li	/Users/aaron/Projects/blog/_layouts/default.html	/^            <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub<\/strong><\/a><\/li>$/;"	function	line:42
-section	/Users/aaron/Projects/blog/_layouts/default.html	/^      <section>$/;"	function	line:46
-footer	/Users/aaron/Projects/blog/_layouts/default.html	/^      <footer>$/;"	function	line:51
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}<\/a><\/p>$/;"	function	line:53
-p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https:\/\/github.com\/orderedlist">orderedlist<\/a><\/small><\/p>$/;"	function	line:55
-script	/Users/aaron/Projects/blog/_layouts/default.html	/^    <script src="{{ '\/assets\/js\/scale.fix.js' | relative_url }}"><\/script>$/;"	function	line:58
-script	/Users/aaron/Projects/blog/_layouts/default.html	/^    <script>$/;"	function	line:62
+p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p class="view"><a href="\/blog">main page<\/a><\/p>$/;"	function	line:20
+p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p class="view"><a href="\/blog\/projects\/projects_sum.html">Projects<\/a><\/p>$/;"	function	line:21
+p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p class="view"><a href="\/blog\/papers\/papers_index.html">Paper Reviews<\/a><\/p>$/;"	function	line:22
+p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p class="view"><a href="\/blog\/books\/papers_index.html">Book Reviews<\/a><\/p>$/;"	function	line:23
+p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p class="view"><a href="\/blog\/coding\/coding_index.html">Coding\/APIs<\/a><\/p>$/;"	function	line:24
+p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p class="view"><a href="{{ site.github.owner_url }}">Python<\/a><\/p>$/;"	function	line:28
+p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p class="view"><a href="{{ site.github.owner_url }}">C++<\/a><\/p> -->$/;"	function	line:29
+p	/Users/aaron/Projects/blog/_layouts/default.html	/^          <p class="view"><a href="{{ site.github.repository_url }}">View My GitHub Profile <small>{{ github_name }}<\/small><\/a><\/p>$/;"	function	line:32
+p	/Users/aaron/Projects/blog/_layouts/default.html	/^          <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile<\/a><\/p>$/;"	function	line:36
+ul	/Users/aaron/Projects/blog/_layouts/default.html	/^          <ul>$/;"	function	line:40
+li	/Users/aaron/Projects/blog/_layouts/default.html	/^            <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File<\/strong><\/a><\/li>$/;"	function	line:41
+li	/Users/aaron/Projects/blog/_layouts/default.html	/^            <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball<\/strong><\/a><\/li>$/;"	function	line:42
+li	/Users/aaron/Projects/blog/_layouts/default.html	/^            <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub<\/strong><\/a><\/li>$/;"	function	line:43
+section	/Users/aaron/Projects/blog/_layouts/default.html	/^      <section>$/;"	function	line:47
+footer	/Users/aaron/Projects/blog/_layouts/default.html	/^      <footer>$/;"	function	line:52
+p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}<\/a><\/p>$/;"	function	line:54
+p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https:\/\/github.com\/orderedlist">orderedlist<\/a><\/small><\/p>$/;"	function	line:56
+script	/Users/aaron/Projects/blog/_layouts/default.html	/^    <script src="{{ '\/assets\/js\/scale.fix.js' | relative_url }}"><\/script>$/;"	function	line:59
+script	/Users/aaron/Projects/blog/_layouts/default.html	/^    <script>$/;"	function	line:63
+[](	/Users/aaron/Projects/blog/index.md	/^# [](#Introduction)Introduction$/;"	function	line:5
+[](	/Users/aaron/Projects/blog/index.md	/^# [](#projects)Projects$/;"	function	line:9
+[](	/Users/aaron/Projects/blog/index.md	/^## [](#header-2)Header 2$/;"	function	line:21
+[](	/Users/aaron/Projects/blog/index.md	/^### [](#header-3)Header 3$/;"	function	line:27
+Ruby code with syntax highlighting	/Users/aaron/Projects/blog/index.md	/^# Ruby code with syntax highlighting$/;"	function	line:38
+[](	/Users/aaron/Projects/blog/index.md	/^#### [](#header-4)Header 4$/;"	function	line:44
+[](	/Users/aaron/Projects/blog/index.md	/^##### [](#header-5)Header 5$/;"	function	line:50
+[](	/Users/aaron/Projects/blog/index.md	/^###### [](#header-6)Header 6$/;"	function	line:56
+There's a horizontal rule below this.	/Users/aaron/Projects/blog/index.md	/^### There's a horizontal rule below this.$/;"	function	line:65
+Here is an unordered list:	/Users/aaron/Projects/blog/index.md	/^### Here is an unordered list:$/;"	function	line:69
+And an ordered list:	/Users/aaron/Projects/blog/index.md	/^### And an ordered list:$/;"	function	line:76
+And a nested list:	/Users/aaron/Projects/blog/index.md	/^### And a nested list:$/;"	function	line:83
+Small image	/Users/aaron/Projects/blog/index.md	/^### Small image$/;"	function	line:99
+Large image	/Users/aaron/Projects/blog/index.md	/^### Large image$/;"	function	line:103
+Definition lists can be used with HTML syntax.	/Users/aaron/Projects/blog/index.md	/^### Definition lists can be used with HTML syntax.$/;"	function	line:108
+[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#nn)Neural Networks$/;"	function	line:5
+[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#fpga)FPGAs$/;"	function	line:7
+[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#fpga)Others$/;"	function	line:8
