@@ -3,7 +3,7 @@ layout: default
 ---
 # [](#coarse_prune)Coarse-grained Pruning
 
-**Paper Name**:Pruning Filters for Efficient ConvNets
+1. **Paper Name**:Pruning Filters for Efficient ConvNets
 
   **Review**([Paper link](https://arxiv.org/pdf/1608.08710))
 
@@ -26,7 +26,7 @@ layout: default
   }
   ```
 
-**Paper Name**: Learning Structured Sparsity in Deep Neural Networks
+2. **Paper Name**: Learning Structured Sparsity in Deep Neural Networks
 
   **Review**([Paper link](https://arxiv.org/pdf/1608.08710))
 
