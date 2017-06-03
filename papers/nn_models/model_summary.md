@@ -139,7 +139,14 @@ As for Inception-v3, it is a variant of Inception-v2 which adds BN-auxiliary.
 }
 ```
 
-
+@inproceedings{deng2009imagenet,
+  title={Imagenet: A large-scale hierarchical image database},
+  author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
+  booktitle={Computer Vision and Pattern Recognition, 2009. CVPR 2009. IEEE Conference on},
+  pages={248--255},
+  year={2009},
+  organization={IEEE}
+}
 
 
 
