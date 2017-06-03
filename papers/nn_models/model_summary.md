@@ -9,7 +9,7 @@ layout: default
 | [AlexNet](#alexnet)      | 8     | 40.7/18.2            | 240MB | 2012 |
 | [VGG16](#vgg)        | 16    | 27/7.4               | 528MB | 2014 |
 | [VGG19](#vgg)        | 19    | 27.3/7.3               | 548MB | 2014 |
-| GoogleLeNet(#googlenet)  | 22    | 22/6.67              | 96MB  | 2015 |
+| [GoogleLeNet](#googlenet)  | 22    | 22/6.67              | 96MB  | 2015 |
 | InceptionV1  | 22    | 22/10.07             | 96MB  | 2015 |
 | InceptionV3  | 22    | 22/10.07             | 96MB  | 2015 |
 | ResNet-50    | 50    | 24.01/7.02           | 102MB | 2015 |
@@ -55,7 +55,7 @@ Normally train with a decaying learning rate and around 70 epochs.
 }
 ```
 ## [](#googlenet)GoogLeNet
-**Review**([Paper link]https://arxiv.org/pdf/1409.4842))
+**Review**([Paper link](https://arxiv.org/pdf/1409.4842))
 **Bibtex**
 ```
 @article{DBLP:journals/corr/SzegedyLJSRAEVR14,
@@ -78,7 +78,47 @@ Normally train with a decaying learning rate and around 70 epochs.
   bibsource = {dblp computer science bibliography, http://dblp.org}
 }
 ```
+## [](#inception)Inception
+**Review**([Batch Norm Paper link](https://arxiv.org/pdf/1502.03167), [Rethink](https://arxiv.org/pdf/1512.00567))
+In the Batch Norm paper, Sergey et al. proposed InceptionV1 architecture, which is very similar to GoogleNet.
+They introduced the very important concept of batch norm to speed up learning and also increases accuracy.
+Later on, the authors proposed InceptionV2 and InceptionV3.
+In the Inception-v2, they introduced Factorization (factorize convolutions into smaller convolutions) and some minor change into Inception-v1.
+As for Inception-v3, it is a variant of Inception-v2 which adds BN-auxiliary.
 
+
+**Bibtex**
+```
+@article{DBLP:journals/corr/IoffeS15,
+  author    = {Sergey Ioffe and
+               Christian Szegedy},
+  title     = {Batch Normalization: Accelerating Deep Network Training by Reducing
+               Internal Covariate Shift},
+  journal   = {CoRR},
+  volume    = {abs/1502.03167},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1502.03167},
+  timestamp = {Mon, 02 Mar 2015 14:17:34 +0100},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/IoffeS15},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{DBLP:journals/corr/SzegedyVISW15,
+  author    = {Christian Szegedy and
+               Vincent Vanhoucke and
+               Sergey Ioffe and
+               Jonathon Shlens and
+               Zbigniew Wojna},
+  title     = {Rethinking the Inception Architecture for Computer Vision},
+  journal   = {CoRR},
+  volume    = {abs/1512.00567},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1512.00567},
+  timestamp = {Sat, 02 Jan 2016 11:38:49 +0100},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/SzegedyVISW15},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+```
 
 
 

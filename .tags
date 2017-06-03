@@ -52,3 +52,4 @@ script	/Users/aaron/Projects/blog/_layouts/default.html	/^    <script>$/;"	funct
 [](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#alexnet)AlexNet$/;"	function	line:18
 [](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#vgg)VGG$/;"	function	line:35
 [](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#googlenet)GoogLeNet$/;"	function	line:57
+[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#inception)Inception$/;"	function	line:81
