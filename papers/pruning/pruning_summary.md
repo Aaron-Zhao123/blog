@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-#Coarse-grained Pruning
+# [](#coarse_prune)Coarse-grained Pruning
 
 **Paper Name**:Pruning Filters for Efficient ConvNets
 

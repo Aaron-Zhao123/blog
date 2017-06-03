@@ -55,4 +55,4 @@ Definition lists can be used with HTML syntax.	/Users/aaron/Projects/blog/index.
 [Network Pruning](/blog/papers/pruning/pruning_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Pruning](\/blog\/papers\/pruning\/pruning_summary.html)$/;"	function	line:9
 [](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#fpga)FPGAs$/;"	function	line:11
 [](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#fpga)Others$/;"	function	line:12
-Coarse-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#Coarse-grained Pruning$/;"	function	line:4
+[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#coarse_prune)Coarse-grained Pruning$/;"	function	line:4
