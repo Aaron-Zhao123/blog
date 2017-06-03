@@ -2,6 +2,7 @@
 layout: default
 ---
 #Coarse-grained Pruning
+
 **Paper Name**:Pruning Filters for Efficient ConvNets
 **Review**([Paper link](https://arxiv.org/pdf/1608.08710))
 
