@@ -10,8 +10,8 @@ layout: default
 | [VGG16](#vgg)        | 16    | 27/7.4               | 528MB | 2014 |
 | [VGG19](#vgg)        | 19    | 27.3/7.3               | 548MB | 2014 |
 | [GoogleLeNet](#googlenet)  | 22    | 22/6.67              | 96MB  | 2015 |
-| InceptionV1  | 22    | 22/10.07             | 96MB  | 2015 |
-| InceptionV3  | 22    | 22/10.07             | 96MB  | 2015 |
+| [InceptionV1](#inception)  | 22    | 22/10.07             | 96MB  | 2015 |
+| [InceptionV3](#inception)  | 22    | 22/10.07             | 96MB  | 2015 |
 | ResNet-50    | 50    | 24.01/7.02           | 102MB | 2015 |
 | ResNet-200   | 200   | 21.66/5.79           | 102MB | 2015 |
 
@@ -79,7 +79,7 @@ Normally train with a decaying learning rate and around 70 epochs.
 }
 ```
 ## [](#inception)Inception
-**Review**([Batch Norm Paper link](https://arxiv.org/pdf/1502.03167), [Rethink](https://arxiv.org/pdf/1512.00567))
+**Review**([InceptionV1](https://arxiv.org/pdf/1502.03167), [InceptionV2,InceptionV3](https://arxiv.org/pdf/1512.00567))
 In the Batch Norm paper, Sergey et al. proposed InceptionV1 architecture, which is very similar to GoogleNet.
 They introduced the very important concept of batch norm to speed up learning and also increases accuracy.
 Later on, the authors proposed InceptionV2 and InceptionV3.
