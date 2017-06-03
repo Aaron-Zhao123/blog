@@ -10,8 +10,8 @@ layout: default
 | [VGG16](#vgg)        | 16    | 27/7.4               | 528MB | 2014 |
 | [VGG19](#vgg)        | 19    | 27.3/7.3               | 548MB | 2014 |
 | [GoogleLeNet](#googlenet)  | 22    | 22/6.67              | 96MB  | 2015 |
-| [InceptionV1](#inception)  | 22    | 22/10.07             | 96MB  | 2015 |
-| [InceptionV3](#inception)  | 22    | 22/10.07             | 96MB  | 2015 |
+| [InceptionV1](#inception)  | 22    | 22/4.8             | 96MB  | 2015 |
+| [InceptionV3](#inception)  | 22    | 21.2/5.6             | 96MB  | 2015 |
 | ResNet-50    | 50    | 24.01/7.02           | 102MB | 2015 |
 | ResNet-200   | 200   | 21.66/5.79           | 102MB | 2015 |
 
@@ -119,7 +119,25 @@ As for Inception-v3, it is a variant of Inception-v2 which adds BN-auxiliary.
   bibsource = {dblp computer science bibliography, http://dblp.org}
 }
 ```
-
+## [](#resnet)ResNet
+**Review**([Paper link](https://arxiv.org/pdf/1512.03385))
+**Bibtex**
+```
+@article{DBLP:journals/corr/HeZRS15,
+  author    = {Kaiming He and
+               Xiangyu Zhang and
+               Shaoqing Ren and
+               Jian Sun},
+  title     = {Deep Residual Learning for Image Recognition},
+  journal   = {CoRR},
+  volume    = {abs/1512.03385},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1512.03385},
+  timestamp = {Wed, 30 Mar 2016 23:40:00 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/HeZRS15},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+```
 
 
 
