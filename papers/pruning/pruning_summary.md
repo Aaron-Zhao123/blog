@@ -19,7 +19,7 @@ layout: default
 
 * * *
 
-## [](#coarseprune)Coarse-grained Pruning
+## <a id="coarseprune"></a>Coarse-grained Pruning
 1. **Pruning Filters for Efficient ConvNets**
 > > **Review**([Paper link](https://arxiv.org/pdf/1608.08710))
 > >
