@@ -15,7 +15,7 @@ layout: default
 ### [](#coarse_p1) Pruning Filters for Efficient ConvNets ###
 
     **Review**([Paper link](https://arxiv.org/pdf/1608.08710))
-
+<!--
     **Bibtex**
     ```
     @article{DBLP:journals/corr/LiKDSG16,
@@ -76,4 +76,4 @@ layout: default
       biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/LebedevL15},
       bibsource = {dblp computer science bibliography, http://dblp.org}
     }
-    ```
+    ``` -->
