@@ -131,7 +131,7 @@ layout: default
 
 1. **Learning both Weights and Connections for Efficient Neural Networks**
 > > **Review**([Paper link](https://arxiv.org/pdf/1506.02626))
-> > Fine-grained pruning, the first paper dicussed how to use regularizers and decreasing dropouts.
+> > Fine-grained pruning, it discussed how to use regularizers and decrease dropouts.
 > >
 > > **Bibtex**
 > > ```
