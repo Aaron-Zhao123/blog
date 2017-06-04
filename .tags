@@ -56,4 +56,5 @@ Definition lists can be used with HTML syntax.	/Users/aaron/Projects/blog/index.
 [](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#fpga)FPGAs$/;"	function	line:11
 [](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#fpga)Others$/;"	function	line:12
 [](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#list) List of papers$/;"	function	line:4
-[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#coarse_prune) Coarse-grained Pruning$/;"	function	line:19
+[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#coarse_prune) Coarse-grained Pruning$/;"	function	line:21
+[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#fine_prune) Fine-grained Pruning$/;"	function	line:130
