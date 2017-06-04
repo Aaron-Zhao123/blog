@@ -1,6 +1,14 @@
 ---
 layout: default
 ---
+# [](#list) List of papers
+  * Coarse-grained pruning (Filter-wise, Kernel-wise)
+    1. Pruning Filters for Efficient ConvNets
+    2. Learning Structured Sparsity in Deep Neural Networks
+  * Fine-grained pruning
+  * Regularizers
+  * Quantization
+
 # [](#coarse_prune)Coarse-grained Pruning
 
 1. **Paper Name**:Pruning Filters for Efficient ConvNets
@@ -48,5 +56,25 @@ layout: default
     biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/WenWWCL16},
     bibsource = {dblp computer science bibliography, http://dblp.org}
   }
+  }
+  ```
+3. **Paper Name**: Fast ConvNets Using Group-wise Brain Damage
+
+  **Review**([Paper link](https://arxiv.org/pdf/1506.02515))
+
+
+  **Bibtex**
+  ```
+  @article{DBLP:journals/corr/LebedevL15,
+    author    = {Vadim Lebedev and
+                 Victor S. Lempitsky},
+    title     = {Fast ConvNets Using Group-wise Brain Damage},
+    journal   = {CoRR},
+    volume    = {abs/1506.02515},
+    year      = {2015},
+    url       = {http://arxiv.org/abs/1506.02515},
+    timestamp = {Wed, 01 Jul 2015 15:10:24 +0200},
+    biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/LebedevL15},
+    bibsource = {dblp computer science bibliography, http://dblp.org}
   }
   ```

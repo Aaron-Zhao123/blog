@@ -4,4 +4,5 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#coarse_prune)Coarse-grained Pruning$/;"	function	line:4
+[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#list) List of papers$/;"	function	line:4
+[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#coarse_prune)Coarse-grained Pruning$/;"	function	line:12
