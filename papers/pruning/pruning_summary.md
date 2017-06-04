@@ -2,8 +2,7 @@
 layout: default
 ---
 # [](#list) List of papers
-  * Coarse-grained pruning (Filter-wise, Kernel-wise)  
-  [details](#coarse_prune)
+  * Coarse-grained pruning (Filter-wise, Kernel-wise)[details](#coarse_prune)
     1. Pruning Filters for Efficient ConvNets (waiting review)
     2. Learning Structured Sparsity in Deep Neural Networks (waiting review)
     3. Fast ConvNets Using Group-wise Brain Damage (waiting review)
