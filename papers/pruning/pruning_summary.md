@@ -1,15 +1,16 @@
 ---
 layout: default
 ---
+
 # [](#list) List of papers
-  * Coarse-grained pruning (Filter-wise, Kernel-wise)[details](#coarse_prune)
+  * Coarse-grained pruning (Filter-wise, Kernel-wise)[details](#coarseprune)
     1. Pruning Filters for Efficient ConvNets (waiting review)
     2. Learning Structured Sparsity in Deep Neural Networks (waiting review)
     3. Fast ConvNets Using Group-wise Brain Damage (waiting review)
     4. Learning to Prune Deep Neural Networks via Layer-wise Optimal Brain Surgeon (waiting review)
     5. Net-Trim: A Layer-wise Convex Pruning of Deep Neural Networks (waiting review)
 
-  * Fine-grained pruning [details](#fine_prune)
+  * Fine-grained pruning [details](#fineprune)
     1. Learning both Weights and Connections for EfficientNeural Networks
 
   * Regularizers [details](#reg)
@@ -18,7 +19,7 @@ layout: default
 
 * * *
 
-## [](#coarse_prune)Coarse-grained
+## [](#coarseprune)Coarse-grained Pruning
 1. **Pruning Filters for Efficient ConvNets**
 > > **Review**([Paper link](https://arxiv.org/pdf/1608.08710))
 > >
@@ -126,7 +127,7 @@ layout: default
 
 * * *
 
-## [](#fine_prune)Fine-grained
+## [](#fineprune)Fine-grained Pruning
 1. **Learning both Weights and Connections for Efficient Neural Networks**
 > > **Review**([Paper link](https://arxiv.org/pdf/1506.02626))
 > > Fine-grained pruning, it discussed how to use regularizers and decrease dropouts.
