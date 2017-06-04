@@ -2,7 +2,7 @@
 layout: default
 ---
 # [](#list) List of papers #
-  * Coarse-grained pruning (Filter-wise, Kernel-wise)
+  * Coarse-grained pruning (Filter-wise, Kernel-wise) [details](#coarse_prune)
     1. Pruning Filters for Efficient ConvNets [details](#coarse_p1)
     2. Learning Structured Sparsity in Deep Neural Networks
     3. Fast ConvNets Using Group-wise Brain Damage
@@ -10,13 +10,16 @@ layout: default
   * Regularizers
   * Quantization
 
+* * *
+
 # [](#coarse_prune) Coarse-grained Pruning #
 
-### [](#coarse_p1) Pruning Filters for Efficient ConvNets ###
+  1. **Pruning Filters for Efficient ConvNets**
 
-    **Review**([Paper link](https://arxiv.org/pdf/1608.08710))
-<!--
-    **Bibtex**
+    _Review_([Paper link](https://arxiv.org/pdf/1608.08710))
+
+    _Bibtex_
+    
     ```
     @article{DBLP:journals/corr/LiKDSG16,
       author    = {Hao Li and
@@ -76,4 +79,4 @@ layout: default
       biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/LebedevL15},
       bibsource = {dblp computer science bibliography, http://dblp.org}
     }
-    ``` -->
+    ```
