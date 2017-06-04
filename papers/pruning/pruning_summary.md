@@ -60,12 +60,9 @@ layout: default
 ```
 
 3. **Fast ConvNets Using Group-wise Brain Damage**
-
-    **Review**([Paper link](https://arxiv.org/pdf/1506.02515))
-
-
-    **Bibtex**
-    ```
+> > **Review**([Paper link](https://arxiv.org/pdf/1506.02515))
+> > **Bibtex**
+> > ```
     @article{DBLP:journals/corr/LebedevL15,
       author    = {Vadim Lebedev and
                    Victor S. Lempitsky},
@@ -78,4 +75,4 @@ layout: default
       biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/LebedevL15},
       bibsource = {dblp computer science bibliography, http://dblp.org}
     }
-    ```
+```
