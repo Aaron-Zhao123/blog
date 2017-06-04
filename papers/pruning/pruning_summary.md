@@ -14,32 +14,33 @@ layout: default
 
 # [](#coarse_prune) Coarse-grained Pruning
 
-  1. **Pruning Filters for Efficient ConvNets**
+1. **Pruning Filters for Efficient ConvNets**
 
-  _Review_([Paper link](https://arxiv.org/pdf/1608.08710))
+> _Review_([Paper link](https://arxiv.org/pdf/1608.08710))
 
-  _Bibtex_
+> _Bibtex_
 
-    ```
-    @article{DBLP:journals/corr/LiKDSG16,
-      author    = {Hao Li and
-                   Asim Kadav and
-                   Igor Durdanovic and
-                   Hanan Samet and
-                   Hans Peter Graf},
-      title     = {Pruning Filters for Efficient ConvNets},
-      journal   = {CoRR},
-      volume    = {abs/1608.08710},
-      year      = {2016},
-      url       = {http://arxiv.org/abs/1608.08710},
-      timestamp = {Fri, 02 Sep 2016 17:46:24 +0200},
-      biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/LiKDSG16},
-      bibsource = {dblp computer science bibliography, http://dblp.org}
-    }
-    ```
-  2. **Learning Structured Sparsity in Deep Neural Networks**
+> ```
+@article{DBLP:journals/corr/LiKDSG16,
+  author    = {Hao Li and
+               Asim Kadav and
+               Igor Durdanovic and
+               Hanan Samet and
+               Hans Peter Graf},
+  title     = {Pruning Filters for Efficient ConvNets},
+  journal   = {CoRR},
+  volume    = {abs/1608.08710},
+  year      = {2016},
+  url       = {http://arxiv.org/abs/1608.08710},
+  timestamp = {Fri, 02 Sep 2016 17:46:24 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/LiKDSG16},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+```
 
-    **Review**([Paper link](https://arxiv.org/pdf/1608.08710))
+2. **Learning Structured Sparsity in Deep Neural Networks**
+
+> _Review_([Paper link](https://arxiv.org/pdf/1608.08710))
 
     **Bibtex**
     ```
