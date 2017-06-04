@@ -18,7 +18,7 @@ layout: default
 
 * * *
 
-# [](#coarse_prune) Coarse-grained Pruning
+# [](#coarse_prune)Coarse-grained Pruning
 
 1. **Pruning Filters for Efficient ConvNets**
 > > **Review**([Paper link](https://arxiv.org/pdf/1608.08710))
@@ -127,7 +127,7 @@ layout: default
 
 * * *
 
-# [](#fine_prune) Fine-grained Pruning
+# [](#fine_prune)Fine-grained Pruning
 
 1. **Learning both Weights and Connections for Efficient Neural Networks**
 > > **Review**([Paper link](https://arxiv.org/pdf/1506.02626))
