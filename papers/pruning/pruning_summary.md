@@ -15,11 +15,9 @@ layout: default
 # [](#coarse_prune) Coarse-grained Pruning
 
 1. **Pruning Filters for Efficient ConvNets**
-
 > > _Review_([Paper link](https://arxiv.org/pdf/1608.08710))
 > >
 > > _Bibtex_
-> >
 > > ```
 @article{DBLP:journals/corr/LiKDSG16,
   author    = {Hao Li and
@@ -39,11 +37,10 @@ layout: default
 ```
 
 2. **Learning Structured Sparsity in Deep Neural Networks**
-
-> _Review_([Paper link](https://arxiv.org/pdf/1608.08710))
-
-    **Bibtex**
-    ```
+> > _Review_([Paper link](https://arxiv.org/pdf/1608.08710))
+> >
+> > _Bibtex_
+> > ```
     @article{DBLP:journals/corr/WenWWCL16,
       author    = {Wei Wen and
                    Chunpeng Wu and
@@ -60,8 +57,9 @@ layout: default
       bibsource = {dblp computer science bibliography, http://dblp.org}
     }
     }
-    ```
-  3. **Fast ConvNets Using Group-wise Brain Damage**
+```
+
+3. **Fast ConvNets Using Group-wise Brain Damage**
 
     **Review**([Paper link](https://arxiv.org/pdf/1506.02515))
 
