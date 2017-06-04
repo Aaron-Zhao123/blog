@@ -10,9 +10,9 @@ layout: default
   * Regularizers
   * Quantization
 
-# [](#coarse_prune)Coarse-grained Pruning
+# [](#coarse_prune) Coarse-grained Pruning
 
-### [](#coarse_p1)Pruning Filters for Efficient ConvNets
+### [](#coarse_p1) Pruning Filters for Efficient ConvNets
 
     **Review**([Paper link](https://arxiv.org/pdf/1608.08710))
 
