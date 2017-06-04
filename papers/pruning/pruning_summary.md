@@ -17,9 +17,9 @@ layout: default
 1. **Pruning Filters for Efficient ConvNets**
 
 > > _Review_([Paper link](https://arxiv.org/pdf/1608.08710))
-
+> >
 > > _Bibtex_
-
+> >
 > > ```
 @article{DBLP:journals/corr/LiKDSG16,
   author    = {Hao Li and
