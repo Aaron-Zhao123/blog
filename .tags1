@@ -6,6 +6,9 @@
 !_TAG_PROGRAM_VERSION	5.8	//
 [](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#nn)Neural Networks$/;"	function	line:5
 [Network Models](/blog/papers/nn_models/model_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Models](\/blog\/papers\/nn_models\/model_summary.html)$/;"	function	line:6
-[Network Pruning](/blog/papers/pruning/pruning_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Pruning](\/blog\/papers\/pruning\/pruning_summary.html)$/;"	function	line:11
-[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#fpga)FPGAs$/;"	function	line:16
-[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#fpga)Others$/;"	function	line:17
+[Network Compression](/blog/papers/pruning/pruning_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Compression](\/blog\/papers\/pruning\/pruning_summary.html)$/;"	function	line:11
+[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#fpga)FPGAs$/;"	function	line:22
+[Neural networks](/blog/papers/pruning/pruning_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Neural networks](\/blog\/papers\/pruning\/pruning_summary.html)$/;"	function	line:23
+[FPGAs in the cloud](/blog/papers/pruning/pruning_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [FPGAs in the cloud](\/blog\/papers\/pruning\/pruning_summary.html)$/;"	function	line:25
+[High level synthesis](/blog/papers/pruning/pruning_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [High level synthesis](\/blog\/papers\/pruning\/pruning_summary.html)$/;"	function	line:27
+[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#others)Others$/;"	function	line:29
