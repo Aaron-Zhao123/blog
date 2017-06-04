@@ -127,7 +127,7 @@ layout: default
 
 * * *
 
-## [](#fineprune)Fine-grained Pruning
+## <a id="fineprune"></a>Fine-grained Pruning
 1. **Learning both Weights and Connections for Efficient Neural Networks**
 > > **Review**([Paper link](https://arxiv.org/pdf/1506.02626))
 > > Fine-grained pruning, it discussed how to use regularizers and decrease dropouts.
