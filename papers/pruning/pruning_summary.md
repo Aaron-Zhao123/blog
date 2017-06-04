@@ -6,9 +6,13 @@ layout: default
     1. Pruning Filters for Efficient ConvNets
     2. Learning Structured Sparsity in Deep Neural Networks
     3. Fast ConvNets Using Group-wise Brain Damage
-  * Fine-grained pruning
-  * Regularizers
-  * Quantization
+    4. Learning to Prune Deep Neural Networks via Layer-wise Optimal Brain Surgeon
+
+  * Fine-grained pruning[details](#fine_prune)
+
+  * Regularizers[details](#reg)
+
+  * Quantization[details](#quan)
 
 * * *
 
@@ -75,4 +79,24 @@ layout: default
       biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/LebedevL15},
       bibsource = {dblp computer science bibliography, http://dblp.org}
     }
+```
+
+3. **Learning to Prune Deep Neural Networks via Layer-wise Optimal Brain Surgeon**
+> > **Review**([Paper link](https://arxiv.org/pdf/1705.07565))
+> > **Bibtex**
+> > ```
+@article{DBLP:journals/corr/DongCP17,
+  author    = {Xin Dong and
+               Shangyu Chen and
+               Sinno Jialin Pan},
+  title     = {Learning to Prune Deep Neural Networks via Layer-wise Optimal Brain
+               Surgeon},
+  journal   = {CoRR},
+  volume    = {abs/1705.07565},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1705.07565},
+  timestamp = {Thu, 01 Jun 2017 19:31:46 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/DongCP17},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
 ```
