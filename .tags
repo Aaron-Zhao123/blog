@@ -1,9 +1,3 @@
-[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^# [](#header-1)Popular CNN Models$/;"	function	line:4
-[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#alexnet)AlexNet$/;"	function	line:18
-[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#vgg)VGG$/;"	function	line:35
-[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#googlenet)GoogLeNet$/;"	function	line:57
-[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#inception)Inception$/;"	function	line:81
-[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#resnet)ResNet$/;"	function	line:122
 [](	/Users/aaron/Projects/blog/index.md	/^# [](#Introduction)Introduction$/;"	function	line:5
 [](	/Users/aaron/Projects/blog/index.md	/^# [](#projects)Projects$/;"	function	line:9
 [](	/Users/aaron/Projects/blog/index.md	/^## [](#header-2)Header 2$/;"	function	line:21
@@ -61,3 +55,9 @@ script	/Users/aaron/Projects/blog/_layouts/default.html	/^    <script>$/;"	funct
 [](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#list) List of papers$/;"	function	line:4
 [](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#coarse_prune)Coarse-grained Pruning$/;"	function	line:21
 [](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#fine_prune)Fine-grained Pruning$/;"	function	line:130
+[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^# [](#header-1)Popular CNN Models$/;"	function	line:4
+[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#alexnet)AlexNet$/;"	function	line:18
+[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#vgg)VGG$/;"	function	line:35
+[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#googlenet)GoogLeNet$/;"	function	line:57
+[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#inception)Inception$/;"	function	line:81
+[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#resnet)ResNet$/;"	function	line:122

@@ -12,8 +12,8 @@ layout: default
 | [GoogleLeNet](#googlenet)  | 22    | 22/6.67              | 96MB  | 2015 |
 | [InceptionV1](#inception)  | 22    | 22/4.8             | 96MB  | 2015 |
 | [InceptionV3](#inception)  | 22    | 21.2/5.6             | 96MB  | 2015 |
-| ResNet-50    | 50    | 24.01/7.02           | 102MB | 2015 |
-| ResNet-200   | 200   | 21.66/5.79           | 102MB | 2015 |
+| [ResNet-50](#resnet)    | 50    | 24.01/7.02           | 102MB | 2015 |
+| [ResNet-200](#resnet)   | 200   | 21.66/5.79           | 102MB | 2015 |
 
 ## [](#alexnet)AlexNet
 **Review**([Paper link](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf))
