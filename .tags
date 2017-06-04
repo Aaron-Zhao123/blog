@@ -60,4 +60,4 @@ script	/Users/aaron/Projects/blog/_layouts/default.html	/^    <script>$/;"	funct
 [](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#resnet)ResNet$/;"	function	line:122
 [](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#list) List of papers$/;"	function	line:4
 [](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## [](#coarse_prune)Coarse-grained Pruning$/;"	function	line:21
-[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## [](#fine_prune)Fine-grained Pruning$/;"	function	line:130
+[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## [](#fine_prune)Fine-grained Pruning$/;"	function	line:129
