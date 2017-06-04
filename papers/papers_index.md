@@ -14,6 +14,7 @@ A range of compression techniques are summarized:
 * Quantization
 * Regularization
 * Varying network structure
+
 Pruning refers to move away connections in a neural network for compressing the size of it, both fine-grained and coarse-grained
 pruning are discussed.
 Vairous quantization methods: fixed-point, dynamic fixed-point, binarized, tenary.
