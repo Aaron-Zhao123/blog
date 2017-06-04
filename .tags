@@ -50,9 +50,6 @@ p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p>This project is 
 p	/Users/aaron/Projects/blog/_layouts/default.html	/^        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https:\/\/github.com\/orderedlist">orderedlist<\/a><\/small><\/p>$/;"	function	line:56
 script	/Users/aaron/Projects/blog/_layouts/default.html	/^    <script src="{{ '\/assets\/js\/scale.fix.js' | relative_url }}"><\/script>$/;"	function	line:59
 script	/Users/aaron/Projects/blog/_layouts/default.html	/^    <script>$/;"	function	line:63
-[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#list) List of papers$/;"	function	line:4
-[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#coarse_prune) Coarse-grained Pruning$/;"	function	line:22
-[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#fine_prune) Fine-grained Pruning$/;"	function	line:131
 [](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#nn)Neural Networks$/;"	function	line:5
 [Network Models](/blog/papers/nn_models/model_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Models](\/blog\/papers\/nn_models\/model_summary.html)$/;"	function	line:6
 [Network Compression](/blog/papers/pruning/pruning_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Compression](\/blog\/papers\/pruning\/pruning_summary.html)$/;"	function	line:11
@@ -61,3 +58,6 @@ script	/Users/aaron/Projects/blog/_layouts/default.html	/^    <script>$/;"	funct
 [FPGAs in the cloud](/blog/papers/pruning/pruning_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [FPGAs in the cloud](\/blog\/papers\/pruning\/pruning_summary.html)$/;"	function	line:26
 [High level synthesis](/blog/papers/pruning/pruning_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [High level synthesis](\/blog\/papers\/pruning\/pruning_summary.html)$/;"	function	line:28
 [](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#others)Others$/;"	function	line:30
+[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#list) List of papers$/;"	function	line:4
+[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#coarse_prune) Coarse-grained Pruning$/;"	function	line:22
+[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#fine_prune) Fine-grained Pruning$/;"	function	line:131
