@@ -12,7 +12,7 @@ layout: default
 
 # [](#coarse_prune)Coarse-grained Pruning
 
-  1. **Pruning Filters for Efficient ConvNets**
+  * Pruning Filters for Efficient ConvNets
 
     **Review**([Paper link](https://arxiv.org/pdf/1608.08710))
 
