@@ -2,9 +2,9 @@
 layout: default
 ---
 
-# [](#Introduction) A quick introduction of Aaron
-
 <img src="aaron_zhao.png" alt="Aaron Zhao" style="width:150px;height:150px;">
+
+# [](#Introduction) About Me
 
 Hello, thanks for visiting my personal wiki.
 
@@ -12,12 +12,21 @@ My name is Aaron Zhao, a Master student at the Computer Laboratory of University
 
 I am actively researching on neural network related hardware architectures. A list of my previous projects can be found [here](/blog/projects/projects_sum.html).
 
-I keep my [Linkedin Profile](https://www.linkedin.com/in/yiren-aaron-zhao-baa8b5116/) up-to-date, please have a visit if you interested in my education/work experience.
+I keep my [Linkedin Profile](https://www.linkedin.com/in/yiren-aaron-zhao-baa8b5116/) up-to-date, please have a visit if you are interested in my education/work experience.
 
-This wiki collects a bunch of papers, books and code. This collection mainly serves as notes for me, but it might interest some others.
 
-# [](#Introduction) A longer introduction of Aaron
- to be finished... 
+# [](#interests) Research Interests
+* Machine Learning, Neural Networks, Artificial Intelligence
+* High Performance Computing, Reconfigurable Computing, Parallel Computing
+* Computer Architecture
+
+# [](#interests) Education Background
+I have a mixed educational background with study experience in various countries.
+I am a Chinese national, but finished my high school education in New Zealand and received the NZ Goveners Award.  
+I received a _Bachelor of Engineering_ degree in Electrical and Electronic Engineering from Imperial College London.
+I graduated from Imperial with a top-rank score and was awarded with the _Wills Jackson Metal and Price_.
+I am now doing a _Master of Philosophy_ degree at The Computer Laboratory at University of Cambridge.
+
 
 <!--
 # [](#projects)Projects
