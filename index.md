@@ -25,8 +25,22 @@ I have a mixed educational background with study experience in various countries
 I am a Chinese national, but finished my high school education in New Zealand and received the NZ Goveners Award.  
 I received a _Bachelor of Engineering_ degree in Electrical and Electronic Engineering from Imperial College London.
 I graduated from Imperial with a top-rank score and was awarded with the _Wills Jackson Metal and Price_.
-I am now doing a _Master of Philosophy_ degree at The Computer Laboratory at University of Cambridge.
+I am now doing a _Master of Philosophy_ degree at the Computer Laboratory of University of Cambridge.
 
+# [](#interests) Research Experience
+I have previously worked as the following roles:
+
+* Machine learning researcher (Intern) at Ocado Technology 10x
+* Machine learning consultant at Tangi0
+* Research Assistant at Circuits and Systems Research Group at Imperial College London
+* Research Assistant at Radio Frequency Laboratory in University of Electronic Science and Technology of China
+
+
+# [](#interests) Other Interests
+I have a strong interest in business, currently co-funding HorizonEdu with Tommy Jia. We are interested in helping chinese students to apply for oversea universities.
+
+I am a coffee lover, a guitar player and a kickboxer. I had 5 amature fights, 3 non-decisions, 2 wins and 1 loss. I then stopped competing due to knee injuries.
+I am starting to develop an interest in brazilian jiu jitsu.
 
 <!--
 # [](#projects)Projects
