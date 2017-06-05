@@ -2,10 +2,18 @@
 layout: default
 ---
 
-# [](#Introduction)Introduction
+# [](#Introduction) A quick introduction to myself
+![](aaron_zhao.png)
+
 Hello, thanks for visiting my personal wiki.
+
 My name is Aaron Zhao, a Master student at the Computer Laboratory of University of Cambridge.
 
+I am actively researching on neural network related hardware architectures. A list of my previous projects can be found [here](/blog/projects/projects_sum.html).
+
+I keep my [Linkedin Profile](https://www.linkedin.com/in/yiren-aaron-zhao-baa8b5116/) up-to-date, please have a visit if you interested in my education/work experience.
+
+<!--
 # [](#projects)Projects
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
@@ -124,4 +132,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 
 ```
 The final element.
-```
+``` -->

@@ -27,10 +27,13 @@ Novel regularizers are considered as compression techniques.
 Accelerators for low-power systems, and accelerators in the cloud.
 
 # [](#fpga)FPGAs
-## [Neural networks](/blog/papers/pruning/pruning_summary.html)
+## [Applications](/blog/papers/fpga_nn/fpgann_summary.html)
+My main focus on FPGAs in applications are still related to hardware architectures. This section specifically focus on the publications FPGA-based implementation of neural network accceleroatrs in the following conferences: FPGA, FCCM, FPL and FPT.
 
-## [FPGAs in the cloud](/blog/papers/pruning/pruning_summary.html)
+## [FPGAs in the cloud](/blog/papers/fpga_cloud/fpgncloud_summary.html)
+The interest of FPGAs in the cloud origins from the Catapult project from Microsoft.
 
 ## [High level synthesis](/blog/papers/pruning/pruning_summary.html)
+I have a particular interest in HLS. The popular HLS tools include the followings: Vivado HLS, Altera OpenCL and Legup.
 
 # [](#others)Others
