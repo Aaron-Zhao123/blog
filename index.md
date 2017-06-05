@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# [](#Introduction) A quick introduction to myself
+# [](#Introduction) A quick introduction of Aaron
 
 <img src="aaron_zhao.png" alt="Aaron Zhao" style="width:150px;height:150px;">
 
@@ -13,6 +13,11 @@ My name is Aaron Zhao, a Master student at the Computer Laboratory of University
 I am actively researching on neural network related hardware architectures. A list of my previous projects can be found [here](/blog/projects/projects_sum.html).
 
 I keep my [Linkedin Profile](https://www.linkedin.com/in/yiren-aaron-zhao-baa8b5116/) up-to-date, please have a visit if you interested in my education/work experience.
+
+This wiki collects a bunch of papers, books and code. This collection mainly serves as notes for me, but it might interest some others.
+
+# [](#Introduction) A longer introduction of Aaron
+ to be finished... 
 
 <!--
 # [](#projects)Projects
