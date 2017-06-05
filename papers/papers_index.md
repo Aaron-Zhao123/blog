@@ -20,6 +20,12 @@ pruning are discussed.
 Vairous quantization methods: fixed-point, dynamic fixed-point, binarized, tenary.
 Novel regularizers are considered as compression techniques.
 
+## [Neural Network Accelerators](/blog/papers/nn_accelerator/acc_summary.html)
+* Inference Accelerators -> aiming at low-power consumption
+* Training Acceleraotors
+* Frameworks
+Accelerators for low-power systems, and accelerators in the cloud.
+
 # [](#fpga)FPGAs
 ## [Neural networks](/blog/papers/pruning/pruning_summary.html)
 

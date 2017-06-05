@@ -13,6 +13,10 @@ layout: default
   * Fine-grained pruning [details](#fineprune)
     1. Learning both Weights and Connections for EfficientNeural Networks
 
+  * Other types of pruning [details](#oprune)
+    1. Customizing DNN Pruning to the Underlying Hardware
+Parallelism (watiting to be released on ISCA 2017)
+
   * Regularizers [details](#reg)
 
   * Quantization [details](#quan)
@@ -149,3 +153,9 @@ layout: default
   bibsource = {dblp computer science bibliography, http://dblp.org}
 }
 ```
+
+* * *
+
+## <a id="oprune"></a>Other types of Pruning
+1. **Customizing DNN Pruning to the Underlying Hardware
+Parallelism**
