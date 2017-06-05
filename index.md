@@ -3,7 +3,8 @@ layout: default
 ---
 
 # [](#Introduction) A quick introduction to myself
-![](aaron_zhao.png)
+
+<img src="aaron_zhao.png" alt="Aaron Zhao" style="width:150px;height:150px;">
 
 Hello, thanks for visiting my personal wiki.
 
