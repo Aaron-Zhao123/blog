@@ -4,22 +4,6 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-[](	/Users/aaron/Projects/blog/index.md	/^# [](#Introduction) About Me$/;"	function	line:7
-[](	/Users/aaron/Projects/blog/index.md	/^# [](#interests) Research Interests$/;"	function	line:18
-[](	/Users/aaron/Projects/blog/index.md	/^# [](#interests) Education Background$/;"	function	line:23
-[](	/Users/aaron/Projects/blog/index.md	/^# [](#interests) Research Experience$/;"	function	line:30
-[](	/Users/aaron/Projects/blog/index.md	/^# [](#interests) Other Interests$/;"	function	line:39
-[](	/Users/aaron/Projects/blog/index.md	/^# [](#projects)Projects$/;"	function	line:46
-[](	/Users/aaron/Projects/blog/index.md	/^## [](#header-2)Header 2$/;"	function	line:58
-[](	/Users/aaron/Projects/blog/index.md	/^### [](#header-3)Header 3$/;"	function	line:64
-Ruby code with syntax highlighting	/Users/aaron/Projects/blog/index.md	/^# Ruby code with syntax highlighting$/;"	function	line:75
-[](	/Users/aaron/Projects/blog/index.md	/^#### [](#header-4)Header 4$/;"	function	line:81
-[](	/Users/aaron/Projects/blog/index.md	/^##### [](#header-5)Header 5$/;"	function	line:87
-[](	/Users/aaron/Projects/blog/index.md	/^###### [](#header-6)Header 6$/;"	function	line:93
-There's a horizontal rule below this.	/Users/aaron/Projects/blog/index.md	/^### There's a horizontal rule below this.$/;"	function	line:102
-Here is an unordered list:	/Users/aaron/Projects/blog/index.md	/^### Here is an unordered list:$/;"	function	line:106
-And an ordered list:	/Users/aaron/Projects/blog/index.md	/^### And an ordered list:$/;"	function	line:113
-And a nested list:	/Users/aaron/Projects/blog/index.md	/^### And a nested list:$/;"	function	line:120
-Small image	/Users/aaron/Projects/blog/index.md	/^### Small image$/;"	function	line:136
-Large image	/Users/aaron/Projects/blog/index.md	/^### Large image$/;"	function	line:140
-Definition lists can be used with HTML syntax.	/Users/aaron/Projects/blog/index.md	/^### Definition lists can be used with HTML syntax.$/;"	function	line:145
+[](	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^# [](#list) List of papers$/;"	function	line:5
+<a id="l_acc"></a>Inference accelerator	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^## <a id="l_acc"><\/a>Inference accelerator$/;"	function	line:21
+<a id="frameworks"></a>Frameworks	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^## <a id="frameworks"><\/a>Frameworks$/;"	function	line:25

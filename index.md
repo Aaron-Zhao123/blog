@@ -8,7 +8,7 @@ layout: default
 
 Hello, thanks for visiting my personal wiki.
 
-My name is Aaron Zhao, a Master student at the Computer Laboratory of University of Cambridge.
+My name is Aaron Zhao, currently a Master student at the Computer Laboratory of University of Cambridge.
 
 I am actively researching on neural network related hardware architectures. A list of my previous projects can be found [here](/blog/projects/projects_sum.html).
 
@@ -21,16 +21,16 @@ I keep my [Linkedin Profile](https://www.linkedin.com/in/yiren-aaron-zhao-baa8b5
 * Computer Architecture
 
 # [](#interests) Education Background
-I have a mixed educational background with study experience in various countries.
-I am a Chinese national, but finished my high school education in New Zealand and received the NZ Goveners Award.  
-I received a _Bachelor of Engineering_ degree in Electrical and Electronic Engineering from Imperial College London.
-I graduated from Imperial with a top-rank score and was awarded with the _Wills Jackson Metal and Price_.
-I am now doing a _Master of Philosophy_ degree at the Computer Laboratory of University of Cambridge.
+I have a mixed education background with study experience in various countries.
+I am a Chinese national, but finished my high school in New Zealand and received the NZ Goveners Award.  
+I obtained a _Bachelor of Engineering_ degree in Electrical and Electronic Engineering at Imperial College London.
+After graduating from Imperial with a top-rank score and being awarded with the _Wills Jackson Metal and Price_,
+I am now reading a _Master of Philosophy_ degree at the Computer Laboratory of University of Cambridge.
 
 # [](#interests) Research Experience
 I have previously worked as the following roles:
 
-* Machine learning researcher (Intern) at Ocado Technology 10x
+* Machine learning researcher (Intern) at Ocado 10x Research
 * Machine learning consultant at Tangi0
 * Research Assistant at Circuits and Systems Research Group at Imperial College London
 * Research Assistant at Radio Frequency Laboratory in University of Electronic Science and Technology of China
@@ -40,7 +40,7 @@ I have previously worked as the following roles:
 I have a strong interest in business, currently co-funding HorizonEdu with Tommy Jia. We are interested in helping chinese students to apply for oversea universities.
 
 I am a coffee lover, a guitar player and a kickboxer. I had 5 amature fights, 3 non-decisions, 2 wins and 1 loss. I then stopped competing due to knee injuries.
-I am starting to develop an interest in brazilian jiu jitsu.
+I am starting to develop an interest in brazilian jiu jitsu as well.
 
 <!--
 # [](#projects)Projects

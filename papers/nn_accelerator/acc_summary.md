@@ -14,6 +14,7 @@ layout: default
     1. DeepSecure: Scalable Provably-Secure Deep Learning (waiting for review)
     2. Deep^3: Leveraging Three Levels of Parallelism for Efficient Deep Learning (waiting to be realsed on DAC 2017)
     3. Maximizing CNN Accelerator Efficiency Through Resource Partitioning (wating to be reviewed)
+    4. Exploring the Regularity of Sparse Structure inConvolutional Neural Networks (wating to be reviewed)
 
 * * *
 
@@ -31,10 +32,16 @@ layout: default
 3. **Maximizing CNN Accelerator Efficiency Through Resource Partitioning**
 > > **Review**([Paper link](https://arxiv.org/pdf/1607.00064))
 
+4. **Exploring the Regularity of Sparse Structure inConvolutional Neural Networks**
+> > **Review**([Paper link](https://arxiv.org/pdf/1607.00064))
 
 
 
 
+
+
+
+<!--
 > > **Bibtex**
 > > ```
 @article{DBLP:journals/corr/LiKDSG16,
@@ -52,4 +59,4 @@ layout: default
   biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/LiKDSG16},
   bibsource = {dblp computer science bibliography, http://dblp.org}
 }
-```
+``` -->

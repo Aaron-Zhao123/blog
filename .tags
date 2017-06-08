@@ -4,13 +4,6 @@
 [](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#googlenet)GoogLeNet$/;"	function	line:57
 [](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#inception)Inception$/;"	function	line:81
 [](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#resnet)ResNet$/;"	function	line:122
-[](	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^# [](#list) List of papers$/;"	function	line:5
-<a id="l_acc"></a>Inference accelerator	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^## <a id="l_acc"><\/a>Inference accelerator$/;"	function	line:20
-<a id="frameworks"></a>Frameworks	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^## <a id="frameworks"><\/a>Frameworks$/;"	function	line:24
-[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#list) List of papers$/;"	function	line:5
-<a id="coarseprune"></a>Coarse-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="coarseprune"><\/a>Coarse-grained Pruning$/;"	function	line:26
-<a id="fineprune"></a>Fine-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="fineprune"><\/a>Fine-grained Pruning$/;"	function	line:134
-<a id="oprune"></a>Other types of Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="oprune"><\/a>Other types of Pruning$/;"	function	line:159
 [](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#nn)Neural Networks$/;"	function	line:5
 [Network Models](/blog/papers/nn_models/model_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Models](\/blog\/papers\/nn_models\/model_summary.html)$/;"	function	line:6
 [Network Compression](/blog/papers/pruning/pruning_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Compression](\/blog\/papers\/pruning\/pruning_summary.html)$/;"	function	line:11
@@ -72,3 +65,12 @@ And a nested list:	/Users/aaron/Projects/blog/index.md	/^### And a nested list:$
 Small image	/Users/aaron/Projects/blog/index.md	/^### Small image$/;"	function	line:136
 Large image	/Users/aaron/Projects/blog/index.md	/^### Large image$/;"	function	line:140
 Definition lists can be used with HTML syntax.	/Users/aaron/Projects/blog/index.md	/^### Definition lists can be used with HTML syntax.$/;"	function	line:145
+[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#list) List of papers$/;"	function	line:5
+<a id="coarseprune"></a>Coarse-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="coarseprune"><\/a>Coarse-grained Pruning$/;"	function	line:27
+<a id="fineprune"></a>Fine-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="fineprune"><\/a>Fine-grained Pruning$/;"	function	line:135
+<a id="oprune"></a>Other types of Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="oprune"><\/a>Other types of Pruning$/;"	function	line:187
+[](	/Users/aaron/Projects/blog/papers/fpga_nn/fpgann_summary.md	/^# [](#list) List of papers$/;"	function	line:5
+<a id="coarseprune"></a>Coarse-grained Pruning	/Users/aaron/Projects/blog/papers/fpga_nn/fpgann_summary.md	/^## <a id="coarseprune"><\/a>Coarse-grained Pruning$/;"	function	line:13
+[](	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^# [](#list) List of papers$/;"	function	line:5
+<a id="l_acc"></a>Inference accelerator	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^## <a id="l_acc"><\/a>Inference accelerator$/;"	function	line:21
+<a id="frameworks"></a>Frameworks	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^## <a id="frameworks"><\/a>Frameworks$/;"	function	line:25
