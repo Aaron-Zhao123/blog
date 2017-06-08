@@ -32,9 +32,6 @@ layout: default
 3. **Maximizing CNN Accelerator Efficiency Through Resource Partitioning**
 > > **Review**([Paper link](https://arxiv.org/pdf/1607.00064))
 
-4. **Exploring the Regularity of Sparse Structure inConvolutional Neural Networks**
-> > **Review**([Paper link](https://arxiv.org/pdf/1607.00064))
-
 
 
 

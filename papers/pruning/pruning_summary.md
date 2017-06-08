@@ -17,6 +17,7 @@ layout: default
   * Other types of pruning [details](#oprune)
     1. Customizing DNN Pruning to the Underlying Hardware
 Parallelism (watiting to be released on ISCA 2017)
+    2. Exploring the Regularity of Sparse Structure inConvolutional Neural Networks
 
   * Regularizers [details](#reg)
 
@@ -170,7 +171,7 @@ Parallelism (watiting to be released on ISCA 2017)
                Bryan Catanzaro and
                John Tran and
                William J. Dally},
-  title     = {{DSD:} Regularizing Deep Neural Networks with Dense-Sparse-Dense Training
+  title     = {DSD: Regularizing Deep Neural Networks with Dense-Sparse-Dense Training
                Flow},
   journal   = {CoRR},
   volume    = {abs/1607.04381},
@@ -187,3 +188,6 @@ Parallelism (watiting to be released on ISCA 2017)
 ## <a id="oprune"></a>Other types of Pruning
 1. **Customizing DNN Pruning to the Underlying Hardware
 Parallelism**
+
+2. **Exploring the Regularity of Sparse Structure inConvolutional Neural Networks**
+> > **Review**([Paper link](https://arxiv.org/pdf/1607.00064))
