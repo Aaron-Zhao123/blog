@@ -34,8 +34,8 @@ Parallelism (watiting to be released on ISCA 2017)
 > > In ResNet, the pruning results can be affected by shorcutting connections, to prune the second convolutional layer of the residual block, the corresponding projected feature maps must also be pruned.
 > > Smallest filter pruning outperforms feature map pruning with the metrics (eg: mean, std, meanl1, meanl2  ... ).
 
-> > **Bibtex**
-> > ```
+> > > **Bibtex**
+> > >```
 @article{DBLP:journals/corr/LiKDSG16,
   author    = {Hao Li and
                Asim Kadav and
