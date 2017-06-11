@@ -59,10 +59,6 @@ Definition lists can be used with HTML syntax.	/Users/aaron/Projects/blog/index.
 [](	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^# [](#list) List of papers$/;"	function	line:5
 <a id="l_acc"></a>Inference accelerator	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^## <a id="l_acc"><\/a>Inference accelerator$/;"	function	line:21
 <a id="frameworks"></a>Frameworks	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^## <a id="frameworks"><\/a>Frameworks$/;"	function	line:25
-[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#list) List of papers$/;"	function	line:5
-<a id="coarseprune"></a>Coarse-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="coarseprune"><\/a>Coarse-grained Pruning$/;"	function	line:28
-<a id="fineprune"></a>Fine-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="fineprune"><\/a>Fine-grained Pruning$/;"	function	line:136
-<a id="oprune"></a>Other types of Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="oprune"><\/a>Other types of Pruning$/;"	function	line:188
 [](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#nn)Neural Networks$/;"	function	line:5
 [Network Models](/blog/papers/nn_models/model_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Models](\/blog\/papers\/nn_models\/model_summary.html)$/;"	function	line:6
 [Network Compression](/blog/papers/pruning/pruning_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Compression](\/blog\/papers\/pruning\/pruning_summary.html)$/;"	function	line:11
@@ -77,3 +73,7 @@ Definition lists can be used with HTML syntax.	/Users/aaron/Projects/blog/index.
 <a id="train"></a>Inference Architecture	/Users/aaron/Projects/blog/papers/fpga_nn/fpgann_summary.md	/^## <a id="train"><\/a>Inference Architecture$/;"	function	line:13
 [](	/Users/aaron/Projects/blog/papers/others/scheduling.md	/^# [](#list) List of papers$/;"	function	line:6
 <a id="train"></a>Switches	/Users/aaron/Projects/blog/papers/others/scheduling.md	/^## <a id="train"><\/a>Switches$/;"	function	line:13
+[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#list) List of papers$/;"	function	line:5
+<a id="coarseprune"></a>Coarse-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="coarseprune"><\/a>Coarse-grained Pruning$/;"	function	line:28
+<a id="fineprune"></a>Fine-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="fineprune"><\/a>Fine-grained Pruning$/;"	function	line:143
+<a id="oprune"></a>Other types of Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="oprune"><\/a>Other types of Pruning$/;"	function	line:195
