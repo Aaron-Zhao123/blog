@@ -27,6 +27,7 @@ Parallelism (watiting to be released on ISCA 2017)
 
 ## <a id="coarseprune"></a>Coarse-grained Pruning
 1. **Pruning Filters for Efficient ConvNets**
+
 > > **Review**([Paper link](https://arxiv.org/pdf/1608.08710))
 > > Fine-grained sparsity requires libraries to explore its advantage. An interesting point: maintaining sparse data structures also creates an additional storage overhead which can be significant for low-precision weights.
 > > Instead of layer-wise iterative fine-tuning (retraining), they use one-shot pruning and retraining to save retraining time for pruning filters across multiple layers, which is critical for pruning very deep networks.
