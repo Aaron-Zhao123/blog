@@ -4,15 +4,6 @@
 [](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#googlenet)GoogLeNet$/;"	function	line:57
 [](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#inception)Inception$/;"	function	line:81
 [](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#resnet)ResNet$/;"	function	line:122
-[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#nn)Neural Networks$/;"	function	line:5
-[Network Models](/blog/papers/nn_models/model_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Models](\/blog\/papers\/nn_models\/model_summary.html)$/;"	function	line:6
-[Network Compression](/blog/papers/pruning/pruning_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Compression](\/blog\/papers\/pruning\/pruning_summary.html)$/;"	function	line:11
-[Neural Network Accelerators](/blog/papers/nn_accelerator/acc_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Neural Network Accelerators](\/blog\/papers\/nn_accelerator\/acc_summary.html)$/;"	function	line:23
-[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#fpga)FPGAs$/;"	function	line:29
-[Applications](/blog/papers/fpga_nn/fpgann_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Applications](\/blog\/papers\/fpga_nn\/fpgann_summary.html)$/;"	function	line:30
-[FPGAs in the cloud](/blog/papers/fpga_cloud/fpgncloud_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [FPGAs in the cloud](\/blog\/papers\/fpga_cloud\/fpgncloud_summary.html)$/;"	function	line:33
-[High level synthesis](/blog/papers/pruning/pruning_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [High level synthesis](\/blog\/papers\/pruning\/pruning_summary.html)$/;"	function	line:36
-[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#others)Others$/;"	function	line:39
 html	/Users/aaron/Projects/blog/_layouts/default.html	/^<html lang="{{ site.lang | default: "en-US" }}">$/;"	function	line:2
 head	/Users/aaron/Projects/blog/_layouts/default.html	/^  <head>$/;"	function	line:3
 meta	/Users/aaron/Projects/blog/_layouts/default.html	/^    <meta charset="utf-8">$/;"	function	line:4
@@ -65,8 +56,6 @@ And a nested list:	/Users/aaron/Projects/blog/index.md	/^### And a nested list:$
 Small image	/Users/aaron/Projects/blog/index.md	/^### Small image$/;"	function	line:136
 Large image	/Users/aaron/Projects/blog/index.md	/^### Large image$/;"	function	line:140
 Definition lists can be used with HTML syntax.	/Users/aaron/Projects/blog/index.md	/^### Definition lists can be used with HTML syntax.$/;"	function	line:145
-[](	/Users/aaron/Projects/blog/papers/fpga_nn/fpgann_summary.md	/^# [](#list) List of papers$/;"	function	line:5
-<a id="coarseprune"></a>Coarse-grained Pruning	/Users/aaron/Projects/blog/papers/fpga_nn/fpgann_summary.md	/^## <a id="coarseprune"><\/a>Coarse-grained Pruning$/;"	function	line:13
 [](	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^# [](#list) List of papers$/;"	function	line:5
 <a id="l_acc"></a>Inference accelerator	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^## <a id="l_acc"><\/a>Inference accelerator$/;"	function	line:21
 <a id="frameworks"></a>Frameworks	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^## <a id="frameworks"><\/a>Frameworks$/;"	function	line:25
@@ -74,3 +63,17 @@ Definition lists can be used with HTML syntax.	/Users/aaron/Projects/blog/index.
 <a id="coarseprune"></a>Coarse-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="coarseprune"><\/a>Coarse-grained Pruning$/;"	function	line:28
 <a id="fineprune"></a>Fine-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="fineprune"><\/a>Fine-grained Pruning$/;"	function	line:136
 <a id="oprune"></a>Other types of Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="oprune"><\/a>Other types of Pruning$/;"	function	line:188
+[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#nn)Neural Networks$/;"	function	line:5
+[Network Models](/blog/papers/nn_models/model_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Models](\/blog\/papers\/nn_models\/model_summary.html)$/;"	function	line:6
+[Network Compression](/blog/papers/pruning/pruning_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Compression](\/blog\/papers\/pruning\/pruning_summary.html)$/;"	function	line:11
+[Neural Network Accelerators](/blog/papers/nn_accelerator/acc_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Neural Network Accelerators](\/blog\/papers\/nn_accelerator\/acc_summary.html)$/;"	function	line:23
+[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#fpga)FPGAs$/;"	function	line:29
+[Applications](/blog/papers/fpga_nn/fpgann_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Applications](\/blog\/papers\/fpga_nn\/fpgann_summary.html)$/;"	function	line:30
+[FPGAs in the cloud](/blog/papers/fpga_cloud/fpgncloud_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [FPGAs in the cloud](\/blog\/papers\/fpga_cloud\/fpgncloud_summary.html)$/;"	function	line:33
+[High level synthesis](/blog/papers/pruning/pruning_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [High level synthesis](\/blog\/papers\/pruning\/pruning_summary.html)$/;"	function	line:36
+[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#others)Others$/;"	function	line:39
+[Scheduling Algorithms](/blog/papers/others/scheduling.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Scheduling Algorithms](\/blog\/papers\/others\/scheduling.html)$/;"	function	line:40
+[](	/Users/aaron/Projects/blog/papers/fpga_nn/fpgann_summary.md	/^# [](#list) List of papers$/;"	function	line:5
+<a id="train"></a>Inference Architecture	/Users/aaron/Projects/blog/papers/fpga_nn/fpgann_summary.md	/^## <a id="train"><\/a>Inference Architecture$/;"	function	line:13
+[](	/Users/aaron/Projects/blog/papers/others/scheduling.md	/^# [](#list) List of papers$/;"	function	line:6
+<a id="train"></a>Switches	/Users/aaron/Projects/blog/papers/others/scheduling.md	/^## <a id="train"><\/a>Switches$/;"	function	line:13

@@ -5,12 +5,12 @@ layout: default
 # [](#list) List of papers
   * Training Architectures [details](#train)
 
-  * Inference Architectures [details](#train)
+  * Inference Architectures [details](#inference)
     1. Can FPGAs Beat GPUs in Accelerating Next-Generation Deep Neural Networks? (waiting review)
 
 * * *
 
-## <a id="coarseprune"></a>Coarse-grained Pruning
+## <a id="train"></a>Inference Architecture
 1. **Can FPGAs Beat GPUs in Accelerating Next-Generation Deep Neural Networks**
 > > **Review**([Paper link](http://jaewoong.org/pubs/fpga17-next-generation-dnns.pdf))
 > >

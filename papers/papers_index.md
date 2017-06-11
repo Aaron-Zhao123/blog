@@ -37,3 +37,5 @@ The interest of FPGAs in the cloud origins from the Catapult project from Micros
 I have a particular interest in HLS. The popular HLS tools include the followings: Vivado HLS, Altera OpenCL and Legup.
 
 # [](#others)Others
+## [Scheduling Algorithms](/blog/papers/others/scheduling.html)
+My research internship in Microsoft puts a focus on input-buffered switches in datacenters
