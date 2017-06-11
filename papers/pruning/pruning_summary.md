@@ -33,6 +33,7 @@ Parallelism (watiting to be released on ISCA 2017)
 > > Pruning based on sum of absolute kernel weights. Sort the rank based on that metric and prune the ones that have lowest value (very arbitrary in a sense). They introduced both **Independent pruning** and **Greedy pruning** for pruning across multiple layers. In **Independent pruning**, only filters in a same layers are considered, in contrast, **Greedy pruning** takes account of removed values in previous layers.
 > > In ResNet, the pruning results can be affected by shorcutting connections, to prune the second convolutional layer of the residual block, the corresponding projected feature maps must also be pruned.
 > > Smallest filter pruning outperforms feature map pruning with the metrics (eg: mean, std, meanl1, meanl2  ... ).
+
 > > **Bibtex**
 > > ```
 @article{DBLP:journals/corr/LiKDSG16,
