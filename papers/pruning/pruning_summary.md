@@ -56,6 +56,7 @@ Parallelism (watiting to be released on ISCA 2017)
 ```
 
 2. **Learning Structured Sparsity in Deep Neural Networks**
+
 > > **Review**([Paper link](https://arxiv.org/pdf/1608.08710))
 > >
 > > **Bibtex**
