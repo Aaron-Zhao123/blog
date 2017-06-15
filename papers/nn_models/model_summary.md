@@ -3,17 +3,18 @@ layout: default
 ---
 # [](#header-1)Popular CNN Models
 
-| Networks     | Layers| Top1 Error/Top5 Error| Size  | Year |
-|:-------------|:------|:---------------------|:------|:-----|
-| LeNet5       | 5     | 99.36 on MNIST       | 451KB | 1998 |
-| [AlexNet](#alexnet)      | 8     | 40.7/18.2            | 240MB | 2012 |
-| [VGG16](#vgg)        | 16    | 27/7.4               | 528MB | 2014 |
-| [VGG19](#vgg)        | 19    | 27.3/7.3               | 548MB | 2014 |
-| [GoogleLeNet](#googlenet)  | 22    | 22/6.67              | 96MB  | 2015 |
-| [InceptionV1](#inception)  | 22    | 22/4.8             | 96MB  | 2015 |
-| [InceptionV3](#inception)  | 22    | 21.2/5.6             | 96MB  | 2015 |
-| [ResNet-50](#resnet)    | 50    | 24.01/7.02           | 102MB | 2015 |
-| [ResNet-200](#resnet)   | 200   | 21.66/5.79           | 102MB | 2015 |
+| Networks     | Layers| Top1 Error/Top5 Error| Size  |   MACs(Million)| Year |
+|:-------------|:------|:---------------------|:------|:------|:-----|
+| LeNet5       | 5     | 99.36 on MNIST       | 451KB |       |1998 |
+| [AlexNet](#alexnet)      | 8     | 40.7/18.2| 240MB |       |2012 |
+| [VGG16](#vgg)        | 16    | 27/7.4       | 528MB |       |2014 |
+| [VGG19](#vgg)        | 19    | 27.3/7.3     | 548MB |       |2014 |
+| [GoogleLeNet](#googlenet)  | 22    | 22/6.67| 96MB  |       |2015 |
+| [InceptionV1](#inception)  | 22    | 22/4.8 | 96MB  |       |2015 |
+| [InceptionV3](#inception)  | 22    | 21.2/5.6| 96MB  |      |2015 |
+| [ResNet-50](#resnet)    | 50    | 24.01/7.02| 102MB |       |2015 |
+| [ResNet-200](#resnet)   | 200   | 21.66/5.79| 102MB |       |2015 |
+| [MoblieNets](#mobilenet)| 224   | 29.3/10.5 | 17MB  | 569   | 2017 |
 
 ## [](#alexnet)AlexNet
 **Review**([Paper link](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf))
@@ -137,8 +138,6 @@ As for Inception-v3, it is a variant of Inception-v2 which adds BN-auxiliary.
   biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/HeZRS15},
   bibsource = {dblp computer science bibliography, http://dblp.org}
 }
-```
-
 @inproceedings{deng2009imagenet,
   title={Imagenet: A large-scale hierarchical image database},
   author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
@@ -147,8 +146,34 @@ As for Inception-v3, it is a variant of Inception-v2 which adds BN-auxiliary.
   year={2009},
   organization={IEEE}
 }
+```
+## [](#mobilenet)MobileNet
+**Review**([Paper link](https://arxiv.org/pdf/1704.04861.pdf)[blog](https://research.googleblog.com/2017/06/mobilenets-open-source-models-for.html))
 
+MobileNets are based on a streamlined architecture that uses
+**depth-wise separable convolutions** to build light weight networks.
+**Depth-wise seperable convolution** breaks a standard convolutional layer into depth-wise layers and point-wise layers.
+Tradeoff between latency and accuracy are determined by two hyperparameters.
+One parameter is called **width multiplier**, this hyperparameter defines how "thin" the network is by multiplying itself to both input and output channel counts.
+The second hyperparameter is **Resolution multiplier**, this works by reduce the kernel width.
 
+**Bibtex**
+```
+@article{DBLP:journals/corr/HeZRS15,
+  author    = {Kaiming He and
+               Xiangyu Zhang and
+               Shaoqing Ren and
+               Jian Sun},
+  title     = {Deep Residual Learning for Image Recognition},
+  journal   = {CoRR},
+  volume    = {abs/1512.03385},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1512.03385},
+  timestamp = {Wed, 30 Mar 2016 23:40:00 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/HeZRS15},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+```
 
 <!-- # [](#header-2)Citations
 <a id='alexnet-paper'>
