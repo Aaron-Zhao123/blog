@@ -14,7 +14,7 @@ layout: default
 | [InceptionV3](#inception)  | 22    | 21.2/5.6| 96MB  |      |2015 |
 | [ResNet-50](#resnet)    | 50    | 24.01/7.02| 102MB |       |2015 |
 | [ResNet-200](#resnet)   | 200   | 21.66/5.79| 102MB |       |2015 |
-| [SqueezeNet](#squeeezenet)| 224   | 42.5/18.7 | 4.8MB  |   | 2017 |
+| [SqueezeNet](#snet)| 224   | 42.5/18.7 | 4.8MB  |   | 2017 |
 | [MoblieNets](#mobilenet)| 224   | 29.3/10.5 | 17MB  | 569   | 2017 |
 
 ## [](#alexnet)AlexNet
@@ -148,7 +148,7 @@ As for Inception-v3, it is a variant of Inception-v2 which adds BN-auxiliary.
   organization={IEEE}
 }
 ```
-## [](#squeeezenet)SqueezeNet
+## [](#snet)SqueezeNet
 **Review**([Paper link](https://arxiv.org/pdf/1602.07360.pdf)))
 SqueezeNet work by replacing standard convolutional layers into a **fire module**.
 The fire module contains a squeeze layer and an expand layer.
