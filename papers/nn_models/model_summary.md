@@ -157,6 +157,8 @@ Tradeoff between latency and accuracy are determined by two hyperparameters.
 One parameter is called **width multiplier**, this hyperparameter defines how "thin" the network is by multiplying itself to both input and output channel counts.
 The second hyperparameter is **Resolution multiplier**, this works by reduce the kernel width.
 
+At the end, they found a near linear relationship between the accuracy and the number of MAC.
+
 **Bibtex**
 ```
 @article{DBLP:journals/corr/HeZRS15,
