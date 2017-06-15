@@ -148,7 +148,7 @@ As for Inception-v3, it is a variant of Inception-v2 which adds BN-auxiliary.
 }
 ```
 ## [](#mobilenet)MobileNet
-**Review**([Paper link](https://arxiv.org/pdf/1704.04861.pdf)[blog](https://research.googleblog.com/2017/06/mobilenets-open-source-models-for.html))
+**Review**([Paper link](https://arxiv.org/pdf/1704.04861.pdf),[blog](https://research.googleblog.com/2017/06/mobilenets-open-source-models-for.html))
 
 MobileNets are based on a streamlined architecture that uses
 **depth-wise separable convolutions** to build light weight networks.
@@ -161,18 +161,23 @@ At the end, they found a near linear relationship between the accuracy and the n
 
 **Bibtex**
 ```
-@article{DBLP:journals/corr/HeZRS15,
-  author    = {Kaiming He and
-               Xiangyu Zhang and
-               Shaoqing Ren and
-               Jian Sun},
-  title     = {Deep Residual Learning for Image Recognition},
+@article{DBLP:journals/corr/HowardZCKWWAA17,
+  author    = {Andrew G. Howard and
+               Menglong Zhu and
+               Bo Chen and
+               Dmitry Kalenichenko and
+               Weijun Wang and
+               Tobias Weyand and
+               Marco Andreetto and
+               Hartwig Adam},
+  title     = {MobileNets: Efficient Convolutional Neural Networks for Mobile Vision
+               Applications},
   journal   = {CoRR},
-  volume    = {abs/1512.03385},
-  year      = {2015},
-  url       = {http://arxiv.org/abs/1512.03385},
-  timestamp = {Wed, 30 Mar 2016 23:40:00 +0200},
-  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/HeZRS15},
+  volume    = {abs/1704.04861},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1704.04861},
+  timestamp = {Wed, 07 Jun 2017 14:40:11 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/HowardZCKWWAA17},
   bibsource = {dblp computer science bibliography, http://dblp.org}
 }
 ```
