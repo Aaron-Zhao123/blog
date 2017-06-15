@@ -6,7 +6,7 @@ layout: default
 | Networks     | Layers| Top1 Error/Top5 Error| Size  |   MACs(Million)| Year |
 |:-------------|:------|:---------------------|:------|:----|:-----|
 | LeNet5       | 5     | 99.36 on MNIST       | 451KB |       |1998 |
-| [AlexNet](#alexnet)      | 8     | 40.7/18.2| 240MB |       |2012 |
+| [AlexNet](#alexnet)      | 8     | 42.5/18.2| 240MB |       |2012 |
 | [VGG16](#vgg)        | 16    | 27/7.4       | 528MB |       |2014 |
 | [VGG19](#vgg)        | 19    | 27.3/7.3     | 548MB |       |2014 |
 | [GoogleLeNet](#googlenet)  | 22    | 22/6.67| 96MB  |       |2015 |
@@ -14,6 +14,7 @@ layout: default
 | [InceptionV3](#inception)  | 22    | 21.2/5.6| 96MB  |      |2015 |
 | [ResNet-50](#resnet)    | 50    | 24.01/7.02| 102MB |       |2015 |
 | [ResNet-200](#resnet)   | 200   | 21.66/5.79| 102MB |       |2015 |
+| [SqueezeNet](#squeeezenet)| 224   | 42.5/18.7 | 4.8MB  |   | 2017 |
 | [MoblieNets](#mobilenet)| 224   | 29.3/10.5 | 17MB  | 569   | 2017 |
 
 ## [](#alexnet)AlexNet
@@ -146,6 +147,34 @@ As for Inception-v3, it is a variant of Inception-v2 which adds BN-auxiliary.
   year={2009},
   organization={IEEE}
 }
+```
+## [](#squeeezenet)SqueezeNet
+**Review**([Paper link](https://arxiv.org/pdf/1602.07360.pdf)))
+SqueezeNet work by replacing standard convolutional layers into a **fire module**.
+The fire module contains a squeeze layer and an expand layer.
+The squeeze layer has only 1*1 convolutional filters to expand the activation map.
+The expand layer than a mixed 1*1 and 3*3 filters.
+The paper presents compression results of SqueezeNet using Han's Deep Compression.
+
+**Bibtex**
+```
+@article{DBLP:journals/corr/IandolaMAHDK16,
+  author    = {Forrest N. Iandola and
+               Matthew W. Moskewicz and
+               Khalid Ashraf and
+               Song Han and
+               William J. Dally and
+               Kurt Keutzer},
+  title     = {SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and {\textless}1MB
+               model size},
+  journal   = {CoRR},
+  volume    = {abs/1602.07360},
+  year      = {2016},
+  url       = {http://arxiv.org/abs/1602.07360},
+  timestamp = {Wed, 07 Jun 2017 14:42:50 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/IandolaMAHDK16},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}}
 ```
 ## [](#mobilenet)MobileNet
 **Review**([Paper link](https://arxiv.org/pdf/1704.04861.pdf),[blog](https://research.googleblog.com/2017/06/mobilenets-open-source-models-for.html))
