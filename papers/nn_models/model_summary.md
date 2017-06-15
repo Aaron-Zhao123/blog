@@ -4,7 +4,7 @@ layout: default
 # [](#header-1)Popular CNN Models
 
 | Networks     | Layers| Top1 Error/Top5 Error| Size  |   MACs(Million)| Year |
-|:-------------|:------|:---------------------|:------|:------|:-----|
+|:-------------|:------|:---------------------|:------|:----|:-----|
 | LeNet5       | 5     | 99.36 on MNIST       | 451KB |       |1998 |
 | [AlexNet](#alexnet)      | 8     | 40.7/18.2| 240MB |       |2012 |
 | [VGG16](#vgg)        | 16    | 27/7.4       | 528MB |       |2014 |
