@@ -9,6 +9,7 @@ layout: default
     3. Fast ConvNets Using Group-wise Brain Damage (waiting review)
     4. Learning to Prune Deep Neural Networks via Layer-wise Optimal Brain Surgeon (waiting review)
     5. Net-Trim: A Layer-wise Convex Pruning of Deep Neural Networks (waiting review)
+    6. Pruning Convolutional Neural Networks for Resource Efficient Transfer Learning
 
   * Fine-grained pruning [details](#fineprune)
     1. Learning both Weights and Connections for EfficientNeural Networks
