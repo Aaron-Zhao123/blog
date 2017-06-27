@@ -3,9 +3,11 @@ layout: default
 ---
 
 # [](#list) List of papers
-  * Inference accelerators [details](#I_acc)
+  * Inference accelerators [details](#l_acc)
     1. SCNN: An Accelerator for Compressed-sparseConvolutional Neural Networks (waiting for review)
 
+  * Training accelerators [details](#t_acc)
+    1. CATERPILLAR: Coarse Grain Reconfigurable Architecture for Accelerating the Training of Deep Neural Networks (waiting for review)
 
   * Accelerators in the cloud [details](#cloud)
     1. Learning both Weights and Connections for EfficientNeural Networks
@@ -19,8 +21,12 @@ layout: default
 * * *
 
 ## <a id="l_acc"></a>Inference accelerator
-1. **DeepSecure: Scalable Provably-Secure Deep Learning**
+1. **SCNN: An Accelerator for Compressed-sparseConvolutional Neural Network**
 > > **Review**([Paper link](http://people.csail.mit.edu/anurag_m/papers/2017.scnn.isca.pdf))
+
+## <a id="t_acc"></a>Training accelerator
+1. **CATERPILLAR: Coarse Grain Reconfigurable Architecture for Accelerating the Training of Deep Neural Networks**
+> > **Review**([Paper link](https://arxiv.org/abs/1706.00517))
 
 ## <a id="frameworks"></a>Frameworks
 1. **DeepSecure: Scalable Provably-Secure Deep Learning**
