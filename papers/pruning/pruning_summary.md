@@ -23,6 +23,7 @@ Parallelism (watiting to be released on ISCA 2017)
   * Regularizers [details](#reg)
 
   * Quantization [details](#quan)
+    1. Trained Ternary Quantization
 
 * * *
 
@@ -192,11 +193,22 @@ Parallelism (watiting to be released on ISCA 2017)
 }
 ```
 
-* * *
-
 ## <a id="oprune"></a>Other types of Pruning
 1. **Customizing DNN Pruning to the Underlying Hardware
 Parallelism**
+
+2. **Exploring the Regularity of Sparse Structure inConvolutional Neural Networks**
+> > **Review**([Paper link](https://arxiv.org/pdf/1607.00064))
+
+* * *
+## <a id="quan"></a>Quantization
+1. **Trained Ternary Quantization**
+> > **Review**([Paper link](https://arxiv.org/abs/1612.01064))
+> > Tenary representation is {-1,0,1} which is two-bit signed fixed-point arithmetic.
+> > It performs 'normalize', 'quantize' and 'scale'.
+> > The experiments are interesting because ResNets are used on Cifar10 and AlexNet
+> > is used on ImageNet, both models contain a high redundancy and thus it is hard
+> > to argue their compression results are legit.
 
 2. **Exploring the Regularity of Sparse Structure inConvolutional Neural Networks**
 > > **Review**([Paper link](https://arxiv.org/pdf/1607.00064))
