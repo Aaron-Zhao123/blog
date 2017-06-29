@@ -8,4 +8,4 @@ layout: default
 
 # [](#c++)C++
 
-# [](#verilog)Verilog and HLS
+# [Verilog, System Verilog and HLS](/blog/coding/verilog.html)

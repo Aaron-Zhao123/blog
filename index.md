@@ -8,7 +8,7 @@ layout: default
 
 Hello, thanks for visiting my personal wiki.
 
-My name is Aaron Zhao, currently a Master student at the Computer Laboratory of University of Cambridge.
+My name is Aaron Zhao, currently interning at Microsoft Research Cambridge and would start my phd study at the Computer Lab of University of Cambridge this October.
 
 I am actively researching on neural network related hardware architectures. A list of my previous projects can be found [here](/blog/projects/projects_sum.html).
 
@@ -30,6 +30,7 @@ I am now reading a _Master of Philosophy_ degree at the Computer Laboratory of U
 # [](#interests) Research Experience
 I have previously worked as the following roles:
 
+* Researcher Intern at Microsoft Research Cambridge
 * Machine learning researcher (Intern) at Ocado 10x Research
 * Machine learning consultant at Tangi0
 * Research Assistant at Circuits and Systems Research Group at Imperial College London

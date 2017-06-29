@@ -13,7 +13,6 @@ layout: default
 
   * Fine-grained pruning [details](#fineprune)
     1. Learning both Weights and Connections for EfficientNeural Networks
-    2. DSD:  DENSE-SPARSE-DENSE Training For Deep Neural Networks
 
   * Other types of pruning [details](#oprune)
     1. Customizing DNN Pruning to the Underlying Hardware
@@ -57,7 +56,7 @@ Parallelism (watiting to be released on ISCA 2017)
 }
 ```
 
-2.**Learning Structured Sparsity in Deep Neural Networks**
+2. **Learning Structured Sparsity in Deep Neural Networks**
 
 > > **Review**([Paper link](https://arxiv.org/pdf/1608.08710))
 > >
@@ -121,7 +120,7 @@ Parallelism (watiting to be released on ISCA 2017)
 }
 ```
 
-4. **Net-Trim: A Layer-wise Convex Pruning of Deep Neural Networks**
+5. **Net-Trim: A Layer-wise Convex Pruning of Deep Neural Networks**
 > > **Review**([Paper link](https://arxiv.org/pdf/1611.05162))
 > >
 > > **Bibtex**
@@ -147,51 +146,7 @@ Parallelism (watiting to be released on ISCA 2017)
 1. **Learning both Weights and Connections for Efficient Neural Networks**
 > > **Review**([Paper link](https://arxiv.org/pdf/1506.02626))
 > > Fine-grained pruning, it discussed how to use regularizers and decrease dropouts.
-> >
-> > **Bibtex**
-> > ```
-@article{DBLP:journals/corr/HanPTD15,
-  author    = {Song Han and
-               Jeff Pool and
-               John Tran and
-               William J. Dally},
-  title     = {Learning both Weights and Connections for Efficient Neural Networks},
-  journal   = {CoRR},
-  volume    = {abs/1506.02626},
-  year      = {2015},
-  url       = {http://arxiv.org/abs/1506.02626},
-  timestamp = {Wed, 01 Jul 2015 15:10:24 +0200},
-  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/HanPTD15},
-  bibsource = {dblp computer science bibliography, http://dblp.org}
-}
-```
-2. **DSD:  DENSE-SPARSE-DENSE Training For Deep Neural Network**
-> > **Review**([Paper link](https://arxiv.org/pdf/1607.04381.pdf))
-> > Fine-grained pruning, it discussed how to use regularizers and decrease dropouts.
-> >
-> > **Bibtex**
-> > ```
-@article{DBLP:journals/corr/HanPNMTECTD16,
-  author    = {Song Han and
-               Jeff Pool and
-               Sharan Narang and
-               Huizi Mao and
-               Shijian Tang and
-               Erich Elsen and
-               Bryan Catanzaro and
-               John Tran and
-               William J. Dally},
-  title     = {DSD: Regularizing Deep Neural Networks with Dense-Sparse-Dense Training
-               Flow},
-  journal   = {CoRR},
-  volume    = {abs/1607.04381},
-  year      = {2016},
-  url       = {http://arxiv.org/abs/1607.04381},
-  timestamp = {Wed, 07 Jun 2017 14:41:40 +0200},
-  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/HanPNMTECTD16},
-  bibsource = {dblp computer science bibliography, http://dblp.org}
-}
-```
+
 
 ## <a id="oprune"></a>Other types of Pruning
 1. **Customizing DNN Pruning to the Underlying Hardware

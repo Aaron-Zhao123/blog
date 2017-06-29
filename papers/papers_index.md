@@ -20,15 +20,22 @@ pruning are discussed.
 Vairous quantization methods: fixed-point, dynamic fixed-point, binarized, tenary.
 Novel regularizers are considered as compression techniques.
 
+## [Network Training](/blog/papers/train/train_summary.html)
+Interesting benchmarks and methods of training neural networks
+
+## [Network applicaiton, Reinforcement learning  and so on](/blog/papers/nn_app/app_summary.html)
+How to apply neural networks in other domains.
+A collection of Reinforcement learning techniques, although this is not my field.
+
 ## [Neural Network Accelerators](/blog/papers/nn_accelerator/acc_summary.html)
 * Inference Accelerators -> aiming at low-power consumption
-* Training Acceleraotors
+* Training Accelerators
 * Frameworks
 Accelerators for low-power systems, and accelerators in the cloud.
 
 # [](#fpga)FPGAs
 ## [Applications](/blog/papers/fpga_nn/fpgann_summary.html)
-My main focus on FPGAs in applications are still related to hardware architectures. This section specifically focus on the publications FPGA-based implementation of neural network accceleroatrs in the following conferences: FPGA, FCCM, FPL and FPT.
+My main focus on FPGAs in applications are still related to hardware architectures. This section specifically focus on the publications FPGA-based implementation of neural network accelerators in the following conferences: FPGA, FCCM, FPL and FPT.
 
 ## [FPGAs in the cloud](/blog/papers/fpga_cloud/fpgncloud_summary.html)
 The interest of FPGAs in the cloud origins from the Catapult project from Microsoft.
