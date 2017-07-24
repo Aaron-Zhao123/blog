@@ -27,118 +27,54 @@ Parallelism (watiting to be released on ISCA 2017)
 * * *
 
 ## <a id="coarseprune"></a>Coarse-grained Pruning
-1.**Pruning Filters for Efficient ConvNets**
 
-> > **Review**([Paper link](https://arxiv.org/pdf/1608.08710))
-> >
-> > Fine-grained sparsity requires libraries to explore its advantage. An interesting point: maintaining sparse data structures also creates an additional storage overhead which can be significant for low-precision weights.
-> > Instead of layer-wise iterative fine-tuning (retraining), they use one-shot pruning and retraining to save retraining time for pruning filters across multiple layers, which is critical for pruning very deep networks.
-> > Pruning based on sum of absolute kernel weights. Sort the rank based on that metric and prune the ones that have lowest value (very arbitrary in a sense). They introduced both **Independent pruning** and **Greedy pruning** for pruning across multiple layers. In **Independent pruning**, only filters in a same layers are considered, in contrast, **Greedy pruning** takes account of removed values in previous layers.
-> > In ResNet, the pruning results can be affected by shorcutting connections, to prune the second convolutional layer of the residual block, the corresponding projected feature maps must also be pruned.
-> > Smallest filter pruning outperforms feature map pruning with the metrics (eg: mean, std, meanl1, meanl2  ... ).
+#### **1. Pruning Filters for Efficient ConvNets**
 
-> > **Bibtex**
-> > ```
-@article{DBLP:journals/corr/LiKDSG16,
-  author    = {Hao Li and
-               Asim Kadav and
-               Igor Durdanovic and
-               Hanan Samet and
-               Hans Peter Graf},
-  title     = {Pruning Filters for Efficient ConvNets},
-  journal   = {CoRR},
-  volume    = {abs/1608.08710},
-  year      = {2016},
-  url       = {http://arxiv.org/abs/1608.08710},
-  timestamp = {Fri, 02 Sep 2016 17:46:24 +0200},
-  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/LiKDSG16},
-  bibsource = {dblp computer science bibliography, http://dblp.org}
-}
-```
+**Review**([Paper link](https://arxiv.org/pdf/1608.08710)) Fine-grained sparsity requires libraries to explore its advantage. An interesting point: maintaining sparse data structures also creates an additional storage overhead which can be significant for low-precision weights.
+Instead of layer-wise iterative fine-tuning (retraining), they use one-shot pruning and retraining to save retraining time for pruning filters across multiple layers, which is critical for pruning very deep networks.
+Pruning based on sum of absolute kernel weights. Sort the rank based on that metric and prune the ones that have lowest value (very arbitrary in a sense). They introduced both **Independent pruning** and **Greedy pruning** for pruning across multiple layers. In **Independent pruning**, only filters in a same layers are considered, in contrast, **Greedy pruning** takes account of removed values in previous layers.
+In ResNet, the pruning results can be affected by shorcutting connections, to prune the second convolutional layer of the residual block, the corresponding projected feature maps must also be pruned.
+Smallest filter pruning outperforms feature map pruning with the metrics (eg: mean, std, meanl1, meanl2  ... ).
 
-2. **Learning Structured Sparsity in Deep Neural Networks**
+#### **2. Learning Structured Sparsity in Deep Neural Networks**
 
-> > **Review**([Paper link](https://arxiv.org/pdf/1608.08710))
-> >
-> > **Bibtex**
-> > ```
-    @article{DBLP:journals/corr/WenWWCL16,
-      author    = {Wei Wen and
-                   Chunpeng Wu and
-                   Yandan Wang and
-                   Yiran Chen and
-                   Hai Li},
-      title     = {Learning Structured Sparsity in Deep Neural Networks},
-      journal   = {CoRR},
-      volume    = {abs/1608.03665},
-      year      = {2016},
-      url       = {http://arxiv.org/abs/1608.03665},
-      timestamp = {Mon, 30 Jan 2017 17:08:13 +0100},
-      biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/WenWWCL16},
-      bibsource = {dblp computer science bibliography, http://dblp.org}
-    }
-    }
-```
+**Review**([Paper link](https://arxiv.org/pdf/1608.08710))
+This paper explores filer-wise, channel-wise, shape-wise and depth-wise
+sparsities. Penalizing multiple weights structures using group-lasso (
+adding arbitrary hyperparameters in the cost function). The interesting observation
+is to combine both filter-wise and shape-wise sparsity in GEMM operations,
+where a high dimensional matrix is unrolled to a flat one. The rows and
+columns of GEMM can be removed directly. Their code can be found at
+[here](https://github.com/wenwei202/caffe/tree/scnn).
 
-3. **Fast ConvNets Using Group-wise Brain Damage**
-> > **Review**([Paper link](https://arxiv.org/pdf/1506.02515))
-> >
-> > **Bibtex**
-> > ```
-    @article{DBLP:journals/corr/LebedevL15,
-      author    = {Vadim Lebedev and
-                   Victor S. Lempitsky},
-      title     = {Fast ConvNets Using Group-wise Brain Damage},
-      journal   = {CoRR},
-      volume    = {abs/1506.02515},
-      year      = {2015},
-      url       = {http://arxiv.org/abs/1506.02515},
-      timestamp = {Wed, 01 Jul 2015 15:10:24 +0200},
-      biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/LebedevL15},
-      bibsource = {dblp computer science bibliography, http://dblp.org}
-    }
-```
+#### **3. Fast ConvNets Using Group-wise Brain Damage**
 
-4. **Learning to Prune Deep Neural Networks via Layer-wise Optimal Brain Surgeon**
-> > **Review**([Paper link](https://arxiv.org/pdf/1705.07565))
-> >
-> > **Bibtex**
-> > ```
-@article{DBLP:journals/corr/DongCP17,
-  author    = {Xin Dong and
-               Shangyu Chen and
-               Sinno Jialin Pan},
-  title     = {Learning to Prune Deep Neural Networks via Layer-wise Optimal Brain
-               Surgeon},
-  journal   = {CoRR},
-  volume    = {abs/1705.07565},
-  year      = {2017},
-  url       = {http://arxiv.org/abs/1705.07565},
-  timestamp = {Thu, 01 Jun 2017 19:31:46 +0200},
-  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/DongCP17},
-  bibsource = {dblp computer science bibliography, http://dblp.org}
-}
-```
+**Review**([Paper link](https://arxiv.org/pdf/1506.02515))
+This paper has a nice explaination of GEMM (generalized matrix multiplication). The consider a
+"group regularizer" that is essentially based on
+L2 and L1 norms.
+Two pruning strategies are considered. The first
+method adds the regularizer directly to a trained network and force a number of groups with smallest L2 norms to zeros.
+The second method inspects a validation set and
+increase the "brain damage" with a control of
+loss of test accuracy.
 
-5. **Net-Trim: A Layer-wise Convex Pruning of Deep Neural Networks**
-> > **Review**([Paper link](https://arxiv.org/pdf/1611.05162))
-> >
-> > **Bibtex**
-> > ```
-@article{DBLP:journals/corr/AghasiNR16,
-  author    = {Alireza Aghasi and
-               Nam Nguyen and
-               Justin Romberg},
-  title     = {Net-Trim: {A} Layer-wise Convex Pruning of Deep Neural Networks},
-  journal   = {CoRR},
-  volume    = {abs/1611.05162},
-  year      = {2016},
-  url       = {http://arxiv.org/abs/1611.05162},
-  timestamp = {Thu, 01 Dec 2016 19:32:08 +0100},
-  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/AghasiNR16},
-  bibsource = {dblp computer science bibliography, http://dblp.org}
-}
-```
+#### **4. Learning to Prune Deep Neural Networks via Layer-wise Optimal Brain Surgeon**
+
+**Review**([Paper link](https://arxiv.org/pdf/1705.07565))
+This paper proposed a new layer-wise pruning method, and theoretically proved that only a light retraining is required to resume the test accuracy.
+The parameters with least increase of error approximated by second-order directives are pruned. The second order derivative approximation requires an inverse of Hessian Matrix. This work makes computation easier by: 1. compute layer-wise Hessian; 2. compute a block-wise pesudo-inverse of Hessian and then populate to the whole dataset.
+
+Highlights:
+1. The only parameter we have to control is the layer-wise error to ensure gradient to be small enough after pruning.
+That is one of reasons why there is a “pruning inflection point” after which layer-wise error would drop dramatically.
+2. Significantly less retraining iterations, around two magnitudes smaller than other popular methods.
+
+#### **5. Net-Trim: A Layer-wise Convex Pruning of Deep Neural Networks**
+**Review** ([Paper link](https://arxiv.org/pdf/1611.05162))
+The first (maybe) paper considers second-order directive pruning in a layer-wise fashion.
+A series of convex solvers are used at each layer.
+(This is a long paper and a more careful read might happen later)
 
 * * *
 
