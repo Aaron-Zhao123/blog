@@ -7,12 +7,14 @@ layout: default
     1. Pruning Filters for Efficient ConvNets (waiting review)
     2. Learning Structured Sparsity in Deep Neural Networks (waiting review)
     3. Fast ConvNets Using Group-wise Brain Damage (waiting review)
-    4. Learning to Prune Deep Neural Networks via Layer-wise Optimal Brain Surgeon (waiting review)
-    5. Net-Trim: A Layer-wise Convex Pruning of Deep Neural Networks (waiting review)
+    4. Learning to Prune Deep Neural Networks via Layer-wise Optimal Brain Surgeon
+    5. Net-Trim: A Layer-wise Convex Pruning of Deep Neural Networks
     6. Pruning Convolutional Neural Networks for Resource Efficient Transfer Learning
 
   * Fine-grained pruning [details](#fineprune)
     1. Learning both Weights and Connections for EfficientNeural Networks
+
+
 
   * Other types of pruning [details](#oprune)
     1. Customizing DNN Pruning to the Underlying Hardware
@@ -76,12 +78,25 @@ The first (maybe) paper considers second-order directive pruning in a layer-wise
 A series of convex solvers are used at each layer.
 (This is a long paper and a more careful read might happen later)
 
+#### **6. Pruning Convolutional Neural Networks for Resource Efficient Inference**
+**Review**([Paper link](https://arxiv.org/abs/1611.06440))
+This work limits itself to transfer learning, where large networks are adapted to specialized tasks.
+In such user cases, pruning offers a large compression.
+This work proposed a pruning strategy that focuses on the first-order gradient.
+The criteria prunes parameters that have an almost flat gradient of the cost function with respect to the feature maps.
+
+Highlights:
+1. Based on the assumption that samples are iid, it avoids computing the second-order term of tayler series compared to Optimal Brain Damage(OBD). They use the expectation value of the absolute value of the first order term to approximate variance.
+2.  FLOPs regularization: add extra term into the cost function to regularize flops per feature map. Feature maps with larger flops are penalized.
+
 * * *
 
 ## <a id="fineprune"></a>Fine-grained Pruning
 1. **Learning both Weights and Connections for Efficient Neural Networks**
-> > **Review**([Paper link](https://arxiv.org/pdf/1506.02626))
-> > Fine-grained pruning, it discussed how to use regularizers and decrease dropouts.
+**Review**([Paper link](https://arxiv.org/pdf/1506.02626))
+Fine-grained pruning, it discussed how to use regularizers and decrease dropouts.
+
+
 
 
 ## <a id="oprune"></a>Other types of Pruning
