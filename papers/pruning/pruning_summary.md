@@ -25,6 +25,7 @@ Parallelism (watiting to be released on ISCA 2017)
 
   * Quantization [details](#quan)
     1. Trained Ternary Quantization
+    2. Quantized Neural Networks: Training Neural Networks with Low Precision Weights and Activations
 
 * * *
 
@@ -108,13 +109,27 @@ Parallelism**
 
 * * *
 ## <a id="quan"></a>Quantization
-1. **Trained Ternary Quantization**
-> > **Review**([Paper link](https://arxiv.org/abs/1612.01064))
-> > Tenary representation is {-1,0,1} which is two-bit signed fixed-point arithmetic.
-> > It performs 'normalize', 'quantize' and 'scale'.
-> > The experiments are interesting because ResNets are used on Cifar10 and AlexNet
-> > is used on ImageNet, both models contain a high redundancy and thus it is hard
-> > to argue their compression results are legit.
+#### 1. **Trained Ternary Quantization**
+**Review**([Paper link](https://arxiv.org/abs/1612.01064))
+Tenary representation is {-1,0,1} which is two-bit signed fixed-point arithmetic.
+It performs 'normalize', 'quantize' and 'scale'.
+The experiments are interesting because ResNets are used on Cifar10 and AlexNet is used on ImageNet, both models contain a high redundancy and thus it is hard to argue their compression results are legit.
 
-2. **Exploring the Regularity of Sparse Structure inConvolutional Neural Networks**
-> > **Review**([Paper link](https://arxiv.org/pdf/1607.00064))
+#### 2. Quantized Neural Networks: Training Neural Networks with Low Precision Weights and Activations
+**Review**([Paper link](https://arxiv.org/abs/1609.07061)
+This paper proposed **Quantized Neural Network**.
+All MAC operations are replaced by XNORs and population counts.
+Quantized version of AlexNet with 1-bit weights and 2-bit activations achieves 51% top-1 accuracy.
+BNN achieves 41.8% top-1 and 67.1% top-5 accuracy using AlexNet and 47.1% top-1 and 69.1%top-5 accuracy using GoogleNet
+
+#### 3. **Exploring the Regularity of Sparse Structure inConvolutional Neural Networks**
+**Review**([Paper link](https://arxiv.org/pdf/1607.00064))
+
+#### 4. **Incremental Network Quantization: Towards Lossless CNNs with Low-Precision Weights**
+**Review**([Paper link](https://arxiv.org/abs/1702.03044)
+
+#### 4. **Deep Learning with Low Precision by Half-wave Gaussian Quantization**
+**Review**([Paper link](https://arxiv.org/abs/1702.00953)
+
+#### 5. **DoReFa-Net: Training Low Bitwidth Convolutional Neural Networks with Low Bitwidth Gradients**
+**Review**([Paper link](https://arxiv.org/abs/1606.06160)
