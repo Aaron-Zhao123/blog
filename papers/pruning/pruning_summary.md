@@ -68,7 +68,7 @@ loss of test accuracy.
 This paper proposed a new layer-wise pruning method, and theoretically proved that only a light retraining is required to resume the test accuracy.
 The parameters with least increase of error approximated by second-order directives are pruned. The second order derivative approximation requires an inverse of Hessian Matrix. This work makes computation easier by: 1. compute layer-wise Hessian; 2. compute a block-wise pesudo-inverse of Hessian and then populate to the whole dataset.
 
-Highlights:
+**Highlights**:
 1. The only parameter we have to control is the layer-wise error to ensure gradient to be small enough after pruning.
 That is one of reasons why there is a “pruning inflection point” after which layer-wise error would drop dramatically.
 2. Significantly less retraining iterations, around two magnitudes smaller than other popular methods.
@@ -86,14 +86,14 @@ In such user cases, pruning offers a large compression.
 This work proposed a pruning strategy that focuses on the first-order gradient.
 The criteria prunes parameters that have an almost flat gradient of the cost function with respect to the feature maps.
 
-Highlights:
+**Highlights**:
 1. Based on the assumption that samples are iid, it avoids computing the second-order term of tayler series compared to Optimal Brain Damage(OBD). They use the expectation value of the absolute value of the first order term to approximate variance.
 2.  FLOPs regularization: add extra term into the cost function to regularize flops per feature map. Feature maps with larger flops are penalized.
 
 * * *
 
 ## <a id="fineprune"></a>Fine-grained Pruning
-1. **Learning both Weights and Connections for Efficient Neural Networks**
+#### 1. **Learning both Weights and Connections for Efficient Neural Networks**
 **Review**([Paper link](https://arxiv.org/pdf/1506.02626))
 Fine-grained pruning, it discussed how to use regularizers and decrease dropouts.
 
@@ -101,10 +101,9 @@ Fine-grained pruning, it discussed how to use regularizers and decrease dropouts
 
 
 ## <a id="oprune"></a>Other types of Pruning
-1. **Customizing DNN Pruning to the Underlying Hardware
-Parallelism**
+#### 1. **Customizing DNN Pruning to the Underlying Hardware Parallelism**
 
-2. **Exploring the Regularity of Sparse Structure inConvolutional Neural Networks**
+#### 2. **Exploring the Regularity of Sparse Structure inConvolutional Neural Networks**
 > > **Review**([Paper link](https://arxiv.org/pdf/1607.00064))
 
 * * *

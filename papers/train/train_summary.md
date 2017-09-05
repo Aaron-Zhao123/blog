@@ -6,6 +6,7 @@ layout: default
   1. **DSD:  DENSE-SPARSE-DENSE Training For Deep Neural Network**
   2. **Understanding deep learning requires rethinking generalization**
   3. **Accurate, Large Minibatch SGD:Training ImageNet in 1 Hour**
+  4. **Revisiting Unreasonable Effectiveness of Data in Deep Learning Era**
 
 * * *
 
@@ -29,4 +30,5 @@ In this case, the network is able to obtain zero training error which proves: 1.
 Using synchronous SGD to train is very popular in distributed computing.
 The problem is, if giving a large minibatch to each GPU, the neural network model loses its generalization and thus has worse accuracy.
 This paper proposes a linear relationship between learning rate and batch size: for using a larger batch per GPU, learning rate has to increase linearly as well.
-At early stage of training, to enable the linear scaling of learning rate, the network has to perform "warmup": ramps up the learning rate from small to large in the first few epochs. 
+At early stage of training, to enable the linear scaling of learning rate, the network has to perform "warmup": ramps up the learning rate from small to large in the first few epochs.
+#### **4. Revisiting Unreasonable Effectiveness of Data in Deep Learning Era**
