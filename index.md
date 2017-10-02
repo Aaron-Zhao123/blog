@@ -8,7 +8,7 @@ layout: default
 
 Hello, thanks for visiting my personal wiki.
 
-My name is Aaron Zhao, currently interning at Microsoft Research Cambridge and would start my phd study at the Computer Lab of University of Cambridge this October.
+My name is Aaron Zhao, currently a Phd student at the Computer Lab of University of Cambridge.
 
 I am actively researching on neural network related hardware architectures. A list of my previous projects can be found [here](/blog/projects/projects_sum.html).
 
@@ -16,21 +16,27 @@ I keep my [Linkedin Profile](https://www.linkedin.com/in/yiren-aaron-zhao-baa8b5
 
 
 # [](#interests) Research Interests
-* Machine Learning, Neural Networks, Artificial Intelligence
+* Machine Learning
 * High Performance Computing, Reconfigurable Computing, Parallel Computing
 * Computer Architecture
 
 # [](#interests) Education Background
+* Imperial College London, BEng in Electrical and Electronic Engineering (2013-2016)
+* University of Cambridge, Mphil in Computer Science (2016-2017)
+* University of Cambridge, Phd in Computer Science (2017-present)
+
+
 I have a mixed education background with study experience in various countries.
 I am a Chinese national, but finished my high school in New Zealand and received the NZ Goveners Award.  
 I obtained a _Bachelor of Engineering_ degree in Electrical and Electronic Engineering at Imperial College London.
 After graduating from Imperial with a top-rank score and being awarded with the _Wills Jackson Metal and Price_,
-I am now reading a _Master of Philosophy_ degree at the Computer Laboratory of University of Cambridge.
+I finished a _Master of Philosophy_ degree at the Computer Laboratory of University of Cambridge.
+I am now reading a phd dgree at the Computer Laboratory of University of Cambridge supervised by Dr.Robert Mullins.
 
 # [](#interests) Research Experience
 I have previously worked as the following roles:
 
-* Researcher Intern at Microsoft Research Cambridge
+* Research Intern at Microsoft Research Cambridge
 * Machine learning researcher (Intern) at Ocado 10x Research
 * Machine learning consultant at Tangi0
 * Research Assistant at Circuits and Systems Research Group at Imperial College London
