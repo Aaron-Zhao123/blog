@@ -47,7 +47,7 @@ I have a particular interest in HLS. The popular HLS tools include the following
 
 # [](#others)Networking
 ## [Scheduling Algorithms](/blog/papers/others/scheduling.html)
-My research internship in Microsoft puts a focus on input-buffered switches in datacenters
+My research internship in Microsoft puts a focus on input-buffered switches in data centers
 
 # To Read
 
@@ -73,3 +73,14 @@ My research internship in Microsoft puts a focus on input-buffered switches in d
 
 #### 7. An exploration of parameter redundancy in deep networks with circulant projections
 **Review**([Paper link](https://arxiv.org/abs/1502.03436))
+
+#### 8. Mixture of experts
+Choose which channels/subnetworks are most useful for a particular input
+http://arxiv.org/abs/1701.06538
+
+#### 9. Measuring catastrophic forgetting
+5 techniques to continue training networks on new tasks
+http://arxiv.org/abs/1708.02072
+
+#### 10. More detail about the approach which measures sensitivity on particular weights
+http://www.pnas.org/content/114/13/3521.full

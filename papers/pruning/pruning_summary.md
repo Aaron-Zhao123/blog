@@ -68,6 +68,10 @@ loss of test accuracy.
 This paper proposed a new layer-wise pruning method, and theoretically proved that only a light retraining is required to resume the test accuracy.
 The parameters with least increase of error approximated by second-order directives are pruned. The second order derivative approximation requires an inverse of Hessian Matrix. This work makes computation easier by: 1. compute layer-wise Hessian; 2. compute a block-wise pesudo-inverse of Hessian and then populate to the whole dataset.
 
+Consider a trained network, if we prune an arbitrary weight away, it will affect our loss function.
+The change in loss function can be broken down into a Taylor expansion. The first derivative is zero since network is well trained (back prop gradient is zero), so the error can be approximated using the second derivative if ignoring other high order terms.
+Computing such second-order derivative requires an inverse of hessian matrix and this becomes the computation bottleneck. Because hessian matrix of a network is N*N where N is the total parameter count.
+
 **Highlights**:
 1. The only parameter we have to control is the layer-wise error to ensure gradient to be small enough after pruning.
 That is one of reasons why there is a “pruning inflection point” after which layer-wise error would drop dramatically.
