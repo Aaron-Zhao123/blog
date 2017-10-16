@@ -51,28 +51,9 @@ My research internship in Microsoft puts a focus on input-buffered switches in d
 
 # To Read
 
-#### 1. SplitNet: Learning to Semantically Split Deep Networks for Parameter Reduction and Model Parallelization
-
-**Review**([Paper link](http://proceedings.mlr.press/v70/kim17b.html))
-
-#### 2. ZeNA: Zero-Aware Neural Network Accelerator
-
-**Review**([Paper link](http://ieeexplore.ieee.org/document/8013151/))
-
-#### 3. Squeeze-and-Excitation Networks
-**Review**([Paper link](https://arxiv.org/abs/1709.01507))
-
-#### 4. Celerity: An Open Source RISC-VTiered Accelerator Fabric
-**Review**([Paper link](http://www-personal.umich.edu/~rovinski/pub/ajayi2017celerity.pdf))
-
-#### 5. Accelerating Binarized Convolutional Neural Networkswith Software-Programmable FPGAs
-**Review**([Paper link](http://www.csl.cornell.edu/~zhiruz/pdfs/bnn-fpga2017.pdf))
-
-#### 6. CirCNN: Accelerating and Compressing Deep Neural Networks Using Block-CirculantWeight Matrices
-**Review**([Paper link](https://arxiv.org/abs/1708.08917))
 
 #### 7. An exploration of parameter redundancy in deep networks with circulant projections
-**Review**([Paper link](https://arxiv.org/abs/1502.03436))
+**Review**([Paper link](https://arxiv.org/abs/1502.03436)
 
 #### 8. Mixture of experts
 Choose which channels/subnetworks are most useful for a particular input

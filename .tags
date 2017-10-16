@@ -1,9 +1,3 @@
-[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^# [](#header-1)Popular CNN Models$/;"	function	line:4
-[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#alexnet)AlexNet$/;"	function	line:18
-[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#vgg)VGG$/;"	function	line:35
-[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#googlenet)GoogLeNet$/;"	function	line:57
-[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#inception)Inception$/;"	function	line:81
-[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#resnet)ResNet$/;"	function	line:122
 html	/Users/aaron/Projects/blog/_layouts/default.html	/^<html lang="{{ site.lang | default: "en-US" }}">$/;"	function	line:2
 head	/Users/aaron/Projects/blog/_layouts/default.html	/^  <head>$/;"	function	line:3
 meta	/Users/aaron/Projects/blog/_layouts/default.html	/^    <meta charset="utf-8">$/;"	function	line:4
@@ -56,24 +50,74 @@ And a nested list:	/Users/aaron/Projects/blog/index.md	/^### And a nested list:$
 Small image	/Users/aaron/Projects/blog/index.md	/^### Small image$/;"	function	line:136
 Large image	/Users/aaron/Projects/blog/index.md	/^### Large image$/;"	function	line:140
 Definition lists can be used with HTML syntax.	/Users/aaron/Projects/blog/index.md	/^### Definition lists can be used with HTML syntax.$/;"	function	line:145
-[](	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^# [](#list) List of papers$/;"	function	line:5
-<a id="l_acc"></a>Inference accelerator	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^## <a id="l_acc"><\/a>Inference accelerator$/;"	function	line:21
-<a id="frameworks"></a>Frameworks	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^## <a id="frameworks"><\/a>Frameworks$/;"	function	line:25
-[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#nn)Neural Networks$/;"	function	line:5
-[Network Models](/blog/papers/nn_models/model_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Models](\/blog\/papers\/nn_models\/model_summary.html)$/;"	function	line:6
-[Network Compression](/blog/papers/pruning/pruning_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Network Compression](\/blog\/papers\/pruning\/pruning_summary.html)$/;"	function	line:11
-[Neural Network Accelerators](/blog/papers/nn_accelerator/acc_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Neural Network Accelerators](\/blog\/papers\/nn_accelerator\/acc_summary.html)$/;"	function	line:23
-[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#fpga)FPGAs$/;"	function	line:29
-[Applications](/blog/papers/fpga_nn/fpgann_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Applications](\/blog\/papers\/fpga_nn\/fpgann_summary.html)$/;"	function	line:30
-[FPGAs in the cloud](/blog/papers/fpga_cloud/fpgncloud_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [FPGAs in the cloud](\/blog\/papers\/fpga_cloud\/fpgncloud_summary.html)$/;"	function	line:33
-[High level synthesis](/blog/papers/pruning/pruning_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [High level synthesis](\/blog\/papers\/pruning\/pruning_summary.html)$/;"	function	line:36
-[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#others)Others$/;"	function	line:39
-[Scheduling Algorithms](/blog/papers/others/scheduling.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Scheduling Algorithms](\/blog\/papers\/others\/scheduling.html)$/;"	function	line:40
-[](	/Users/aaron/Projects/blog/papers/fpga_nn/fpgann_summary.md	/^# [](#list) List of papers$/;"	function	line:5
-<a id="train"></a>Inference Architecture	/Users/aaron/Projects/blog/papers/fpga_nn/fpgann_summary.md	/^## <a id="train"><\/a>Inference Architecture$/;"	function	line:13
 [](	/Users/aaron/Projects/blog/papers/others/scheduling.md	/^# [](#list) List of papers$/;"	function	line:6
 <a id="train"></a>Switches	/Users/aaron/Projects/blog/papers/others/scheduling.md	/^## <a id="train"><\/a>Switches$/;"	function	line:13
+[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^# [](#header-1)Popular CNN Models$/;"	function	line:4
+[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#alexnet)AlexNet$/;"	function	line:20
+[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#vgg)VGG$/;"	function	line:37
+[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#googlenet)GoogLeNet$/;"	function	line:59
+[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#inception)Inception$/;"	function	line:83
+[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#resnet)ResNet$/;"	function	line:124
+[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#snet)SqueezeNet$/;"	function	line:151
+[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#mobilenet)MobileNet$/;"	function	line:179
+[](	/Users/aaron/Projects/blog/papers/nn_models/model_summary.md	/^## [](#SENet)Squeeze-and-Excitation Networks$/;"	function	line:214
+[](	/Users/aaron/Projects/blog/papers/fpga_nn/fpgann_summary.md	/^# [](#list) List of papers$/;"	function	line:5
+<a id="train"></a>Inference Architecture	/Users/aaron/Projects/blog/papers/fpga_nn/fpgann_summary.md	/^## <a id="train"><\/a>Inference Architecture$/;"	function	line:14
+1. Can FPGAs Beat GPUs in Accelerating Next-Generation Deep Neural Networks	/Users/aaron/Projects/blog/papers/fpga_nn/fpgann_summary.md	/^#### 1. Can FPGAs Beat GPUs in Accelerating Next-Generation Deep Neural Networks$/;"	function	line:15
+2. Accelerating Binarized Convolutional Neural Networks with Software-Programmable FPGAs	/Users/aaron/Projects/blog/papers/fpga_nn/fpgann_summary.md	/^#### 2. Accelerating Binarized Convolutional Neural Networks with Software-Programmable FPGAs$/;"	function	line:18
+[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#nn)Neural Networks$/;"	function	line:5
+[Models](/blog/papers/nn_models/model_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^### [Models](\/blog\/papers\/nn_models\/model_summary.html)$/;"	function	line:6
+[Compression](/blog/papers/pruning/pruning_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^### [Compression](\/blog\/papers\/pruning\/pruning_summary.html)$/;"	function	line:11
+[ Training](/blog/papers/train/train_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^### [ Training](\/blog\/papers\/train\/train_summary.html)$/;"	function	line:23
+Reinforcement learning	/Users/aaron/Projects/blog/papers/papers_index.md	/^# Reinforcement learning$/;"	function	line:26
+Neural Network Accelerators	/Users/aaron/Projects/blog/papers/papers_index.md	/^# Neural Network Accelerators$/;"	function	line:31
+[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#fpga)FPGAs$/;"	function	line:38
+[Applications](/blog/papers/fpga_nn/fpgann_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^### [Applications](\/blog\/papers\/fpga_nn\/fpgann_summary.html)$/;"	function	line:39
+[Cloud](/blog/papers/fpga_cloud/fpgncloud_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^### [Cloud](\/blog\/papers\/fpga_cloud\/fpgncloud_summary.html)$/;"	function	line:42
+[High level synthesis](/blog/papers/pruning/pruning_summary.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^### [High level synthesis](\/blog\/papers\/pruning\/pruning_summary.html)$/;"	function	line:45
+[](	/Users/aaron/Projects/blog/papers/papers_index.md	/^# [](#others)Networking$/;"	function	line:48
+[Scheduling Algorithms](/blog/papers/others/scheduling.html)	/Users/aaron/Projects/blog/papers/papers_index.md	/^## [Scheduling Algorithms](\/blog\/papers\/others\/scheduling.html)$/;"	function	line:49
+To Read	/Users/aaron/Projects/blog/papers/papers_index.md	/^# To Read$/;"	function	line:52
+7. An exploration of parameter redundancy in deep networks with circulant projections	/Users/aaron/Projects/blog/papers/papers_index.md	/^#### 7. An exploration of parameter redundancy in deep networks with circulant projections$/;"	function	line:55
+8. Mixture of experts	/Users/aaron/Projects/blog/papers/papers_index.md	/^#### 8. Mixture of experts$/;"	function	line:58
+9. Measuring catastrophic forgetting	/Users/aaron/Projects/blog/papers/papers_index.md	/^#### 9. Measuring catastrophic forgetting$/;"	function	line:62
+10. More detail about the approach which measures sensitivity on particular weights	/Users/aaron/Projects/blog/papers/papers_index.md	/^#### 10. More detail about the approach which measures sensitivity on particular weights$/;"	function	line:66
+[](	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^# [](#list) List of papers$/;"	function	line:5
+<a id="l_acc"></a>Inference accelerator	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^## <a id="l_acc"><\/a>Inference accelerator$/;"	function	line:27
+1. SCNN: An Accelerator for Compressed-sparseConvolutional Neural Network	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^#### 1. SCNN: An Accelerator for Compressed-sparseConvolutional Neural Network$/;"	function	line:28
+2. ZeNA: Zero-Aware Neural Network Accelerator	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^#### 2. ZeNA: Zero-Aware Neural Network Accelerator$/;"	function	line:32
+<a id="t_acc"></a>Training accelerator	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^## <a id="t_acc"><\/a>Training accelerator$/;"	function	line:42
+1. **CATERPILLAR: Coarse Grain Reconfigurable Architecture for Accelerating the Training of Deep Neural Networks**	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^#### 1. **CATERPILLAR: Coarse Grain Reconfigurable Architecture for Accelerating the Training of Deep Neural Networks**$/;"	function	line:43
+<a id="frameworks"></a>Frameworks	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^## <a id="frameworks"><\/a>Frameworks$/;"	function	line:46
+1. **DeepSecure: Scalable Provably-Secure Deep Learning**	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^#### 1. **DeepSecure: Scalable Provably-Secure Deep Learning**$/;"	function	line:47
+2. **Deep^3: Leveraging Three Levels of Parallelism for Efficient Deep Learning**	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^#### 2. **Deep^3: Leveraging Three Levels of Parallelism for Efficient Deep Learning**$/;"	function	line:50
+3. **Maximizing CNN Accelerator Efficiency Through Resource Partitioning**	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^#### 3. **Maximizing CNN Accelerator Efficiency Through Resource Partitioning**$/;"	function	line:53
+4. **Fast YOLO: A Fast You Only Look Once System for Real-time Embedded Object Detection in Video**	/Users/aaron/Projects/blog/papers/nn_accelerator/acc_summary.md	/^#### 4. **Fast YOLO: A Fast You Only Look Once System for Real-time Embedded Object Detection in Video**$/;"	function	line:56
 [](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#list) List of papers$/;"	function	line:5
-<a id="coarseprune"></a>Coarse-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="coarseprune"><\/a>Coarse-grained Pruning$/;"	function	line:28
-<a id="fineprune"></a>Fine-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="fineprune"><\/a>Fine-grained Pruning$/;"	function	line:144
-<a id="oprune"></a>Other types of Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="oprune"><\/a>Other types of Pruning$/;"	function	line:196
+<a id="coarseprune"></a>Coarse-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="coarseprune"><\/a>Coarse-grained Pruning$/;"	function	line:34
+**1. Pruning Filters for Efficient ConvNets**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### **1. Pruning Filters for Efficient ConvNets**$/;"	function	line:36
+**2. Learning Structured Sparsity in Deep Neural Networks**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### **2. Learning Structured Sparsity in Deep Neural Networks**$/;"	function	line:44
+**3. Fast ConvNets Using Group-wise Brain Damage**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### **3. Fast ConvNets Using Group-wise Brain Damage**$/;"	function	line:55
+**4. Learning to Prune Deep Neural Networks via Layer-wise Optimal Brain Surgeon**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### **4. Learning to Prune Deep Neural Networks via Layer-wise Optimal Brain Surgeon**$/;"	function	line:67
+**5. Net-Trim: A Layer-wise Convex Pruning of Deep Neural Networks**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### **5. Net-Trim: A Layer-wise Convex Pruning of Deep Neural Networks**$/;"	function	line:82
+**6. Pruning Convolutional Neural Networks for Resource Efficient Inference**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### **6. Pruning Convolutional Neural Networks for Resource Efficient Inference**$/;"	function	line:88
+<a id="fineprune"></a>Fine-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="fineprune"><\/a>Fine-grained Pruning$/;"	function	line:101
+1. **Learning both Weights and Connections for Efficient Neural Networks**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 1. **Learning both Weights and Connections for Efficient Neural Networks**$/;"	function	line:102
+<a id="oprune"></a>Other types of Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="oprune"><\/a>Other types of Pruning$/;"	function	line:109
+1. **Customizing DNN Pruning to the Underlying Hardware Parallelism**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 1. **Customizing DNN Pruning to the Underlying Hardware Parallelism**$/;"	function	line:110
+2. **Exploring the Regularity of Sparse Structure inConvolutional Neural Networks**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 2. **Exploring the Regularity of Sparse Structure inConvolutional Neural Networks**$/;"	function	line:112
+<a id="quan"></a>Quantization	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="quan"><\/a>Quantization$/;"	function	line:116
+1. **Trained Ternary Quantization**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 1. **Trained Ternary Quantization**$/;"	function	line:117
+2. Quantized Neural Networks: Training Neural Networks with Low Precision Weights and Activations	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 2. Quantized Neural Networks: Training Neural Networks with Low Precision Weights and Activations$/;"	function	line:123
+3. **Exploring the Regularity of Sparse Structure inConvolutional Neural Networks**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 3. **Exploring the Regularity of Sparse Structure inConvolutional Neural Networks**$/;"	function	line:130
+4. **Incremental Network Quantization: Towards Lossless CNNs with Low-Precision Weights**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 4. **Incremental Network Quantization: Towards Lossless CNNs with Low-Precision Weights**$/;"	function	line:133
+4. **Deep Learning with Low Precision by Half-wave Gaussian Quantization**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 4. **Deep Learning with Low Precision by Half-wave Gaussian Quantization**$/;"	function	line:136
+5. **DoReFa-Net: Training Low Bitwidth Convolutional Neural Networks with Low Bitwidth Gradients**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 5. **DoReFa-Net: Training Low Bitwidth Convolutional Neural Networks with Low Bitwidth Gradients**$/;"	function	line:139
+<a id="quan"></a> Novel Structures	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="quan"><\/a> Novel Structures$/;"	function	line:143
+1. **SplitNet: Learning to Semantically Split Deep Networks for Parameter Reduction and Model Parallelization**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 1. **SplitNet: Learning to Semantically Split Deep Networks for Parameter Reduction and Model Parallelization**$/;"	function	line:145
+2. CirCNN: Accelerating and Compressing Deep Neural Networks Using Block-Circulant Weight Matrices	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 2. CirCNN: Accelerating and Compressing Deep Neural Networks Using Block-Circulant Weight Matrices$/;"	function	line:157
+3.An Exploration of Parameter Redundancy in Deep Networks with Circulant Projections	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 3.An Exploration of Parameter Redundancy in Deep Networks with Circulant Projections$/;"	function	line:168
+[](	/Users/aaron/Projects/blog/papers/speech/speech.md	/^# [](#list) List of papers$/;"	function	line:5
+<a id="train"></a>Inference Architecture	/Users/aaron/Projects/blog/papers/speech/speech.md	/^## <a id="train"><\/a>Inference Architecture$/;"	function	line:15
+1. Can FPGAs Beat GPUs in Accelerating Next-Generation Deep Neural Networks	/Users/aaron/Projects/blog/papers/speech/speech.md	/^#### 1. Can FPGAs Beat GPUs in Accelerating Next-Generation Deep Neural Networks$/;"	function	line:16
+2. Accelerating Binarized Convolutional Neural Networks with Software-Programmable FPGAs	/Users/aaron/Projects/blog/papers/speech/speech.md	/^#### 2. Accelerating Binarized Convolutional Neural Networks with Software-Programmable FPGAs$/;"	function	line:19

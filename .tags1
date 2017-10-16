@@ -4,7 +4,7 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#list) List of papers$/;"	function	line:5
-<a id="coarseprune"></a>Coarse-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="coarseprune"><\/a>Coarse-grained Pruning$/;"	function	line:28
-<a id="fineprune"></a>Fine-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="fineprune"><\/a>Fine-grained Pruning$/;"	function	line:144
-<a id="oprune"></a>Other types of Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="oprune"><\/a>Other types of Pruning$/;"	function	line:196
+[](	/Users/aaron/Projects/blog/papers/speech/speech.md	/^# [](#list) List of papers$/;"	function	line:5
+<a id="train"></a>Inference Architecture	/Users/aaron/Projects/blog/papers/speech/speech.md	/^## <a id="train"><\/a>Inference Architecture$/;"	function	line:15
+1. Can FPGAs Beat GPUs in Accelerating Next-Generation Deep Neural Networks	/Users/aaron/Projects/blog/papers/speech/speech.md	/^#### 1. Can FPGAs Beat GPUs in Accelerating Next-Generation Deep Neural Networks$/;"	function	line:16
+2. Accelerating Binarized Convolutional Neural Networks with Software-Programmable FPGAs	/Users/aaron/Projects/blog/papers/speech/speech.md	/^#### 2. Accelerating Binarized Convolutional Neural Networks with Software-Programmable FPGAs$/;"	function	line:19

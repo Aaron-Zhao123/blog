@@ -211,6 +211,14 @@ At the end, they found a near linear relationship between the accuracy and the n
 }
 ```
 
+## [](#SENet)Squeeze-and-Excitation Networks
+**Review**([Paper link](https://arxiv.org/abs/1709.01507))
+
+The winner of **ILSVRC 2017**. At each layer, it average pools the feature maps
+(squeeze) and feed them into a small fully connected network. 
+This tiny network then output a scaling factor for the following feature maps
+to excite them.
+
 <!-- # [](#header-2)Citations
 <a id='alexnet-paper'>
 [1] Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton. "ImageNet Classification with Deep Convolutional Neural Networks." NIPS 2012
