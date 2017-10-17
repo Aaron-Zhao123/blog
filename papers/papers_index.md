@@ -23,6 +23,9 @@ Novel regularizers are considered as compression techniques.
 ### [ Training](/blog/papers/train/train_summary.html)
 Interesting benchmarks and methods of training neural networks
 
+### [ Speech models](/blog/papers/speech/speech.html)
+Mainly focus on keeping in track with state-of-the-art NLP models.
+
 # Reinforcement learning
 How to apply neural networks in other domains.
 A collection of Reinforcement learning techniques, although this is not my field.

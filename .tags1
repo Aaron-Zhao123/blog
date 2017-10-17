@@ -4,7 +4,26 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-[](	/Users/aaron/Projects/blog/papers/speech/speech.md	/^# [](#list) List of papers$/;"	function	line:5
-<a id="train"></a>Inference Architecture	/Users/aaron/Projects/blog/papers/speech/speech.md	/^## <a id="train"><\/a>Inference Architecture$/;"	function	line:15
-1. Can FPGAs Beat GPUs in Accelerating Next-Generation Deep Neural Networks	/Users/aaron/Projects/blog/papers/speech/speech.md	/^#### 1. Can FPGAs Beat GPUs in Accelerating Next-Generation Deep Neural Networks$/;"	function	line:16
-2. Accelerating Binarized Convolutional Neural Networks with Software-Programmable FPGAs	/Users/aaron/Projects/blog/papers/speech/speech.md	/^#### 2. Accelerating Binarized Convolutional Neural Networks with Software-Programmable FPGAs$/;"	function	line:19
+[](	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^# [](#list) List of papers$/;"	function	line:5
+<a id="coarseprune"></a>Coarse-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="coarseprune"><\/a>Coarse-grained Pruning$/;"	function	line:34
+**1. Pruning Filters for Efficient ConvNets**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### **1. Pruning Filters for Efficient ConvNets**$/;"	function	line:36
+**2. Learning Structured Sparsity in Deep Neural Networks**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### **2. Learning Structured Sparsity in Deep Neural Networks**$/;"	function	line:44
+**3. Fast ConvNets Using Group-wise Brain Damage**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### **3. Fast ConvNets Using Group-wise Brain Damage**$/;"	function	line:55
+**4. Learning to Prune Deep Neural Networks via Layer-wise Optimal Brain Surgeon**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### **4. Learning to Prune Deep Neural Networks via Layer-wise Optimal Brain Surgeon**$/;"	function	line:67
+**5. Net-Trim: A Layer-wise Convex Pruning of Deep Neural Networks**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### **5. Net-Trim: A Layer-wise Convex Pruning of Deep Neural Networks**$/;"	function	line:82
+**6. Pruning Convolutional Neural Networks for Resource Efficient Inference**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### **6. Pruning Convolutional Neural Networks for Resource Efficient Inference**$/;"	function	line:88
+<a id="fineprune"></a>Fine-grained Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="fineprune"><\/a>Fine-grained Pruning$/;"	function	line:101
+1. **Learning both Weights and Connections for Efficient Neural Networks**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 1. **Learning both Weights and Connections for Efficient Neural Networks**$/;"	function	line:102
+<a id="oprune"></a>Other types of Pruning	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="oprune"><\/a>Other types of Pruning$/;"	function	line:109
+1. **Customizing DNN Pruning to the Underlying Hardware Parallelism**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 1. **Customizing DNN Pruning to the Underlying Hardware Parallelism**$/;"	function	line:110
+2. **Exploring the Regularity of Sparse Structure inConvolutional Neural Networks**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 2. **Exploring the Regularity of Sparse Structure inConvolutional Neural Networks**$/;"	function	line:112
+<a id="quan"></a>Quantization	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="quan"><\/a>Quantization$/;"	function	line:124
+1. **Trained Ternary Quantization**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 1. **Trained Ternary Quantization**$/;"	function	line:125
+2. Quantized Neural Networks: Training Neural Networks with Low Precision Weights and Activations	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 2. Quantized Neural Networks: Training Neural Networks with Low Precision Weights and Activations$/;"	function	line:131
+3. **Incremental Network Quantization: Towards Lossless CNNs with Low-Precision Weights**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 3. **Incremental Network Quantization: Towards Lossless CNNs with Low-Precision Weights**$/;"	function	line:138
+4. **Deep Learning with Low Precision by Half-wave Gaussian Quantization**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 4. **Deep Learning with Low Precision by Half-wave Gaussian Quantization**$/;"	function	line:147
+5. **DoReFa-Net: Training Low Bitwidth Convolutional Neural Networks with Low Bitwidth Gradients**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 5. **DoReFa-Net: Training Low Bitwidth Convolutional Neural Networks with Low Bitwidth Gradients**$/;"	function	line:150
+<a id="quan"></a> Novel Structures	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^## <a id="quan"><\/a> Novel Structures$/;"	function	line:154
+1. **SplitNet: Learning to Semantically Split Deep Networks for Parameter Reduction and Model Parallelization**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 1. **SplitNet: Learning to Semantically Split Deep Networks for Parameter Reduction and Model Parallelization**$/;"	function	line:156
+2. CirCNN: Accelerating and Compressing Deep Neural Networks Using Block-Circulant Weight Matrices	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 2. CirCNN: Accelerating and Compressing Deep Neural Networks Using Block-Circulant Weight Matrices$/;"	function	line:168
+3.An Exploration of Parameter Redundancy in Deep Networks with Circulant Projections	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 3.An Exploration of Parameter Redundancy in Deep Networks with Circulant Projections$/;"	function	line:179

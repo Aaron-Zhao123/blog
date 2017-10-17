@@ -110,7 +110,15 @@ Fine-grained pruning, it discussed how to use regularizers and decrease dropouts
 #### 1. **Customizing DNN Pruning to the Underlying Hardware Parallelism**
 
 #### 2. **Exploring the Regularity of Sparse Structure inConvolutional Neural Networks**
-> > **Review**([Paper link](https://arxiv.org/pdf/1607.00064))
+> > **Review**([Paper link](https://arxiv.org/abs/1705.08922))
+This paper classifies pruning into various granularities:
+1. Fine-grained (individual values)
+2. Vector wise
+3. Kernel wise
+4. Filter wise
+The interesting observation they make is that:
+1. sparsity structure does not impact quantization (Figure 6)
+2. Vector-wise pruning shows similar results to valina pruning (Table 2)
 
 * * *
 ## <a id="quan"></a>Quantization
@@ -127,17 +135,20 @@ All MAC operations are replaced by XNORs and population counts.
 Quantized version of AlexNet with 1-bit weights and 2-bit activations achieves 51% top-1 accuracy.
 BNN achieves 41.8% top-1 and 67.1% top-5 accuracy using AlexNet and 47.1% top-1 and 69.1%top-5 accuracy using GoogleNet
 
-#### 3. **Exploring the Regularity of Sparse Structure inConvolutional Neural Networks**
-**Review**([Paper link](https://arxiv.org/pdf/1607.00064))
+#### 3. **Incremental Network Quantization: Towards Lossless CNNs with Low-Precision Weights**
+**Review**([Paper link](https://arxiv.org/abs/1702.03044))
+Method description:
+1. Partition weights into two groups.
+2. Quantize the first group to powers of tows, retrain the second group.
+3. Go back to 1 until all weights are quantized.
 
-#### 4. **Incremental Network Quantization: Towards Lossless CNNs with Low-Precision Weights**
-**Review**([Paper link](https://arxiv.org/abs/1702.03044)
+The results are amazing, 89× on Alexnet with -1.47%/-0.96% on top1/top5 accuracies.
 
 #### 4. **Deep Learning with Low Precision by Half-wave Gaussian Quantization**
-**Review**([Paper link](https://arxiv.org/abs/1702.00953)
+**Review**([Paper link](https://arxiv.org/abs/1702.00953))
 
 #### 5. **DoReFa-Net: Training Low Bitwidth Convolutional Neural Networks with Low Bitwidth Gradients**
-**Review**([Paper link](https://arxiv.org/abs/1606.06160)
+**Review**([Paper link](https://arxiv.org/abs/1606.06160))
 
 * * *
 ## <a id="quan"></a> Novel Structures

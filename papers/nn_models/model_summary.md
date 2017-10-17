@@ -211,11 +211,19 @@ At the end, they found a near linear relationship between the accuracy and the n
 }
 ```
 
+
+## [](#SENet)GBD-Net
+**Review**([Paper link](https://arxiv.org/abs/1709.01507))
+
+The winner of **ILSVRC 2016**. In order to use the contextual information, multiple image regions surrounding the candidate box were cropped in and whole-image classification scores were used in. In GBD-net, they use gate functions for controlling message passing.
+Message passing at the feature level was studied in Recurrent neural network (RNN) and gate functions are used to control message passing in long short-term memory (LSTM) networks.
+GBD-net takes an image as input, uses roi-pooling operations to obtain features with different resolutions and different support regions for each candidate box, and then the gated bi-direction layer is used for passing messages among features, and final classification is made.
+
 ## [](#SENet)Squeeze-and-Excitation Networks
 **Review**([Paper link](https://arxiv.org/abs/1709.01507))
 
 The winner of **ILSVRC 2017**. At each layer, it average pools the feature maps
-(squeeze) and feed them into a small fully connected network. 
+(squeeze) and feed them into a small fully connected network.
 This tiny network then output a scaling factor for the following feature maps
 to excite them.
 
