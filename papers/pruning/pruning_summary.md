@@ -25,10 +25,11 @@ Parallelism (watiting to be released on ISCA 2017)
     1. Trained Ternary Quantization
     2. Quantized Neural Networks: Training Neural Networks with Low Precision Weights and Activations
 
-  * Novel Structures [details](#fineprune)
+  * Efficient Structures [details](#fineprune)
     1. SplitNet: Learning to Semantically Split Deep Networks for Parameter Reduction and Model Parallelization
     2. CirCNN: Accelerating and Compressing Deep Neural Networks Using Block-Circulant Weight Matrices
     3. An Exploration of Parameter Redundancy in Deep Networks with Circulant Projections
+
 * * *
 
 ## <a id="coarseprune"></a>Coarse-grained Pruning

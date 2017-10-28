@@ -20,8 +20,8 @@ pruning are discussed.
 Various quantization methods: fixed-point, dynamic fixed-point, binarized, tenary.
 Novel regularizers are considered as compression techniques.
 
-### [ Training](/blog/papers/train/train_summary.html)
-Interesting benchmarks and methods of training neural networks
+### [ Training and Novel Networks](/blog/papers/train/train_summary.html)
+Interesting benchmarks and methods of training neural networks.
 
 ### [ Speech models](/blog/papers/speech/speech.html)
 Mainly focus on keeping in track with state-of-the-art NLP models.
