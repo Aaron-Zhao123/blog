@@ -3,7 +3,7 @@ layout: default
 ---
 # [](#header-1)Popular CNN Models
 
-| Networks     | Layers| Top1 Error/Top5 Error| Size  |   MACs(Million)| Year |
+| Networks     | Layers| Top1/Top5 Error| Size  |   MACs(Million)| Year |
 |:-------------|:------|:---------------------|:------|:----|:-----|
 | LeNet5       | 5     | 99.36 on MNIST       | 451KB |       |1998 |
 | [AlexNet](#alexnet)      | 8     | 42.5/18.2| 240MB |       |2012 |
@@ -16,6 +16,9 @@ layout: default
 | [ResNet-200](#resnet)   | 200   | 21.66/5.79| 102MB |       |2015 |
 | [SqueezeNet](#snet)| 224   | 42.5/18.7 | 4.8MB  |   | 2017 |
 | [MoblieNets](#mobilenet)| 224   | 29.3/10.5 | 17MB  | 569   | 2017 |
+
+* * *
+# Paper reviews
 
 ## [](#alexnet)AlexNet
 **Review**([Paper link](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf))

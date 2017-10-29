@@ -79,3 +79,10 @@ This type of “routing-by-agreement” should be far more effective than the ve
 
 
 #### **2. Generative Adversarial Networks: An Overview**
+**Review**([Paper link](https://arxiv.org/abs/1710.07035v1))
+Fig 2 is interesting in the sense that it views generator as producing a distribution that is slightly different from the real data distribution.
+For an appropriately parametrized and trained GAN, these two distributions are nearly identical.
+GAN training is very challenging because:
+1. Difficult to converge.
+2. The generative model might collapse, meaning that it generates very similar samples for various inputs.
+3. Discriminator loss converges quickly to zero and provide no updates to the generator.
