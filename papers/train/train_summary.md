@@ -3,15 +3,20 @@ layout: default
 ---
 
 # [](#list) List of papers
+  * Training [details](#Training)
   1. **DSD:  DENSE-SPARSE-DENSE Training For Deep Neural Network**
   2. **Understanding deep learning requires rethinking generalization**
   3. **Accurate, Large Minibatch SGD:Training ImageNet in 1 Hour**
   4. **Revisiting Unreasonable Effectiveness of Data in Deep Learning Era**
-  5. **Dynamic Routing Between Capsules**
+
+  * New Models/Concepts [details](#concepts)
+  1. **Dynamic Routing Between Capsules**
+  2. **Generative Adversarial Networks: An Overview**
+
 
 * * *
 
-## <a id="Training Methods"></a>Training
+## <a id="Training"></a>Training
 
 #### **1. DENSE-SPARSE-DENSE Training For Deep Neural Network**
 **Review**([Paper link](https://arxiv.org/pdf/1607.04381.pdf))
@@ -39,12 +44,38 @@ This paper describes three trends:
 1. Model size has decreased but number of layers keep inreasing
 2. GPU/hardware power keeps increasing
 3. Dataset size stays constant!
+
 The paper tested some popular CNN models on datasets that are 10x or 100x bigger
-than ImageNet, they found:
-1. Performance on vision increases logarithmically based on volume of
-training datasize.
-2. Representation learning (or pre-training) still holds a lot of promise. One can improve per-formance on many vision tasks by just training a better basemodel.  
+than ImageNet. They mainly focus on JFT-300M.
+The  JFT-300M  dataset  is closely related and derived from the data which powers
+the Image Search. In this version, the dataset has 300M images and 375M labels,  on average each image has 1.26 labels.These images are labeled with 18291 categories. They found:
+
+1. Performance on vision increases requires exponential increase of volume of
+training data size.
+2. Representation learning (or pre-training) still holds a lot of promise.
+One can improve performance on many vision tasks by just training from a better
+base model.  
 3. Build larger datasets.
 
-#### **5. Dynamic Routing Between Capsules** (NIPS2017)
+## <a id="concepts"></a>New Models/Concepts
+
+#### **1. Dynamic Routing Between Capsules** (NIPS2017)
 **Review**([Paper link](https://arxiv.org/abs/1710.09829v1))
+The problem of current neural networks is that pooling is a bad way of dealing
+with viewpoints. Current neural networks work by making viewpoints
+invariant during learning. The argument is that dynamic routing is required
+for learning from different view points.
+A capsule is a set of neurons whose activity vectors represents the 'instantiation
+parameters'. Active capsules at one level make predictions, via transformation
+matrices, for the instantiation parameters of higher-level capsules.
+When multiple predictions agree, a higher level capsule becomes active.
+This is basically saying multiple subnetworks can be stacked together to serve
+the next layer.
+Dynamic routing mechanism to ensure that the output of the capsule gets sent to an appropriate parent in the layer above.
+For each possible parent, the capsule computes a “prediction vector” by multiplying its output by a weight matrix.
+If this prediction vector has a large scalar product with the output of a possible parent, there is top-down feedback which has the effect of increasing the coupling coefficient for that parent and decreasing it for other parents.
+This increases the contribution that the capsule makes to that parent thus further increasing the scalar product of the capsule’s prediction with the parent’s output.
+This type of “routing-by-agreement” should be far more effective than the very primitive form of routing implemented by max-pooling which allows neurons in one layer to ignore all but the most active feature detector in a local pool in the layer below.  
+
+
+#### **2. Generative Adversarial Networks: An Overview**
