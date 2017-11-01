@@ -22,7 +22,7 @@ layout: default
 * * *
 
 ## <a id="l_acc"></a>Inference accelerator
-#### **1. SCNN: An Accelerator for Compressed-sparseConvolutional Neural Network ** (ISCA 2017)
+#### 1. SCNN: An Accelerator for Compressed-sparseConvolutional Neural Network (ISCA 2017)
 
 **Review**([Paper link](https://arxiv.org/abs/1708.04485))
 A sparse CNN accelerator that encode both weights and activations.
@@ -49,7 +49,7 @@ Partial sums pass in a vertically, input images pass diagonally and filter weigh
 Data delivery is finished using an onchip network.
 They claim zero skipping at run-time can reduce power by 45%.
 
-#### 4.An Energy-Efficient Precision-Scalable ConvNet Processor in 40-nm CMOS (JSSC)
+#### 4. An Energy-Efficient Precision-Scalable ConvNet Processor in 40-nm CMOS (JSSC)
 **Review**([Paper link](http://ieeexplore.ieee.org/abstract/document/7801877/))
 2-D SIMD MAC arrays, supports what is called "dynamic-voltage-accuracy-scaling". This allows modulation of both computational precision and used supply voltage to vary.
 A multiplier capable of modulating its precision and supply voltage makes use of a number of computational blocks. High precision activities a higher switching activities and thus longer critical path.
@@ -57,6 +57,7 @@ The hardware also guards sparsity to avoid unnecessary computations.
 First, it checks a sparsity flat for memory fetch.
 Second, it clock gates the accumulation register to prevent redundant MACs.
 
+***
 
 ## <a id="t_acc"></a>Training accelerator
 #### 1. **CATERPILLAR: Coarse Grain Reconfigurable Architecture for Accelerating the Training of Deep Neural Networks**
