@@ -15,15 +15,25 @@ I am actively researching on neural network related hardware architectures. A li
 I keep my [Linkedin Profile](https://www.linkedin.com/in/yiren-aaron-zhao-baa8b5116/) up-to-date, please have a visit if you are interested in my education/work experience.
 
 
-# [](#interests) Research Interests
-* Machine Learning
-* High Performance Computing, Reconfigurable Computing, Parallel Computing
-* Computer Architecture
-
 # [](#interests) Education Background
 * Imperial College London, BEng in Electrical and Electronic Engineering (2013-2016)
 * University of Cambridge, Mphil in Computer Science (2016-2017)
 * University of Cambridge, Phd in Computer Science (2017-present)
+
+# [](#interests) Research Experience
+I have previously worked as the following roles:
+
+* Research Intern at Microsoft Research Cambridge (Summer 2017)
+* Machine learning researcher (Intern) at Ocado 10x Research (Summer 2016)
+* Machine learning consultant at Tangi0 (Summer 2016)
+* Research Assistant at Circuits and Systems Research Group at Imperial College London (Summer 2015)
+* Research Assistant at Radio Frequency Laboratory in University of Electronic Science and Technology of China (Summer 2014)
+
+
+# [](#interests) Research Interests
+* Machine Learning
+* High Performance Computing, Reconfigurable Computing, Parallel Computing
+* Computer Architecture
 
 
 I have a mixed education background with study experience in various countries.
@@ -32,16 +42,6 @@ I obtained a _Bachelor of Engineering_ degree in Electrical and Electronic Engin
 After graduating from Imperial with a top-rank score and being awarded with the _Wills Jackson Metal and Price_,
 I finished a _Master of Philosophy_ degree at the Computer Laboratory of University of Cambridge.
 I am now reading a phd dgree at the Computer Laboratory of University of Cambridge supervised by Dr.Robert Mullins.
-
-# [](#interests) Research Experience
-I have previously worked as the following roles:
-
-* Research Intern at Microsoft Research Cambridge
-* Machine learning researcher (Intern) at Ocado 10x Research
-* Machine learning consultant at Tangi0
-* Research Assistant at Circuits and Systems Research Group at Imperial College London
-* Research Assistant at Radio Frequency Laboratory in University of Electronic Science and Technology of China
-
 
 # [](#interests) Other Interests
 I have a strong interest in business, currently co-funding HorizonEdu with Tommy Jia. We are interested in helping chinese students to apply for oversea universities.
