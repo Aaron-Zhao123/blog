@@ -12,6 +12,8 @@ layout: default
   * New Models/Concepts [details](#concepts)
   1. **Dynamic Routing Between Capsules**
   2. **Generative Adversarial Networks: An Overview**
+  3. **Diffusion-Convolutional Neural Networks**
+  4. **Sparse Diffusion-Convolutional Neural Networks**
 
 
 * * *
@@ -57,6 +59,8 @@ One can improve performance on many vision tasks by just training from a better
 base model.  
 3. Build larger datasets.
 
+* * *
+
 ## <a id="concepts"></a>New Models/Concepts
 
 #### **1. Dynamic Routing Between Capsules** (NIPS2017)
@@ -86,3 +90,19 @@ GAN training is very challenging because:
 1. Difficult to converge.
 2. The generative model might collapse, meaning that it generates very similar samples for various inputs.
 3. Discriminator loss converges quickly to zero and provide no updates to the generator.
+
+#### **3. Diffusion-Convolutional Neural Networks**
+**Review**([Paper link](https://arxiv.org/abs/1511.02136))
+Diffusion-Convolutional Neural Networks(DCNN) is a new model for graph-structured
+data.
+The network is designed to classify noes or edges or graphs.
+The diffusion action transfer any given inputs (nodes, edges or graphs) into
+a formalized input to neural network (Number of nodes * number of features).
+Their experiments show how to classify nodes in a graph and how to classify
+different graphs.
+
+#### **4. Sparse Diffusion-Convolutional Neural Networks**
+**Review**([Paper link](https://arxiv.org/abs/1710.09813v1))
+One problem of DCNN is the memory overhead since it considers all nodes in a
+graph. This directly meets a scaling problem. The solution this paper proposed
+is to use a threshold to make the network sparse.
