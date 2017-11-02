@@ -39,13 +39,13 @@ A collection of Reinforcement learning techniques, although this is not my field
 ***
 
 # [](#fpga)FPGAs
-### [Applications](/blog/papers/fpga_nn/fpgann_summary.html)
+### [Applications](/blog/papers/fpga/fpga_nn.html)
 My main focus on FPGAs in applications are still related to hardware architectures. This section specifically focus on the publications FPGA-based implementation of neural network accelerators in the following conferences: FPGA, FCCM, FPL and FPT.
 
-### [Cloud](/blog/papers/fpga_cloud/fpgncloud_summary.html)
+### [Cloud](/blog/papers/fpga/fpga_cloud.html)
 The interest of FPGAs in the cloud origins from the Catapult project from Microsoft.
 
-### [High level synthesis](/blog/papers/pruning/pruning_summary.html)
+### [High level synthesis](/blog/papers/fpga/fpga_hls.html)
 HLS boosts working efficiency on FPGAs. The popular HLS tools include the followings: Vivado HLS, Altera OpenCL and Legup.
 
 ***
