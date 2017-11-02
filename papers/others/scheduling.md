@@ -10,6 +10,7 @@ layout: default
     3. Maintaining Packet Order in Two-Stage Switches
 
   * Networking architectures (Paper read from the course) [details](#course)
+  
     The course information can be found at this [link](https://www.cl.cam.ac.uk/teaching/1718/R02/materials.html)
 
 * * *

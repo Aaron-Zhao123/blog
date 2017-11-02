@@ -25,6 +25,7 @@ layout: default
 #### 1. SCNN: An Accelerator for Compressed-sparseConvolutional Neural Network (ISCA 2017)
 
 **Review**([Paper link](https://arxiv.org/abs/1708.04485))
+
 A sparse CNN accelerator that encode both weights and activations.
 Processing element(PE) is a multiplier  array that accepts a vector of weights and  a vector of activations.
 Activations stay stationary but weights are streamed.
@@ -32,7 +33,9 @@ The partial sum accumulation is done in a separated PE because of the encoding.
 
 
 #### 2. ZeNA: Zero-Aware Neural Network Accelerator
+
 **Review**([Paper link](http://ieeexplore.ieee.org/document/8013151/))
+
 A hardware architecture that skips zeros in a neural network.
 The major problem of valina-sparsity is that parallel threads might have imbalanced
 sparsity.
@@ -41,7 +44,9 @@ balancing the workloads.
 They also propose to use work stealing and dynamic allocations to balance the workloads.
 
 #### 3. Eyeriss: An Energy-Efficient Reconfigurable Accelerator for Deep Convolutional Neural Networks
+
 **Review**([Paper link](http://ieeexplore.ieee.org/document/7738524/))
+
 If moving data to PE is 1x, DRAM to PE is 500x and Buffer to PE is 10x.
 Data reuse is important and in Eyeriss, it is row stationary.
 PE level reuse in Eyeriss is very high.
@@ -50,7 +55,9 @@ Data delivery is finished using an onchip network.
 They claim zero skipping at run-time can reduce power by 45%.
 
 #### 4. An Energy-Efficient Precision-Scalable ConvNet Processor in 40-nm CMOS (JSSC)
+
 **Review**([Paper link](http://ieeexplore.ieee.org/abstract/document/7801877/))
+
 2-D SIMD MAC arrays, supports what is called "dynamic-voltage-accuracy-scaling". This allows modulation of both computational precision and used supply voltage to vary.
 A multiplier capable of modulating its precision and supply voltage makes use of a number of computational blocks. High precision activities a higher switching activities and thus longer critical path.
 The hardware also guards sparsity to avoid unnecessary computations.
@@ -61,10 +68,14 @@ Second, it clock gates the accumulation register to prevent redundant MACs.
 
 ## <a id="t_acc"></a>Training accelerator
 #### 1. **CATERPILLAR: Coarse Grain Reconfigurable Architecture for Accelerating the Training of Deep Neural Networks**
+
  **Review**([Paper link](https://arxiv.org/abs/1706.00517))
+
+***
 
 ## <a id="frameworks"></a>Frameworks and Strategies
 #### 1. **DeepSecure: Scalable Provably-Secure Deep Learning**
+
  **Review**([Paper link](https://arxiv.org/pdf/1705.08963.pdf))
 
 #### 2. **Deep^3: Leveraging Three Levels of Parallelism for Efficient Deep Learning**
