@@ -10,6 +10,7 @@ layout: default
     4. Learning to Prune Deep Neural Networks via Layer-wise Optimal Brain Surgeon
     5. Net-Trim: A Layer-wise Convex Pruning of Deep Neural Networks
     6. Pruning Convolutional Neural Networks for Resource Efficient Transfer Learning
+    7. Compact Deep Convolutional Neural Networks with Coarse Pruning
 
   * Fine-grained pruning [details](#fineprune)
     1. Learning both Weights and Connections for EfficientNeural Networks
@@ -102,6 +103,14 @@ The criteria prunes parameters that have an almost flat gradient of the cost fun
 **Highlights**:
 1. Based on the assumption that samples are iid, it avoids computing the second-order term of tayler series compared to Optimal Brain Damage(OBD). They use the expectation value of the absolute value of the first order term to approximate variance.
 2.  FLOPs regularization: add extra term into the cost function to regularize flops per feature map. Feature maps with larger flops are penalized.
+
+#### **7. Compact Deep Convolutional Neural Networks with Coarse Pruning**
+**Review**([Paper link]())
+This work chooses pruning masks based on the accuracy performance on the validation
+set, but it might not be correct to do so.
+The results are reported on Cifar10 and SVHN, both of these are relatively
+small datasets.
+They mentioned exploring run-time pruning in their future works.
 
 * * *
 

@@ -14,6 +14,7 @@ layout: default
   2. **Generative Adversarial Networks: An Overview**
   3. **Diffusion-Convolutional Neural Networks**
   4. **Sparse Diffusion-Convolutional Neural Networks**
+  5. **Matrix Capsules with EM Routing**
 
 
 * * *
@@ -106,3 +107,8 @@ different graphs.
 One problem of DCNN is the memory overhead since it considers all nodes in a
 graph. This directly meets a scaling problem. The solution this paper proposed
 is to use a threshold to make the network sparse.
+
+#### **5. MATRIX CAPSULES WITH EM ROUTING** (Open Review for ICLR 2018)
+**Review**([Paper link]())
+Viewpoint changes have complicated effects on pixel intensities but simple, linear effects on the pose matrix that represents the relation-ship between an object or object-part and the viewer. Capsules use high-dimensional coincidence filtering:  a familiar object can be detected by looking for agreement between votes for its pose matrix.
+As the viewpoint changes, the pose matrices of the parts and the whole will change in a coordinated way so that any agreement between votes from different parts will persist.
