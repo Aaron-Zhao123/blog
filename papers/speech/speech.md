@@ -10,6 +10,7 @@ layout: default
     1. Outrageously large neural networks:
 the sparsely-gated mixture-of-experts layer
     2. Language Modeling with Gated Convolutional Networks
+    3. Multi-mention Learning for Reading Comprehension with Neural Cascades
 * * *
 
 ## <a id="train"></a> Conditional Computations
@@ -23,9 +24,12 @@ Defining a soft constraint (another loss term into the cost function) can help a
 
 
 #### 2. Language Modeling with Gated Convolutional Networks
-
- **Review**([Paper link]())
-
+ <!-- **Review**([Paper link]()) -->
  I did not fully understand the paper, a later review after reading on LSTMs is required.
  The paper proposed a new gating mechanism.
  The authors claim their gated linear units reduce the vanishing gradient problem for deep architectures by providing a linear path for the gradients while retaining non-linear capabilities
+
+#### 3. Multi-mention Learning for Reading Comprehension with Neural Cascades
+**Review**([Paper link](https://arxiv.org/abs/1711.00894))
+Reading comprehension is a task of answering questions based on a set of
+documents. Long short-term memory networks (LSTM) 

@@ -152,3 +152,69 @@ top_three = word_counts.most_common(3)
 print(top_three)
 # Outputs [('eyes', 8), ('the', 5), ('look', 4)]
 ```
+
+#### itemgetter with dict
+```Python
+rows = [
+    {'fname': 'Brian', 'lname': 'Jones', 'uid': 1003},
+    {'fname': 'David', 'lname': 'Beazley', 'uid': 1002},
+    {'fname': 'John', 'lname': 'Cleese', 'uid': 1001},
+    {'fname': 'Big', 'lname': 'Jones', 'uid': 1004}
+]
+from operator import itemgetter
+rows_by_fname = sorted(rows, key=itemgetter('fname'))
+rows_by_uid = sorted(rows, key=itemgetter('uid'))
+
+rows_by_lfname = sorted(rows, key=itemgetter('lname','fname'))
+```
+The code above shows how ```itemgetter``` returns a callable object. Apparently, this can be replaced by ```lambda``` functions.
+```Python
+rows_by_fname = sorted(rows, key=lambda r: r['fname'])
+rows_by_lfname = sorted(rows, key=lambda r: (r['lname'],r['fname']))
+```
+
+#### Sorting in a class
+```Python
+class User:
+    def __init__(self, user_id):
+        self.user_id = user_id
+
+    def __repr__(self):
+        return 'User({})'.format(self.user_id)
+
+
+def sort_notcompare():
+    users = [User(23), User(3), User(99)]
+    sorted(users, key=lambda u: u.user_id)
+
+    # Or use attrgetter()
+    from operator import attrgetter
+    sorted(users, key=attrgetter('user_id'))
+```
+
+Notice ```users``` cannot be sorted directly, this case, we can whether use again an lambda function or the attrgetter.
+
+#### groupby
+```Python
+rows = [
+    {'address': '5412 N CLARK', 'date': '07/01/2012'},
+    {'address': '5148 N CLARK', 'date': '07/04/2012'},
+    {'address': '5800 E 58TH', 'date': '07/02/2012'},
+    {'address': '2122 N CLARK', 'date': '07/03/2012'},
+    {'address': '5645 N RAVENSWOOD', 'date': '07/02/2012'},
+    {'address': '1060 W ADDISON', 'date': '07/02/2012'},
+    {'address': '4801 N BROADWAY', 'date': '07/01/2012'},
+    {'address': '1039 W GRANVILLE', 'date': '07/04/2012'},
+]
+from operator import itemgetter
+from itertools import groupby
+
+# Sort by the desired field first
+rows.sort(key=itemgetter('date'))
+# Iterate in groups
+for date, items in groupby(rows, key=itemgetter('date')):
+    print(date)
+    for i in items:
+        print(' ', i)
+```
+Firstly sort the list using ```itemgetter```, it then shows how to use group by, each group is produced by date.
