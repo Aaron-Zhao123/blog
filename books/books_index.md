@@ -218,3 +218,82 @@ for date, items in groupby(rows, key=itemgetter('date')):
         print(' ', i)
 ```
 Firstly sort the list using ```itemgetter```, it then shows how to use group by, each group is produced by date.
+
+#### Filtering
+Use generator and iterator, **filter** creates an iterator and convert it using **list**
+```Python
+values = ['1', '2', '-3', '-', '4', 'N/A', '5']
+def is_int(val):
+    try:
+        x = int(val)
+        return True
+    except ValueError:
+        return False
+ivals = list(filter(is_int, values))
+print(ivals)
+# Outputs ['1', '2', '-3', '4', '5']
+```
+
+**itertools.compress()**
+```Python
+addresses = [
+    '5412 N CLARK',
+    '5148 N CLARK',
+    '5800 E 58TH',
+    '2122 N CLARK',
+    '5645 N RAVENSWOOD',
+    '1060 W ADDISON',
+    '4801 N BROADWAY',
+    '1039 W GRANVILLE',
+]
+counts = [ 0, 3, 10, 4, 1, 7, 6, 1]
+from itertools import compress
+more5 = [n > 5 for n in counts]
+list(compress(addresses, more5))
+# ['5800 E 58TH', '1060 W ADDISON', '4801 N BROADWAY']
+```
+
+**namedtuple()**
+```Python
+from collections import namedtuple
+
+Stock = namedtuple('Stock', ['name', 'shares', 'price'])
+def compute_cost(records):
+    total = 0.0
+    for rec in records:
+        s = Stock(*rec)
+        total += s.shares * s.price
+    return total
+```
+Better naming than hard coded numbers.
+
+```Python
+from collections import namedtuple
+
+Stock = namedtuple('Stock', ['name', 'shares', 'price', 'date', 'time'])
+
+# Create a prototype instance
+stock_prototype = Stock('', 0, 0.0, None, None)
+
+# Function to convert a dictionary to a Stock
+def dict_to_stock(s):
+    return stock_prototype._replace(**s)
+```
+Using the above code, stock can be updated by passing a dictionary into the function **dict_to_stock**, this ****s** is a useful way of extracting components in a dict.
+
+#### Combining multiple dicts
+One method is to use **ChainMap**
+```Python
+from collections import ChainMap
+c = ChainMap(a,b)
+```
+Chainmap creates a list to collect all of these dictionaries, but not creating a new dictionaries, all the old dictionaries stay valid, any updates of the original dictionaries propagates to the new dictionary.
+
+**update** is another method of merging dictionaries
+```Python
+a = {'x': 1, 'z': 3 }
+b = {'y': 2, 'z': 4 }
+merged = dict(b)
+merged.update(a)
+```
+merged creates a completely different dictionary, updates on old dictionaries will not affect the newly created one.
