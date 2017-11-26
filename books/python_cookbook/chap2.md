@@ -11,7 +11,7 @@ import re
 re.split(r'[;,\s]\s*', line)
 # output
 # ['asdf', 'fjdk', 'afed', 'fjek', 'asdf', 'foo']
-{% highlight python %}
+{% endhighlight %}
 
 
 **re.split** supports splitting with multiple keywords.
