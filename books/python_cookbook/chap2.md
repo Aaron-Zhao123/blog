@@ -30,9 +30,8 @@ fnmatch('foo.txt', '*.txt')
 <!-- ``` -->
 
 ## Searching and replace strings
-* Normal practice is to use **str.find()**, **str.endswith()** and **str.startswith()**
-
-* Use **re** module
+Normal practice is to use **str.find()**, **str.endswith()** and **str.startswith()**.
+Harder pattern matchings will use **re** module.
 
 <!-- ```Python -->
 {% highlight python %}
@@ -59,10 +58,24 @@ month, day, year = m.groups()
 <!-- ``` -->
 Use () to capture grouping, use **re.compute** to instantiate a data pattern
 
-```Python
+<!-- ```Python -->
+{% highlight python %}
 # find all returns a complete list
 for m in datepat.finditer(text):
     print(m.groups())
 # ('11', '27', '2012')
 # ('3', '13', '2013'
+{% endhighlight%}
+<!-- ``` -->
+**finditer()** returns the found matchings in an iterator
+
+Replacing strings normally can be done using **str.replace()**, harder pattern
+matching can use **re.sub()**
+```Python
+{% highlight python %}
+text = 'Today is 11/27/2012. PyCon starts 3/13/2013.'
+import re
+re.sub(r'(\d+)/(\d+)/(\d+)', r'\3-\1-\2', text)
+# 'Today is 2012-11-27. PyCon starts 2013-3-13.'
+{% endhighlight%}
 ```
