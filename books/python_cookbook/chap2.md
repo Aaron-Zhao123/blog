@@ -71,11 +71,11 @@ for m in datepat.finditer(text):
 
 Replacing strings normally can be done using **str.replace()**, harder pattern
 matching can use **re.sub()**
-```Python
 {% highlight python %}
+```Python
 text = 'Today is 11/27/2012. PyCon starts 3/13/2013.'
 import re
 re.sub(r'(\d+)/(\d+)/(\d+)', r'\3-\1-\2', text)
 # 'Today is 2012-11-27. PyCon starts 2013-3-13.'
-{% endhighlight%}
 ```
+{% endhighlight%}
