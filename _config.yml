@@ -2,6 +2,7 @@ title: Aaron's Wiki
 description: Hello, thanks for visiting my personal wiki.
 show_downloads: false
 is_user_page: true
-highlighter: pygments
+markdown: kramdown
+highlighter: rouge
 google_analytics:
 theme:
