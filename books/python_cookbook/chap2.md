@@ -5,7 +5,6 @@ layout: default
 # Chapter 2: Strings and File Processing
 
 ## re.split()
-<!-- ```Python -->
 {% highlight python %}
 line = 'asdf fjdk; afed, fjek,asdf, foo'
 import re
@@ -13,7 +12,7 @@ re.split(r'[;,\s]\s*', line)
 # output
 # ['asdf', 'fjdk', 'afed', 'fjek', 'asdf', 'foo']
 {% highlight python %}
-<!-- ``` -->
+
 
 **re.split** supports splitting with multiple keywords.
 
