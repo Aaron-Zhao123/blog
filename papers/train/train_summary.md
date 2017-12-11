@@ -4,18 +4,18 @@ layout: default
 
 # [](#list) List of papers
   * Training [details](#Training)
-  1. **DSD:  DENSE-SPARSE-DENSE Training For Deep Neural Network**
-  2. **Understanding deep learning requires rethinking generalization**
-  3. **Accurate, Large Minibatch SGD:Training ImageNet in 1 Hour**
-  4. **Revisiting Unreasonable Effectiveness of Data in Deep Learning Era**
+  1. DSD:  DENSE-SPARSE-DENSE Training For Deep Neural Network
+  2. Understanding deep learning requires rethinking generalization
+  3. Accurate, Large Minibatch SGD:Training ImageNet in 1 Hour
+  4. Revisiting Unreasonable Effectiveness of Data in Deep Learning Era
 
   * New Models/Concepts [details](#concepts)
-  1. **Dynamic Routing Between Capsules**
-  2. **Generative Adversarial Networks: An Overview**
-  3. **Diffusion-Convolutional Neural Networks**
-  4. **Sparse Diffusion-Convolutional Neural Networks**
-  5. **Matrix Capsules with EM Routing**
-
+  1. Dynamic Routing Between Capsules
+  2. Generative Adversarial Networks: An Overview
+  3. Diffusion-Convolutional Neural Networks
+  4. Sparse Diffusion-Convolutional Neural Networks
+  5. Matrix Capsules with EM Routing
+  6. Multi-Scale Dense Networks for Resource Efficient Image Classification
 
 * * *
 
@@ -34,7 +34,6 @@ This paper trained a network with data that has completely random labeling.
 In this case, the network is able to obtain zero training error which proves: 1. network can memorize the entire dataset because of the large number of parameters it has. 2. Noise can be embraced by the network in a brute-force manner.
 
 #### **3. Accurate, Large Minibatch SGD:Training ImageNet in 1 Hour**
-
 **Review**([Paper link](https://research.fb.com/wp-content/uploads/2017/06/imagenet1kin1h5.pdf))
 Using synchronous SGD to train is very popular in distributed computing.
 The problem is, if giving a large minibatch to each GPU, the neural network model loses its generalization and thus has worse accuracy.
@@ -112,3 +111,18 @@ is to use a threshold to make the network sparse.
 **Review**([Paper link]())
 Viewpoint changes have complicated effects on pixel intensities but simple, linear effects on the pose matrix that represents the relation-ship between an object or object-part and the viewer. Capsules use high-dimensional coincidence filtering:  a familiar object can be detected by looking for agreement between votes for its pose matrix.
 As the viewpoint changes, the pose matrices of the parts and the whole will change in a coordinated way so that any agreement between votes from different parts will persist.
+
+#### **6. Multi-Scale Dense Networks for Resource Efficient Image Classification (ICLR 2018)**
+**Review**([Paper link](https://arxiv.org/abs/1703.09844))
+This is a good paper, the motivation is clear and simple:
+why do we choose between either wasting computational resources by applying an unnecessarily expensive model to easy images, or making mistakes by using an efficient model that fails to recognize difficult images?
+
+The desired system should automatically use small networks when test images are easy, and bigger networks when test images are hard.
+
+CNNs learn data representation and the classifier jointly:
+1. The features in the last layer are extracted directly to be used by the classifier, whereas earlier features are not. The inherent dilemma is that different kinds of features need to be extracted depending on how many layers are left until the classification.
+2. The features in different layers of the network may have different scale.
+
+The suggested model basically builds cascade classifiers (in the middle of the network). To avoid losing information when layer count is large, the proposed structure maintains multi-scale feature maps. To avoid classifiers at current layer destroys accuracy of final layer, the author proposed a variant of densenet can avoid this problem since deep connectivity allows later layers to bypass features optimized for short-terms, and thus the final prediction is independent of the location of of the intermediate classifier.
+
+A typical classifier in their design is two convolutional layers followed by one average pooling layer and one linear layer.

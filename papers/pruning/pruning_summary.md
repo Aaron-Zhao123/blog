@@ -31,11 +31,15 @@ Parallelism (watiting to be released on ISCA 2017)
     6. Hardware-oriented Approximation of Convolutional Neural Networks
     7. Training deep neural networks with low precision multiplications
     8. Quantized Neural Networks: Training Neural Networks with Low Precision Weights and Activations
+    9. Variational Network Quantization
+    10. Fixed Point Quantization of Deep Convolutional Networks
+    11. Flexpoint: An Adaptive Numerical Format for EfficientTraining of Deep Neural Networks
 
   * Efficient Structures [details](#fineprune)
     1. SplitNet: Learning to Semantically Split Deep Networks for Parameter Reduction and Model Parallelization
     2. CirCNN: Accelerating and Compressing Deep Neural Networks Using Block-Circulant Weight Matrices
     3. An Exploration of Parameter Redundancy in Deep Networks with Circulant Projections
+    4. Shift: A Zero FLOP, Zero Parameter Alternative to Spatial Convolutions
 
 * * *
 
@@ -204,9 +208,36 @@ The convergence algorithm of dynamic fixed point is shown in this paper.
 This works shows very aggressive quantization: AlexNet with 1-bit weights and
 2-bits activations.
 The gradients are also quantized to 6 bits.
-When training BNNs, they constraint acivations to be either +1 or -1.
+When training BNNs, they constraint activations to be either +1 or -1.
 The gradients propagation is a discrete function since they ignored noise, and
 batch norm becomes shifting.
+
+#### 9. Variational Network Quantization (ICLR 2018)
+**Review**([Paper link])
+Bayesian methods for network compression, it learns a posterior distribution over network weights under a sparsity-inducing prior.
+The posterior distribution over the network allows identifying redundancies through:
+1. weights with expected values close to zero
+2. weights with a large variance
+3. the posterior variance over non-pruned parameters can be used to determine the required bit-precision.
+
+The pruned and quantized weights has an interesting distribution: a major peak at round zero and two peaks at the sides.
+
+#### 10. Fixed Point Quantization of Deep Convolutional Networks (ICML 2016)
+**Review**([Paper link](https://arxiv.org/abs/1511.06393))
+Convert a pretrained network into a fixed-point model using the optimization
+strategy based on signal-to-noise-ratio.
+Simply quantizing all layers in a network with uniform bit-width value gives a
+bad performance.
+
+#### 11. Flexpoint: An Adaptive Numerical Format for EfficientTraining of Deep Neural Networks
+**Review**([Paper link](https://arxiv.org/abs/1711.02213))
+This is a special floating point arithmetic with a section of the exponent that
+is shared, but also maintains their own exponent bits.
+
+#### 12. Convolutional Neural Networks using Logarithmic Data Representation
+**Review**([Paper link](https://arxiv.org/abs/1603.01025))
+
+
 
 
 * * *
@@ -245,3 +276,10 @@ Theoretically, this is a pruning method that prunes information in the
 frequency domain.
 It is therefore very hard to argue a formally that it could reach a global minimum
 on the optimization space?
+
+#### 4. Shift: A Zero FLOP, Zero Parameter Alternative to Spatial Convolutions
+**Review**([Paper link](https://arxiv.org/abs/1711.08141))
+The shift operation moves each channel of its input tensor in a different spatial
+direction.
+A shift-based module interleaves shift operations with point-wise convolutions,  
+which further mixes spatial information across channels.
