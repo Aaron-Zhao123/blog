@@ -166,3 +166,19 @@ import os
 import textwrap
 print(textwrap.fill(s, os.get_terminal_size().columns))
 ```
+
+# Additional Info: Regular Expressions
+https://docs.python.org/3/library/re.html
+`.` (Dot.) In the default mode.
+`^`(Caret.) Matches the start of the string.
+`$` Matches the end of the string or just before the newline at the end of the string.
+`*` causes the resulting RE to match 0 or more repetitions of the preceding RE, as many repetitions as are possible. ab* will match ‘a’, ‘ab’, or ‘a’ followed by any number of ‘b’s.
+`+` causes the resulting RE to match 1 or more repetitions of the preceding RE, as many repetitions as are possible. ab* will match ‘ab’, or ‘a’ followed by any number of ‘b’s.
+`?` causes the resulting RE to match 0 or 1 repetitions of the preceding RE. ab? will match either ‘a’ or ‘ab’.
+`{m,n}`
+Causes the resulting RE to match from m to n repetitions of the preceding RE, attempting to match as many repetitions as possible. For example, a{3,5} will match from 3 to 5 'a' characters. Omitting m specifies a lower bound of zero, and omitting n specifies an infinite upper bound. As an example, a{4,}b will match 'aaaab' or a thousand 'a' characters followed by a 'b', but not 'aaab'. The comma may not be omitted or the modifier would be confused with the previously described form.
+`{m,n}?`
+Causes the resulting RE to match from m to n repetitions of the preceding RE, attempting to match as few repetitions as possible. This is the non-greedy version of the previous qualifier. For example, on the 6-character string 'aaaaaa', a{3,5} will match 5 'a' characters, while a{3,5}? will only match 3 characters.
+[]
+Used to indicate a set of characters. [amk] will match 'a', 'm', or 'k'.
+[0-5][0-9] will match all the two-digits numbers from 00 to 59, and [0-9A-Fa-f] will match any hexadecimal digit. 

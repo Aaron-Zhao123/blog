@@ -22,6 +22,9 @@ Parallelism (watiting to be released on ISCA 2017)
 
   * Regularizers [details](#reg)
 
+  * Knowledge Distillation[details](#knowdist)
+    1. Apprentice: Using knowledge distillation techniques to improve low-precision networks accuracy
+
   * Quantization [details](#quan)
     1. Trained Ternary Quantization
     2. Quantized Neural Networks: Training Neural Networks with Low Precision Weights and Activations
@@ -34,6 +37,11 @@ Parallelism (watiting to be released on ISCA 2017)
     9. Variational Network Quantization
     10. Fixed Point Quantization of Deep Convolutional Networks
     11. Flexpoint: An Adaptive Numerical Format for EfficientTraining of Deep Neural Networks
+    12. Convolutional Neural Networks using Logarithmic Data Representation
+    13. Ternary Neural Networks with Fine-Grained Quantization
+    14. Training Quantized Nets: A Deeper Understanding
+    15. ShiftCNN: Generalized Low-Precision Architecture for Inference of Convolutional Neural Networks
+    16. LogNet: Energy-efficient Neural Networks Using Logarithmic Computation
 
   * Efficient Structures [details](#fineprune)
     1. SplitNet: Learning to Semantically Split Deep Networks for Parameter Reduction and Model Parallelization
@@ -116,6 +124,11 @@ The results are reported on Cifar10 and SVHN, both of these are relatively
 small datasets.
 They mentioned exploring run-time pruning in their future works.
 
+#### 8. To prune, or not to prune: exploring the efficacy of pruning for model compression
+This paper presents a threshold based pruning method and shows very good compression results on mobilnet.
+They conclude that large-sparse models outperform comparably-sized small-dense models across a diverse set of neural network architectures.
+I think the reason of their high compression rate on mobilent is because that they do not prune the parameters in the one standard convolution layer and in the depthwise convolution layers since there are very few parameters in these layers (1.1% of the total number of parameters)
+
 * * *
 
 ## <a id="fineprune"></a>Fine-grained Pruning
@@ -139,6 +152,22 @@ This paper classifies pruning into various granularities:
 The interesting observation they make is that:
 1. sparsity structure does not impact quantization (Figure 6)
 2. Vector-wise pruning shows similar results to valina pruning (Table 2)
+
+
+* * *
+## <a id="kdist"></a>Knowledge Distillation
+#### 1. Apprentice: Using Knowledge Distillation Techniques to improve low-precision network accuracy
+**Review**([Paper link]())
+Knowledge distillation refers to using a teacher network to guide a student network.
+The new cost functions contains costs of two separated networks and a knowledge distillation term.
+The knowledge distillation term is simply a cross entropy function with two inputs, the first input is the pre-softmax logits of the teacher network and the second input is the post-softmax results of the student network.
+
+In this paper, there are three schemes.
+In the first scheme, a low-precision network and a full-precision network are jointly trained from scratch using knowledge distillation scheme.
+In the second scheme, they start with a full-precision trained network and transfer knowledge from this trained network continuously to train a low-precision network from scratch.
+In the third scheme, they start with a trained full-precision large network and an student network that has been initialised with full-precision weights.
+
+
 
 * * *
 ## <a id="quan"></a>Quantization
@@ -236,8 +265,36 @@ is shared, but also maintains their own exponent bits.
 
 #### 12. Convolutional Neural Networks using Logarithmic Data Representation
 **Review**([Paper link](https://arxiv.org/abs/1603.01025))
+This paper presents how to quantize a network in log domain.
+This includes using base-2 logs and normal base logs.
+**Convolution layers are more sensitive than fc layers.**
+The guess is fc weights are used only once per input image but convolutional
+weights are reused multiple times.
+The results are presented in the following table, conv layers are 5 bits but fc layers are 4 bits.
+
+| Networks     | Linear | Base 2 log | Base root 2 log|
+|:-------------|:-------|:-----------|:---------------|
+| AlexNet      | 73.6%  | 70.6%      | 75.1%          |
+| Vgg16        | 85.1%  | 83.4%      | 89.0%          |
 
 
+#### 13. Ternary Neural Networks with Fine-Grained Quantization
+**Review**([Paper link]())
+They hypothesize that weights that learn different types of features may follow different distributions.
+Combining all the weights together represents a mixture of various distributions, and ternarizing them using a single threshold (∆) and magnitude (α) may not preserve the distributions of individual weights.
+
+#### 14. Training Quantized Nets: A Deeper Understanding
+**Review**([Paper link]())
+
+#### 15. ShiftCNN: Generalized Low-Precision Architecture for Inference of Convolutional Neural Networks
+**Review**([Paper link]())
+This paper shows surprisingly good results for shift based quantization.
+The key concept is to allow multiple shifts to occur on weights.
+This increases resolution by a significant amount.
+
+#### 16. LogNet: Energy-efficient Neural Networks Using Logarithmic Computation
+**Review**([Paper link]())
+This is a hardware implmentation of the original LogNet paper to further prove that elimination of bulky multipliers increases energy efficiency. 
 
 
 * * *
@@ -283,3 +340,8 @@ The shift operation moves each channel of its input tensor in a different spatia
 direction.
 A shift-based module interleaves shift operations with point-wise convolutions,  
 which further mixes spatial information across channels.
+
+#### 5. Model compression as constrained optimization, with application to neural nets. (2017 NIPS)
+This theoretical paper presents a learning framework that works with any compression techniques.
+The basic idea is to use augmented Lagrangian and alternating optimization.
+Two alternating losses are proposed and represents learning the model and learning the compression respectively.
