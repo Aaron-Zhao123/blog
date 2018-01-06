@@ -9,3 +9,6 @@ layout: default
 [Chapter 1: Data structures](python_cookbook/chap1.html)
 
 [Chapter 2: Strings and File Processing](python_cookbook/chap2.html)
+
+# ConvNet Revisit
+[Chapter 1: Going back to convolutions](conv_nets_basics/chap1.html)
