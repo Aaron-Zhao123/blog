@@ -3,9 +3,9 @@ layout: default
 ---
 
 # Basics
-[Chapter 1: FSM](verilog_basics/chap1.html)
-[Chapter 2: Logic and Timing](verilog_basics/chap2.html)
-[Chapter 3: Memory](verilog_basics/chap3.html)
+* [Chapter 1: FSM](verilog_basics/chap1.html)
+* [Chapter 2: Logic and Timing](verilog_basics/chap2.html)
+* [Chapter 3: Memory](verilog_basics/chap3.html)
 
 
 
