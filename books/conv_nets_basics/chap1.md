@@ -5,7 +5,7 @@ layout: default
 In this chapter, I would like to go back to basic convolution operations --
 rewriting them in C++ to help understanding this basic operation.
 A graphical illustration is provided [here](http://cs231n.github.io/convolutional-networks/)
-by the Standford Team.
+by the Stanford Team.
 
 
 A straightforward implementation is follow the order:
@@ -46,4 +46,4 @@ for (int oc = 0; oc < output_channels; oc += 1) {
 }
 ```
 
-Another implementation is to
+Another implementation is to stat with output channel first then output width/height and finally input channel, height, width
