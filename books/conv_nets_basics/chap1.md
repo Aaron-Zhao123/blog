@@ -47,3 +47,17 @@ for (int oc = 0; oc < output_channels; oc += 1) {
 ```
 
 Another implementation is to stat with output channel first then output width/height and finally input channel, height, width
+```C++
+// output channels
+for (int oc = 0; oc < output_channels; oc += 1) {
+  for (int row = 0; row < out_row; row += 1){
+    for (int col = 0; col < out_col; col+= 1){
+      for (int ic = 0; in < input_channels' ic += 1){
+        for (int wy = 0; wy < kernel_height; wy += 1){
+          for (int wx = 0; wx < kernel_width; wx += 1) {
+            sum[oc][row][col] += weights[oc][ic][wx][wy] * frame_in[ic][wy][wx];
+          }        
+      }
+  }
+}
+```

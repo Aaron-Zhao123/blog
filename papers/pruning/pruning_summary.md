@@ -13,7 +13,10 @@ layout: default
     7. Compact Deep Convolutional Neural Networks with Coarse Pruning
 
   * Fine-grained pruning [details](#fineprune)
-    1. Learning both Weights and Connections for EfficientNeural Networks
+    1. Optimal Brain Damage
+    2. Second order derivatives for network pruning: Optimal Brain Surgeon
+    3. Learning both Weights and Connections for EfficientNeural Networks
+
 
   * Other types of pruning [details](#oprune)
     1. Customizing DNN Pruning to the Underlying Hardware
@@ -61,7 +64,7 @@ Parallelism (watiting to be released on ISCA 2017)
 **Review**([Paper link](https://arxiv.org/pdf/1608.08710)) Fine-grained sparsity requires libraries to explore its advantage. An interesting point: maintaining sparse data structures also creates an additional storage overhead which can be significant for low-precision weights.
 Instead of layer-wise iterative fine-tuning (retraining), they use one-shot pruning and retraining to save retraining time for pruning filters across multiple layers, which is critical for pruning very deep networks.
 Pruning based on sum of absolute kernel weights. Sort the rank based on that metric and prune the ones that have lowest value (very arbitrary in a sense). They introduced both **Independent pruning** and **Greedy pruning** for pruning across multiple layers. In **Independent pruning**, only filters in a same layers are considered, in contrast, **Greedy pruning** takes account of removed values in previous layers.
-In ResNet, the pruning results can be affected by shorcutting connections, to prune the second convolutional layer of the residual block, the corresponding projected feature maps must also be pruned.
+In ResNet, the pruning results can be affected by shortcutting connections, to prune the second convolutional layer of the residual block, the corresponding projected feature maps must also be pruned.
 Smallest filter pruning outperforms feature map pruning with the metrics (eg: mean, std, meanl1, meanl2  ... ).
 
 #### **2. Learning Structured Sparsity in Deep Neural Networks**
@@ -136,9 +139,16 @@ I think the reason of their high compression rate on mobilent is because that th
 * * *
 
 ## <a id="fineprune"></a>Fine-grained Pruning
-#### 1. **Learning both Weights and Connections for Efficient Neural Networks**
+#### **1. Optimal Brain Damage**
+**Review**([Paper link](http://yann.lecun.com/exdb/publis/pdf/lecun-90b.pdf)) Use second-order Taylor expansion to find parameters to prune. Perform second-orderr taylor expansion to emulate the increase in the loss function when a weight is set to zero. The saliency for each parameter was computed using a diagonal Hessian approximation, and the low-saliency parameters were pruned from the network and the network was retrained.
+
+#### **2. Second-order derivatives for network pruning: Optimal Brain Surgeon**
+**Review**([Paper link](http://papers.nips.cc/paper/647-second-order-derivatives-for-network-pruning-optimal-brain-surgeon.pdf))  
+The saliency for each parameter was computed using the inverse Hessian matrix, and the low-saliency weights are pruned and all other weights in the network are updated using the second-order information.
+
+#### 3. **Learning both Weights and Connections for Efficient Neural Networks**
 **Review**([Paper link](https://arxiv.org/pdf/1506.02626))
-Fine-grained pruning, it discussed how to use regularizers and decrease dropouts.
+Fine-grained pruning, it discussed how to use regularizers and decrease dropouts based on sparsity.
 
 
 
