@@ -184,6 +184,15 @@ This can be also viewed as a "conditional" version of dropout.
 This mehtod works by predicting the active blocking units using its local
 activations.
 
+#### 2. **Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer**
+**Review**([Paper link](https://arxiv.org/abs/1701.06538))
+The sparsely-gated mixture of experts consits a number of feed-forward neural
+networks (experts), a trainable gating network select a sparse combination of
+the experts to process each input.
+All parts of the components are trained by backpropagation.
+This model is applied on very large datasets and large recognition tasks.
+
+#### 3. **Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer**
 
 
 * * *
