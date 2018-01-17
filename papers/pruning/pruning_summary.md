@@ -3,7 +3,7 @@ layout: default
 ---
 
 # [](#list) List of papers
-  * Coarse-grained pruning (Filter-wise, Kernel-wise)[details](#coarseprune)
+  * Coarse-grained pruning (Filter-wise, Kernel-wise) [details](#coarseprune)
     1. Pruning Filters for Efficient ConvNets (waiting review)
     2. Learning Structured Sparsity in Deep Neural Networks (waiting review)
     3. Fast ConvNets Using Group-wise Brain Damage (waiting review)
@@ -20,9 +20,12 @@ layout: default
 Parallelism (watiting to be released on ISCA 2017)
     2. Exploring the Regularity of Sparse Structure inConvolutional Neural Networks
 
+  * Conditional Computation[details](#condcompute)
+    1. Conditional Computation in Neural Networks for faster models
+
   * Regularizers [details](#reg)
 
-  * Knowledge Distillation[details](#knowdist)
+  * Knowledge Distillation [details](#kdist)
     1. Apprentice: Using knowledge distillation techniques to improve low-precision networks accuracy
 
   * Quantization [details](#quan)
@@ -63,7 +66,7 @@ Smallest filter pruning outperforms feature map pruning with the metrics (eg: me
 
 #### **2. Learning Structured Sparsity in Deep Neural Networks**
 
-**Review**([Paper link](https://arxiv.org/pdf/1608.08710))
+**Review**([Paper link](https://arxiv.org/abs/1608.03665))
 This paper explores filer-wise, channel-wise, shape-wise and depth-wise
 sparsities. Penalizing multiple weights structures using group-lasso (
 adding arbitrary hyperparameters in the cost function). The interesting observation
@@ -117,7 +120,7 @@ The criteria prunes parameters that have an almost flat gradient of the cost fun
 2.  FLOPs regularization: add extra term into the cost function to regularize flops per feature map. Feature maps with larger flops are penalized.
 
 #### **7. Compact Deep Convolutional Neural Networks with Coarse Pruning**
-**Review**([Paper link]())
+**Review**([Paper link](https://arxiv.org/abs/1610.09639))
 This work chooses pruning masks based on the accuracy performance on the validation
 set, but it might not be correct to do so.
 The results are reported on Cifar10 and SVHN, both of these are relatively
@@ -125,6 +128,7 @@ small datasets.
 They mentioned exploring run-time pruning in their future works.
 
 #### 8. To prune, or not to prune: exploring the efficacy of pruning for model compression
+**Review**([Paper link](https://arxiv.org/abs/1710.01878))
 This paper presents a threshold based pruning method and shows very good compression results on mobilnet.
 They conclude that large-sparse models outperform comparably-sized small-dense models across a diverse set of neural network architectures.
 I think the reason of their high compression rate on mobilent is because that they do not prune the parameters in the one standard convolution layer and in the depthwise convolution layers since there are very few parameters in these layers (1.1% of the total number of parameters)
@@ -155,6 +159,24 @@ The interesting observation they make is that:
 
 
 * * *
+## <a id="condcompute"></a>Conditional Computation / Run-time Pruning
+#### 1. **Conditional Computation in Neural Networks for faster models**
+**Review**([Paper link](https://arxiv.org/abs/1511.06297))
+Conditional computation refers to an operation that selectively
+activating only parts of the network at a time.
+This paper claims it uses reinfocement to learn a conditional computation
+policy.
+The authors propose to learn input-dependent activation probabilities
+for every node (or blocks of nodes), while trying to jointly minimize the
+prediction errors at the output and the number of participating nodes at
+every layer, thus reducing the computational load.
+This can be also viewed as a "conditional" version of dropout.
+This mehtod works by predicting the active blocking units using its local
+activations.
+
+
+
+* * *
 ## <a id="kdist"></a>Knowledge Distillation
 #### 1. Apprentice: Using Knowledge Distillation Techniques to improve low-precision network accuracy
 **Review**([Paper link]())
@@ -173,14 +195,12 @@ In the third scheme, they start with a trained full-precision large network and 
 ## <a id="quan"></a>Quantization
 #### 1. **Trained Ternary Quantization**
 **Review**([Paper link](https://arxiv.org/abs/1612.01064))
-
 Tenary representation is {-1,0,1} which is two-bit signed fixed-point arithmetic.
 It performs 'normalize', 'quantize' and 'scale'.
 The experiments are interesting because ResNets are used on Cifar10 and AlexNet is used on ImageNet, both models contain a high redundancy and thus it is hard to argue their compression results are legit.
 
 #### 2. Quantized Neural Networks: Training Neural Networks with Low Precision Weights and Activations
 **Review**([Paper link](https://arxiv.org/abs/1609.07061))
-
 This paper proposed **Quantized Neural Network**.
 All MAC operations are replaced by XNORs and population counts.
 Quantized version of AlexNet with 1-bit weights and 2-bit activations achieves 51% top-1 accuracy.
@@ -188,7 +208,6 @@ BNN achieves 41.8% top-1 and 67.1% top-5 accuracy using AlexNet and 47.1% top-1 
 
 #### 3. **Incremental Network Quantization: Towards Lossless CNNs with Low-Precision Weights**
 **Review**([Paper link](https://arxiv.org/abs/1702.03044))
-
 Method description:
 1. Partition weights into two groups.
 2. Quantize the first group to powers of tows, retrain the second group.
@@ -209,7 +228,6 @@ They arguet that, using HWG, binary networks can achieve good accuracy with only
 
 #### 5. **DoReFa-Net: Training Low Bitwidth Convolutional Neural Networks with Low Bitwidth Gradients**
 **Review**([Paper link](https://arxiv.org/abs/1606.06160), [Code](https://github.com/ppwwyyxx/tensorpack/tree/master/examples/DoReFa-Net))
-
 DoReFa-Net is built on Tensorpack -- using python monkey patching to override
 the back propagation of gradients.
 They suggest weights and activations can be deterministically quantized, but
@@ -222,7 +240,6 @@ Two major concerns on this work
 
 #### 6. Hardware-oriented Approximation of Convolutional Neural Networks
 **Review**([Paper link](https://arxiv.org/abs/1605.06402), [Code](http://lepsucd.com/?page_id=621))
-
 This thesis describes a number of different quantization methods, including
 fixed-point, dynamic fixed-point and mini-float.
 The author suggests that dynamic fixed-point achieves the best performance.
@@ -294,15 +311,14 @@ This increases resolution by a significant amount.
 
 #### 16. LogNet: Energy-efficient Neural Networks Using Logarithmic Computation
 **Review**([Paper link]())
-This is a hardware implmentation of the original LogNet paper to further prove that elimination of bulky multipliers increases energy efficiency. 
+This is a hardware implmentation of the original LogNet paper to further prove that elimination of bulky multipliers increases energy efficiency.
 
 
 * * *
 ## <a id="quan"></a> Novel Structures
 
 #### 1. **SplitNet: Learning to Semantically Split Deep Networks for Parameter Reduction and Model Parallelization**
-**Review**([Paper link](https://arxiv.org/abs/1612.01064))
-This paper proposed a technique that splits a network into a number of sub-networks
+**Review**([Paper link](https://arxiv.org/abs/1612.01064)) This paper proposed a technique that splits a network into a number of sub-networks
 by learning classes-to-group and features-to-group information.
 The learned network has common lower layers but a number of groups of disjoint
 sets of features.
