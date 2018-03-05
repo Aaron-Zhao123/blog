@@ -1,3 +1,0 @@
-webmaster=(name="Alan Mycroft", url="http://www.cl.cam.ac.uk/~am21/"),
-navtop=1,
-*glob('[12][0-9][0-9][0-9]/index-b.html'),
