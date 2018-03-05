@@ -9,7 +9,7 @@ A collection of popular neural network models: from the old LeNet model to ResNe
 Some interesting network architectures are also collected.
 
 ### [Compression](/blog/papers/compression/compression.html)
-
+Compression is a key research area to enable neural network to be executed efficiently on hardwares.
 
 ### [ Training and Novel Networks](/blog/papers/train/train_summary.html)
 Interesting benchmarks and methods of training neural networks.

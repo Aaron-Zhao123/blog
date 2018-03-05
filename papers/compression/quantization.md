@@ -21,8 +21,6 @@ layout: default
     15. ShiftCNN: Generalized Low-Precision Architecture for Inference of Convolutional Neural Networks
     16. LogNet: Energy-efficient Neural Networks Using Logarithmic Computation
 
-
-
     * * *
     ## <a id="quan"></a>Quantization
     #### 1. **Trained Ternary Quantization**
@@ -128,12 +126,12 @@ layout: default
 
 
     #### 13. Ternary Neural Networks with Fine-Grained Quantization
-    **Review**([Paper link]())
+    **Review**([Paper link](https://arxiv.org/abs/1705.01462))
     They hypothesize that weights that learn different types of features may follow different distributions.
     Combining all the weights together represents a mixture of various distributions, and ternarizing them using a single threshold (∆) and magnitude (α) may not preserve the distributions of individual weights.
 
     #### 14. Training Quantized Nets: A Deeper Understanding
-    **Review**([Paper link]())
+    **Review**([Paper link](https://arxiv.org/abs/1706.02379))
 
     #### 15. ShiftCNN: Generalized Low-Precision Architecture for Inference of Convolutional Neural Networks
     **Review**([Paper link]())
