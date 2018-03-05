@@ -122,3 +122,25 @@ To Read	/Users/aaron/Projects/blog/papers/papers_index.md	/^# To Read$/;"	functi
 1. **SplitNet: Learning to Semantically Split Deep Networks for Parameter Reduction and Model Parallelization**	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 1. **SplitNet: Learning to Semantically Split Deep Networks for Parameter Reduction and Model Parallelization**$/;"	function	line:156
 2. CirCNN: Accelerating and Compressing Deep Neural Networks Using Block-Circulant Weight Matrices	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 2. CirCNN: Accelerating and Compressing Deep Neural Networks Using Block-Circulant Weight Matrices$/;"	function	line:168
 3.An Exploration of Parameter Redundancy in Deep Networks with Circulant Projections	/Users/aaron/Projects/blog/papers/pruning/pruning_summary.md	/^#### 3.An Exploration of Parameter Redundancy in Deep Networks with Circulant Projections$/;"	function	line:179
+Deep Reinforcement learning for dialogue policy optimization	/Users/aaron/Projects/blog/talks/deeprl_in_dialogue.md	/^## Deep Reinforcement learning for dialogue policy optimization$/;"	function	line:1
+General model	/Users/aaron/Projects/blog/talks/deeprl_in_dialogue.md	/^#### General model$/;"	function	line:3
+Belief Tracking	/Users/aaron/Projects/blog/talks/deeprl_in_dialogue.md	/^#### Belief Tracking$/;"	function	line:7
+Reinforcement learning	/Users/aaron/Projects/blog/talks/deeprl_in_dialogue.md	/^#### Reinforcement learning$/;"	function	line:15
+Deep learning for speech and language processing	/Users/aaron/Projects/blog/talks/dl_for_speech_and_language_processing.md	/^## Deep learning for speech and language processing$/;"	function	line:1
+Structured models	/Users/aaron/Projects/blog/talks/dl_for_speech_and_language_processing.md	/^#### Structured models$/;"	function	line:3
+Policy adaptation for dl	/Users/aaron/Projects/blog/talks/dl_for_speech_and_language_processing.md	/^#### Policy adaptation for dl$/;"	function	line:6
+Policy adaption	/Users/aaron/Projects/blog/talks/dl_for_speech_and_language_processing.md	/^#### Policy adaption$/;"	function	line:12
+Multi-agent dialog policy	/Users/aaron/Projects/blog/talks/dl_for_speech_and_language_processing.md	/^#### Multi-agent dialog policy$/;"	function	line:17
+Key-value Store for In-network Computing	/Users/aaron/Projects/blog/talks/in_network_kvalues.md	/^## Key-value Store for In-network Computing$/;"	function	line:1
+In memory database	/Users/aaron/Projects/blog/talks/in_network_kvalues.md	/^#### In memory database$/;"	function	line:4
+KVS accelerations	/Users/aaron/Projects/blog/talks/in_network_kvalues.md	/^#### KVS accelerations$/;"	function	line:7
+Layered Key-value Store	/Users/aaron/Projects/blog/talks/in_network_kvalues.md	/^#### Layered Key-value Store$/;"	function	line:11
+Instruction-level Parallelism	/Users/aaron/Projects/blog/books/comp_arch/chap3.md	/^## Instruction-level Parallelism$/;"	function	line:4
+Dependencies	/Users/aaron/Projects/blog/books/comp_arch/chap3.md	/^#### Dependencies$/;"	function	line:5
+Hazards	/Users/aaron/Projects/blog/books/comp_arch/chap3.md	/^#### Hazards$/;"	function	line:26
+Expoliting ILP	/Users/aaron/Projects/blog/books/comp_arch/chap3.md	/^## Expoliting ILP$/;"	function	line:34
+Basic compiler techniques	/Users/aaron/Projects/blog/books/comp_arch/chap3.md	/^#### Basic compiler techniques$/;"	function	line:39
+Branch Prediction	/Users/aaron/Projects/blog/books/comp_arch/chap3.md	/^#### Branch Prediction$/;"	function	line:52
+Dynamic Scheduling	/Users/aaron/Projects/blog/books/comp_arch/chap3.md	/^#### Dynamic Scheduling$/;"	function	line:59
+Out-of-order Execution	/Users/aaron/Projects/blog/books/comp_arch/chap3.md	/^# Out-of-order Execution$/;"	function	line:66
+VLIW	/Users/aaron/Projects/blog/books/comp_arch/chap3.md	/^# VLIW$/;"	function	line:76

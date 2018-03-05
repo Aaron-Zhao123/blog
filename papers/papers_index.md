@@ -8,17 +8,8 @@ layout: default
 A collection of popular neural network models: from the old LeNet model to ResNet model.
 Some interesting network architectures are also collected.
 
-### [Compression](/blog/papers/pruning/pruning_summary.html)
-A range of compression techniques are summarized:
-* Pruning
-* Quantization
-* Regularization
-* Varying network structure
+### [Compression](/blog/papers/compression/compression.html)
 
-Pruning refers to move away connections in a neural network for compressing the size of it, both fine-grained and coarse-grained
-pruning are discussed.
-Various quantization methods: fixed-point, dynamic fixed-point, binarized, tenary.
-Novel regularizers are considered as compression techniques.
 
 ### [ Training and Novel Networks](/blog/papers/train/train_summary.html)
 Interesting benchmarks and methods of training neural networks.
