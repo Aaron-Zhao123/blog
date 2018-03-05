@@ -18,4 +18,6 @@ pruning are discussed.
 
 #### [Quantization](/blog/papers/compression/pruning.html)
 Various quantization methods: fixed-point, dynamic fixed-point, binarized, tenary.
+
+#### [Regularizations and etc](/blog/papers/compression/other.html)
 Novel regularizers are considered as compression techniques.
