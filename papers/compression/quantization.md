@@ -119,26 +119,28 @@ layout: default
     weights are reused multiple times.
     The results are presented in the following table, conv layers are 5 bits but fc layers are 4 bits.
 
-    | Networks     | Linear | Base 2 log | Base root 2 log|
-    |:-------------|:-------|:-----------|:---------------|
-    | AlexNet      | 73.6%  | 70.6%      | 75.1%          |
-    | Vgg16        | 85.1%  | 83.4%      | 89.0%          |
+|  Networks     | Linear | Base 2 log | Base root 2 log|
+| ------------- | ------- | ----------- |---------------|
+| AlexNet      | 73.6%  | 70.6%      | 75.1%          |
+| Vgg16        | 85.1%  | 83.4%      | 89.0%          |
 
 
-    #### 13. Ternary Neural Networks with Fine-Grained Quantization
-    **Review**([Paper link](https://arxiv.org/abs/1705.01462))
-    They hypothesize that weights that learn different types of features may follow different distributions.
-    Combining all the weights together represents a mixture of various distributions, and ternarizing them using a single threshold (∆) and magnitude (α) may not preserve the distributions of individual weights.
 
-    #### 14. Training Quantized Nets: A Deeper Understanding
-    **Review**([Paper link](https://arxiv.org/abs/1706.02379))
+  #### 13. Ternary Neural Networks with Fine-Grained Quantization
+  **Review**([Paper link](https://arxiv.org/abs/1705.01462))
+  They hypothesize that weights that learn different types of features may follow different distributions.
+  Combining all the weights together represents a mixture of various distributions, and ternarizing them using a single threshold (∆) and magnitude (α) may not preserve the distributions of individual weights.
 
-    #### 15. ShiftCNN: Generalized Low-Precision Architecture for Inference of Convolutional Neural Networks
-    **Review**([Paper link]())
-    This paper shows surprisingly good results for shift based quantization.
-    The key concept is to allow multiple shifts to occur on weights.
-    This increases resolution by a significant amount.
+  #### 14. Training Quantized Nets: A Deeper Understanding
+  **Review**([Paper link](https://arxiv.org/abs/1706.02379))
+  This paper shows a theoretical proof of why algorithms that are quantizing in a non-linear form work relatively well because it can converge to a true minimal in a convex set up.
 
-    #### 16. LogNet: Energy-efficient Neural Networks Using Logarithmic Computation
-    **Review**([Paper link]())
-    This is a hardware implmentation of the original LogNet paper to further prove that elimination of bulky multipliers increases energy efficiency.
+  #### 15. ShiftCNN: Generalized Low-Precision Architecture for Inference of Convolutional Neural Networks
+  **Review**([Paper link]())
+  This paper shows surprisingly good results for shift based quantization.
+  The key concept is to allow multiple shifts to occur on weights.
+  This increases resolution by a significant amount.
+
+  #### 16. LogNet: Energy-efficient Neural Networks Using Logarithmic Computation
+  **Review**([Paper link]())
+  This is a hardware implmentation of the original LogNet paper to further prove that elimination of bulky multipliers increases energy efficiency.
