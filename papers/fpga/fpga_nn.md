@@ -8,6 +8,8 @@ layout: default
   * Inference Architectures [details](#inference)
     1. Can FPGAs Beat GPUs in Accelerating Next-Generation Deep Neural Networks? (waiting review)
     2. Accelerating Binarized Convolutional Neural Networks with Software-Programmable FPGAs
+    3. Optimizing Quantized Neural Networks on FPGAs
+    4. A framework for generating high throughput CNN implementations on FPGAs
 
 * * *
 
@@ -24,3 +26,11 @@ layout: default
  bit-widths, a new input therefore can be buffered for every clock cycle.
  FC only perform a parallel read of inputs and weights and vector-wise parallel
  multiplications.
+
+#### Optimizing Quantized Neural Networks on FPGAs
+**Review**([Paper Link](http://www.isfpga.org/slides/w2.pdf))
+Complexity analysis:
+conv = o(N * M * K * K * OutW * OutH)
+pool = o(N * OutW * OutH)
+conv_mem = o(N * M * K * K)
+Useful demo code on tiling and unrolling

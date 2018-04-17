@@ -22,6 +22,7 @@ layout: default
     1. Customizing DNN Pruning to the Underlying Hardware
 Parallelism (watiting to be released on ISCA 2017)
     2. Exploring the Regularity of Sparse Structure inConvolutional Neural Networks
+    3. Efficient Sparse Winograd Convolutional Neural Networks
 
 * * *
 
@@ -134,3 +135,13 @@ This paper classifies pruning into various granularities:
 The interesting observation they make is that:
 1. sparsity structure does not impact quantization (Figure 6)
 2. Vector-wise pruning shows similar results to valina pruning (Table 2)
+
+#### 3. Efficient Sparse Winograd Convolutional Neural Networks
+**Review**([Paper link](https://arxiv.org/abs/1802.06367))
+The basic block of Winograd works on a certain tile size.
+The valilla pruned model does not provide any savings, sparsity does not
+reduce the number of multiplications.
+An alternative is to prune weights in the Winograd-domain, which
+directly reduces the number of multiplications.
+Note the Relu function can be transformed to the Winograd-domain hence further
+reduces the number of multiplications.
