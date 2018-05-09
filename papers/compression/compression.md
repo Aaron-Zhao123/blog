@@ -3,10 +3,6 @@ layout: default
 ---
 # [](#compression)Compression
 
-
-
-
-
 A range of compression techniques are summarized:
 * Pruning
 * Quantization
