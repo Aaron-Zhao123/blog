@@ -11,11 +11,14 @@ layout: default
     5. Net-Trim: A Layer-wise Convex Pruning of Deep Neural Networks
     6. Pruning Convolutional Neural Networks for Resource Efficient Transfer Learning
     7. Compact Deep Convolutional Neural Networks with Coarse Pruning
+    8. To prune, or not to prune: exploring the efficacy of pruning for model compression
+    9. NIPS: Pruning Networks using Neuron Importance Score Propagation
 
   * Fine-grained pruning [details](#fineprune)
     1. Optimal Brain Damage
     2. Second order derivatives for network pruning: Optimal Brain Surgeon
     3. Learning both Weights and Connections for EfficientNeural Networks
+    4. “Learning-Compression” Algorithms for Neural Net Pruning
 
 
   * Other types of pruning [details](#oprune)
@@ -23,6 +26,7 @@ layout: default
 Parallelism (watiting to be released on ISCA 2017)
     2. Exploring the Regularity of Sparse Structure inConvolutional Neural Networks
     3. Efficient Sparse Winograd Convolutional Neural Networks
+    4. PackNet: Adding Multiple Tasks to a Single Network by Iterative Pruning
 
 * * *
 
@@ -105,6 +109,11 @@ This paper presents a threshold based pruning method and shows very good compres
 They conclude that large-sparse models outperform comparably-sized small-dense models across a diverse set of neural network architectures.
 I think the reason of their high compression rate on mobilent is because that they do not prune the parameters in the one standard convolution layer and in the depthwise convolution layers since there are very few parameters in these layers (1.1% of the total number of parameters)
 
+#### 9. NIPS: Pruning Networks using Neuron Importance Score Propagation (CVPR 2018)
+**Review**([Paper link]())
+The paper suggested another closed-form solution to find the correct neuron to prune. One key insight is that they deduce the importance of features by looking at the matrix’s power series. They then propagate back the importance measure to each layer to construct an importance measure for each node.
+
+
 * * *
 
 ## <a id="fineprune"></a>Fine-grained Pruning
@@ -119,6 +128,10 @@ The saliency for each parameter was computed using the inverse Hessian matrix, a
 **Review**([Paper link](https://arxiv.org/pdf/1506.02626))
 Fine-grained pruning, it discussed how to use regularizers and decrease dropouts based on sparsity.
 
+#### 4. “Learning-Compression” Algorithms for Neural Net Pruning
+**Review**([Paper link]())(CVPR2018)
+Pruning has been traditionally done by ranking or penalizing weights according to some criterion (such as magnitude), removing low-ranked weights and retraining the remaining ones.
+A more direct form of the question is to remove weights that are not important to the loss function. This paper proposes genetic algorithm to search for the best metric that turns out to be very different from magnitude based metrics.
 
 
 
@@ -145,3 +158,8 @@ An alternative is to prune weights in the Winograd-domain, which
 directly reduces the number of multiplications.
 Note the Relu function can be transformed to the Winograd-domain hence further
 reduces the number of multiplications.
+
+#### 4. PackNet: Adding Multiple Tasks to a Single Network by Iterative Pruning
+**Review**([Paper link]())(CVPR 2018)
+Catastrophic forgetting refers to how the neural network loses its accuracy for the original dataset when shown to learn a new dataset while the old dataset becomes invisible.
+The paper presented a method that basically prunes weights away for each task and then it can create task-specific pruning masks to share the weights in the same network to avoid catastrophic forgetting.

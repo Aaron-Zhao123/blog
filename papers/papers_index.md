@@ -22,6 +22,11 @@ Yolo, FastRCNN and etc, all these popular object detections networks.
 How to apply neural networks in other domains.
 A collection of Reinforcement learning techniques, although this is not my field.
 
+
+### [Adversarial attacks](/blog/papers/attack/attack.html)
+Performing adversarial attacks on neural networks breaks the network's
+performance, my focus is on how compressed networks work with that.
+
 ***
 
 # [](#nn)Neural Networks Hardware Optimizations

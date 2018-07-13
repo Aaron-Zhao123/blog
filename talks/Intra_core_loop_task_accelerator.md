@@ -1,5 +1,5 @@
 ##  Intra-Core Loop-task Accelerators for Task Based Parallel Programs
-Speaker: Chris Battern
+Speaker: Chris Batten
 
 #### Task level programming
 * Inter-Core Task-based parallelism: TBB, Cilk

@@ -7,6 +7,7 @@ layout: default
 
     1. Neural Architecture Search with Reinforcement Learning
     2. Learning Transferable Architectures for Scalable Image Recognition
+    3. Learning to Represent Programs with Graphs
 
 * * *
 
@@ -46,3 +47,31 @@ The search strategy costs a pool of workers of 500 GPUs.
 Note:
 "We use a common heuristic to double the number of filters in the output whenever the spatial activation size is reduced in order to maintain roughly constant hidden state dimension."
 This is a very interesting statement.
+
+#### 3. Learning to Represent Programs with Graphs (ICLR 2018)
+**Review**([Paper link](https://arxiv.org/abs/1711.00740))
+This paper considers to tasks: 1) VARNAMING, 2) VARMISUSE.
+They encode programs as graphs, in which the edges represents syntactic
+relationships (e.g. “token before/after”) and semantic relationships
+(“variable last used/written here”, “formal parameter for argument is called stream”, etc.).
+
+#### 4. ZERO-SHOT VISUAL IMITATION (ICLR 2018)
+Imitating expert demonstration is a powerful mechanism for learning to perform
+tasks.
+The expert typically provides multiple demonstrations of a task at training time,
+and this generates data in the form of observation-action pairs from the agent’s point of view.
+A function that predicts the sequence of actions to take the agent from the
+current observation to the goal is called a goal-conditioned skill policy (GSP).
+They use the difference in the output of the forward model for the GSP-selected
+action and the ground truth next state to train the GSP.
+This loss has the effect of making the GSP-predicted action consistent with
+the ground-truth action instead of exactly matching the actions themselves,
+thus ensuring that actions that are different from the ground-truth—but
+lead to the same next state— are not inadvertently penalized.
+To account for varying number of steps required to reach different goals,
+we propose to jointly optimize the GSP with a goal recognizer that
+determines if the current goal has been satisfied.
+This method is zero-shot because because the agent never has access to
+expert actions, neither during training of the GSP nor for task demonstration
+at inference.
+The agent therefore can learn from short video clips or even a sequence of images.
