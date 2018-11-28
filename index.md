@@ -10,7 +10,10 @@ Hello, thanks for visiting my personal wiki.
 
 My name is Aaron Zhao, currently a Phd student at the Computer Lab of University of Cambridge.
 
-I am actively researching on neural network related hardware architectures. A list of my previous projects can be found [here](/blog/projects/projects_sum.html).
+I am actively researching on neural network related hardware architectures.
+A list of my previous projects can be found
+[here](/blog/projects/projects_sum.html).
+You can also view my papers at [Google scholar].(https://scholar.google.com/citations?user=lOOmgEgAAAAJ&hl=zh-CN)
 
 I keep my [Linkedin Profile](https://www.linkedin.com/in/yiren-aaron-zhao-baa8b5116/) up-to-date, please have a visit if you are interested in my education/work experience.
 
@@ -23,31 +26,29 @@ I keep my [Linkedin Profile](https://www.linkedin.com/in/yiren-aaron-zhao-baa8b5
 # [](#interests) Research Experience
 I have previously worked as the following roles:
 
-* Research Intern at Microsoft Research Cambridge (Summer 2017)
-* Machine learning researcher (Intern) at Ocado 10x Research (Summer 2016)
-* Machine learning consultant at Tangi0 (Summer 2016)
-* Research Assistant at Circuits and Systems Research Group at Imperial College London (Summer 2015)
-* Research Assistant at Radio Frequency Laboratory in University of Electronic Science and Technology of China (Summer 2014)
+* Microsoft Research Redmond, Research Intern (Summer 2017)
+* Microsoft Research Cambridge, Research Intern (Summer 2017)
+* Ocado 10x Lab, ML Researcher Intern (Summer 2016)
+* Tangi0, ML Consultant (Summer 2016)
+* CAS Research Group, Imperial College London, Research Assistant (Summer 2015)
+* Radio Frequency Research Lab, University of Electronic Science and Technology of China, Research Assistant (Summer 2014)
 
 
 # [](#interests) Research Interests
 * Machine Learning
-* High Performance Computing, Reconfigurable Computing, Parallel Computing
+* High Performance Computing
+* Reconfigurable Computing
 * Computer Architecture
+* Custom Accelerator Design
 
-
-I have a mixed education background with study experience in various countries.
-I am a Chinese national, but finished my high school in New Zealand and received the NZ Goveners Award.  
-I obtained a _Bachelor of Engineering_ degree in Electrical and Electronic Engineering at Imperial College London.
-After graduating from Imperial with a top-rank score and being awarded with the _Wills Jackson Metal and Price_,
-I finished a _Master of Philosophy_ degree at the Computer Laboratory of University of Cambridge.
-I am now reading a phd dgree at the Computer Laboratory of University of Cambridge supervised by Dr.Robert Mullins.
 
 # [](#interests) Other Interests
-I have a strong interest in business, currently co-funding HorizonEdu with Tommy Jia. We are interested in helping chinese students to apply for oversea universities.
 
-I am a coffee lover, a guitar player and a kickboxer. I had 5 amature fights, 3 non-decisions, 2 wins and 1 loss. I then stopped competing due to knee injuries.
-I am starting to develop an interest in brazilian jiu jitsu as well.
+I am
+* a coffee lover
+* a guitar player
+* a kickboxer!
+* I am starting a journey on brazilian jiu jitsu as well.
 
 <!--
 # [](#projects)Projects

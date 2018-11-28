@@ -17,11 +17,9 @@ Mainly focus on keeping in track with state-of-the-art NLP models.
 ### [Object Detections](/blog/papers/detect/detect.html)
 Yolo, FastRCNN and etc, all these popular object detections networks.
 
-
 ### [Reinforcement learning](/blog/papers/nn_app/app_summary.html)
 How to apply neural networks in other domains.
 A collection of Reinforcement learning techniques, although this is not my field.
-
 
 ### [Adversarial attacks](/blog/papers/attack/attack.html)
 Performing adversarial attacks on neural networks breaks the network's

@@ -126,3 +126,8 @@ CNNs learn data representation and the classifier jointly:
 The suggested model basically builds cascade classifiers (in the middle of the network). To avoid losing information when layer count is large, the proposed structure maintains multi-scale feature maps. To avoid classifiers at current layer destroys accuracy of final layer, the author proposed a variant of densenet can avoid this problem since deep connectivity allows later layers to bypass features optimized for short-terms, and thus the final prediction is independent of the location of of the intermediate classifier.
 
 A typical classifier in their design is two convolutional layers followed by one average pooling layer and one linear layer.
+
+## <a id="Decentralized"></a>Decentralized Training
+
+#### **1. Communication-Efficient Learning of Deep Networks from Decentralized Data**
+**Review**([Paper link](https://arxiv.org/abs/1602.05629))
