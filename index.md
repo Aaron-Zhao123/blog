@@ -13,7 +13,7 @@ My name is Aaron Zhao, currently a Phd student at the Computer Lab of University
 I am actively researching on neural network related hardware architectures.
 A list of my previous projects can be found
 [here](/blog/projects/projects_sum.html).
-You can also view my papers at [Google scholar].(https://scholar.google.com/citations?user=lOOmgEgAAAAJ&hl=zh-CN)
+You can also view my papers at [Google scholar](https://scholar.google.com/citations?user=lOOmgEgAAAAJ&hl=zh-CN).
 
 I keep my [Linkedin Profile](https://www.linkedin.com/in/yiren-aaron-zhao-baa8b5116/) up-to-date, please have a visit if you are interested in my education/work experience.
 
