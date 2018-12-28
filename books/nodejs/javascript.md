@@ -1,3 +1,18 @@
+## Flow
+
+Normally, put `.js` files in `<head>` using `<script>...</script>`.
+
+```html
+<html>
+<head>
+  <script src="/static/js/abc.js"></script>
+</head>
+<body>
+  ...
+</body>
+</html>
+```
+
 ## DataTypes
 
 * No int and float
