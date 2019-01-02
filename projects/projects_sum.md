@@ -40,6 +40,7 @@ using transfer learning
 # Compression means safe CNNs?
 
 [paper link](https://arxiv.org/abs/1810.00208)
+(In submission)
 
 <img src="transferable.png" alt="online" style="width:;height:150px;">
 
@@ -50,6 +51,7 @@ The broader implications are that attacks on DNN classifiers that involve advers
 # The Taboo Trap
 
 [paper link](https://arxiv.org/abs/1811.07375)
+(In submission)
 
 <img src="taboo.png" alt="taboo" style="width:;height:150px;">
 
