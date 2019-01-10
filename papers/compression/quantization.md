@@ -34,6 +34,7 @@ layout: default
     4. Quantized Neural Networks: Training Neural Networks with Low Precision Weights and Activations
     5. Training Quantized Nets: A Deeper Understanding
     6. Training and Inference with Integers in Deep Neural Networks
+    7. Error Compensated Quantized SGD and its Applications to Large-scale Distributed Optimization
 
 
 ## <a id="strategy"></a> Quantization Strategies
@@ -143,7 +144,7 @@ Method description:
 3. Go back to 1 until all weights are quantized.
 
 The results are amazing, 89× on Alexnet with -1.47%/-0.96% on top1/top5 accuracies.
- 
+
 #### 2. ShiftCNN: Generalized Low-Precision Architecture for Inference of Convolutional Neural Networks
 **Review**([Paper link]())
 This paper shows surprisingly good results for shift based quantization.
@@ -212,7 +213,7 @@ The gradients are also quantized to 6 bits.
 When training BNNs, they constraint activations to be either +1 or -1.
 The gradients propagation is a discrete function since they ignored noise, and
 batch norm becomes shifting.
- 
+
 
 #### 5. Training Quantized Nets: A Deeper Understanding
 **Review**([Paper link](https://arxiv.org/abs/1706.02379))
@@ -223,3 +224,27 @@ This paper shows a theoretical proof of why algorithms that are quantizing in a 
 This work focuses on training and inference with interger-based arithmetic.
 They propose quantizing WAGE (weights, activations, gradients and errors).
 The error term refers to the gradients on activations, these values turn out to be very small.
+
+#### 7. Error Compensated Quantized SGD and its Applications to Large-scale Distributed Optimization (ICML 2018)
+**Review**([Paper link]())
+This work focuses on reducing the communication required in SGD
+in distributed training.
+In distributed SGD.
+Every node initializes its local model replica using
+the same random seed,
+to ensure the consistency of all model replicas.
+In the t-th iteration,
+each node randomly selects a mini-batch of training samples,
+computes local gradients,
+and then broadcasts to all the other nodes.
+When one node gathers all the local gradients sent by other nodes,
+global gradients can be computed and used to update model parameters.
+
+The proposed QSGD has an error-feedback mechanism.
+In each local node, it collects the previous quantization error (qe)
+and feed this to the current SGD update (Quan(g_(t) + qe_(t))).
+Of course, it then dual-update the quantization error
+(qe_(t+1) = Quan(g_(t) + qe_(t)) - g_(t)).
+
+Given the feedback process, the paper then nicely prove the convergence of
+its quantized SGD using convex optimization.

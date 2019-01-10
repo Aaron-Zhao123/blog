@@ -7,8 +7,6 @@ layout: default
 [paper link](https://arxiv.org/abs/1810.05331)
 (Accepted in ICLR 2019)
 
-
-
 <img src="fbs.png" alt="mayo" style="height:150px;">
 
 We propose feature boosting and suppression (FBS) to dynamically amplify and suppress output channels computed by the convolutional layer in a CNN.
@@ -37,10 +35,10 @@ Using Mayo, users can generate smaller models for the purporse of:
 * slim large models on a smaller dataset with fewer labels
 using transfer learning
 
-# Compression means safe CNNs?
+# Compress or not
 
 [paper link](https://arxiv.org/abs/1810.00208)
-(In submission)
+(Accepted in SysML2019)
 
 <img src="transferable.png" alt="online" style="width:;height:150px;">
 
@@ -61,7 +59,6 @@ The Taboo Trap is a detection mechanisms that works against adversarial samples 
 We train our DNN so that, as long as it is working as intended on the kind of inputs we expect, its behavior is constrained, in that a set of behaviors are taboo. If it is exposed to adversarial samples, they will often cause a taboo behavior, which we can detect. As an analogy, we can imagine that we are teaching our robot good manners; if it’s ever rude, we know it’s come under some bad influence. This defence mechanism is very simple and, although it involves a modest increase in training, has almost zero computation overhead at runtime – making it particularly suitable for use in embed- ded systems.
 
 # Online Arithmetic
-
 
 [paper link](https://ieeexplore.ieee.org/document/7929191)
 (Published in FPT2018)

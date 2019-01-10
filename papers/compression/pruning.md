@@ -19,6 +19,7 @@ layout: default
     2. Second order derivatives for network pruning: Optimal Brain Surgeon
     3. Learning both Weights and Connections for EfficientNeural Networks
     4. “Learning-Compression” Algorithms for Neural Net Pruning
+    5. Deep k-Means: Re-Training and Parameter Sharing with Harder Cluster Assignments for Compressing Deep Convolutions
 
 
   * Other types of pruning [details](#oprune)
@@ -121,7 +122,7 @@ The paper suggested another closed-form solution to find the correct neuron to p
 **Review**([Paper link](http://yann.lecun.com/exdb/publis/pdf/lecun-90b.pdf)) Use second-order Taylor expansion to find parameters to prune. Perform second-orderr taylor expansion to emulate the increase in the loss function when a weight is set to zero. The saliency for each parameter was computed using a diagonal Hessian approximation, and the low-saliency parameters were pruned from the network and the network was retrained.
 
 #### **2. Second-order derivatives for network pruning: Optimal Brain Surgeon**
-**Review**([Paper link](http://papers.nips.cc/paper/647-second-order-derivatives-for-network-pruning-optimal-brain-surgeon.pdf))  
+**Review**([Paper link](http://papers.nips.cc/paper/647-second-order-derivatives-for-network-pruning-optimal-brain-surgeon.pdf))
 The saliency for each parameter was computed using the inverse Hessian matrix, and the low-saliency weights are pruned and all other weights in the network are updated using the second-order information.
 
 #### 3. **Learning both Weights and Connections for Efficient Neural Networks**
@@ -133,6 +134,13 @@ Fine-grained pruning, it discussed how to use regularizers and decrease dropouts
 Pruning has been traditionally done by ranking or penalizing weights according to some criterion (such as magnitude), removing low-ranked weights and retraining the remaining ones.
 A more direct form of the question is to remove weights that are not important to the loss function. This paper proposes genetic algorithm to search for the best metric that turns out to be very different from magnitude based metrics.
 
+#### 5. "Deep k-Means: Re-Training and Parameter Sharing with Harder Cluster Assignments for Compressing Deep Convolutions"
+**Review**([Paper link]())(ICML2018)
+This paper proposes to put the cost of K-means as a regularization
+term into the cost function of SGD.
+The learned weights are thus more suitable for a K-means clustering.
+The SVD factors of K-means are lazy computed -- meaning that they only update
+after a few epochs.
 
 
 ## <a id="oprune"></a>Other types of Pruning
