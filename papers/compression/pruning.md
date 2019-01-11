@@ -13,6 +13,7 @@ layout: default
     7. Compact Deep Convolutional Neural Networks with Coarse Pruning
     8. To prune, or not to prune: exploring the efficacy of pruning for model compression
     9. NIPS: Pruning Networks using Neuron Importance Score Propagation
+    10. Discrimination-aware Channel Pruning for Deep Neural Networks
 
   * Fine-grained pruning [details](#fineprune)
     1. Optimal Brain Damage
@@ -20,6 +21,9 @@ layout: default
     3. Learning both Weights and Connections for EfficientNeural Networks
     4. “Learning-Compression” Algorithms for Neural Net Pruning
     5. Deep k-Means: Re-Training and Parameter Sharing with Harder Cluster Assignments for Compressing Deep Convolutions
+    6. Frequency-domain Dynamic Pruning for Convolutional Neural Networks
+    7. Compressing Neural Networks using the Variational Information Bottleneck
+    8. Weightless: Lossy weight encoding for deep neural network compression
 
 
   * Other types of pruning [details](#oprune)
@@ -114,6 +118,15 @@ I think the reason of their high compression rate on mobilent is because that th
 **Review**([Paper link]())
 The paper suggested another closed-form solution to find the correct neuron to prune. One key insight is that they deduce the importance of features by looking at the matrix’s power series. They then propagate back the importance measure to each layer to construct an importance measure for each node.
 
+#### 10. Discrimination-aware Channel Pruning for Deep Neural Networks (NIPS 2018)
+**Review**([Paper link]())
+This paper suggests doing a Lp norm before performing channel pruning.
+p can be any arbitrary numbers to this additional Lp norm is fine-tuned
+on the pruned model.
+The paper suggests that this process helps each channel to gain
+discrimination-power and thus makes pruning easier.
+I simply thin this argument is a bit too vague...
+
 
 * * *
 
@@ -142,8 +155,27 @@ The learned weights are thus more suitable for a K-means clustering.
 The SVD factors of K-means are lazy computed -- meaning that they only update
 after a few epochs.
 
+#### 6. Frequency-domain Dynamic Pruning for Convolutional Neural Networks (NIPS 2018)
+**Review**([Paper link]())(NIPS2018)
+This paper proposes a simple idea of converting convolution to the
+frequency domain and then apply DNS.
+The experiments results are not persuading though, since it's all about
+alexnet on imagnet and resent on cifar.
+
+#### 7. Compressing Neural Networks using the Variational Information Bottleneck
+**Review**([Paper link]())(ICML2018)
+This paper proposes a information bottleneck.
+Minimization of this information theoretic bound reduces the redundancy between adjacent layers by aggregating useful information into a subset of neurons that can be preserved.
+In contrast, the activations of disposable neurons are shut off via an attractive form of sparse regularization that emerges naturally from this framework, providing tangible advantages over traditional sparsity penalties without contributing additional tuning parameters to the energy landscape.
+
+#### 8. Weightless: Lossy weight encoding for deep neural network compression
+**Review**([Paper link]())(ICML2018)
+Weightless is a lossy encoding scheme based on Bloomier filters.
+The idea of Bloomier filter is a loassy hashing system with a probabilistic false positive answer.
+This compression results are not that impressive, but it seems like this hashing mechanism can be very hardware friendly.
 
 ## <a id="oprune"></a>Other types of Pruning
+
 #### 1. **Customizing DNN Pruning to the Underlying Hardware Parallelism**
 
 #### 2. **Exploring the Regularity of Sparse Structure inConvolutional Neural Networks**

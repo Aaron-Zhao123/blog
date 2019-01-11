@@ -4,14 +4,14 @@ layout: default
 
 # [](#nn)Neural Networks Algorithms
 
-### [Models](/blog/papers/nn_models/model_summary.html)
-A collection of popular neural network models: from the old LeNet model to ResNet model.
+### [Vision](/blog/papers/nn_models/model_summary.html)
+A collection of popular neural network models for vision: from the old LeNet model to ResNet model.
 Some interesting network architectures are also collected.
 
 ### [ Training and Novel Networks](/blog/papers/train/train_summary.html)
 Interesting benchmarks and methods of training neural networks.
 
-### [ Speech models](/blog/papers/speech/speech.html)
+### [ Speech and Langauge](/blog/papers/speech/speech.html)
 Mainly focus on keeping in track with state-of-the-art NLP models.
 
 ### [Object Detections](/blog/papers/detect/detect.html)
@@ -27,7 +27,7 @@ performance, my focus is on how compressed networks work with that.
 
 ***
 
-# [](#nn)Neural Networks Hardware Optimizations
+# [](#nn)Neural Network in Hardware
 ### [Compression](/blog/papers/compression/compression.html)
 Compression is a key research area to enable neural network to be executed efficiently on hardwares.
 
@@ -51,9 +51,10 @@ HLS boosts working efficiency on FPGAs. The popular HLS tools include the follow
 
 ***
 
-# [](#networking)Networking
-### [Scheduling Algorithms](/blog/papers/others/scheduling.html)
-My research internship in Microsoft puts a focus on input-buffered switches in data centers
+# [](#networking)Systems
+### [overview](/blog/papers/system/system.html)
+My research internship in Microsoft puts a focus on input-buffered switches in data centers.
+I am also interested in how neural networks work in large distributed systems.
 
 ***
 

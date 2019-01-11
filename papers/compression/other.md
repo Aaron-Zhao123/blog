@@ -11,12 +11,16 @@ layout: default
 
 * Knowledge Distillation [details](#kdist)
   1. Apprentice: Using knowledge distillation techniques to improve low-precision networks accuracy
+  2. Paraphrasing Complex Network: Network Compression via Factor Transfer
 
 * Efficient Structures [details](#fineprune)
   1. SplitNet: Learning to Semantically Split Deep Networks for Parameter Reduction and Model Parallelization
   2. CirCNN: Accelerating and Compressing Deep Neural Networks Using Block-Circulant Weight Matrices
   3. An Exploration of Parameter Redundancy in Deep Networks with Circulant Projections
   4. Shift: A Zero FLOP, Zero Parameter Alternative to Spatial Convolutions
+  5. Model compression as constrained optimization, with application to neural nets
+  6. Learning Versatile Filters for Efficient Convolutional Neural Networks
+  7. ChannelNets: Compact and Efficient Convolutional Neural Networks via Channel-Wise Convolutions
 
 
 
@@ -46,7 +50,9 @@ This model is applied on very large datasets and large recognition tasks.
 
 * * *
 ## <a id="kdist"></a>Knowledge Distillation
+
 #### 1. Apprentice: Using Knowledge Distillation Techniques to improve low-precision network accuracy
+
 **Review**([Paper link]())
 Knowledge distillation refers to using a teacher network to guide a student network.
 The new cost functions contains costs of two separated networks and a knowledge distillation term.
@@ -57,6 +63,13 @@ In the first scheme, a low-precision network and a full-precision network are jo
 In the second scheme, they start with a full-precision trained network and transfer knowledge from this trained network continuously to train a low-precision network from scratch.
 In the third scheme, they start with a trained full-precision large network and an student network that has been initialised with full-precision weights.
 
+#### 2.Paraphrasing Complex Network: Network Compression via Factor Transfer
+**Review**([Paper link]())(NeuralIPS 2018)
+This is a nice piece of work in theory but lacks experiemnts.
+Ordinary (old) knolwedge distillation works on the last layer, where the logits values are directly compared between the students and the teacher.
+Later, attention maps are considereed and teachers' feature maps are compared to students' feature maps.
+I view this paper as building an auto-encoder between the teachers' feature maps and the students' feature maps.
+So knowledge is highly 'distilled' in the auto-encoder's hidden dimension.
 
 * * *
 ## <a id="quan"></a> Novel Structures
@@ -98,10 +111,28 @@ on the optimization space?
 **Review**([Paper link](https://arxiv.org/abs/1711.08141))
 The shift operation moves each channel of its input tensor in a different spatial
 direction.
-A shift-based module interleaves shift operations with point-wise convolutions,  
+A shift-based module interleaves shift operations with point-wise convolutions,
 which further mixes spatial information across channels.
 
 #### 5. Model compression as constrained optimization, with application to neural nets. (2017 NIPS)
+
+**Review**([Paper link]())
 This theoretical paper presents a learning framework that works with any compression techniques.
 The basic idea is to use augmented Lagrangian and alternating optimization.
 Two alternating losses are proposed and represents learning the model and learning the compression respectively.
+
+#### 6. Learning Versatile Filters for Efficient Convolutional Neural Networks.
+
+**Review**([Paper link]())(NIPS 2018)
+The idea is to derive a varity of secondary filters from primary filters, so that once computation is unfolded the capacity of neural network increases.
+For example, given a primary filter of 5\*5, its secondary filters can be 3\*3 and 1\*1.
+So each channel now might have been associated with different filters, but the generated feature volume remains its shape.
+This is equivalent to explore the design flexibility in output feature map dimension.
+The results are promising, but this leaves a auto-ml question of what versatile filters to use?
+
+#### 7. ChannelNets: Compact and Efficient Convolutional Neural Networks via Channel-Wise Convolutions
+
+**Review**([Paper link]())(NIPS 2018)
+This paper proposes a network type, that makes use
+of grouped channel-wise convolutions that have fewer connections.
+This type of convolution then proves to give better performance compared to mobilenets.
