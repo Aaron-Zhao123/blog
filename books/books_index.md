@@ -19,6 +19,8 @@ layout: default
 * [Chapter 1: Basics](nodejs/basic.html)
 * [Chapter 2: Functions](nodejs/function.html)
 * [Chapter 3: More Functions](nodejs/more_function.html)
+* [Chapter 4: Objects](nodejs/objects.html)
+* [Chapter 5: Browser](nodejs/browser.html)
 
 ## Computer Architecture
 

@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="/assets/css/style.css?v=">
     <meta name="viewport" content="width=device-width">
+    <script src="jquery-3.3.1.min.js"></script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -15,18 +16,20 @@
     <div class="wrapper">
       <header>
         <h1>Aaron's Wiki</h1>
-        <!-- <p>Hello, thanks for visiting my personal wiki. My name is Aaron Zhao, a Master student at the Computer Lab of Univeristy of Cambridge. This Wiki contains my research projects, paper reviews and code reviews.</p> -->
-        <h2>Projects</h2>
-        <p class="view"><a href="../projects/past_projects2.html">Past projects</a></p>
-        <p class="view"><a href="">Current projects</a></p>
-        <h2>Paper Reviews</h2>
-        <p class="view"><a href="/papers/nn_models/model_summary.html">Neural Networks</a></p>
-        <p class="view"><a href="">Harware Design</a></p>
-        <h2>Book and Code Reviews</h2>
-        <p class="view"><a href="">Books</a></p>
+        <!-- <p>Hello, thanks for visiting my personal wiki.</p> -->
+        <!-- <h2>Projects</h2> -->
+        <p class="view"><a href="/index">main page</a></p>
+        <p class="view"><a href="/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="/posts/posts_index.html">Posts</a></p>
+        <!-- <p class="view"><a href="/blog/papers/nn_models/model_summary.html">Papers</a></p> -->
+        <!-- <h2>Book and Code Reviews</h2> -->
+        <!-- <p class="view"><a href="">Books</a></p>
         <p class="view"><a href="">Python</a></p>
-        <p class="view"><a href="">C++</a></p>
-        <h2>Contacts</h2>
+        <p class="view"><a href="">C++</a></p> -->
+        <!-- <h2>Contacts</h2> -->
         
 
         
@@ -35,157 +38,162 @@
       </header>
       <section>
 
-      <h1><a href="#Introduction"></a></h1>
-<p>Hello, thanks for visiting my personal wiki.
-My name is Aaron Zhao, a Master student at the Computer Laboratory of University of Cambridge.</p>
+      <script src="assets/js/test.js"></script>
 
-<h1 id="projects"><a href="#projects"></a>Projects</h1>
-<p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>.</p>
+<p><img id="myhead" src="aaron_zhao.png" alt="Aaron Zhao" style="width:150px;height:150px;" /></p>
 
-<p><a href="another-page">Link to another page</a>.</p>
+<h1 id="-about-me"><a href="#Introduction"></a> About Me</h1>
 
-<p>There should be whitespace between paragraphs.</p>
+<p>Hello, thanks for visiting my personal wiki.</p>
 
-<p>There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.</p>
+<p>My name is Aaron Zhao, currently a Phd student at the Computer Lab of University of Cambridge.</p>
 
-<p>This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.</p>
+<p>I am actively researching on neural network related hardware architectures.
+A list of my previous projects can be found
+<a href="/blog/projects/projects_sum.html">here</a>.
+You can also view my papers at <a href="https://scholar.google.com/citations?user=lOOmgEgAAAAJ&amp;hl=zh-CN">Google scholar</a>.</p>
 
-<h2 id="header-2"><a href="#header-2"></a>Header 2</h2>
+<p>I keep my <a href="https://www.linkedin.com/in/yiren-aaron-zhao-baa8b5116/">Linkedin Profile</a> up-to-date, please have a visit if you are interested in my education/work experience.</p>
 
-<blockquote>
-  <p>This is a blockquote following a header.</p>
-
-  <p>When something is important enough, you do it even if the odds are not in your favor.</p>
-</blockquote>
-
-<h3 id="header-3"><a href="#header-3"></a>Header 3</h3>
-
-<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="c1">// Javascript code with syntax highlighting.</span>
-<span class="kd">var</span> <span class="nx">fun</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">lang</span><span class="p">(</span><span class="nx">l</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">dateformat</span><span class="p">.</span><span class="nx">i18n</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'./lang/'</span> <span class="o">+</span> <span class="nx">l</span><span class="p">)</span>
-  <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-</div>
-
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="c1"># Ruby code with syntax highlighting</span>
-<span class="no">GitHubPages</span><span class="o">::</span><span class="no">Dependencies</span><span class="p">.</span><span class="nf">gems</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">gem</span><span class="p">,</span> <span class="n">version</span><span class="o">|</span>
-  <span class="n">s</span><span class="p">.</span><span class="nf">add_dependency</span><span class="p">(</span><span class="n">gem</span><span class="p">,</span> <span class="s2">"= </span><span class="si">#{</span><span class="n">version</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="k">end</span>
-</code></pre>
-</div>
-
-<h4 id="header-4"><a href="#header-4"></a>Header 4</h4>
-
+<h1 id="-education-background"><a href="#interests"></a> Education Background</h1>
 <ul>
-  <li>This is an unordered list following a header.</li>
-  <li>This is an unordered list following a header.</li>
-  <li>This is an unordered list following a header.</li>
+  <li>Imperial College London, BEng in Electrical and Electronic Engineering (2013-2016)</li>
+  <li>University of Cambridge, Mphil in Computer Science (2016-2017)</li>
+  <li>University of Cambridge, Phd in Computer Science (2017-present)</li>
 </ul>
 
-<h5 id="header-5"><a href="#header-5"></a>Header 5</h5>
-
-<ol>
-  <li>This is an ordered list following a header.</li>
-  <li>This is an ordered list following a header.</li>
-  <li>This is an ordered list following a header.</li>
-</ol>
-
-<h6 id="header-6"><a href="#header-6"></a>Header 6</h6>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">head1</th>
-      <th style="text-align: left">head two</th>
-      <th style="text-align: left">three</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">ok</td>
-      <td style="text-align: left">good swedish fish</td>
-      <td style="text-align: left">nice</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">out of stock</td>
-      <td style="text-align: left">good and plenty</td>
-      <td style="text-align: left">nice</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">ok</td>
-      <td style="text-align: left">good <code class="highlighter-rouge">oreos</code></td>
-      <td style="text-align: left">hmm</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">ok</td>
-      <td style="text-align: left">good <code class="highlighter-rouge">zoute</code> drop</td>
-      <td style="text-align: left">yumm</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="theres-a-horizontal-rule-below-this">There’s a horizontal rule below this.</h3>
-
-<hr />
-
-<h3 id="here-is-an-unordered-list">Here is an unordered list:</h3>
+<h1 id="-research-experience"><a href="#interests"></a> Research Experience</h1>
+<p>I have previously worked as the following roles:</p>
 
 <ul>
-  <li>Item foo</li>
-  <li>Item bar</li>
-  <li>Item baz</li>
-  <li>Item zip</li>
+  <li>Microsoft Research Redmond, Research Intern (Summer 2017)</li>
+  <li>Microsoft Research Cambridge, Research Intern (Summer 2017)</li>
+  <li>Ocado 10x Lab, ML Researcher Intern (Summer 2016)</li>
+  <li>Tangi0, ML Consultant (Summer 2016)</li>
+  <li>CAS Research Group, Imperial College London, Research Assistant (Summer 2015)</li>
+  <li>Radio Frequency Research Lab, University of Electronic Science and Technology of China, Research Assistant (Summer 2014)</li>
 </ul>
 
-<h3 id="and-an-ordered-list">And an ordered list:</h3>
-
-<ol>
-  <li>Item one</li>
-  <li>Item two</li>
-  <li>Item three</li>
-  <li>Item four</li>
-</ol>
-
-<h3 id="and-a-nested-list">And a nested list:</h3>
-
+<h1 id="-research-interests"><a href="#interests"></a> Research Interests</h1>
 <ul>
-  <li>level 1 item
-    <ul>
-      <li>level 2 item</li>
-      <li>level 2 item
-        <ul>
-          <li>level 3 item</li>
-          <li>level 3 item</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>level 1 item
-    <ul>
-      <li>level 2 item</li>
-      <li>level 2 item</li>
-      <li>level 2 item</li>
-    </ul>
-  </li>
-  <li>level 1 item
-    <ul>
-      <li>level 2 item</li>
-      <li>level 2 item</li>
-    </ul>
-  </li>
-  <li>level 1 item</li>
+  <li>Machine Learning</li>
+  <li>High Performance Computing</li>
+  <li>Reconfigurable Computing</li>
+  <li>Computer Architecture</li>
+  <li>Custom Accelerator Design</li>
 </ul>
 
-<h3 id="small-image">Small image</h3>
+<h1 id="-other-interests"><a href="#interests"></a> Other Interests</h1>
 
-<p><img src="https://assets-cdn.github.com/images/icons/emoji/octocat.png" alt="" /></p>
+<p>I am</p>
+<ul>
+  <li>a coffee lover</li>
+  <li>a guitar player</li>
+  <li>a kickboxer!</li>
+  <li>I am starting a journey on brazilian jiu jitsu as well.</li>
+</ul>
 
-<h3 id="large-image">Large image</h3>
+<!--
+# [](#projects)Projects
+Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-<p><img src="https://guides.github.com/activities/hello-world/branching.png" alt="" /></p>
+[Link to another page](another-page).
 
-<h3 id="definition-lists-can-be-used-with-html-syntax">Definition lists can be used with HTML syntax.</h3>
+There should be whitespace between paragraphs.
+
+There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+
+
+This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+
+## [](#header-2)Header 2
+
+> This is a blockquote following a header.
+>
+> When something is important enough, you do it even if the odds are not in your favor.
+
+### [](#header-3)Header 3
+
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+```
+
+```ruby
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
+```
+
+#### [](#header-4)Header 4
+
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
+
+##### [](#header-5)Header 5
+
+1.  This is an ordered list following a header.
+2.  This is an ordered list following a header.
+3.  This is an ordered list following a header.
+
+###### [](#header-6)Header 6
+
+| head1        | head two          | three |
+|:-------------|:------------------|:------|
+| ok           | good swedish fish | nice  |
+| out of stock | good and plenty   | nice  |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | yumm  |
+
+### There's a horizontal rule below this.
+
+* * *
+
+### Here is an unordered list:
+
+*   Item foo
+*   Item bar
+*   Item baz
+*   Item zip
+
+### And an ordered list:
+
+1.  Item one
+1.  Item two
+1.  Item three
+1.  Item four
+
+### And a nested list:
+
+- level 1 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+
+### Small image
+
+![](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
+
+### Large image
+
+![](https://guides.github.com/activities/hello-world/branching.png)
+
+
+### Definition lists can be used with HTML syntax.
 
 <dl>
 <dt>Name</dt>
@@ -198,13 +206,13 @@ My name is Aaron Zhao, a Master student at the Computer Laboratory of University
 <dd>Green</dd>
 </dl>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-</code></pre>
-</div>
+```
+Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+```
 
-<div class="highlighter-rouge"><pre class="highlight"><code>The final element.
-</code></pre>
-</div>
+```
+The final element.
+``` -->
 
 
       </section>

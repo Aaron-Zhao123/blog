@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-
-<img src="aaron_zhao.png" alt="Aaron Zhao" style="width:150px;height:150px;">
+<script src="assets/js/test.js"></script>
+<img id="myhead" src="aaron_zhao.png" alt="Aaron Zhao" style="width:150px;height:150px;">
 
 # [](#Introduction) About Me
 

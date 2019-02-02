@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="/assets/css/style.css?v=">
     <meta name="viewport" content="width=device-width">
+    <script src="jquery-3.3.1.min.js"></script>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -15,18 +16,20 @@
     <div class="wrapper">
       <header>
         <h1>Aaron's Wiki</h1>
-        <!-- <p>Hello, thanks for visiting my personal wiki. My name is Aaron Zhao, a Master student at the Computer Lab of Univeristy of Cambridge. This Wiki contains my research projects, paper reviews and code reviews.</p> -->
-        <h2>Projects</h2>
-        <p class="view"><a href="../projects/past_projects2.html">Past projects</a></p>
-        <p class="view"><a href="">Current projects</a></p>
-        <h2>Paper Reviews</h2>
-        <p class="view"><a href="/papers/nn_models/model_summary.html">Neural Networks</a></p>
-        <p class="view"><a href="">Harware Design</a></p>
-        <h2>Book and Code Reviews</h2>
-        <p class="view"><a href="">Books</a></p>
+        <!-- <p>Hello, thanks for visiting my personal wiki.</p> -->
+        <!-- <h2>Projects</h2> -->
+        <p class="view"><a href="/index">main page</a></p>
+        <p class="view"><a href="/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="/posts/posts_index.html">Posts</a></p>
+        <!-- <p class="view"><a href="/blog/papers/nn_models/model_summary.html">Papers</a></p> -->
+        <!-- <h2>Book and Code Reviews</h2> -->
+        <!-- <p class="view"><a href="">Books</a></p>
         <p class="view"><a href="">Python</a></p>
-        <p class="view"><a href="">C++</a></p>
-        <h2>Contacts</h2>
+        <p class="view"><a href="">C++</a></p> -->
+        <!-- <h2>Contacts</h2> -->
         
 
         
@@ -42,8 +45,9 @@
     <tr>
       <th style="text-align: left">Networks</th>
       <th style="text-align: left">Layers</th>
-      <th style="text-align: left">Top1 Error/Top5 Error</th>
+      <th style="text-align: left">Top1/Top5 Error</th>
       <th style="text-align: left">Size</th>
+      <th style="text-align: left">MACs(Million)</th>
       <th style="text-align: left">Year</th>
     </tr>
   </thead>
@@ -53,13 +57,15 @@
       <td style="text-align: left">5</td>
       <td style="text-align: left">99.36 on MNIST</td>
       <td style="text-align: left">451KB</td>
+      <td style="text-align: left"> </td>
       <td style="text-align: left">1998</td>
     </tr>
     <tr>
       <td style="text-align: left"><a href="#alexnet">AlexNet</a></td>
       <td style="text-align: left">8</td>
-      <td style="text-align: left">40.7/18.2</td>
+      <td style="text-align: left">42.5/18.2</td>
       <td style="text-align: left">240MB</td>
+      <td style="text-align: left"> </td>
       <td style="text-align: left">2012</td>
     </tr>
     <tr>
@@ -67,6 +73,7 @@
       <td style="text-align: left">16</td>
       <td style="text-align: left">27/7.4</td>
       <td style="text-align: left">528MB</td>
+      <td style="text-align: left"> </td>
       <td style="text-align: left">2014</td>
     </tr>
     <tr>
@@ -74,38 +81,70 @@
       <td style="text-align: left">19</td>
       <td style="text-align: left">27.3/7.3</td>
       <td style="text-align: left">548MB</td>
+      <td style="text-align: left"> </td>
       <td style="text-align: left">2014</td>
     </tr>
     <tr>
-      <td style="text-align: left">InceptionV1</td>
+      <td style="text-align: left"><a href="#googlenet">GoogleLeNet</a></td>
       <td style="text-align: left">22</td>
-      <td style="text-align: left">22/10.07</td>
+      <td style="text-align: left">22/6.67</td>
       <td style="text-align: left">96MB</td>
+      <td style="text-align: left"> </td>
       <td style="text-align: left">2015</td>
     </tr>
     <tr>
-      <td style="text-align: left">InceptionV3</td>
+      <td style="text-align: left"><a href="#inception">InceptionV1</a></td>
       <td style="text-align: left">22</td>
-      <td style="text-align: left">22/10.07</td>
+      <td style="text-align: left">22/4.8</td>
       <td style="text-align: left">96MB</td>
+      <td style="text-align: left"> </td>
       <td style="text-align: left">2015</td>
     </tr>
     <tr>
-      <td style="text-align: left">ResNet-50</td>
+      <td style="text-align: left"><a href="#inception">InceptionV3</a></td>
+      <td style="text-align: left">22</td>
+      <td style="text-align: left">21.2/5.6</td>
+      <td style="text-align: left">96MB</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">2015</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="#resnet">ResNet-50</a></td>
       <td style="text-align: left">50</td>
       <td style="text-align: left">24.01/7.02</td>
       <td style="text-align: left">102MB</td>
+      <td style="text-align: left"> </td>
       <td style="text-align: left">2015</td>
     </tr>
     <tr>
-      <td style="text-align: left">ResNet-200</td>
+      <td style="text-align: left"><a href="#resnet">ResNet-200</a></td>
       <td style="text-align: left">200</td>
       <td style="text-align: left">21.66/5.79</td>
       <td style="text-align: left">102MB</td>
+      <td style="text-align: left"> </td>
       <td style="text-align: left">2015</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="#snet">SqueezeNet</a></td>
+      <td style="text-align: left">224</td>
+      <td style="text-align: left">42.5/18.7</td>
+      <td style="text-align: left">4.8MB</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">2017</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="#mobilenet">MoblieNets</a></td>
+      <td style="text-align: left">224</td>
+      <td style="text-align: left">29.3/10.5</td>
+      <td style="text-align: left">17MB</td>
+      <td style="text-align: left">569</td>
+      <td style="text-align: left">2017</td>
     </tr>
   </tbody>
 </table>
+
+<hr />
+<h1 id="paper-reviews">Paper reviews</h1>
 
 <h2 id="alexnet"><a href="#alexnet"></a>AlexNet</h2>
 <p><strong>Review</strong>(<a href="http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf">Paper link</a>)
@@ -146,6 +185,174 @@ Normally train with a decaying learning rate and around 70 epochs.</p>
 }
 </code></pre>
 </div>
+<h2 id="googlenet"><a href="#googlenet"></a>GoogLeNet</h2>
+<p><strong>Review</strong>(<a href="https://arxiv.org/pdf/1409.4842">Paper link</a>)
+<strong>Bibtex</strong></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>@article{DBLP:journals/corr/SzegedyLJSRAEVR14,
+  author    = {Christian Szegedy and
+               Wei Liu and
+               Yangqing Jia and
+               Pierre Sermanet and
+               Scott E. Reed and
+               Dragomir Anguelov and
+               Dumitru Erhan and
+               Vincent Vanhoucke and
+               Andrew Rabinovich},
+  title     = {Going Deeper with Convolutions},
+  journal   = {CoRR},
+  volume    = {abs/1409.4842},
+  year      = {2014},
+  url       = {http://arxiv.org/abs/1409.4842},
+  timestamp = {Tue, 31 May 2016 18:15:20 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/SzegedyLJSRAEVR14},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+</code></pre>
+</div>
+<h2 id="inception"><a href="#inception"></a>Inception</h2>
+<p><strong>Review</strong>(<a href="https://arxiv.org/pdf/1502.03167">InceptionV1</a>, <a href="https://arxiv.org/pdf/1512.00567">InceptionV2,InceptionV3</a>)
+In the Batch Norm paper, Sergey et al. proposed InceptionV1 architecture, which is very similar to GoogleNet.
+They introduced the very important concept of batch norm to speed up learning and also increases accuracy.
+Later on, the authors proposed InceptionV2 and InceptionV3.
+In the Inception-v2, they introduced Factorization (factorize convolutions into smaller convolutions) and some minor change into Inception-v1.
+As for Inception-v3, it is a variant of Inception-v2 which adds BN-auxiliary.</p>
+
+<p><strong>Bibtex</strong></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>@article{DBLP:journals/corr/IoffeS15,
+  author    = {Sergey Ioffe and
+               Christian Szegedy},
+  title     = {Batch Normalization: Accelerating Deep Network Training by Reducing
+               Internal Covariate Shift},
+  journal   = {CoRR},
+  volume    = {abs/1502.03167},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1502.03167},
+  timestamp = {Mon, 02 Mar 2015 14:17:34 +0100},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/IoffeS15},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+
+@article{DBLP:journals/corr/SzegedyVISW15,
+  author    = {Christian Szegedy and
+               Vincent Vanhoucke and
+               Sergey Ioffe and
+               Jonathon Shlens and
+               Zbigniew Wojna},
+  title     = {Rethinking the Inception Architecture for Computer Vision},
+  journal   = {CoRR},
+  volume    = {abs/1512.00567},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1512.00567},
+  timestamp = {Sat, 02 Jan 2016 11:38:49 +0100},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/SzegedyVISW15},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+</code></pre>
+</div>
+<h2 id="resnet"><a href="#resnet"></a>ResNet</h2>
+<p><strong>Review</strong>(<a href="https://arxiv.org/pdf/1512.03385">Paper link</a>)
+<strong>Bibtex</strong></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>@article{DBLP:journals/corr/HeZRS15,
+  author    = {Kaiming He and
+               Xiangyu Zhang and
+               Shaoqing Ren and
+               Jian Sun},
+  title     = {Deep Residual Learning for Image Recognition},
+  journal   = {CoRR},
+  volume    = {abs/1512.03385},
+  year      = {2015},
+  url       = {http://arxiv.org/abs/1512.03385},
+  timestamp = {Wed, 30 Mar 2016 23:40:00 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/HeZRS15},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+@inproceedings{deng2009imagenet,
+  title={Imagenet: A large-scale hierarchical image database},
+  author={Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
+  booktitle={Computer Vision and Pattern Recognition, 2009. CVPR 2009. IEEE Conference on},
+  pages={248--255},
+  year={2009},
+  organization={IEEE}
+}
+</code></pre>
+</div>
+<h2 id="squeezenet"><a href="#snet"></a>SqueezeNet</h2>
+<p><strong>Review</strong>(<a href="https://arxiv.org/pdf/1602.07360.pdf">Paper link</a>))
+SqueezeNet work by replacing standard convolutional layers into a <strong>fire module</strong>.
+The fire module contains a squeeze layer and an expand layer.
+The squeeze layer has only 1<em>1 convolutional filters to expand the activation map.
+The expand layer than a mixed 1</em>1 and 3*3 filters.
+The paper presents compression results of SqueezeNet using Han’s Deep Compression.</p>
+
+<p><strong>Bibtex</strong></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>@article{DBLP:journals/corr/IandolaMAHDK16,
+  author    = {Forrest N. Iandola and
+               Matthew W. Moskewicz and
+               Khalid Ashraf and
+               Song Han and
+               William J. Dally and
+               Kurt Keutzer},
+  title     = {SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and {\textless}1MB
+               model size},
+  journal   = {CoRR},
+  volume    = {abs/1602.07360},
+  year      = {2016},
+  url       = {http://arxiv.org/abs/1602.07360},
+  timestamp = {Wed, 07 Jun 2017 14:42:50 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/IandolaMAHDK16},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}}
+</code></pre>
+</div>
+<h2 id="mobilenet"><a href="#mobilenet"></a>MobileNet</h2>
+<p><strong>Review</strong>(<a href="https://arxiv.org/pdf/1704.04861.pdf">Paper link</a>,<a href="https://research.googleblog.com/2017/06/mobilenets-open-source-models-for.html">blog</a>)</p>
+
+<p>MobileNets are based on a streamlined architecture that uses
+<strong>depth-wise separable convolutions</strong> to build light weight networks.
+<strong>Depth-wise seperable convolution</strong> breaks a standard convolutional layer into depth-wise layers and point-wise layers.
+Tradeoff between latency and accuracy are determined by two hyperparameters.
+One parameter is called <strong>width multiplier</strong>, this hyperparameter defines how “thin” the network is by multiplying itself to both input and output channel counts.
+The second hyperparameter is <strong>Resolution multiplier</strong>, this works by reduce the kernel width.</p>
+
+<p>At the end, they found a near linear relationship between the accuracy and the number of MAC.</p>
+
+<p><strong>Bibtex</strong></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>@article{DBLP:journals/corr/HowardZCKWWAA17,
+  author    = {Andrew G. Howard and
+               Menglong Zhu and
+               Bo Chen and
+               Dmitry Kalenichenko and
+               Weijun Wang and
+               Tobias Weyand and
+               Marco Andreetto and
+               Hartwig Adam},
+  title     = {MobileNets: Efficient Convolutional Neural Networks for Mobile Vision
+               Applications},
+  journal   = {CoRR},
+  volume    = {abs/1704.04861},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1704.04861},
+  timestamp = {Wed, 07 Jun 2017 14:40:11 +0200},
+  biburl    = {http://dblp.uni-trier.de/rec/bib/journals/corr/HowardZCKWWAA17},
+  bibsource = {dblp computer science bibliography, http://dblp.org}
+}
+</code></pre>
+</div>
+
+<h2 id="gbd-net"><a href="#SENet"></a>GBD-Net</h2>
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1709.01507">Paper link</a>)</p>
+
+<p>The winner of <strong>ILSVRC 2016</strong>. In order to use the contextual information, multiple image regions surrounding the candidate box were cropped in and whole-image classification scores were used in. In GBD-net, they use gate functions for controlling message passing.
+Message passing at the feature level was studied in Recurrent neural network (RNN) and gate functions are used to control message passing in long short-term memory (LSTM) networks.
+GBD-net takes an image as input, uses roi-pooling operations to obtain features with different resolutions and different support regions for each candidate box, and then the gated bi-direction layer is used for passing messages among features, and final classification is made.</p>
+
+<h2 id="squeeze-and-excitation-networks"><a href="#SENet"></a>Squeeze-and-Excitation Networks</h2>
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1709.01507">Paper link</a>)</p>
+
+<p>The winner of <strong>ILSVRC 2017</strong>. At each layer, it average pools the feature maps
+(squeeze) and feed them into a small fully connected network.
+This tiny network then output a scaling factor for the following feature maps
+to excite them.</p>
 
 <!-- # [](#header-2)Citations
 <a id='alexnet-paper'>
