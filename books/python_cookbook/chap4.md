@@ -6,7 +6,7 @@ layout: default
 
 ## Manually Iterate
 
-#### next and StopIteration
+Next and StopIteration
 
 ```Python
 def manual_iter():
