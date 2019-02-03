@@ -9,6 +9,8 @@ layout: default
 
 * [Chapter 1: Data structures](python_cookbook/chap1.html)
 * [Chapter 2: Strings and File Processing](python_cookbook/chap2.html)
+* [Chapter 3: Numbers and Time](python_cookbook/chap3.html)
+* [Chapter 4: Iterator and Generator](python_cookbook/chap4.html)
 
 ## Node JS Guide
 
