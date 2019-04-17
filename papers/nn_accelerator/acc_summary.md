@@ -3,7 +3,9 @@ layout: default
 ---
 
 # [](#list) List of papers
+
   * Inference accelerators [details](#l_acc)
+
     1. SCNN: An Accelerator for Compressed-sparse Convolutional Neural Networks
     2. ZeNA: Zero-Aware Neural Network Accelerator
     3. Eyeriss: An Energy-Efficient Reconfigurable Accelerator for Deep Convolutional Neural Networks
@@ -18,6 +20,14 @@ layout: default
     3. Maximizing CNN Accelerator Efficiency Through Resource Partitioning (wating to be reviewed)
     4. Fast YOLO: A Fast You Only Look Once System for Real-time Embedded Object Detection in Video
     5. Efficient Processing of Deep Neural Networks: A Tutorial and Survey
+    6. TVM: An Automated End-to-End Optimizing Compiler for Deep Learning
+    7. Polyhedral Compilation of ML Computation Graphs (CGO 2019)
+    8. Extending PlaidML to Encompass the Modern Accelerator Landscape (CGO 2019)
+    9. The Sparse Tensor Algebra Compiler (CGO 2019)
+    10. TensorRT - a Platform for Deep Learning Inference
+    11. Compiling ML with XLA
+    12. Compiling Deep Neural Networks for ACAP Devices
+    13. Glow: Graph Lowering Compiler Techniques for Neural Networks
 
 * * *
 
@@ -94,6 +104,7 @@ For each video frame, an image stack consisting of the video frame with a refere
 The result of the convolutional layer is a motion probability map, which is then fed into a motion-adaptive inference module to determine if deep inference is needed to compute an updated class probability map.
 
 #### 5. Efficient Processing of Deep Neural Networks: A Tutorial and Survey
+
 **Review**([Paper link](https://arxiv.org/pdf/1607.00064)))
 * CPU/GPU: computational transform on kernals to reduce the number of MACs
   1. Fully connected layers: batching
@@ -108,3 +119,58 @@ The result of the convolutional layer is a motion probability map, which is then
     * Weights stationary: parallel activations fetch and streaming of partial sums
     * Output stationary: parallel weights fetching and streaming of activations
     * No local reuse: no register files on each PEs
+
+#### 6. TVM: An Automated End-to-End Optimizing Compiler for Deep Learning (CGO 2019)
+
+**Review**([Paper link](https://drive.google.com/file/d/1xx8Fj3q71MnFKz1XXG-tdiSUlrAoucru/view)))
+This talk on CGO focuses on fusing operations in the TVM framework.
+Optimizaiton chances including loop transform, thread binding, cache locality, etc.
+They suggest that using cost-model to find effective transformation or statistical modelling are too slow and thus use GRU to extract loop context and build embeddings.
+In that case, the embedding can be hardware-irrelevant.
+
+#### 7. Polyhedral Compilation of ML Computation Graphs (CGO 2019)
+
+**Review**([Paper link](https://drive.google.com/file/d/1lVuENaC8cBoXn7xF-e-mXFtQh5okcy4U/view)
+They add info to the DAG to contain: data access maps, iteration and data spaces and a dependency map.
+These additional information then allows polyhedral IR to perform polyhedral transforms.
+
+#### 8. Extending PlaidML to Encompass the Modern Accelerator Landscape (CGO 2019)
+
+**Review**
+Another IR ported from Intel.
+It visualize data as an arbitrary size tensor where the user defines the finest operation block sizes for the targeting hardware.
+Nothing really exciting...
+Basically an IR that supports arbitrary granularity control on the data.
+
+#### 9. The Sparse Tensor Algebra Compiler (CGO 2019)
+
+**Review**([Paper link](https://drive.google.com/open?id=1-GeM9UkP23J-l0v0C4o-Z1iw-lDw0PDG))
+Use various compressed formats (hashed, CSR ...)
+and classifies them into 1. whether read access is random. 2. whether it is iterative access.
+TACO now supports a wide range of data formats and efficient computations between these formats.
+
+#### 10. TensorRT - a Platform for Deep Learning Inference
+
+**Review**([Paper link](https://drive.google.com/file/d/1BJQTlcj40JXVIZa5byMtFab8lls3odyw/view))
+TensorRT has a graph transformation to put the original graph into an 8-bit version with scheduled memory, and of course, fused operations.
+The Auto-tuning is nothing more than latency hiding, where it tries to overlap uncorrelated computations.
+
+#### 11. Compiling ML with XLA
+
+**Review**([Paper link](https://drive.google.com/file/d/1AfNoznbCIejQLErblXF7CV_Wk4cJypuC/view))
+XLA supports graph fusion, but it seems like its fusion is more low-level, it considers memory reuse in a chained computation like conv-bn-relu.
+They point out that the heuristics used to decide how to fuse greatly affect performance and compiling general fusing ops is very tricky.
+BatchNorm becomes an interesting candidate and fusing can cause bartnorm to be fused with different surrounding ops.
+An interesting mention is that they said it is hard to max the compute of TPUs...
+
+#### 12. Compiling Deep Neural Networks for ACAP Devices
+
+**Review**([Paper link](https://drive.google.com/open?id=1Pxn27H9JyFynkhUBBmcbpLNyBVdtE-kM)
+XDNN accelerator has a layerwise execution strategy, and FiNN is a streaming structure.
+They then have a new AI core in 7nm, connected by a NoC.
+
+#### 13. Glow: Graph Lowering Compiler Techniques for Neural Networks
+
+**Review**([Paper link](https://drive.google.com/file/d/1-Nczf_gXOvtjYL3ooyRFu205ivswBHAk/view))
+They explicitly introduce another level of optimization called lower-level, mainly for memory scheduling operations.
+They support static memory allocation, graph partitioning, etc.

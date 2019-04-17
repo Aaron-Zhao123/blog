@@ -11,7 +11,8 @@ layout: default
 * [Chapter 2: Strings and File Processing](python_cookbook/chap2.html)
 * [Chapter 3: Numbers and Time](python_cookbook/chap3.html)
 * [Chapter 4: Iterator and Generator](python_cookbook/chap4.html)
-* [Chapter 7: Functions](python_cookbook/chap4.html)
+* [Chapter 7: Functions](python_cookbook/chap7.html)
+* [Chapter 8: Objects](python_cookbook/chap8.html)
 
 ## Node JS Guide
 
