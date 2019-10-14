@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Aaron's Wiki by </title>
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <meta name="viewport" content="width=device-width">
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Aaron's Wiki</h1>
+        <!-- <p>Hello, thanks for visiting my personal wiki.</p> -->
+        <!-- <h2>Projects</h2> -->
+        <p class="view"><a href="blog/index">main page</a></p>
+        <p class="view"><a href="blog/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="blog/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="blog/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="blog/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="blog/posts/posts_index.html">Posts</a></p>
+        <!-- <p class="view"><a href="/index">main page</a></p>
+        <p class="view"><a href="/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="/posts/posts_index.html">Posts</a></p> -->
+        <!-- <p class="view"><a href="/blog/papers/nn_models/model_summary.html">Papers</a></p> -->
+        <!-- <h2>Book and Code Reviews</h2> -->
+        <!-- <p class="view"><a href="">Books</a></p>
+        <p class="view"><a href="">Python</a></p>
+        <p class="view"><a href="">C++</a></p> -->
+        <!-- <h2>Contacts</h2> -->
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h1 id="chapter-2-strings-and-file-processing">Chapter 2: Strings and File Processing</h1>
+
+<h2 id="resplit">re.split()</h2>
+
+<pre><code class="language-Python">line = 'asdf fjdk; afed, fjek,asdf, foo'
+import re
+re.split(r'[;,\s]\s*', line)
+# output
+# ['asdf', 'fjdk', 'afed', 'fjek', 'asdf', 'foo']
+</code></pre>
+
+<p><code class="highlighter-rouge">re.split</code> supports splitting with multiple keywords.</p>
+
+<h2 id="fnmatch-fnmatchcase">fnmatch, fnmatchcase</h2>
+
+<pre><code class="language-Python">from fnmatch import fnmatch, fnmatchcase
+fnmatch('foo.txt', '*.txt')
+# True
+[addr for addr in addresses if fnmatchcase(addr, '* ST')]
+# ['5412 N CLARK ST', '1060 W ADDISON ST', '2122 N CLARK ST']
+</code></pre>
+
+<h2 id="searching-and-replace-strings">Searching and replace strings</h2>
+<p>Normal practice is to use <code class="highlighter-rouge">str.find()</code>, <code class="highlighter-rouge">str.endswith()</code> and <code class="highlighter-rouge">str.startswith()</code>.
+Harder pattern matchings will use <code class="highlighter-rouge">re</code> module.</p>
+
+<pre><code class="language-Python">text = '11/27/2012'
+import re
+datepat = re.compile(r'\d+/\d+/\d+')
+</code></pre>
+
+<p>Simple matching: <code class="highlighter-rouge">\d+</code> means match one or more digits.</p>
+
+<pre><code class="language-Python"># match searches from the start, findall() to find any positions
+datepat.match(text)
+datepat.findall(text)
+
+# Use () to capture grouping
+datepat = re.compile(r'(\d+)/(\d+)/(\d+)')
+m = datepat.match('11/27/2012')
+m.groups()
+# ('11', '27', '2012')
+month, day, year = m.groups()
+</code></pre>
+
+<p>Use () to capture grouping, use <code class="highlighter-rouge">re.compute</code> to instantiate a data pattern</p>
+
+<pre><code class="language-Python"># find all returns a complete list
+for m in datepat.finditer(text):
+    print(m.groups())
+# ('11', '27', '2012')
+# ('3', '13', '2013'
+</code></pre>
+
+<p><code class="highlighter-rouge">finditer()</code> returns the found matchings in an iterator</p>
+
+<p>Replacing strings normally can be done using <code class="highlighter-rouge">str.replace()</code>, harder pattern
+matching can use <code class="highlighter-rouge">re.sub()</code></p>
+
+<p><code class="highlighter-rouge">\3</code> refers to the grouping name of the data captured in the previous pattern matching.</p>
+<pre><code class="language-Python">text = 'Today is 11/27/2012. PyCon starts 3/13/2013.'
+import re
+re.sub(r'(\d+)/(\d+)/(\d+)', r'\3-\1-\2', text)
+# 'Today is 2012-11-27. PyCon starts 2013-3-13.'
+</code></pre>
+
+<p>We normally use <code class="highlighter-rouge">(.)</code> to match any characters of a sentence in regular expression.
+This might lead to missing of contents that are inside <code class="highlighter-rouge">""</code>, normally, we add <code class="highlighter-rouge">?</code> and after <code class="highlighter-rouge">*</code> and <code class="highlighter-rouge">+</code> to avoid it.</p>
+
+<pre><code class="language-Python">str_pat = re.compile(r'\"(.*?)\"')
+</code></pre>
+
+<p>Another common problem with <code class="highlighter-rouge">(.)</code> is that it misses <code class="highlighter-rouge">\n</code> so the regular expression only matches a single line.
+To support multiple line, we can use <code class="highlighter-rouge">or</code>(<code class="highlighter-rouge">|</code>):</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>comment = re.compile(r'/\*((?:.|\n)*?)\*/')
+</code></pre>
+</div>
+<p>We can also use <code class="highlighter-rouge">re.DOTALL</code>, this supports every characters including <code class="highlighter-rouge">\n</code></p>
+
+<pre><code class="language-Python">comment = re.compile(r'/\*(.*?)\*/', re.DOTALL)
+</code></pre>
+
+<h2 id="formalizing-unicode">Formalizing unicode</h2>
+<pre><code class="language-Python">import unicodedata
+norm_text = unicodedata.normalize('NFC', raw_text)
+unicodedata.combining(c)
+</code></pre>
+
+<h2 id="deleting-characters-in-a-string">Deleting characters in a string</h2>
+<p><code class="highlighter-rouge">strip()</code>, <code class="highlighter-rouge">lstrip()</code> and <code class="highlighter-rouge">rstrip()</code> are powerful methods for deleting characters.</p>
+<pre><code class="language-Python">s = ' hello world \n'
+s.strip()
+# 'hello world \n'
+t = '-----hello====='
+t.lstrip('-')
+# 'hello====='
+</code></pre>
+
+<p><code class="highlighter-rouge">strip()</code> does not clean anything that’s inside between characters, to clear them, you might use <code class="highlighter-rouge">replace()</code> instead.</p>
+
+<p>Using <code class="highlighter-rouge">strip()</code> in a recursive manner:</p>
+
+<pre><code class="language-Python">with open(filename) as f:
+    lines = (line.strip() for line in f)
+    for line in lines:
+        print(line)
+</code></pre>
+
+<p>A more advanced replacement is to use the <code class="highlighter-rouge">translate()</code> method, <code class="highlighter-rouge">ord</code> return an integer representing the Unicode code point of the character:</p>
+<pre><code class="language-Python">remap = {
+  ord('\t') : ' ',
+  ord('\f') : ' ',
+  ord('\r') : None # Deleted
+}
+a = s.translate(remap)
+</code></pre>
+
+<h2 id="placing-your-characters">Placing your characters</h2>
+<p><code class="highlighter-rouge">ljust()</code>, <code class="highlighter-rouge">rjust()</code> and <code class="highlighter-rouge">center()</code> are common methods for placing text.
+Or using <code class="highlighter-rouge">format()</code> with <code class="highlighter-rouge">&lt;</code>, <code class="highlighter-rouge">&gt;</code> and <code class="highlighter-rouge">^</code></p>
+<pre><code class="language-Python">text.rjust(20,'=')
+#'=========Hello World'
+format(text, '&gt;20')
+#'         Hello World'
+</code></pre>
+
+<h2 id="combining-strings">Combining strings</h2>
+<p>Two popular methods, <code class="highlighter-rouge">join()</code> and <code class="highlighter-rouge">+</code></p>
+<pre><code class="language-Python">' '.join(parts)
+a + ' ' + b
+
+# a more complicated example
+def sample():
+    yield 'Is'
+    yield 'Chicago'
+    yield 'Not'
+    yield 'Chicago?
+text = ''.join(sample())
+</code></pre>
+
+<h2 id="formatting-output-strings">Formatting output strings</h2>
+<p><code class="highlighter-rouge">textwrap</code> and <code class="highlighter-rouge">os.get_terminal_size</code></p>
+<pre><code class="language-Python">import os
+import textwrap
+print(textwrap.fill(s, os.get_terminal_size().columns))
+</code></pre>
+
+<h1 id="additional-info-regular-expressions">Additional Info: Regular Expressions</h1>
+<p>https://docs.python.org/3/library/re.html
+<code class="highlighter-rouge">.</code> (Dot.) In the default mode.
+<code class="highlighter-rouge">^</code>(Caret.) Matches the start of the string.
+<code class="highlighter-rouge">$</code> Matches the end of the string or just before the newline at the end of the string.
+<code class="highlighter-rouge">*</code> causes the resulting RE to match 0 or more repetitions of the preceding RE, as many repetitions as are possible. ab* will match ‘a’, ‘ab’, or ‘a’ followed by any number of ‘b’s.
+<code class="highlighter-rouge">+</code> causes the resulting RE to match 1 or more repetitions of the preceding RE, as many repetitions as are possible. ab* will match ‘ab’, or ‘a’ followed by any number of ‘b’s.
+<code class="highlighter-rouge">?</code> causes the resulting RE to match 0 or 1 repetitions of the preceding RE. ab? will match either ‘a’ or ‘ab’.
+<code class="highlighter-rouge"><span class="p">{</span><span class="err">m,n</span><span class="p">}</span></code>
+Causes the resulting RE to match from m to n repetitions of the preceding RE, attempting to match as many repetitions as possible. For example, a{3,5} will match from 3 to 5 ‘a’ characters. Omitting m specifies a lower bound of zero, and omitting n specifies an infinite upper bound. As an example, a{4,}b will match ‘aaaab’ or a thousand ‘a’ characters followed by a ‘b’, but not ‘aaab’. The comma may not be omitted or the modifier would be confused with the previously described form.
+<code class="highlighter-rouge"><span class="p">{</span><span class="err">m,n</span><span class="p">}</span><span class="err">?</span></code>
+Causes the resulting RE to match from m to n repetitions of the preceding RE, attempting to match as few repetitions as possible. This is the non-greedy version of the previous qualifier. For example, on the 6-character string ‘aaaaaa’, a{3,5} will match 5 ‘a’ characters, while a{3,5}? will only match 3 characters.
+[]
+Used to indicate a set of characters. [amk] will match ‘a’, ‘m’, or ‘k’.
+[0-5][0-9] will match all the two-digits numbers from 00 to 59, and [0-9A-Fa-f] will match any hexadecimal digit.</p>
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+
+
+  
+  </body>
+</html>

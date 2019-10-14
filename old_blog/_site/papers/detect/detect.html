@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Aaron's Wiki by </title>
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <meta name="viewport" content="width=device-width">
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Aaron's Wiki</h1>
+        <!-- <p>Hello, thanks for visiting my personal wiki.</p> -->
+        <!-- <h2>Projects</h2> -->
+        <p class="view"><a href="blog/index">main page</a></p>
+        <p class="view"><a href="blog/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="blog/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="blog/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="blog/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="blog/posts/posts_index.html">Posts</a></p>
+        <!-- <p class="view"><a href="/index">main page</a></p>
+        <p class="view"><a href="/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="/posts/posts_index.html">Posts</a></p> -->
+        <!-- <p class="view"><a href="/blog/papers/nn_models/model_summary.html">Papers</a></p> -->
+        <!-- <h2>Book and Code Reviews</h2> -->
+        <!-- <p class="view"><a href="">Books</a></p>
+        <p class="view"><a href="">Python</a></p>
+        <p class="view"><a href="">C++</a></p> -->
+        <!-- <h2>Contacts</h2> -->
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h1 id="-list-of-papers"><a href="#list"></a> List of papers</h1>
+<ul>
+  <li>Yolo <a href="#yolo">details</a>
+    <ol>
+      <li>You Only Look Once: Unified, Real-Time Object Detection</li>
+      <li>YOLO9000: Better, Faster, Stronger</li>
+    </ol>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="yolo"><a id="coarseprune"></a>Yolo</h2>
+
+<h4 id="1-you-only-look-once-unified-real-time-object-detection"><strong>1. You Only Look Once: Unified, Real-Time Object Detection</strong></h4>
+
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1506.02640">Paper link</a>)
+Most traditional object detection generates bounding boxes in an image first
+and then runs a classifier.
+Post-processing is used to refine the bounding boxes after classification to
+avoid duplication of detections.
+These pipelines are slow.
+Yolo uses a single conv network to predict multiple bounding boxes and
+the class probabilities for these boxes.</p>
+
+<p>Each image becomes S<em>S grids, the center grid of the image is responsible
+for the detection.
+Each grid cell predicts B bounding boxes and confidence scores.
+Confidence is defined as Pr(obj)</em>IOU, where IOU is the intersection over
+union between the predicted box and the ground truth.</p>
+
+<p>The network has 24 conv layers and 2 fc layers.
+The first 20 layers are picked and appeneded with an avg-pool and a fc layer,
+and then trained on ImageNet.
+Later on, the 20 layers are taken and added with 4 conv layers and 2 fc layers
+to retrain on the detection network.
+The input resolution if increased to 448 also because detection always requires
+fine-grained visual information.
+The final layer outputs both class probabilities and bounding box coordinates.</p>
+
+<h4 id="2-yolo9000-better-faster-stronger"><strong>2. YOLO9000: Better, Faster, Stronger</strong></h4>
+<p>The YoloV2 model added batch normalization.
+This time, the classification network is trained at full 448*448 resolution
+for 10 epochs on ImageNet.
+To get a good prior on anchor boxes, the YOLOV2 model runs a
+k-means clustering to find good priors.</p>
+<ul>
+  <li>Anchor boxes: each grid has 5 anchor boxes.
+The appropriate bounding box is selected as the bounding box with highest IOU between the ground truth box and anchor box.</li>
+  <li>IOU (Intersection over unions):
+Intersection(detected, truth) / union(detected, truth)</li>
+</ul>
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+
+
+  
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Aaron's Wiki by </title>
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <meta name="viewport" content="width=device-width">
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Aaron's Wiki</h1>
+        <!-- <p>Hello, thanks for visiting my personal wiki.</p> -->
+        <!-- <h2>Projects</h2> -->
+        <p class="view"><a href="blog/index">main page</a></p>
+        <p class="view"><a href="blog/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="blog/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="blog/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="blog/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="blog/posts/posts_index.html">Posts</a></p>
+        <!-- <p class="view"><a href="/index">main page</a></p>
+        <p class="view"><a href="/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="/posts/posts_index.html">Posts</a></p> -->
+        <!-- <p class="view"><a href="/blog/papers/nn_models/model_summary.html">Papers</a></p> -->
+        <!-- <h2>Book and Code Reviews</h2> -->
+        <!-- <p class="view"><a href="">Books</a></p>
+        <p class="view"><a href="">Python</a></p>
+        <p class="view"><a href="">C++</a></p> -->
+        <!-- <h2>Contacts</h2> -->
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h1 id="-list-of-papers"><a href="#list"></a> List of papers</h1>
+<ul>
+  <li>
+    <p>Learning network structures</p>
+
+    <ol>
+      <li>Neural Architecture Search with Reinforcement Learning</li>
+      <li>Learning Transferable Architectures for Scalable Image Recognition</li>
+      <li>Learning to Represent Programs with Graphs</li>
+    </ol>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="transfer-networks"><a id="l_acc"></a>Transfer networks</h2>
+
+<h4 id="1-neural-architecture-search-with-reinforcement-learning">1. Neural Architecture Search with Reinforcement Learning</h4>
+
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1611.01578">Paper link</a>)
+This work uses a recurrent network to generate definitions of a neural network’s structure.
+The process of generating an architecture stops if the number of layers exceeds a certain value.
+This value follows a schedule where we increase it as training progresses.
+To accelerate training, they used asynchronous updates by placing multiple controllers
+They allow controller to propose skip connections or branching layers, thereby widening the search space.
+This skipping is achieved using a  set-selection type attention which was built upon the attention mechanism.
+The search space is too large for large datasets, so the experiments are finished on CIFAR-10 only, and even this costs them 800 GPUs.</p>
+
+<h4 id="2-learning-transferable-architectures-for-scalable-image-recognition">2. Learning Transferable Architectures for Scalable Image Recognition</h4>
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1707.07012">Paper link</a>)
+This paper proposed to automate the process of neural network architecture
+by using reinforcement learning to learn model architectures building blocks.
+This approach limits the search space and successfully learned building blocks
+can be transferred from to large datasets.
+They use NAS to search for a good architecture on the far smaller CIFAR-10 dataset, and automatically transfer the learned architecture to ImageNet.
+Two types of convolutional cells are considered:</p>
+<ol>
+  <li>Normal cell:
+convolutional cells that return a feature map of the same dimension.</li>
+  <li>Reduction cell:
+convolutional cells that return a feature map where the feature map height and width is reduced by a factor of two.</li>
+</ol>
+
+<p>The reinforcement learning method asks each hidden sate in the cell to select
+from a set of pre-defined operations, and append it to the cell. This action
+is repeated multiple times to search for one particular block to append to a
+given hidden state of a given cell.
+The number of repetition is set to 5 to limit the search space.
+The search strategy costs a pool of workers of 500 GPUs.</p>
+
+<p>Note:
+“We use a common heuristic to double the number of filters in the output whenever the spatial activation size is reduced in order to maintain roughly constant hidden state dimension.”
+This is a very interesting statement.</p>
+
+<h4 id="3-learning-to-represent-programs-with-graphs-iclr-2018">3. Learning to Represent Programs with Graphs (ICLR 2018)</h4>
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1711.00740">Paper link</a>)
+This paper considers to tasks: 1) VARNAMING, 2) VARMISUSE.
+They encode programs as graphs, in which the edges represents syntactic
+relationships (e.g. “token before/after”) and semantic relationships
+(“variable last used/written here”, “formal parameter for argument is called stream”, etc.).</p>
+
+<h4 id="4-zero-shot-visual-imitation-iclr-2018">4. ZERO-SHOT VISUAL IMITATION (ICLR 2018)</h4>
+<p>Imitating expert demonstration is a powerful mechanism for learning to perform
+tasks.
+The expert typically provides multiple demonstrations of a task at training time,
+and this generates data in the form of observation-action pairs from the agent’s point of view.
+A function that predicts the sequence of actions to take the agent from the
+current observation to the goal is called a goal-conditioned skill policy (GSP).
+They use the difference in the output of the forward model for the GSP-selected
+action and the ground truth next state to train the GSP.
+This loss has the effect of making the GSP-predicted action consistent with
+the ground-truth action instead of exactly matching the actions themselves,
+thus ensuring that actions that are different from the ground-truth—but
+lead to the same next state— are not inadvertently penalized.
+To account for varying number of steps required to reach different goals,
+we propose to jointly optimize the GSP with a goal recognizer that
+determines if the current goal has been satisfied.
+This method is zero-shot because because the agent never has access to
+expert actions, neither during training of the GSP nor for task demonstration
+at inference.
+The agent therefore can learn from short video clips or even a sequence of images.</p>
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+
+
+  
+  </body>
+</html>

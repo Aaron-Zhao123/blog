@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Aaron's Wiki by </title>
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <meta name="viewport" content="width=device-width">
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Aaron's Wiki</h1>
+        <!-- <p>Hello, thanks for visiting my personal wiki.</p> -->
+        <!-- <h2>Projects</h2> -->
+        <p class="view"><a href="blog/index">main page</a></p>
+        <p class="view"><a href="blog/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="blog/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="blog/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="blog/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="blog/posts/posts_index.html">Posts</a></p>
+        <!-- <p class="view"><a href="/index">main page</a></p>
+        <p class="view"><a href="/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="/posts/posts_index.html">Posts</a></p> -->
+        <!-- <p class="view"><a href="/blog/papers/nn_models/model_summary.html">Papers</a></p> -->
+        <!-- <h2>Book and Code Reviews</h2> -->
+        <!-- <p class="view"><a href="">Books</a></p>
+        <p class="view"><a href="">Python</a></p>
+        <p class="view"><a href="">C++</a></p> -->
+        <!-- <h2>Contacts</h2> -->
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h2 id="vector-processors">Vector Processors</h2>
+<p>Vector-register processors: lower memory bandwidth and easier to check
+dependencies.</p>
+
+<h4 id="components">Components</h4>
+<p><strong>vector registers</strong>: each register holds a fixed number of elements and
+the vector register files has lots of ports so different vector operations
+can be performed in parallel.</p>
+
+<p><strong>vector functional units</strong>: fully pipelined, new element per clock cycle.</p>
+
+<p><strong>vector load store units</strong>: data moved between register and memory</p>
+
+<p><strong>scalar registers</strong>: provide data as input to vector functional units</p>
+
+<ul>
+  <li>Partition vector register files and functional units into multiple lanes.</li>
+</ul>
+
+<h4 id="advantages">Advantages</h4>
+<ul>
+  <li>Data-level parallelism</li>
+  <li>Reduce energy per operation: less switching in datapath, reduction in number
+of instructions, regular access pattern.</li>
+</ul>
+
+<h4 id="practical-designs">Practical designs:</h4>
+<ul>
+  <li>memory system: start-up time of a vector load is the time to get the first
+word from memory to register. The initiation rate should be capable of providing
+data at this rate.</li>
+  <li>Vector length and stride: (small) vector-length register (VLR) to control the
+length of vector operations.  (long) stripe-mine.</li>
+  <li>chaining and taligating: element-wise dependencies instead vector dependency.</li>
+  <li>conditional execution: handel ifs</li>
+  <li>sparsity: indirect access, load and store vector indexed instructions (gather and scatter)</li>
+</ul>
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+
+
+  
+  </body>
+</html>

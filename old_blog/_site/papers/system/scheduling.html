@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Aaron's Wiki by </title>
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <meta name="viewport" content="width=device-width">
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Aaron's Wiki</h1>
+        <!-- <p>Hello, thanks for visiting my personal wiki.</p> -->
+        <!-- <h2>Projects</h2> -->
+        <p class="view"><a href="blog/index">main page</a></p>
+        <p class="view"><a href="blog/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="blog/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="blog/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="blog/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="blog/posts/posts_index.html">Posts</a></p>
+        <!-- <p class="view"><a href="/index">main page</a></p>
+        <p class="view"><a href="/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="/posts/posts_index.html">Posts</a></p> -->
+        <!-- <p class="view"><a href="/blog/papers/nn_models/model_summary.html">Papers</a></p> -->
+        <!-- <h2>Book and Code Reviews</h2> -->
+        <!-- <p class="view"><a href="">Books</a></p>
+        <p class="view"><a href="">Python</a></p>
+        <p class="view"><a href="">C++</a></p> -->
+        <!-- <h2>Contacts</h2> -->
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h1 id="-list-of-papers"><a href="#list"></a> List of papers</h1>
+<ul>
+  <li>Switches and Routers <a href="#swithces">details</a>
+    <ol>
+      <li>Scaling Internet Routers using Optics (waiting review)</li>
+      <li>Load Balanced Birkhoff-von Neumann Swtiches: one-stage buffering (waiting review)</li>
+      <li>Maintaining Packet Order in Two-Stage Switches</li>
+    </ol>
+  </li>
+  <li>
+    <p>Networking architectures (Paper read from the course) <a href="#course">details</a></p>
+
+    <p>The course information can be found at this <a href="https://www.cl.cam.ac.uk/teaching/1718/R02/materials.html">link</a></p>
+  </li>
+</ul>
+
+<hr />
+<h2 id="switches-and-routers"><a id="swithces"></a>Switches and Routers</h2>
+<h4 id="1-scaling-internet-routers-using-optics">1. <strong>Scaling Internet Routers using Optics</strong></h4>
+<p><strong>Review</strong>(<a href="http://dl.acm.org/citation.cfm?id=863978">Paper link</a>)</p>
+<ol>
+  <li>The capacity of router must grow but growth in router speed seems less important.</li>
+  <li>Two problems on multi-rack systems: unpredictable performance and poor scalability.</li>
+  <li>The architecture: Load balancing -&gt; N*N VOQs -&gt; switch; both switches are equal-rates and serve in a deterministic manner.</li>
+  <li>If output nodes also serve as intermediate nodes, the same setup is achieved using only one fixed switch with a loss of 50% in throughputs.</li>
+  <li>In TCP, packets arriving to the destination with wrong order triggers retransmissions.</li>
+  <li>Fully ordered frames first (FOFF)</li>
+</ol>
+
+<h4 id="2-load-balanced-birkhoff-von-neumann-switches">2. <strong>Load balanced Birkhoff-von Neumann switches</strong></h4>
+<p><strong>Review</strong>(<a href="http://ieeexplore.ieee.org/document/923646/">Paper link</a>)</p>
+<ol>
+  <li>The main drawback is that FIFO might be violated for packets from the same input.
+  Two classes of systems: multi-rack system and single-stage switches.</li>
+  <li>The complexity for the switch is O(N).</li>
+  <li>Load balancing works by making incoming packets of different queues become evenly distributed on the output side. The evenly distributed queues are then be served concurrently on the second-stage buffer.</li>
+</ol>
+
+<h4 id="3-maintaining-packet-order-in-two-stage-switches">3. Maintaining Packet Order in Two-Stage Switches</h4>
+<p><strong>Review</strong>(<a href="http://yuba.stanford.edu/~nickm/papers/Infocom02_two_stage.pdf">Paper link</a>)</p>
+<ol>
+  <li>The scalability of most input-queued switches is limited by the scheduling algorithm.</li>
+  <li>Two stage switching – load balancing spreads data traffic uniformly for the next stage. Is it possible to find a more efficient spreading algorithm?</li>
+  <li>EDF (Earlier deadline first) algorithm prevents miss-sequencing by serving cells in VOQs in the order that they arrived to the switch.</li>
+  <li>3DQ, the use of 3-dimensional virtual queueing to avoid HOL.</li>
+  <li>FFF (Full Frames First): algorithms deal with frames rather than packets. The priority of serving frames is higher than serving packets. Only there are no full frames requiring services, it serves non-full frames in round-robin fashion.</li>
+</ol>
+
+<hr />
+<h2 id="-network-architectures"><a id="course"></a> Network architectures</h2>
+<h4 id="1-towards-a-spdyier-mobile-web">1. Towards a SPDY’ier mobile web?</h4>
+<p><strong>Review</strong>(<a href="https://dl.acm.org/citation.cfm?id=2535399">Paper link</a>)
+SPDY, a recently proposed alter-native  to  HTTP,  tries  to  address  many  of  the  limitations of HTTP (e.g., multiple connections, setup latency).</p>
+
+<h4 id="2-quic">2. QUIC</h4>
+<p><strong>Review</strong>(<a href="https://blog.chromium.org/2015/04/a-quic-update-on-googles-experimental.html">Paper link</a>)
+A UDP-based transport protocol developed by Google, the aim is to replace the
+TCP protocol with this light-weight protocol.</p>
+
+<p>**</p>
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+
+
+  
+  </body>
+</html>

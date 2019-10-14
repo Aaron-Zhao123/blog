@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Aaron's Wiki by </title>
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <meta name="viewport" content="width=device-width">
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Aaron's Wiki</h1>
+        <!-- <p>Hello, thanks for visiting my personal wiki.</p> -->
+        <!-- <h2>Projects</h2> -->
+        <p class="view"><a href="blog/index">main page</a></p>
+        <p class="view"><a href="blog/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="blog/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="blog/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="blog/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="blog/posts/posts_index.html">Posts</a></p>
+        <!-- <p class="view"><a href="/index">main page</a></p>
+        <p class="view"><a href="/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="/posts/posts_index.html">Posts</a></p> -->
+        <!-- <p class="view"><a href="/blog/papers/nn_models/model_summary.html">Papers</a></p> -->
+        <!-- <h2>Book and Code Reviews</h2> -->
+        <!-- <p class="view"><a href="">Books</a></p>
+        <p class="view"><a href="">Python</a></p>
+        <p class="view"><a href="">C++</a></p> -->
+        <!-- <h2>Contacts</h2> -->
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h1 id="chapter-4-iterator">Chapter 4: Iterator</h1>
+
+<h2 id="manually-iterate">Manually Iterate</h2>
+
+<h4 id="next-and-stopiteration">next and StopIteration</h4>
+
+<pre><code class="language-Python">def manual_iter():
+    with open('/etc/passwd') as f:
+        try:
+            while True:
+                line = next(f)
+                print(line, end='')
+        except StopIteration:
+            pass
+</code></pre>
+
+<p>Alternatively, you can check none:</p>
+
+<pre><code class="language-Python">with open('/etc/passwd') as f:
+    while True:
+        line = next(f, None)
+        if line is None:
+            break
+        print(line, end='')
+</code></pre>
+
+<h2 id="manage-iteration">Manage Iteration</h2>
+<pre><code class="language-Python">class Node:
+    def __init__(self, value):
+        self._value = value
+        self._children = []
+
+    def __repr__(self):
+        return 'Node({!r})'.format(self._value)
+
+    def add_child(self, node):
+        self._children.append(node)
+
+    def __iter__(self):
+        return iter(self._children)
+
+# Example
+if __name__ == '__main__':
+    root = Node(0)
+    child1 = Node(1)
+    child2 = Node(2)
+    root.add_child(child1)
+    root.add_child(child2)
+    # Outputs Node(1), Node(2)
+    for ch in root:
+        print(ch)
+</code></pre>
+
+<p><code class="highlighter-rouge">__iter__</code> method simply pass the iteration request to its internal <code class="highlighter-rouge">_children</code> list.</p>
+
+<pre><code class="language-Python">class Node:
+    def __init__(self, value):
+        self._value = value
+        self._children = []
+
+    def __repr__(self):
+        return 'Node({!r})'.format(self._value)
+
+    def add_child(self, node):
+        self._children.append(node)
+
+    def __iter__(self):
+        return iter(self._children)
+
+    def depth_first(self):
+        yield self
+        for c in self:
+            yield from c.depth_first()
+
+# Example
+if __name__ == '__main__':
+    root = Node(0)
+    child1 = Node(1)
+    child2 = Node(2)
+    root.add_child(child1)
+    root.add_child(child2)
+    child1.add_child(Node(3))
+    child1.add_child(Node(4))
+    child2.add_child(Node(5))
+
+    for ch in root.depth_first():
+        print(ch)
+    # Outputs Node(0), Node(1), Node(3), Node(4), Node(2), Node(5)
+</code></pre>
+
+<p>In this piece of code, <code class="highlighter-rouge">depth_first</code> returns itself and iterate to the children nodes, the children node’s <code class="highlighter-rouge">depth_first</code> is also called.</p>
+
+<h2 id="reverse-iteration">Reverse Iteration</h2>
+<p><code class="highlighter-rouge">__reversed__</code> can add to a class, this avoid straight usage of <code class="highlighter-rouge">reversed</code> and conversion to</p>
+
+<pre><code class="language-Python">from collections import deque
+
+class linehistory:
+    def __init__(self, lines, histlen=3):
+        self.lines = lines
+        self.history = deque(maxlen=histlen)
+
+    def __iter__(self):
+        for lineno, line in enumerate(self.lines, 1):
+            self.history.append((lineno, line))
+            yield line
+
+    def clear(self):
+        self.history.clear()
+</code></pre>
+
+<p><code class="highlighter-rouge">yield</code> might be hard to use in a class, an alternatie is to embed <code class="highlighter-rouge">__iter__</code> in a class.
+If not using <code class="highlighter-rouge">for</code> loop, this requires to use <code class="highlighter-rouge">iter</code> first before using <code class="highlighter-rouge">next</code>.</p>
+
+<h2 id="itertools">itertools</h2>
+
+<h4 id="isslice">isslice()</h4>
+<p>Slicing on iterators:</p>
+<pre><code class="language-Python">&gt;&gt;&gt; def count(n):
+...     while True:
+...         yield n
+...         n += 1
+...
+&gt;&gt;&gt; c = count(0)
+&gt;&gt;&gt; c[10:20]
+Traceback (most recent call last):
+    File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+TypeError: 'generator' object is not subscriptable
+
+&gt;&gt;&gt; # Now using islice()
+&gt;&gt;&gt; import itertools
+&gt;&gt;&gt; for x in itertools.islice(c, 10, 20):
+...     print(x)
+</code></pre>
+
+<h4 id="dropwhile">dropwhile()</h4>
+<p>dropwhile helps you to skip certain contents:</p>
+<pre><code class="language-Python">with open('/etc/passwd') as f:
+     for line in dropwhile(lambda line: line.startswith('#'), f):
+         print(line, end='')
+</code></pre>
+
+<h4 id="combinations-and-permutations">combinations and permutations</h4>
+<pre><code class="language-Python">from itertools import permutations, combinations
+('a', 'b', 'c')
+&gt;&gt;&gt; for p in permutations(items, 2):
+...     print(p)
+...
+('a', 'b')
+('a', 'c')
+('b', 'a')
+('b', 'c')
+('c', 'a')
+('c', 'b')
+&gt;&gt;&gt; for c in combinations(items, 2):
+...     print(c)
+...
+('a', 'b')
+('a', 'c')
+('b', 'c')
+</code></pre>
+
+<h2 id="iterate-multiple-items">Iterate multiple items</h2>
+<p>Using <code class="highlighter-rouge">zip</code> can generate multiple iterators.
+This will stop at the shortest array
+<code class="highlighter-rouge">itertools.zip_longest()</code> can provide a longest array:</p>
+<pre><code class="language-Python">&gt;&gt;&gt; from itertools import zip_longest
+&gt;&gt;&gt; for i in zip_longest(a,b):
+...     print(i)
+...
+(1, 'w')
+(2, 'x')
+(3, 'y')
+(None, 'z')
+
+&gt;&gt;&gt; for i in zip_longest(a, b, fillvalue=0):
+...     print(i)
+...
+(1, 'w')
+(2, 'x')
+(3, 'y')
+(0, 'z')
+</code></pre>
+
+<p>A useful trick <code class="highlighter-rouge">s = dict(zip(headers,values))</code></p>
+<pre><code class="language-Python">for name, val in zip(headers, values):
+    print(name, '=', val)
+</code></pre>
+
+<p>A <code class="highlighter-rouge">zip()</code> can work on more than two lists!!!</p>
+<pre><code class="language-Python">&gt;&gt;&gt; a = [1, 2, 3]
+&gt;&gt;&gt; b = [10, 11, 12]
+&gt;&gt;&gt; c = ['x','y','z']
+&gt;&gt;&gt; for i in zip(a, b, c):
+...     print(i)
+...
+(1, 10, 'x')
+(2, 11, 'y')
+(3, 12, 'z')
+</code></pre>
+
+<p><code class="highlighter-rouge">zip()</code> creates an iterator to return, you might need to use <code class="highlighter-rouge">list()</code>:</p>
+<pre><code class="language-Python">&gt;&gt;&gt; zip(a, b)
+&lt;zip object at 0x1007001b8&gt;
+&gt;&gt;&gt; list(zip(a, b))
+[(1, 10), (2, 11), (3, 12)]
+</code></pre>
+
+<p>Another use case is to iterate through one list and another. <code class="highlighter-rouge">itertools.chain()</code> can be used:</p>
+<pre><code class="language-Python">&gt;&gt;&gt; from itertools import chain
+&gt;&gt;&gt; a = [1, 2, 3, 4]
+&gt;&gt;&gt; b = ['x', 'y', 'z']
+&gt;&gt;&gt; for x in chain(a, b):
+... print(x)
+...
+1
+2
+3
+4
+x
+y
+z
+</code></pre>
+<p>The advantage is this can chain lists with different types of elements.</p>
+
+<h2 id="creating-data-pipe">Creating data pipe</h2>
+<pre><code class="language-Python">import os
+import fnmatch
+import gzip
+import bz2
+import re
+
+def gen_find(filepat, top):
+    '''
+    Find all filenames in a directory tree that match a shell wildcard pattern
+    '''
+    for path, dirlist, filelist in os.walk(top):
+        for name in fnmatch.filter(filelist, filepat):
+            yield os.path.join(path,name)
+
+def gen_opener(filenames):
+    '''
+    Open a sequence of filenames one at a time producing a file object.
+    The file is closed immediately when proceeding to the next iteration.
+    '''
+    for filename in filenames:
+        if filename.endswith('.gz'):
+            f = gzip.open(filename, 'rt')
+        elif filename.endswith('.bz2'):
+            f = bz2.open(filename, 'rt')
+        else:
+            f = open(filename, 'rt')
+        yield f
+        f.close()
+
+def gen_concatenate(iterators):
+    '''
+    Chain a sequence of iterators together into a single sequence.
+    '''
+    for it in iterators:
+        yield from it
+
+def gen_grep(pattern, lines):
+    '''
+    Look for a regex pattern in a sequence of lines
+    '''
+    pat = re.compile(pattern)
+    for line in lines:
+        if pat.search(line):
+            yield line
+</code></pre>
+
+<h2 id="iterate-on-nested-lists">Iterate on nested lists</h2>
+<p><code class="highlighter-rouge">yield from</code> can used to perform a nested call to deal with nested list.
+<code class="highlighter-rouge">ignore_types</code> help to preserve strings and etc.</p>
+
+<pre><code class="language-Python">from collections import Iterable
+
+def flatten(items, ignore_types=(str, bytes)):
+    for x in items:
+        if isinstance(x, Iterable) and not isinstance(x, ignore_types):
+            yield from flatten(x)
+        else:
+            yield x
+
+items = [1, 2, [3, 4, [5, 6], 7], 8]
+# Produces 1 2 3 4 5 6 7 8
+for x in flatten(items):
+    print(x)
+</code></pre>
+
+<h2 id="iterate-on-sorted-list">Iterate on sorted list</h2>
+<p>Two lists are sorted and you want to iterate on a list that is a merge between those two which is sorted as well.
+The correct method is to use <code class="highlighter-rouge">heapq</code>, because it is lazy and does not consume too much memory.
+<code class="highlighter-rouge">heapq.merge()</code> requires all the inputs to be sorted.</p>
+<pre><code class="language-Python">&gt;&gt;&gt; import heapq
+&gt;&gt;&gt; a = [1, 4, 7, 10]
+&gt;&gt;&gt; b = [2, 5, 6, 11]
+&gt;&gt;&gt; for c in heapq.merge(a, b):
+...     print(c)
+...
+1
+2
+4
+5
+6
+7
+10
+11
+</code></pre>
+
+<h2 id="iterate-on-function-calls">Iterate on function calls</h2>
+<pre><code class="language-Python">CHUNKSIZE = 8192
+
+def reader(s):
+    while True:
+        data = s.recv(CHUNKSIZE)
+        if data == b'':
+            break
+        process_data(data)
+
+
+# Replacement
+def reader2(s):
+    for chunk in iter(lambda: s.recv(CHUNKSIZE), b''):
+        pass
+        # process_data(data)
+</code></pre>
+<p><code class="highlighter-rouge">iter</code> can work on function calls and terminate when the returned value equals the second argument of <code class="highlighter-rouge">iter</code>.</p>
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+
+
+  
+  </body>
+</html>

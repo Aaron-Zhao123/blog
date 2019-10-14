@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Aaron's Wiki by </title>
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <meta name="viewport" content="width=device-width">
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Aaron's Wiki</h1>
+        <!-- <p>Hello, thanks for visiting my personal wiki.</p> -->
+        <!-- <h2>Projects</h2> -->
+        <p class="view"><a href="blog/index">main page</a></p>
+        <p class="view"><a href="blog/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="blog/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="blog/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="blog/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="blog/posts/posts_index.html">Posts</a></p>
+        <!-- <p class="view"><a href="/index">main page</a></p>
+        <p class="view"><a href="/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="/posts/posts_index.html">Posts</a></p> -->
+        <!-- <p class="view"><a href="/blog/papers/nn_models/model_summary.html">Papers</a></p> -->
+        <!-- <h2>Book and Code Reviews</h2> -->
+        <!-- <p class="view"><a href="">Books</a></p>
+        <p class="view"><a href="">Python</a></p>
+        <p class="view"><a href="">C++</a></p> -->
+        <!-- <h2>Contacts</h2> -->
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h2 id="instruction-level-parallelism">Instruction-level Parallelism</h2>
+<h4 id="dependencies">Dependencies</h4>
+<ol>
+  <li>
+    <p>Name dependency:
+antidependency and output dependency.
+Name dependency is not a true dependency.
+<strong>register renaming</strong> can resolve this.</p>
+  </li>
+  <li>
+    <p>Data dependency:
+  Executing dependent data simultaneously would cause a processor with
+  pipeline interlocks to detect a hazard and stall.
+  In a processor without interlocks, the compiler cannot schedule dependent instructions
+  with complete overlaps.
+  The presence of the dependence indicates a potential of hazard.
+  The actual hazard and length of any stall depends on the pipeline.
+  Data flow occurs at registers is easy to analyze for dependency, but data
+  flow occurs in memories is a lot harder to detect.</p>
+  </li>
+  <li>
+    <p>Control dependency
+  Programs must reserve the program order.
+  Control dependency itself is not a performance limit.</p>
+  </li>
+</ol>
+
+<h4 id="hazards">Hazards</h4>
+<ol>
+  <li>Data Hazard</li>
+  <li>Structural hazards:
+arise from resource conflict</li>
+  <li>Control hazards:
+are caused by instructions that change the PC</li>
+</ol>
+
+<h2 id="expoliting-ilp">Expoliting ILP</h2>
+<ul>
+  <li>To keep a pipeline full, parallelism among instructions must be exploited
+by finding sequences of unrelated instructions that can be <strong>overlapped</strong>.</li>
+  <li>To avoid stall, the execution of dependent instructions must be separated.</li>
+</ul>
+
+<h4 id="basic-compiler-techniques">Basic compiler techniques</h4>
+<ol>
+  <li>Determine unrolling of the loop.</li>
+  <li>Use different registers to avoid name dependencies.</li>
+  <li>Determine the loads and stores in the unrolled loop can be interchanged,
+this requires analyzing the memory addresses. This sometimes reduces the stalls!</li>
+  <li>Schedule the code to preserve dependencies.</li>
+</ol>
+
+<p>Potential limits:</p>
+<ol>
+  <li>Decrease in the amount of overhead amortized with each unroll.</li>
+  <li>Code size, might cause instruction cache misses. Too many unrolling also causes
+<strong>register pressure</strong>.</li>
+  <li>Compiler limitations</li>
+</ol>
+
+<h4 id="branch-prediction">Branch Prediction</h4>
+<p><strong>Static branch prediction</strong> is optimized by compilers normally</p>
+
+<p>Tournament Predictors: adaptively combine local and global predictors.</p>
+<ul>
+  <li>Local predictor has a two level predictor. Branch history table + Prediction history table.</li>
+  <li>an (m,n) predictor uses the behavior of the last m branches to choose from 2^m branches</li>
+</ul>
+
+<h4 id="dynamic-scheduling">Dynamic Scheduling</h4>
+<p>In-order instruction issue and execution can cause stall of a pipeline.
+If there’s a dependency between two closely spaced instructions, this will
+lead to hazard.
+If in a supersclar core (multiple functional units), these units will lie idle.</p>
+
+<h1 id="out-of-order-execution">Out-of-order Execution</h1>
+<p>Split the pipeline stage:</p>
+<ol>
+  <li>Issue: Decode instructions, check for structural hazards.</li>
+  <li>Read Operand: wait until no data hazards, then read operands.</li>
+  <li>Maintain a buffer of instruction waiting to execute.</li>
+</ol>
+
+<p>Potential Problems:</p>
+<ol>
+  <li>Introduce WAR and WAW hazards.</li>
+  <li>Hard to handle exceptions. Imprecise exceptions makes reissuing the instruction harder</li>
+</ol>
+
+<h1 id="vliw">VLIW</h1>
+<p>VLIW processors pack multiple independent operations into one very long instruction.</p>
+
+<ol>
+  <li>Potential for simpler hardware</li>
+  <li>Assume compiler has nicely scheduled the instructions, very complex compilers</li>
+  <li>Simply stall pipeline if operations cannot finish</li>
+  <li>Pack the very-long instructions with no-ops if cannot find full set of independent instructions</li>
+</ol>
+
+<p>Now mainly exists in DSPs</p>
+<ol>
+  <li>Low power, simpler hardware</li>
+  <li>focous on tight loop orientated kernels</li>
+  <li>Predictable performance</li>
+</ol>
+
+<ul>
+  <li>Software speculation -&gt; Load address table</li>
+  <li>Software pipelining -&gt; rotating register file</li>
+</ul>
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+
+
+  
+  </body>
+</html>

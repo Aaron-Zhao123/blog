@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Aaron's Wiki by </title>
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <meta name="viewport" content="width=device-width">
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Aaron's Wiki</h1>
+        <!-- <p>Hello, thanks for visiting my personal wiki.</p> -->
+        <!-- <h2>Projects</h2> -->
+        <p class="view"><a href="blog/index">main page</a></p>
+        <p class="view"><a href="blog/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="blog/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="blog/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="blog/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="blog/posts/posts_index.html">Posts</a></p>
+        <!-- <p class="view"><a href="/index">main page</a></p>
+        <p class="view"><a href="/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="/posts/posts_index.html">Posts</a></p> -->
+        <!-- <p class="view"><a href="/blog/papers/nn_models/model_summary.html">Papers</a></p> -->
+        <!-- <h2>Book and Code Reviews</h2> -->
+        <!-- <p class="view"><a href="">Books</a></p>
+        <p class="view"><a href="">Python</a></p>
+        <p class="view"><a href="">C++</a></p> -->
+        <!-- <h2>Contacts</h2> -->
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h1 id="-list-of-papers"><a href="#list"></a> List of papers</h1>
+<ul>
+  <li>Coarse-grained pruning (Filter-wise, Kernel-wise) <a href="#coarseprune">details</a>
+    <ol>
+      <li>Pruning Filters for Efficient ConvNets (waiting review)</li>
+      <li>Learning Structured Sparsity in Deep Neural Networks (waiting review)</li>
+      <li>Fast ConvNets Using Group-wise Brain Damage (waiting review)</li>
+      <li>Learning to Prune Deep Neural Networks via Layer-wise Optimal Brain Surgeon</li>
+      <li>Net-Trim: A Layer-wise Convex Pruning of Deep Neural Networks</li>
+      <li>Pruning Convolutional Neural Networks for Resource Efficient Transfer Learning</li>
+      <li>Compact Deep Convolutional Neural Networks with Coarse Pruning</li>
+      <li>To prune, or not to prune: exploring the efficacy of pruning for model compression</li>
+      <li>NIPS: Pruning Networks using Neuron Importance Score Propagation</li>
+      <li>Discrimination-aware Channel Pruning for Deep Neural Networks</li>
+    </ol>
+  </li>
+  <li>Fine-grained pruning <a href="#fineprune">details</a>
+    <ol>
+      <li>Optimal Brain Damage</li>
+      <li>Second order derivatives for network pruning: Optimal Brain Surgeon</li>
+      <li>Learning both Weights and Connections for EfficientNeural Networks</li>
+      <li>“Learning-Compression” Algorithms for Neural Net Pruning</li>
+      <li>Deep k-Means: Re-Training and Parameter Sharing with Harder Cluster Assignments for Compressing Deep Convolutions</li>
+      <li>Frequency-domain Dynamic Pruning for Convolutional Neural Networks</li>
+      <li>Compressing Neural Networks using the Variational Information Bottleneck</li>
+      <li>Weightless: Lossy weight encoding for deep neural network compression</li>
+    </ol>
+  </li>
+  <li>Other types of pruning <a href="#oprune">details</a>
+    <ol>
+      <li>Customizing DNN Pruning to the Underlying Hardware
+Parallelism (watiting to be released on ISCA 2017)</li>
+      <li>Exploring the Regularity of Sparse Structure inConvolutional Neural Networks</li>
+      <li>Efficient Sparse Winograd Convolutional Neural Networks</li>
+      <li>PackNet: Adding Multiple Tasks to a Single Network by Iterative Pruning</li>
+    </ol>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="coarse-grained-pruning"><a id="coarseprune"></a>Coarse-grained Pruning</h2>
+
+<h4 id="1-pruning-filters-for-efficient-convnets"><strong>1. Pruning Filters for Efficient ConvNets</strong></h4>
+
+<p><strong>Review</strong>(<a href="https://arxiv.org/pdf/1608.08710">Paper link</a>) Fine-grained sparsity requires libraries to explore its advantage. An interesting point: maintaining sparse data structures also creates an additional storage overhead which can be significant for low-precision weights.
+Instead of layer-wise iterative fine-tuning (retraining), they use one-shot pruning and retraining to save retraining time for pruning filters across multiple layers, which is critical for pruning very deep networks.
+Pruning based on sum of absolute kernel weights. Sort the rank based on that metric and prune the ones that have lowest value (very arbitrary in a sense). They introduced both <strong>Independent pruning</strong> and <strong>Greedy pruning</strong> for pruning across multiple layers. In <strong>Independent pruning</strong>, only filters in a same layers are considered, in contrast, <strong>Greedy pruning</strong> takes account of removed values in previous layers.
+In ResNet, the pruning results can be affected by shortcutting connections, to prune the second convolutional layer of the residual block, the corresponding projected feature maps must also be pruned.
+Smallest filter pruning outperforms feature map pruning with the metrics (eg: mean, std, meanl1, meanl2  … ).</p>
+
+<h4 id="2-learning-structured-sparsity-in-deep-neural-networks"><strong>2. Learning Structured Sparsity in Deep Neural Networks</strong></h4>
+
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1608.03665">Paper link</a>)
+This paper explores filer-wise, channel-wise, shape-wise and depth-wise
+sparsities. Penalizing multiple weights structures using group-lasso (
+adding arbitrary hyperparameters in the cost function). The interesting observation
+is to combine both filter-wise and shape-wise sparsity in GEMM operations,
+where a high dimensional matrix is unrolled to a flat one. The rows and
+columns of GEMM can be removed directly. Their code can be found at
+<a href="https://github.com/wenwei202/caffe/tree/scnn">here</a>.</p>
+
+<h4 id="3-fast-convnets-using-group-wise-brain-damage"><strong>3. Fast ConvNets Using Group-wise Brain Damage</strong></h4>
+
+<p><strong>Review</strong>(<a href="https://arxiv.org/pdf/1506.02515">Paper link</a>)
+This paper has a nice explaination of GEMM (generalized matrix multiplication). The consider a
+“group regularizer” that is essentially based on
+L2 and L1 norms.
+Two pruning strategies are considered. The first
+method adds the regularizer directly to a trained network and force a number of groups with smallest L2 norms to zeros.
+The second method inspects a validation set and
+increase the “brain damage” with a control of
+loss of test accuracy.</p>
+
+<h4 id="4-learning-to-prune-deep-neural-networks-via-layer-wise-optimal-brain-surgeon"><strong>4. Learning to Prune Deep Neural Networks via Layer-wise Optimal Brain Surgeon</strong></h4>
+
+<p><strong>Review</strong>(<a href="https://arxiv.org/pdf/1705.07565">Paper link</a>)
+This paper proposed a new layer-wise pruning method, and theoretically proved that only a light retraining is required to resume the test accuracy.
+The parameters with least increase of error approximated by second-order directives are pruned. The second order derivative approximation requires an inverse of Hessian Matrix. This work makes computation easier by: 1. compute layer-wise Hessian; 2. compute a block-wise pesudo-inverse of Hessian and then populate to the whole dataset.</p>
+
+<p>Consider a trained network, if we prune an arbitrary weight away, it will affect our loss function.
+The change in loss function can be broken down into a Taylor expansion. The first derivative is zero since network is well trained (back prop gradient is zero), so the error can be approximated using the second derivative if ignoring other high order terms.
+Computing such second-order derivative requires an inverse of hessian matrix and this becomes the computation bottleneck. Because hessian matrix of a network is N*N where N is the total parameter count.</p>
+
+<p><strong>Highlights</strong>:</p>
+<ol>
+  <li>The only parameter we have to control is the layer-wise error to ensure gradient to be small enough after pruning.
+That is one of reasons why there is a “pruning inflection point” after which layer-wise error would drop dramatically.</li>
+  <li>Significantly less retraining iterations, around two magnitudes smaller than other popular methods.</li>
+</ol>
+
+<h4 id="5-net-trim-a-layer-wise-convex-pruning-of-deep-neural-networks"><strong>5. Net-Trim: A Layer-wise Convex Pruning of Deep Neural Networks</strong></h4>
+<p><strong>Review</strong> (<a href="https://arxiv.org/pdf/1611.05162">Paper link</a>)
+The first (maybe) paper considers second-order directive pruning in a layer-wise fashion.
+A series of convex solvers are used at each layer.
+(This is a long paper and a more careful read might happen later)</p>
+
+<h4 id="6-pruning-convolutional-neural-networks-for-resource-efficient-inference"><strong>6. Pruning Convolutional Neural Networks for Resource Efficient Inference</strong></h4>
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1611.06440">Paper link</a>)
+This work limits itself to transfer learning, where large networks are adapted to specialized tasks.
+In such user cases, pruning offers a large compression.
+This work proposed a pruning strategy that focuses on the first-order gradient.
+The criteria prunes parameters that have an almost flat gradient of the cost function with respect to the feature maps.</p>
+
+<p><strong>Highlights</strong>:</p>
+<ol>
+  <li>Based on the assumption that samples are iid, it avoids computing the second-order term of tayler series compared to Optimal Brain Damage(OBD). They use the expectation value of the absolute value of the first order term to approximate variance.</li>
+  <li>FLOPs regularization: add extra term into the cost function to regularize flops per feature map. Feature maps with larger flops are penalized.</li>
+</ol>
+
+<h4 id="7-compact-deep-convolutional-neural-networks-with-coarse-pruning"><strong>7. Compact Deep Convolutional Neural Networks with Coarse Pruning</strong></h4>
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1610.09639">Paper link</a>)
+This work chooses pruning masks based on the accuracy performance on the validation
+set, but it might not be correct to do so.
+The results are reported on Cifar10 and SVHN, both of these are relatively
+small datasets.
+They mentioned exploring run-time pruning in their future works.</p>
+
+<h4 id="8-to-prune-or-not-to-prune-exploring-the-efficacy-of-pruning-for-model-compression">8. To prune, or not to prune: exploring the efficacy of pruning for model compression</h4>
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1710.01878">Paper link</a>)
+This paper presents a threshold based pruning method and shows very good compression results on mobilnet.
+They conclude that large-sparse models outperform comparably-sized small-dense models across a diverse set of neural network architectures.
+I think the reason of their high compression rate on mobilent is because that they do not prune the parameters in the one standard convolution layer and in the depthwise convolution layers since there are very few parameters in these layers (1.1% of the total number of parameters)</p>
+
+<h4 id="9-nips-pruning-networks-using-neuron-importance-score-propagation-cvpr-2018">9. NIPS: Pruning Networks using Neuron Importance Score Propagation (CVPR 2018)</h4>
+<p><strong>Review</strong>(<a href="">Paper link</a>)
+The paper suggested another closed-form solution to find the correct neuron to prune. One key insight is that they deduce the importance of features by looking at the matrix’s power series. They then propagate back the importance measure to each layer to construct an importance measure for each node.</p>
+
+<h4 id="10-discrimination-aware-channel-pruning-for-deep-neural-networks-nips-2018">10. Discrimination-aware Channel Pruning for Deep Neural Networks (NIPS 2018)</h4>
+<p><strong>Review</strong>(<a href="">Paper link</a>)
+This paper suggests doing a Lp norm before performing channel pruning.
+p can be any arbitrary numbers to this additional Lp norm is fine-tuned
+on the pruned model.
+The paper suggests that this process helps each channel to gain
+discrimination-power and thus makes pruning easier.
+I simply thin this argument is a bit too vague…</p>
+
+<hr />
+
+<h2 id="fine-grained-pruning"><a id="fineprune"></a>Fine-grained Pruning</h2>
+<h4 id="1-optimal-brain-damage"><strong>1. Optimal Brain Damage</strong></h4>
+<p><strong>Review</strong>(<a href="http://yann.lecun.com/exdb/publis/pdf/lecun-90b.pdf">Paper link</a>) Use second-order Taylor expansion to find parameters to prune. Perform second-orderr taylor expansion to emulate the increase in the loss function when a weight is set to zero. The saliency for each parameter was computed using a diagonal Hessian approximation, and the low-saliency parameters were pruned from the network and the network was retrained.</p>
+
+<h4 id="2-second-order-derivatives-for-network-pruning-optimal-brain-surgeon"><strong>2. Second-order derivatives for network pruning: Optimal Brain Surgeon</strong></h4>
+<p><strong>Review</strong>(<a href="http://papers.nips.cc/paper/647-second-order-derivatives-for-network-pruning-optimal-brain-surgeon.pdf">Paper link</a>)
+The saliency for each parameter was computed using the inverse Hessian matrix, and the low-saliency weights are pruned and all other weights in the network are updated using the second-order information.</p>
+
+<h4 id="3-learning-both-weights-and-connections-for-efficient-neural-networks">3. <strong>Learning both Weights and Connections for Efficient Neural Networks</strong></h4>
+<p><strong>Review</strong>(<a href="https://arxiv.org/pdf/1506.02626">Paper link</a>)
+Fine-grained pruning, it discussed how to use regularizers and decrease dropouts based on sparsity.</p>
+
+<h4 id="4-learning-compression-algorithms-for-neural-net-pruning">4. “Learning-Compression” Algorithms for Neural Net Pruning</h4>
+<p><strong>Review</strong>(<a href="">Paper link</a>)(CVPR2018)
+Pruning has been traditionally done by ranking or penalizing weights according to some criterion (such as magnitude), removing low-ranked weights and retraining the remaining ones.
+A more direct form of the question is to remove weights that are not important to the loss function. This paper proposes genetic algorithm to search for the best metric that turns out to be very different from magnitude based metrics.</p>
+
+<h4 id="5-deep-k-means-re-training-and-parameter-sharing-with-harder-cluster-assignments-for-compressing-deep-convolutions">5. “Deep k-Means: Re-Training and Parameter Sharing with Harder Cluster Assignments for Compressing Deep Convolutions”</h4>
+<p><strong>Review</strong>(<a href="">Paper link</a>)(ICML2018)
+This paper proposes to put the cost of K-means as a regularization
+term into the cost function of SGD.
+The learned weights are thus more suitable for a K-means clustering.
+The SVD factors of K-means are lazy computed – meaning that they only update
+after a few epochs.</p>
+
+<h4 id="6-frequency-domain-dynamic-pruning-for-convolutional-neural-networks-nips-2018">6. Frequency-domain Dynamic Pruning for Convolutional Neural Networks (NIPS 2018)</h4>
+<p><strong>Review</strong>(<a href="">Paper link</a>)(NIPS2018)
+This paper proposes a simple idea of converting convolution to the
+frequency domain and then apply DNS.
+The experiments results are not persuading though, since it’s all about
+alexnet on imagnet and resent on cifar.</p>
+
+<h4 id="7-compressing-neural-networks-using-the-variational-information-bottleneck">7. Compressing Neural Networks using the Variational Information Bottleneck</h4>
+<p><strong>Review</strong>(<a href="">Paper link</a>)(ICML2018)
+This paper proposes a information bottleneck.
+Minimization of this information theoretic bound reduces the redundancy between adjacent layers by aggregating useful information into a subset of neurons that can be preserved.
+In contrast, the activations of disposable neurons are shut off via an attractive form of sparse regularization that emerges naturally from this framework, providing tangible advantages over traditional sparsity penalties without contributing additional tuning parameters to the energy landscape.</p>
+
+<h4 id="8-weightless-lossy-weight-encoding-for-deep-neural-network-compression">8. Weightless: Lossy weight encoding for deep neural network compression</h4>
+<p><strong>Review</strong>(<a href="">Paper link</a>)(ICML2018)
+Weightless is a lossy encoding scheme based on Bloomier filters.
+The idea of Bloomier filter is a loassy hashing system with a probabilistic false positive answer.
+This compression results are not that impressive, but it seems like this hashing mechanism can be very hardware friendly.</p>
+
+<h2 id="other-types-of-pruning"><a id="oprune"></a>Other types of Pruning</h2>
+
+<h4 id="1-customizing-dnn-pruning-to-the-underlying-hardware-parallelism">1. <strong>Customizing DNN Pruning to the Underlying Hardware Parallelism</strong></h4>
+
+<h4 id="2-exploring-the-regularity-of-sparse-structure-inconvolutional-neural-networks">2. <strong>Exploring the Regularity of Sparse Structure inConvolutional Neural Networks</strong></h4>
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1705.08922">Paper link</a>)
+This paper classifies pruning into various granularities:</p>
+<ol>
+  <li>Fine-grained (individual values)</li>
+  <li>Vector wise</li>
+  <li>Kernel wise</li>
+  <li>Filter wise
+The interesting observation they make is that:</li>
+  <li>sparsity structure does not impact quantization (Figure 6)</li>
+  <li>Vector-wise pruning shows similar results to valina pruning (Table 2)</li>
+</ol>
+
+<h4 id="3-efficient-sparse-winograd-convolutional-neural-networks">3. Efficient Sparse Winograd Convolutional Neural Networks</h4>
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1802.06367">Paper link</a>)
+The basic block of Winograd works on a certain tile size.
+The valilla pruned model does not provide any savings, sparsity does not
+reduce the number of multiplications.
+An alternative is to prune weights in the Winograd-domain, which
+directly reduces the number of multiplications.
+Note the Relu function can be transformed to the Winograd-domain hence further
+reduces the number of multiplications.</p>
+
+<h4 id="4-packnet-adding-multiple-tasks-to-a-single-network-by-iterative-pruning">4. PackNet: Adding Multiple Tasks to a Single Network by Iterative Pruning</h4>
+<p><strong>Review</strong>(<a href="">Paper link</a>)(CVPR 2018)
+Catastrophic forgetting refers to how the neural network loses its accuracy for the original dataset when shown to learn a new dataset while the old dataset becomes invisible.
+The paper presented a method that basically prunes weights away for each task and then it can create task-specific pruning masks to share the weights in the same network to avoid catastrophic forgetting.</p>
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+
+
+  
+  </body>
+</html>

@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Aaron's Wiki by </title>
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <meta name="viewport" content="width=device-width">
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Aaron's Wiki</h1>
+        <!-- <p>Hello, thanks for visiting my personal wiki.</p> -->
+        <!-- <h2>Projects</h2> -->
+        <p class="view"><a href="blog/index">main page</a></p>
+        <p class="view"><a href="blog/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="blog/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="blog/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="blog/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="blog/posts/posts_index.html">Posts</a></p>
+        <!-- <p class="view"><a href="/index">main page</a></p>
+        <p class="view"><a href="/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="/posts/posts_index.html">Posts</a></p> -->
+        <!-- <p class="view"><a href="/blog/papers/nn_models/model_summary.html">Papers</a></p> -->
+        <!-- <h2>Book and Code Reviews</h2> -->
+        <!-- <p class="view"><a href="">Books</a></p>
+        <p class="view"><a href="">Python</a></p>
+        <p class="view"><a href="">C++</a></p> -->
+        <!-- <h2>Contacts</h2> -->
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h1 id="-list-of-papers"><a href="#list"></a> List of papers</h1>
+
+<ul>
+  <li>Quantization Strategies and theoreis<a href="#strategy">details</a>
+    <ol>
+      <li>Fixed Point Quantization of Deep Convolutional Networks.</li>
+      <li>Variational Network Quantization</li>
+      <li>Explicit Loss-Error-Aware Quantization for Low-Bit Deep Neural Networks</li>
+      <li>Feature Quantization for Defending Against Distortion of Images</li>
+      <li>Clip-Q: Deep Network Compression Learning by In-Parallel Pruning-Quantization</li>
+    </ol>
+  </li>
+  <li>Fixed-point based Quantization <a href="#fixedquan">details</a>
+    <ol>
+      <li>Trained Ternary Quantization</li>
+      <li>Ternary Neural Networks with Fine-Grained Quantization</li>
+      <li>Deep Learning with Low Precision by Half-wave Gaussian Quantization</li>
+      <li>Hardware-oriented Approximation of Convolutional Neural Networks</li>
+      <li>Two-Step Quantization for Low-bit Neural Networks</li>
+      <li>SYQ: Learning Symmetric Quantization For Efficient Deep Neural Networks</li>
+      <li>Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference</li>
+    </ol>
+  </li>
+  <li>Log-based, Float-based Quantization <a href="#logquan">details</a>
+    <ol>
+      <li>Incremental Network Quantization: Towards Lossless CNNs with Low-Precision Weights</li>
+      <li>ShiftCNN: Generalized Low-Precision Architecture for Inference of Convolutional Neural Networks</li>
+      <li>LogNet: Energy-efficient Neural Networks Using Logarithmic Computation</li>
+      <li>Flexpoint: An Adaptive Numerical Format for EfficientTraining of Deep Neural Networks</li>
+      <li>Convolutional Neural Networks using Logarithmic Data Representation</li>
+    </ol>
+  </li>
+  <li>Quantized Training <a href="#train">details</a>
+    <ol>
+      <li>Quantized Neural Networks: Training Neural Networks with Low Precision Weights and Activations</li>
+      <li>DoReFa-Net: Training Low Bitwidth Convolutional Neural Networks with Low Bitwidth Gradients</li>
+      <li>Training deep neural networks with low precision multiplications</li>
+      <li>Quantized Neural Networks: Training Neural Networks with Low Precision Weights and Activations</li>
+      <li>Training Quantized Nets: A Deeper Understanding</li>
+      <li>Training and Inference with Integers in Deep Neural Networks</li>
+      <li>Error Compensated Quantized SGD and its Applications to Large-scale Distributed Optimization</li>
+    </ol>
+  </li>
+</ul>
+
+<h2 id="-quantization-strategies"><a id="strategy"></a> Quantization Strategies</h2>
+
+<h4 id="1-fixed-point-quantization-of-deep-convolutional-networks-icml-2016">1. Fixed Point Quantization of Deep Convolutional Networks (ICML 2016)</h4>
+
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1511.06393">Paper link</a>)
+Convert a pretrained network into a fixed-point model using the optimization
+strategy based on signal-to-noise-ratio.
+Simply quantizing all layers in a network with uniform bit-width value gives a
+bad performance.</p>
+
+<h4 id="2-variational-network-quantization-iclr-2018">2. Variational Network Quantization (ICLR 2018)</h4>
+
+<p><strong>Review</strong>([Paper link])</p>
+
+<p>Bayesian methods for network compression, it learns a posterior distribution over network weights under a sparsity-inducing prior.
+The posterior distribution over the network allows identifying redundancies through:</p>
+<ol>
+  <li>weights with expected values close to zero</li>
+  <li>weights with a large variance</li>
+  <li>the posterior variance over non-pruned parameters can be used to determine the required bit-precision.</li>
+</ol>
+
+<p>The pruned and quantized weights has an interesting distribution: a major peak at round zero and two peaks at the sides.</p>
+
+<h4 id="3-explicit-loss-error-aware-quantization-for-low-bit-deep-neural-networks">3. Explicit Loss-Error-Aware Quantization for Low-Bit Deep Neural Networks</h4>
+
+<p><strong>Review</strong>([Paper link])
+This paper works on regularizing the loss perturbation from weights quantization.
+The closed form of loss of quantization can be characterized as the differences of two values, they can open up the error term using first-order Taylor expansion and characterize the quantization loss.</p>
+
+<h4 id="4-feature-quantization-for-defending-against-distortion-of-images">4. Feature Quantization for Defending Against Distortion of Images</h4>
+
+<p><strong>Review</strong>([Paper link])
+Recognition of distorted images is hard especially on distortions with high moments (skewness, kurosis).
+This paper proposes that quantization helps in eliminating minor perturbation of features.
+They propose a new approach to employ feature quantization while training CNNs. Briefly, we integrate the floor or power non-linearity function into the CNNs, such that the features from distorted images can be mapped to a new space with less divergence.</p>
+
+<h4 id="5clip-q-deep-network-compression-learning-by-in-parallel-pruning-quantization">5.Clip-Q: Deep Network Compression Learning by In-Parallel Pruning-Quantization</h4>
+
+<p><strong>Review</strong>([Paper link])
+This paper claims that decoupling pruning with quantization is probably a bad idea.
+If pruning occurs before quantization, this means the loss caused by pruning cannot be recovered later by quantization.
+This paper claims that mixing up the two in one-shot might benefit accuracy, since the loss of accuracy can be cancelled out.</p>
+
+<hr />
+
+<h2 id="-fixed-point-based-quantization"><a id="fixedquan"></a> Fixed-point based Quantization</h2>
+
+<h4 id="1-trained-ternary-quantization">1. <strong>Trained Ternary Quantization</strong></h4>
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1612.01064">Paper link</a>)
+  Tenary representation is {-1,0,1} which is two-bit signed fixed-point arithmetic.
+  It performs ‘normalize’, ‘quantize’ and ‘scale’.
+  The experiments are interesting because ResNets are used on Cifar10 and AlexNet is used on ImageNet, both models contain a high redundancy and thus it is hard to argue their compression results are legit.</p>
+
+<h4 id="2-ternary-neural-networks-with-fine-grained-quantization">2. Ternary Neural Networks with Fine-Grained Quantization</h4>
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1705.01462">Paper link</a>)
+They hypothesize that weights that learn different types of features may follow different distributions.
+Combining all the weights together represents a mixture of various distributions, and ternarizing them using a single threshold (∆) and magnitude (α) may not preserve the distributions of individual weights.</p>
+
+<h4 id="3-deep-learning-with-low-precision-by-half-wave-gaussian-quantization">3. <strong>Deep Learning with Low Precision by Half-wave Gaussian Quantization</strong></h4>
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1702.00953">Paper link</a>)
+This paper mainly works on proposing a new acitvation function for the purpose
+of quantizing activations.
+They suggest that changing the forward pass of Relu to Half-wave Gaussian function,
+which is just matching positive inputs to a number of discrete levels.
+The discrete levels are derieved from the statistics of the entire network, basicaly, a profiling of the entire dataset is required to define these discrete
+levels.
+They arguet that, using HWG, binary networks can achieve good accuracy with only
+2-bit activations.</p>
+
+<h4 id="4-hardware-oriented-approximation-of-convolutional-neural-networks">4. Hardware-oriented Approximation of Convolutional Neural Networks</h4>
+
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1605.06402">Paper link</a>, <a href="http://lepsucd.com/?page_id=621">Code</a>)</p>
+
+<p>This thesis describes a number of different quantization methods, including
+fixed-point, dynamic fixed-point and mini-float.
+The author suggests that dynamic fixed-point achieves the best performance.</p>
+
+<h4 id="5two-step-quantization-for-low-bit-neural-networks">5.Two-Step Quantization for Low-bit Neural Networks</h4>
+
+<p><strong>Review</strong>(<a href="">Paper link</a>)
+In the first step, all weights are full-precision and all activations are quantized to low-bitwidths.  In deep neural network, large activations are usually more important than small activations, which is the foundation of attention mechanism.
+By turning a portion of the small positive activations into zeros, the quantization function can pay more attention to large values.
+The second step is to learn how to transform one activation A_(l-1) to A_(l), this can be formed as a non-linear least square regression problem, which makes me feel very surprised, because apparently this regression should happen for all possible activations in all training dataset, which they did not specify.</p>
+
+<h4 id="6-syq-learning-symmetric-quantization-for-efficient-deep-neural-networks">6. SYQ: Learning Symmetric Quantization For Efficient Deep Neural Networks</h4>
+
+<p><strong>Review</strong>(<a href="">Paper link</a>)
+The quantization granularity can be going down to subgroups inside one tensor. This papers suggests two grouping: pixel-wise and row-wise. Pixel-wise translates to column wise grouping in BLAS, and row-wise translates to grouping multiple columns in BLAS.</p>
+
+<h4 id="7-quantization-and-training-of-neural-networks-for-efficient-integer-arithmetic-only-inference">7. Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference</h4>
+
+<p><strong>Review</strong>(<a href="">Paper link</a>)
+Very solid Google paper, the results match what Pete sent us. They basically emulate the effect of quantizations as well</p>
+
+<hr />
+
+<h2 id="-log-based-and-float-based-quantization"><a id="logquan"></a> Log based and Float based Quantization</h2>
+
+<h4 id="1-incremental-network-quantization-towards-lossless-cnns-with-low-precision-weights">1. <strong>Incremental Network Quantization: Towards Lossless CNNs with Low-Precision Weights</strong></h4>
+
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1702.03044">Paper link</a>)
+Method description:</p>
+<ol>
+  <li>Partition weights into two groups.</li>
+  <li>Quantize the first group to powers of tows, retrain the second group.</li>
+  <li>Go back to 1 until all weights are quantized.</li>
+</ol>
+
+<p>The results are amazing, 89× on Alexnet with -1.47%/-0.96% on top1/top5 accuracies.</p>
+
+<h4 id="2-shiftcnn-generalized-low-precision-architecture-for-inference-of-convolutional-neural-networks">2. ShiftCNN: Generalized Low-Precision Architecture for Inference of Convolutional Neural Networks</h4>
+<p><strong>Review</strong>(<a href="">Paper link</a>)
+This paper shows surprisingly good results for shift based quantization.
+The key concept is to allow multiple shifts to occur on weights.
+This increases resolution by a significant amount.</p>
+
+<h4 id="3-lognet-energy-efficient-neural-networks-using-logarithmic-computation">3. LogNet: Energy-efficient Neural Networks Using Logarithmic Computation</h4>
+<p><strong>Review</strong>(<a href="">Paper link</a>)
+This is a hardware implmentation of the original LogNet paper to further prove that elimination of bulky multipliers increases energy efficiency.</p>
+
+<h4 id="4-flexpoint-an-adaptive-numerical-format-for-efficienttraining-of-deep-neural-networks">4. Flexpoint: An Adaptive Numerical Format for EfficientTraining of Deep Neural Networks</h4>
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1711.02213">Paper link</a>)
+This is a special floating point arithmetic with a section of the exponent that
+is shared, but also maintains their own exponent bits.</p>
+
+<h4 id="5-convolutional-neural-networks-using-logarithmic-data-representation">5. Convolutional Neural Networks using Logarithmic Data Representation</h4>
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1603.01025">Paper link</a>)
+This paper presents how to quantize a network in log domain.
+This includes using base-2 logs and normal base logs.
+<strong>Convolution layers are more sensitive than fc layers.</strong>
+The guess is fc weights are used only once per input image but convolutional
+weights are reused multiple times.
+The results are presented in the following table, conv layers are 5 bits but fc layers are 4 bits.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Networks</th>
+      <th>Linear</th>
+      <th>Base 2 log</th>
+      <th>Base root 2 log</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AlexNet</td>
+      <td>73.6%</td>
+      <td>70.6%</td>
+      <td>75.1%</td>
+    </tr>
+    <tr>
+      <td>Vgg16</td>
+      <td>85.1%</td>
+      <td>83.4%</td>
+      <td>89.0%</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="-quantized-training"><a id="train"></a> Quantized Training</h2>
+
+<h4 id="1-quantized-neural-networks-training-neural-networks-with-low-precision-weights-and-activations">1. Quantized Neural Networks: Training Neural Networks with Low Precision Weights and Activations</h4>
+
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1609.07061">Paper link</a>)
+This paper proposed <strong>Quantized Neural Network</strong>.
+All MAC operations are replaced by XNORs and population counts.
+Quantized version of AlexNet with 1-bit weights and 2-bit activations achieves 51% top-1 accuracy.
+BNN achieves 41.8% top-1 and 67.1% top-5 accuracy using AlexNet and 47.1% top-1 and 69.1%top-5 accuracy using GoogleNet</p>
+
+<h4 id="2-dorefa-net-training-low-bitwidth-convolutional-neural-networks-with-low-bitwidth-gradients">2. <strong>DoReFa-Net: Training Low Bitwidth Convolutional Neural Networks with Low Bitwidth Gradients</strong></h4>
+
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1606.06160">Paper link</a>, <a href="https://github.com/ppwwyyxx/tensorpack/tree/master/examples/DoReFa-Net">Code</a>)
+DoReFa-Net is built on Tensorpack – using python monkey patching to override
+the back propagation of gradients.
+They suggest weights and activations can be deterministically quantized, but
+gradients have to be quantized in a stochasitc manner.
+Using a gradient with bit width less than four can significantly impact
+training and prediction accuracy.
+Two major concerns on this work</p>
+<ol>
+  <li>The bit-wdith limitation is not really a fixed-point quantization.</li>
+  <li>Round-off error propagation on low precision is significant.</li>
+</ol>
+
+<h4 id="3-training-deep-neural-networks-with-low-precision-multiplications">3. Training deep neural networks with low precision multiplications</h4>
+
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1412.7024">Paper link</a>)
+This paper presents how fixed-point and dynamic fixed-point quantization works.
+The convergence algorithm of dynamic fixed point is shown in this paper.</p>
+
+<h4 id="4-quantized-neural-networks-training-neural-networks-with-low-precision-weights-and-activations">4. Quantized Neural Networks: Training Neural Networks with Low Precision Weights and Activations</h4>
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1609.07061">Paper link</a>)
+This works shows very aggressive quantization: AlexNet with 1-bit weights and
+2-bits activations.
+The gradients are also quantized to 6 bits.
+When training BNNs, they constraint activations to be either +1 or -1.
+The gradients propagation is a discrete function since they ignored noise, and
+batch norm becomes shifting.</p>
+
+<h4 id="5-training-quantized-nets-a-deeper-understanding">5. Training Quantized Nets: A Deeper Understanding</h4>
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1706.02379">Paper link</a>)
+This paper shows a theoretical proof of why algorithms that are quantizing in a non-linear form work relatively well because it can converge to a true minimal in a convex set up.</p>
+
+<h4 id="6-training-and-inference-with-integers-in-deep-neural-networks">6. Training and Inference with Integers in Deep Neural Networks</h4>
+<p><strong>Review</strong>(<a href="https://arxiv.org/abs/1802.04680">Paper link</a>, <a href="https://github.com/boluoweifenda/WAGE">Code</a>)
+This work focuses on training and inference with interger-based arithmetic.
+They propose quantizing WAGE (weights, activations, gradients and errors).
+The error term refers to the gradients on activations, these values turn out to be very small.</p>
+
+<h4 id="7-error-compensated-quantized-sgd-and-its-applications-to-large-scale-distributed-optimization-icml-2018">7. Error Compensated Quantized SGD and its Applications to Large-scale Distributed Optimization (ICML 2018)</h4>
+<p><strong>Review</strong>(<a href="">Paper link</a>)
+This work focuses on reducing the communication required in SGD
+in distributed training.
+In distributed SGD.
+Every node initializes its local model replica using
+the same random seed,
+to ensure the consistency of all model replicas.
+In the t-th iteration,
+each node randomly selects a mini-batch of training samples,
+computes local gradients,
+and then broadcasts to all the other nodes.
+When one node gathers all the local gradients sent by other nodes,
+global gradients can be computed and used to update model parameters.</p>
+
+<p>The proposed QSGD has an error-feedback mechanism.
+In each local node, it collects the previous quantization error (qe)
+and feed this to the current SGD update (Quan(g_(t) + qe_(t))).
+Of course, it then dual-update the quantization error
+(qe_(t+1) = Quan(g_(t) + qe_(t)) - g_(t)).</p>
+
+<p>Given the feedback process, the paper then nicely prove the convergence of
+its quantized SGD using convex optimization.</p>
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+
+
+  
+  </body>
+</html>

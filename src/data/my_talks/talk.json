@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Towards Efficient and Secure DNNs",
+        "pub": "Cambridge Computer Lab NLP Seminars",
+        "link": "https://arxiv.org/abs/1909.02918"
+    },
+    {
+        "name": "To compress or not to compress: Understanding the Interactions between Adversarial Attacks and Neural Network Compression",
+        "pub": "SysML 2018",
+        "link": "https://arxiv.org/abs/1810.00208"
+    },
+    {
+        "name": "An Efficient Implementation of Online Arithmetics",
+        "pub": "FPT 2015",
+        "link": "https://arxiv.org/abs/1810.00208"
+    }
+]

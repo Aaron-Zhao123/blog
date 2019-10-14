@@ -1,0 +1,172 @@
+---
+layout: default
+---
+<script src="assets/js/test.js"></script>
+<img id="myhead" src="aaron_zhao.png" alt="Aaron Zhao" style="width:150px;height:150px;">
+
+# [](#Introduction) About Me
+
+Hello, thanks for visiting my personal wiki.
+
+My name is Aaron Zhao, currently a Phd student at the Computer Lab of University of Cambridge.
+
+I am actively researching on neural network related hardware architectures.
+A list of my previous projects can be found
+[here](/blog/projects/projects_sum.html).
+You can also view my papers at [Google scholar](https://scholar.google.com/citations?user=lOOmgEgAAAAJ&hl=zh-CN).
+
+I keep my [Linkedin Profile](https://www.linkedin.com/in/yiren-aaron-zhao-baa8b5116/) up-to-date, please have a visit if you are interested in my education/work experience.
+
+
+# [](#interests) Education Background
+* Imperial College London, BEng in Electrical and Electronic Engineering (2013-2016)
+* University of Cambridge, Mphil in Computer Science (2016-2017)
+* University of Cambridge, Phd in Computer Science (2017-present)
+
+# [](#interests) Research Experience
+I have previously worked as the following roles:
+
+* Microsoft Research Redmond, Research Intern (Summer 2017)
+* Microsoft Research Cambridge, Research Intern (Summer 2017)
+* Ocado 10x Lab, ML Researcher Intern (Summer 2016)
+* Tangi0, ML Consultant (Summer 2016)
+* CAS Research Group, Imperial College London, Research Assistant (Summer 2015)
+* Radio Frequency Research Lab, University of Electronic Science and Technology of China, Research Assistant (Summer 2014)
+
+
+# [](#interests) Research Interests
+* Machine Learning
+* High Performance Computing
+* Reconfigurable Computing
+* Computer Architecture
+* Custom Accelerator Design
+
+
+# [](#interests) Other Interests
+
+I am
+* a coffee lover
+* a guitar player
+* a kickboxer!
+* I am starting a journey on brazilian jiu jitsu as well.
+
+<!--
+# [](#projects)Projects
+Text can be **bold**, _italic_, or ~~strikethrough~~.
+
+[Link to another page](another-page).
+
+There should be whitespace between paragraphs.
+
+There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+
+
+This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+
+## [](#header-2)Header 2
+
+> This is a blockquote following a header.
+>
+> When something is important enough, you do it even if the odds are not in your favor.
+
+### [](#header-3)Header 3
+
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+```
+
+```ruby
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
+```
+
+#### [](#header-4)Header 4
+
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
+
+##### [](#header-5)Header 5
+
+1.  This is an ordered list following a header.
+2.  This is an ordered list following a header.
+3.  This is an ordered list following a header.
+
+###### [](#header-6)Header 6
+
+| head1        | head two          | three |
+|:-------------|:------------------|:------|
+| ok           | good swedish fish | nice  |
+| out of stock | good and plenty   | nice  |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | yumm  |
+
+### There's a horizontal rule below this.
+
+* * *
+
+### Here is an unordered list:
+
+*   Item foo
+*   Item bar
+*   Item baz
+*   Item zip
+
+### And an ordered list:
+
+1.  Item one
+1.  Item two
+1.  Item three
+1.  Item four
+
+### And a nested list:
+
+- level 1 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+
+### Small image
+
+![](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
+
+### Large image
+
+![](https://guides.github.com/activities/hello-world/branching.png)
+
+
+### Definition lists can be used with HTML syntax.
+
+<dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
+
+```
+Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+```
+
+```
+The final element.
+``` -->

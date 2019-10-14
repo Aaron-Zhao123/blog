@@ -1,0 +1,136 @@
+[
+    {
+        "name": "Automatic Generation of Multi-precision Multi-arithmetic CNN Accelerators for FPGA",
+        "authors": [
+            "Yiren Zhao*",
+            "Xitong Gao*",
+            "Xuan Guo*",
+            "Junyi Liu",
+            "Erwei Wang",
+            "Peter Chuang",
+            "Robert Mullins",
+            "George Constantinides",
+            "Chengzhong Xu"
+        ],
+        "pub": "2019 International Conference on Field-Programmable Technology",
+        "link": ""
+    },
+    {
+        "name": "Blackbox Attacks on Reinforcement Learning Agents Using Approximated Temporal Information",
+        "authors": [
+            "Yiren Zhao*",
+            "Ilia Shumailov*",
+            "Han Cui*",
+            "Xitong Gao",
+            "Robert Mullins",
+            "Ross Anderson"
+        ],
+        "pub": "Preprint on arxiv",
+        "link": "https://arxiv.org/abs/1909.02918"
+    },
+    {
+        "name": "Focused Quantisation for Sparse DNNs",
+        "authors": [
+            "Yiren Zhao*",
+            "Xitong Gao*",
+            "Daniel Bates",
+            "Robert Mullins",
+            "Chengzhong Xu"
+        ],
+        "pub": "2019 Neural Information Processing Systems",
+        "link": ""
+    },
+    {
+        "name": "Characterizing Sources of Ineffectual Computations in Deep Learning Networks",
+        "authors": [
+            "Milos Nikolic",
+            "Mostafa Mahmoud",
+            "Andreas Moshovos",
+            "Yiren Zhao",
+            "Robert Mullins"
+        ],
+        "pub": "2019 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)",
+        "link": "https://ieeexplore.ieee.org/abstract/document/8695654"
+    },
+    {
+        "name": "Sitatapatra: Blocking the Transfer of Adversarial Samples",
+        "authors": [
+            "Ilia Shumailov*",
+            "Xitong Gao*",
+            "Yiren Zhao*",
+            "Robert Mullins",
+            "Ross Anderson",
+            "Chengzhong Xu"
+        ],
+        "pub": "Preprint on arxiv",
+        "link": "https://arxiv.org/abs/1901.08121"
+    },
+    {
+        "name": "Dynamic Channel Pruning: Feature Boosting and Suppression",
+        "authors": [
+            "Xitong Gao*",
+            "Yiren Zhao*",
+            "Robert Mullins",
+            "Chengzhong Xu"
+        ],
+        "pub": "2019 International Conference on Learning Representations (ICLR)",
+        "link": "https://arxiv.org/abs/1810.05331"
+    },
+    {
+        "name": "The Taboo Trap: Behavioural Detection of Adversarial Samples",
+        "authors": [
+            "Ilia Shumailov*",
+            "Yiren Zhao*",
+            "Robert Mullins",
+            "Ross Anderson"
+        ],
+        "pub": "Preprint on arxiv",
+        "link": "https://arxiv.org/abs/1811.07375"
+    },
+    {
+        "name": "Redundancy-reduced MobileNet acceleration on reconfigurable logic for ImageNet classification",
+        "authors": [
+            "Jiang Su",
+            "Julian Faraone",
+            "Junyi Liu",
+            "Yiren Zhao",
+            "David B Thomas",
+            "Philip HW Leong",
+            "Peter YK Cheung"
+        ],
+        "pub": "2018 International Symposium on Applied Reconfigurable Computing",
+        "link": "https://link.springer.com/chapter/10.1007/978-3-319-78890-6_2"
+    },
+    {
+        "name": "To compress or not to compress: Understanding the Interactions between Adversarial Attacks and Neural Network Compression",
+        "authors": [
+            "Yiren Zhao*",
+            "Ilia Shumailov*",
+            "Robert Mullins",
+            "Ross Anderson"
+        ],
+        "pub": "2018 The Conference on Systems and Machine Learning (SysML)",
+        "link": "https://arxiv.org/abs/1810.00208"
+    },
+    {
+        "name": "Mayo: A Framework for Auto-generating Hardware Friendly Deep Neural Networks",
+        "authors": [
+            "Yiren Zhao*",
+            "Xitong Gao*",
+            "Robert Mullins",
+            "Chengzhong Xu"
+        ],
+        "pub": "2nd International Workshop on Embedded and Mobile Deep Learning (EMDL 2018)",
+        "link": "https://dl.acm.org/citation.cfm?id=3212726"
+    },
+    {
+        "name": "An Efficient Implementation of Online Arithmetic",
+        "authors": [
+            "Yiren Zhao*",
+            "John Wickerson",
+            "George A Constantinides"
+        ],
+        "pub": "2016 International Conference on Field-Programmable Technology (FPT)",
+        "link": "https://ieeexplore.ieee.org/abstract/document/7929191"
+    }
+]

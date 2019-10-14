@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/blog/static/js/main.a507abb0.chunk.js",
+    "main.js.map": "/blog/static/js/main.a507abb0.chunk.js.map",
+    "runtime~main.js": "/blog/static/js/runtime~main.205277d3.js",
+    "runtime~main.js.map": "/blog/static/js/runtime~main.205277d3.js.map",
+    "static/js/2.6a0ce0d1.chunk.js": "/blog/static/js/2.6a0ce0d1.chunk.js",
+    "static/js/2.6a0ce0d1.chunk.js.map": "/blog/static/js/2.6a0ce0d1.chunk.js.map",
+    "index.html": "/blog/index.html",
+    "precache-manifest.bcfb487223665ab1ede2235a5aec7e3c.js": "/blog/precache-manifest.bcfb487223665ab1ede2235a5aec7e3c.js",
+    "service-worker.js": "/blog/service-worker.js",
+    "static/media/aaron_zhao.png": "/blog/static/media/aaron_zhao.a666553f.png",
+    "static/media/cv.pdf": "/blog/static/media/cv.9cbedfbe.pdf",
+    "static/media/mayo.jpeg": "/blog/static/media/mayo.08dbf592.jpeg",
+    "static/media/sitatapatra.jpeg": "/blog/static/media/sitatapatra.82b5fdb4.jpeg",
+    "static/media/tomato.jpeg": "/blog/static/media/tomato.5f6c589c.jpeg"
+  }
+}

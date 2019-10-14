@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Aaron's Wiki by </title>
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <meta name="viewport" content="width=device-width">
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Aaron's Wiki</h1>
+        <!-- <p>Hello, thanks for visiting my personal wiki.</p> -->
+        <!-- <h2>Projects</h2> -->
+        <p class="view"><a href="blog/index">main page</a></p>
+        <p class="view"><a href="blog/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="blog/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="blog/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="blog/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="blog/posts/posts_index.html">Posts</a></p>
+        <!-- <p class="view"><a href="/index">main page</a></p>
+        <p class="view"><a href="/projects/projects_sum.html">Projects</a></p>
+        <p class="view"><a href="/papers/papers_index.html">Paper Reviews</a></p>
+        <p class="view"><a href="/books/books_index.html">Book Reviews</a></p>
+        <p class="view"><a href="/coding/coding_index.html">Coding and APIs</a></p>
+        <p class="view"><a href="/posts/posts_index.html">Posts</a></p> -->
+        <!-- <p class="view"><a href="/blog/papers/nn_models/model_summary.html">Papers</a></p> -->
+        <!-- <h2>Book and Code Reviews</h2> -->
+        <!-- <p class="view"><a href="">Books</a></p>
+        <p class="view"><a href="">Python</a></p>
+        <p class="view"><a href="">C++</a></p> -->
+        <!-- <h2>Contacts</h2> -->
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h1 id="chapter-1-going-back-to-convolutions">Chapter 1: Going back to convolutions</h1>
+<p>In this chapter, I would like to go back to basic convolution operations –
+rewriting them in C++ to help understanding this basic operation.
+A graphical illustration is provided <a href="http://cs231n.github.io/convolutional-networks/">here</a>
+by the Stanford Team.</p>
+
+<p>A straightforward implementation is follow the order:</p>
+
+<p>output channels -&gt; input channels -&gt; output_height -&gt; output_width -&gt; kernel_height -&gt; kernel_width</p>
+
+<pre><code class="language-C++">// output channels
+for (int oc = 0; oc &lt; output_channels; oc += 1) {
+  // each output channel
+  const float *pout = &amp;out[oc];
+  for (int ic = 0; ic &lt; input_channels; ic += 1){
+    // each input channel
+    const float *pin = &amp;in[ic];
+    for (int y = 0; y &lt; output_height; y += 1){
+      // each line of input channel
+      const float *pin_line = pin;
+      for (int x = 0; x &lt; output_width; x += 1){
+        // each element of each line of input channel
+        const float *pin_element = pin_line;
+        for (int wy = 0; wy &lt; kernel_height; wy += 1){
+          for (int wx = 0; wx &lt; kernel_width; wx += 1) {
+            sum += pw[wx] * pin_element[wx];
+          }
+          // move to next kernel line
+          pw += kw;
+          // take account of padding
+          pin_element += padding_width;
+        }
+      pout[x] += sum;
+      // take account of striding
+      pin_line += stride;
+      }
+      pout += output_width;
+      // take account of striding
+      pin += stride;
+    }
+}
+</code></pre>
+
+<p>Another implementation is to stat with output channel first then output width/height and finally input channel, height, width</p>
+<pre><code class="language-C++">// output channels
+for (int oc = 0; oc &lt; output_channels; oc += 1) {
+  for (int row = 0; row &lt; out_row; row += 1){
+    for (int col = 0; col &lt; out_col; col+= 1){
+      for (int ic = 0; in &lt; input_channels' ic += 1){
+        for (int wy = 0; wy &lt; kernel_height; wy += 1){
+          for (int wx = 0; wx &lt; kernel_width; wx += 1) {
+            sum[oc][row][col] += weights[oc][ic][wx][wy] * frame_in[ic][wy][wx];
+          }        
+      }
+  }
+}
+</code></pre>
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+
+
+  
+  </body>
+</html>
