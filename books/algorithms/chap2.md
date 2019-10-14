@@ -1,4 +1,0 @@
-# Backtracking
-
-## N Queens
-

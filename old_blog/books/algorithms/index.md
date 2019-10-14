@@ -1,1 +1,0 @@
-Algorithms by Jeff Erickson

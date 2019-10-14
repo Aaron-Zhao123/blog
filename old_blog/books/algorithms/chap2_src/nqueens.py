@@ -1,1 +1,0 @@
-def place_queen()
