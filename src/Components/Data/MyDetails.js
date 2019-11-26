@@ -41,7 +41,7 @@ export default ({styles}) =>
                         </Link>
                         , at the Computer Lab of University of Cambridge.
                     </Typography>
-                    <Typography variant="body" color="textSecondary" component="p">
+                    <Typography variant="body" color="textSecondary" component="p" spacing="2">
                         My research focuses on efficient machine learning, secure machine learning and machine learning hardware designs.
                     </Typography>
                 </Paper>

@@ -22,6 +22,10 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+const scholarUrl = 'https://scholar.google.com/citations?user=lOOmgEgAAAAJ&hl=en';
+const githubUrl = 'https://github.com/Aaron-Zhao123/';
+const linkdinUrl = 'https://www.linkedin.com/in/yiren-aaron-zhao-baa8b5116/';
+
 function handleClick(event) {
   event.preventDefault();
   alert('You clicked a breadcrumb.');
@@ -32,25 +36,15 @@ export default function QuickClick() {
   return (
     <Paper elevation={0} className={classes.root}>
       <Breadcrumbs aria-label="breadcrumb" separator=" ">
-        <Link color="inherit" href="/" onClick={handleClick} className={classes.link}>
+        <Link color="inherit" href={scholarUrl}>
           <Print className={classes.icon} />
           Scholar
         </Link>
-        <Link
-          color="inherit"
-          href="/getting-started/installation/"
-          onClick={handleClick}
-          className={classes.link}
-        >
+        <Link color="inherit" href={githubUrl}>
           <Code className={classes.icon} />
           Github
         </Link>
-        <Link
-          color="inherit"
-          href="/getting-started/installation/"
-          onClick={handleClick}
-          className={classes.link}
-        >
+        <Link color="inherit" href={linkdinUrl}>
           <Contacts className={classes.icon} />
           LinkedIn
         </Link>

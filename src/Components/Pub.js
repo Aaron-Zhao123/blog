@@ -12,15 +12,38 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { tsParameterProperty } from '@babel/types';
 import Link from '@material-ui/core/Link';
 
-var mypaperdata = require('../data/my_papers/paper.json')
+var paper2019 = require('../data/my_papers/paper2019.json')
+var paper2018 = require('../data/my_papers/paper2018.json')
 
 function AuthorList(props) {
   const authors = props.authors
   return authors.join(", ")
 }
 
-function MyPaperList(){
-  return mypaperdata.map(
+function PaperList2018() {
+  return paper2018.map(
+    (paper) =>
+      <ListItem>
+        <ListItemText
+          primary={paper.name}
+          secondary={
+            <div>
+              <div><AuthorList authors={paper.authors}/></div>
+              <div>
+                {paper.pub}
+                {'    '}
+                <Link href={paper.link}>
+                  pdf
+                </Link>
+              </div>
+            </div>
+          }
+        />
+      </ListItem>
+  )
+}
+function PaperList2019() {
+  return paper2019.map(
     (paper) =>
       <ListItem>
         <ListItemText
@@ -54,11 +77,21 @@ const PublicationList = ({ styles }) =>
         <Typography variant="h5" color="text" component="p" spacing="2">
           List of Publications
         </Typography>
-        <Typography component="p">
+        <Typography component="h7">
         * indicates equal contribution.
         </Typography>
+
+        <Typography variant="h6" color="text" component="p" spacing="2">
+        2019
+        </Typography>
         <List>
-          <MyPaperList/>
+          <PaperList2019/>
+        </List>
+        <Typography variant="h6" color="text" component="p" spacing="2">
+        2018
+        </Typography>
+        <List>
+          <PaperList2018/>
         </List>
       </Paper>
       </Box>

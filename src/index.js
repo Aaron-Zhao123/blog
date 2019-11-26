@@ -13,7 +13,7 @@ import Project from './Components/Project';
 import Notes from './Components/Notes';
 
 render((
-    <BrowserRouter>
+    <BrowserRouter basename="/blog">
         <div>
             <Route exact path="/" component={App} />
             <Route path="/resume" component={Resume} />
