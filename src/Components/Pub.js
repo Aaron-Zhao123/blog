@@ -70,23 +70,21 @@ const PublicationList = ({ styles }) =>
       <Box
         m={10}
       >
-      <Paper
-        style={styles.NewsPaper}
-        m={10}
-        >
+      <Paper style={styles.NewsPaper} m={10}>
         <Typography variant="h5" color="text" component="p" spacing="2">
           List of Publications
         </Typography>
         <Typography component="h7">
         * indicates equal contribution.
         </Typography>
-
         <Typography variant="h6" color="text" component="p" spacing="2">
         2019
         </Typography>
         <List>
           <PaperList2019/>
         </List>
+      </Paper>
+      <Paper style={styles.NewsPaper} m={10}>
         <Typography variant="h6" color="text" component="p" spacing="2">
         2018
         </Typography>

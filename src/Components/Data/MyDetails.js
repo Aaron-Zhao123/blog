@@ -23,7 +23,7 @@ export default ({styles}) =>
     <Fragment>
         <Grid container
             direction="column"
-            // justify="center"
+            justify="center"
             alignItems="center"
             spacing={0}
         >
@@ -45,8 +45,6 @@ export default ({styles}) =>
                         My research focuses on efficient machine learning, secure machine learning and machine learning hardware designs.
                     </Typography>
                 </Paper>
-            </Grid>
-            <Grid>
                 <Paper style={styles.NewsPaper}>
                     <News/>
                 </Paper>
