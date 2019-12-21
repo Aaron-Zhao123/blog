@@ -1,6 +1,6 @@
 [
     {
-        "name": "Automatic Generation of Multi-precision Multi-arithmetic CNN Accelerators for FPGA",
+        "name": "Automatic Generation of Multi-precision Multi-arithmetic CNN Accelerators for FPGAs",
         "authors": [
             "Yiren Zhao*",
             "Xitong Gao*",
@@ -12,7 +12,7 @@
             "George Constantinides",
             "Chengzhong Xu"
         ],
-        "pub": "2019 International Conference on Field-Programmable Technology",
+        "pub": "2019 International Conference on Field-Programmable Technology (ICFPT 2019)",
         "link": ""
     },
     {
@@ -25,7 +25,7 @@
             "Robert Mullins",
             "Ross Anderson"
         ],
-        "pub": "Preprint on arxiv",
+        "pub": "Preprint on Arxiv",
         "link": "https://arxiv.org/abs/1909.02918"
     },
     {
@@ -37,7 +37,7 @@
             "Robert Mullins",
             "Chengzhong Xu"
         ],
-        "pub": "2019 Neural Information Processing Systems",
+        "pub": "Thirty-third Conference on Neural Information Processing Systems (NeurIPS 2019)",
         "link": ""
     },
     {
@@ -49,7 +49,7 @@
             "Yiren Zhao",
             "Robert Mullins"
         ],
-        "pub": "2019 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)",
+        "pub": "2019 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS 2019)",
         "link": "https://ieeexplore.ieee.org/abstract/document/8695654"
     },
     {
@@ -73,7 +73,7 @@
             "Robert Mullins",
             "Chengzhong Xu"
         ],
-        "pub": "2019 International Conference on Learning Representations (ICLR)",
+        "pub": "2019 International Conference on Learning Representations (ICLR 2019)",
         "link": "https://arxiv.org/abs/1810.05331"
     }
 ]

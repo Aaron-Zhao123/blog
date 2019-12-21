@@ -1,17 +1,28 @@
 [
     {
+        "name": "Automatic Generation of Multi-Precision and Multi-arithmetic CNN Accelerators for FPGAs",
+        "pub": "FPT 2019",
+        "link": "https://drive.google.com/file/d/1DHYbiLxvFjqeiutTRfl-pSphtuGrXtTs/view?usp=sharing"
+    },
+    {
         "name": "Towards Efficient and Secure DNNs",
         "pub": "Cambridge Computer Lab NLP Seminars",
-        "link": "https://arxiv.org/abs/1909.02918"
+        "link": "https://drive.google.com/file/d/1tGtF21pXXTaWjVdZPQh_NkXpSuFbEsEQ/view?usp=sharing"
     },
     {
         "name": "To compress or not to compress: Understanding the Interactions between Adversarial Attacks and Neural Network Compression",
         "pub": "SysML 2018",
-        "link": "https://arxiv.org/abs/1810.00208"
+        "link": "https://arxiv.org/abs/1810.00208",
+        "video": "https://docs.google.com/presentation/d/1vDZ0ki6VR6BKlapxi10DlFy16e38RrNqEc6lSaMwUpo/edit?usp=sharing"
+    },
+    {
+        "name": "Mayo",
+        "pub": "MobiSys 2018, EMDL",
+        "link": "https://drive.google.com/file/d/1qtEuVAsbCIri4MaptRVQMfq1D2yRtg89/view?usp=sharing"
     },
     {
         "name": "An Efficient Implementation of Online Arithmetics",
         "pub": "FPT 2015",
-        "link": "https://arxiv.org/abs/1810.00208"
+        "link": "https://docs.google.com/presentation/d/1FNrteDeHDrObUxKXuPKcYx0BrEnY3y-Qr82Ezw_hesM/edit?usp=sharing"
     }
 ]

@@ -21,7 +21,7 @@
             "Philip HW Leong",
             "Peter YK Cheung"
         ],
-        "pub": "2018 International Symposium on Applied Reconfigurable Computing",
+        "pub": "2018 International Symposium on Applied Reconfigurable Computing (ARC 2018)",
         "link": "https://link.springer.com/chapter/10.1007/978-3-319-78890-6_2"
     },
     {
@@ -32,7 +32,7 @@
             "Robert Mullins",
             "Ross Anderson"
         ],
-        "pub": "2018 The Conference on Systems and Machine Learning (SysML)",
+        "pub": "2018 The Conference on Systems and Machine Learning (SysML 2018)",
         "link": "https://arxiv.org/abs/1810.00208"
     },
     {
@@ -53,7 +53,7 @@
             "John Wickerson",
             "George A Constantinides"
         ],
-        "pub": "2016 International Conference on Field-Programmable Technology (FPT)",
+        "pub": "2016 International Conference on Field-Programmable Technology (FPT 2016)",
         "link": "https://ieeexplore.ieee.org/abstract/document/7929191"
     }
 ]

@@ -24,8 +24,17 @@ export default function InteractiveList() {
                         <Whatshot />
                     </ListItemIcon>
                     <ListItemText
-                        primary="Our paper Automatic Generation of Multi-precision Multi-arithmetic CNN Accelerators for FPGA
-                        is accepted to FPT 2019!"
+                        primary="Our paper Pay Attention to Features, Transfer Learn Faster CNNs
+                        is accepted to ICLR 2020!"
+                    />
+                </ListItem>
+                <ListItem>
+                    <ListItemIcon>
+                        <Whatshot />
+                    </ListItemIcon>
+                    <ListItemText
+                        primary="Our paper Automatic Generation of Multi-precision Multi-arithmetic CNN Accelerators for FPGAs
+                        is accepted to ICFPT 2019!"
                     />
                 </ListItem>
                 <ListItem>

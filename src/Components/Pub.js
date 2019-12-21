@@ -12,6 +12,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { tsParameterProperty } from '@babel/types';
 import Link from '@material-ui/core/Link';
 
+var paper2020 = require('../data/my_papers/paper2020.json')
 var paper2019 = require('../data/my_papers/paper2019.json')
 var paper2018 = require('../data/my_papers/paper2018.json')
 
@@ -65,6 +66,29 @@ function PaperList2019() {
   )
 }
 
+function PaperList2020() {
+  return paper2020.map(
+    (paper) =>
+      <ListItem>
+        <ListItemText
+          primary={paper.name}
+          secondary={
+            <div>
+              <div><AuthorList authors={paper.authors} /></div>
+              <div>
+                {paper.pub}
+                {'    '}
+                <Link href={paper.link}>
+                  pdf
+                </Link>
+              </div>
+            </div>
+          }
+        />
+      </ListItem>
+  )
+}
+
 const PublicationList = ({ styles }) =>
     <Fragment>
       <Box
@@ -78,6 +102,12 @@ const PublicationList = ({ styles }) =>
         * indicates equal contribution.
         </Typography>
         <Typography variant="h6" color="text" component="p" spacing="2">
+        2020
+        </Typography>
+        <List>
+          <PaperList2020/>
+        </List>
+        <Typography variant="h6" color="text" component="p" spacing="2">
         2019
         </Typography>
         <List>
@@ -86,7 +116,7 @@ const PublicationList = ({ styles }) =>
       </Paper>
       <Paper style={styles.NewsPaper} m={10}>
         <Typography variant="h6" color="text" component="p" spacing="2">
-        2018
+        2018 and Earlier
         </Typography>
         <List>
           <PaperList2018/>

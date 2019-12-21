@@ -17,7 +17,8 @@ import News from "./News"
 import { View, Image} from 'react';
 
 
-const dudUrl = 'https://www.cl.cam.ac.uk/~rdm34/';
+const robertUrl = 'https://www.cl.cam.ac.uk/~rdm34/';
+const georgeUrl = 'http://cas.ee.ic.ac.uk/people/gac1/';
 
 export default ({styles}) =>
     <Fragment>
@@ -36,10 +37,20 @@ export default ({styles}) =>
                     <Typography variant="body" color="textSecondary" component="p" spacing="2">
                         Hello, thanks for visiting my personal wiki.
                         My name is Aaron Zhao.
-                        I am currently a Phd student, suprversided by <Link href={dudUrl}>
+                    </Typography>
+                    <Typography variant="body" color="textSecondary" component="p" spacing="2">
+                        I am currently a PhD student
+                        at the Computer Lab of University of Cambridge, suprversided by <Link href={robertUrl}>
                         Dr. Robert Mullins
+                        </Link>.
+                        I finished my MPhil degree from
+                        Cambridge,
+                        suprversided by Dr. Robert Mullins as well.
+                        Prior to that, I obtained my BEng
+                        from Imperial College London with my final two
+                        years supervised by <Link href={georgeUrl}>
+                        Prof. George Constantinides
                         </Link>
-                        , at the Computer Lab of University of Cambridge.
                     </Typography>
                     <Typography variant="body" color="textSecondary" component="p" spacing="2">
                         My research focuses on efficient machine learning, secure machine learning and machine learning hardware designs.

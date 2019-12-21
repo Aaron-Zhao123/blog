@@ -8,7 +8,7 @@ import App from './Components/App';
 import Pub from './Components/Pub';
 import Resume from './Components/Resume';
 import Talks from './Components/Talks';
-import Project from './Components/Projec';
+import Project from './Components/Project';
 
 /**
  * All routes go here.
@@ -22,6 +22,8 @@ export default (
         <Route path="/talks" component={Talks} >
         <Route path="/projects" component={Project} >
         <Route path="/notes" component={Pub} >
+        <Route path="/notes/papers/attacks" component={Pub} >
+        <Route path="/notes/attacks" component={Pub} >
         {/* <Route path="/resume" component={Resume} /> */}
     </Router>
 );

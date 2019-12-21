@@ -23,13 +23,16 @@ function MyTalkList(){
           primary={talk.name}
           secondary={
             <div>
-              <div>
+              <p>
                 {talk.pub}
                 {'    '}
                 <Link href={talk.link}>
                   slides
                 </Link>
-              </div>
+                , <Link href={talk.video}>
+                  video
+                </Link>
+                </p>
             </div>
           }
         />
