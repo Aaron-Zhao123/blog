@@ -24,6 +24,16 @@ export default function InteractiveList() {
                         <Whatshot />
                     </ListItemIcon>
                     <ListItemText
+                        primary="Our preprint Towards Certifiable Adversarial Sample Detection
+                        is now on arxiv!"
+                    />
+                </ListItem>
+
+                <ListItem>
+                    <ListItemIcon>
+                        <Whatshot />
+                    </ListItemIcon>
+                    <ListItemText
                         primary="Our paper Pay Attention to Features, Transfer Learn Faster CNNs
                         is accepted to ICLR 2020!"
                     />
@@ -42,7 +52,7 @@ export default function InteractiveList() {
                         <Whatshot />
                     </ListItemIcon>
                     <ListItemText
-                        primary="Our prerprint Blackbox Attacks on Reinforcement Learning Agents Using Approximated Temporal Information is now available on arxiv!"
+                        primary="Our preprint Blackbox Attacks on Reinforcement Learning Agents Using Approximated Temporal Information is now available on arxiv!"
                     />
                 </ListItem>
                 <ListItem>

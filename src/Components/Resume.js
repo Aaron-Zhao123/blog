@@ -58,6 +58,12 @@ const ExperienceList = ({ styles }) =>
         <List>
             <ListItem>
                 <ListItemText
+                    primary="Microsoft Research New England, Part-time Contractor"
+                    secondary="Nov 2019 - Now, Supervised by Dr. Nicolo Fusi"
+                />
+            </ListItem>
+            <ListItem>
+                <ListItemText
                     primary="Microsoft Research New England, Research Intern"
                     secondary="June 2019 - Oct 2019, Supervised by Dr. Nicolo Fusi"
                 />

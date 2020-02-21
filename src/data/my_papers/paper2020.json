@@ -2,6 +2,17 @@
     {
         "name": "Pay Attention to Features, Transfer Learn Faster CNNs",
         "authors": [
+            "Ilia Shumailov*",
+            "Yiren Zhao*",
+            "Robert Mullins",
+            "Ross Anderson"
+        ],
+        "pub": "Arxiv",
+        "link": "https://arxiv.org/abs/2002.08740"
+    },
+    {
+        "name": "Pay Attention to Features, Transfer Learn Faster CNNs",
+        "authors": [
             "Kafeng Wang*",
             "Xitong Gao*",
             "Yiren Zhao",

@@ -41,3 +41,30 @@ The optimization surface is complicated and they used ADMM to
 split these constraints by duplicating the optimization variable.
 They claim a proper joint optimisation like this can help
 compressed models to maintain almost the same accuracy and robustness compared to the original one.
+
+# [](#list) Robust NAS
+
+## [](#list) List of papers
+
+  1. When NAS Meets Robustness:
+In Search of Robust Architectures against Adversarial Attacks
+
+  2. Evolving Robust Neural Architectures to Defend from Adversarial Attacks
+
+#### 1. When NAS Meets Robustness: In Search of Robust Architectures against Adversarial Attacks
+
+*Review* ([Paper link](https://arxiv.org/abs/1911.10695))
+
+The authors experiment on over 1000 architectures and conclude that
+densely connected pattern (like densenet) can benefit the network robustness.
+They then propose to use the distance of feature maps when inputting
+adversarial and clean samples; and sample out non-robust architectures
+using this loss.
+The models later are then adversarially trained.
+
+#### 2. Evolving Robust Neural Architectures to Defend from Adversarial Attacks
+
+*Review* ([Paper link](https://arxiv.org/abs/1906.11667))
+This is like a mutation based algorithm for Robustness and NAS, which might
+not be considered as efficient?
+
