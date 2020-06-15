@@ -5,6 +5,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
 import Whatshot from '@material-ui/icons/Whatshot';
+import CastConnected from '@material-ui/icons/CastConnected';
 import Flight from '@material-ui/icons/Flight';
 import Tv from '@material-ui/icons/Tv';
 
@@ -19,6 +20,40 @@ export default function InteractiveList() {
             News
         </Typography>
             <List>
+                <ListItem button component="a" href="https://www.schneier.com/blog/archives/2020/06/availability_at.html">
+                    <ListItemIcon>
+                        <CastConnected />
+                    </ListItemIcon>
+                    <ListItemText
+                        primary="The Sponge Example paper is featured on Schneier's blog!"
+                    />
+                </ListItem>
+                <ListItem button component="a" href="https://www.theregister.com/2020/06/10/ai_sponge_attack/">
+                    <ListItemIcon>
+                        <CastConnected />
+                    </ListItemIcon>
+                    <ListItemText
+                        primary="The Sponge Example paper is featured on The Register!"
+                    />
+                </ListItem>
+                <ListItem>
+                    <ListItemIcon>
+                        <Whatshot />
+                    </ListItemIcon>
+                    <ListItemText
+                        primary="Our preprint Sponge Examples: Energy-Latency Attacks on Neural Networks
+                        is now on arxiv!"
+                    />
+                </ListItem>
+                <ListItem>
+                    <ListItemIcon>
+                        <Whatshot />
+                    </ListItemIcon>
+                    <ListItemText
+                        primary="Our preprint Probabilistic Dual Network Architecture Search on Graphs
+                        is now on arxiv!"
+                    />
+                </ListItem>
                 <ListItem>
                     <ListItemIcon>
                         <Whatshot />
@@ -28,7 +63,6 @@ export default function InteractiveList() {
                         is now on arxiv!"
                     />
                 </ListItem>
-
                 <ListItem>
                     <ListItemIcon>
                         <Whatshot />

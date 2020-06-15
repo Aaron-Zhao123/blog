@@ -27,13 +27,13 @@ const EducationList = ({ styles }) =>
             <ListItem>
                 <ListItemText
                     primary="University of Cambridge"
-                    secondary="PhD in Computer Science, Expected Grad 2020"
+                    secondary="PhD in Computer Science, Expected Grad late 2020 or early 2021"
                 />
             </ListItem>
             <ListItem>
                 <ListItemText
                     primary="University of Cambridge"
-                    secondary="Mphil in Advanced Computer Science, Grad. 2017"
+                    secondary="MPhil in Advanced Computer Science, Grad. 2017"
                 />
             </ListItem>
             <ListItem>
@@ -59,7 +59,7 @@ const ExperienceList = ({ styles }) =>
             <ListItem>
                 <ListItemText
                     primary="Microsoft Research New England, Part-time Contractor"
-                    secondary="Nov 2019 - Now, Supervised by Dr. Nicolo Fusi"
+                    secondary="Nov 2019 - Mar 2020, Supervised by Dr. Nicolo Fusi"
                 />
             </ListItem>
             <ListItem>
@@ -96,6 +96,42 @@ const ExperienceList = ({ styles }) =>
       </Paper>
     </Fragment>
 
+const AwardsList = ({ styles }) =>
+    <Fragment>
+        <Paper
+            style={styles.NewsPaper}
+        >
+            <Typography variant="h5" color="text" component="p" spacing="2">
+                Selected Awards
+        </Typography>
+            <List>
+                <ListItem>
+                    <ListItemText
+                        primary="EPSRC International Doctoral Studentship joint University of Cambridge Computer Laboratory Qualcomm Premium Scholarship"
+                        secondary="Fully funded phd scholarship for 3.5 years. (2017)"
+                    />
+                </ListItem>
+                <ListItem>
+                    <ListItemText
+                        primary="Willis Jackson Medal and Prize"
+                        secondary="For excellence in undergraduate academic performance. (2016)"
+                    />
+                </ListItem>
+                <ListItem>
+                    <ListItemText
+                        primary="Dean's List"
+                        secondary="For top students in the department. (2016)"
+                    />
+                </ListItem>
+                <ListItem>
+                    <ListItemText
+                        primary="Faculty of Engineering UROP Award"
+                        secondary="For students with excellence in research projects. (2015)"
+                    />
+                </ListItem>
+            </List>
+        </Paper>
+    </Fragment>
 
 class Resume extends Component {
   render(){
@@ -115,6 +151,9 @@ class Resume extends Component {
                 </Grid>
                 <Grid>
                     <ExperienceList styles={styles} />
+                </Grid>
+                <Grid>
+                    <AwardsList styles={styles} />
                 </Grid>
                 <Grid>
                     <Link href={CVpdf} color="primary" variant="body3"> Download CV in PDF </Link>

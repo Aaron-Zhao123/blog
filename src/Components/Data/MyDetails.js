@@ -19,6 +19,7 @@ import { View, Image} from 'react';
 
 const robertUrl = 'https://www.cl.cam.ac.uk/~rdm34/';
 const georgeUrl = 'http://cas.ee.ic.ac.uk/people/gac1/';
+const papaUrl = 'http://cas.ee.ic.ac.uk/people/papa/';
 
 export default ({styles}) =>
     <Fragment>
@@ -36,24 +37,30 @@ export default ({styles}) =>
                     <img src={require('../../images/aaron_zhao.png')} hspace="0" vspace="10" width="200" height="200" />
                     <Typography variant="body" color="textSecondary" component="p" spacing="2">
                         Hello, thanks for visiting my personal wiki.
-                        My name is Aaron Zhao.
+                        My name is Yiren (Aaron) Zhao.
                     </Typography>
                     <Typography variant="body" color="textSecondary" component="p" spacing="2">
                         I am currently a PhD student
-                        at the Computer Lab of University of Cambridge, suprversided by <Link href={robertUrl}>
+                        at the Computer Lab of University of Cambridge,
+                        suprversided by <Link href={robertUrl}>
                         Dr. Robert Mullins
                         </Link>.
                         I finished my MPhil degree from
-                        Cambridge,
+                        Cambridge and was
                         suprversided by Dr. Robert Mullins as well.
-                        Prior to that, I obtained my BEng
-                        from Imperial College London with my final two
+                        Prior to that,
+                        I obtained my Electrical and Electronic Engineering
+                        BEng degree
+                        from the Imperial College London with my final two
                         years supervised by <Link href={georgeUrl}>
                         Prof. George Constantinides
-                        </Link>
+                        </Link>.
+                        During my BEng studies, I was tutored by <Link href={papaUrl}>
+                        Dr. Papa
+                        </Link>.
                     </Typography>
                     <Typography variant="body" color="textSecondary" component="p" spacing="2">
-                        My research focuses on efficient machine learning, secure machine learning and machine learning hardware designs.
+                        My current research focuses on efficient machine learning, secure machine learning and machine learning hardware designs.
                     </Typography>
                 </Paper>
                 <Paper style={styles.NewsPaper}>

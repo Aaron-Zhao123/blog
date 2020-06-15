@@ -1,5 +1,31 @@
 [
     {
+        "name": "Sponge Examples: Energy-Latency Attacks on Neural Networks",
+        "authors": [
+            "Ilia Shumailov*",
+            "Yiren Zhao*",
+            "Daniel Bates",
+            "Nicolas Papernot",
+            "Robert Mullins",
+            "Ross Anderson"
+        ],
+        "pub": "Arxiv",
+        "link": "https://arxiv.org/abs/2006.03463"
+    },
+    {
+        "name": "Probabilistic Dual Network Architecture Search on Graphs",
+        "authors": [
+            "Yiren Zhao*",
+            "Duo Wang*",
+            "Xitong Gao*",
+            "Robert Mullins",
+            "Pietro Lio",
+            "Mateja Jamniik"
+        ],
+        "pub": "Arxiv",
+        "link": "https://arxiv.org/abs/2003.09676"
+    },
+    {
         "name": "Towards Certifiable Adversarial Sample Detection",
         "authors": [
             "Ilia Shumailov*",

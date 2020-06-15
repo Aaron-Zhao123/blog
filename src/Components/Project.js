@@ -80,7 +80,7 @@ const ProjectList = ({ styles}) =>
         </CardActionArea>
         <CardActions>
           <Button size="small" color="primary">
-            Code
+            Code will be released soon
         </Button>
           <Button size="small" color="primary">
             Paper
