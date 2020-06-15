@@ -19,7 +19,7 @@ import { View, Image} from 'react';
 
 const robertUrl = 'https://www.cl.cam.ac.uk/~rdm34/';
 const georgeUrl = 'http://cas.ee.ic.ac.uk/people/gac1/';
-const papaUrl = 'http://cas.ee.ic.ac.uk/people/papa/';
+const papaUrl = 'https://www.imperial.ac.uk/people/c.papavas';
 
 export default ({styles}) =>
     <Fragment>
@@ -56,7 +56,7 @@ export default ({styles}) =>
                         Prof. George Constantinides
                         </Link>.
                         During my BEng studies, I was tutored by <Link href={papaUrl}>
-                        Dr. Papa
+                        Dr. Papavassiliou
                         </Link>.
                     </Typography>
                     <Typography variant="body" color="textSecondary" component="p" spacing="2">
