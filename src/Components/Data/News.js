@@ -36,7 +36,7 @@ export default function InteractiveList() {
                         primary="The Sponge Example paper is featured on The Register!"
                     />
                 </ListItem>
-                <ListItem>
+                <ListItem button component="a" href="https://arxiv.org/abs/2006.03463">
                     <ListItemIcon>
                         <Whatshot />
                     </ListItemIcon>
@@ -45,7 +45,7 @@ export default function InteractiveList() {
                         is now on arxiv!"
                     />
                 </ListItem>
-                <ListItem>
+                <ListItem button component="a" href="https://arxiv.org/abs/2003.09676">
                     <ListItemIcon>
                         <Whatshot />
                     </ListItemIcon>
@@ -54,7 +54,7 @@ export default function InteractiveList() {
                         is now on arxiv!"
                     />
                 </ListItem>
-                <ListItem>
+                <ListItem button component="a" href="https://arxiv.org/abs/2002.08740">
                     <ListItemIcon>
                         <Whatshot />
                     </ListItemIcon>
@@ -81,7 +81,7 @@ export default function InteractiveList() {
                         is accepted to ICFPT 2019!"
                     />
                 </ListItem>
-                <ListItem>
+                <ListItem button component="a" href="https://arxiv.org/abs/1909.02918">
                     <ListItemIcon>
                         <Whatshot />
                     </ListItemIcon>
