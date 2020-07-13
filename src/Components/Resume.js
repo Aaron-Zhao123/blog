@@ -107,6 +107,12 @@ const AwardsList = ({ styles }) =>
             <List>
                 <ListItem>
                     <ListItemText
+                        primary="Apple Fellowship"
+                        secondary="Receive support from Apple for my research and academic travel for two years. (2020)"
+                    />
+                </ListItem>
+                <ListItem>
+                    <ListItemText
                         primary="EPSRC International Doctoral Studentship joint University of Cambridge Computer Laboratory Qualcomm Premium Scholarship"
                         secondary="Fully funded phd scholarship for 3.5 years. (2017)"
                     />
@@ -150,10 +156,10 @@ class Resume extends Component {
                     <EducationList styles={styles} />
                 </Grid>
                 <Grid>
-                    <ExperienceList styles={styles} />
+                    <AwardsList styles={styles} />
                 </Grid>
                 <Grid>
-                    <AwardsList styles={styles} />
+                    <ExperienceList styles={styles} />
                 </Grid>
                 <Grid>
                     <Link href={CVpdf} color="primary" variant="body3"> Download CV in PDF </Link>

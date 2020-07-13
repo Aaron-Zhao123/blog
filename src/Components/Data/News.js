@@ -6,6 +6,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
 import Whatshot from '@material-ui/icons/Whatshot';
 import CastConnected from '@material-ui/icons/CastConnected';
+import EmojiEvents from '@material-ui/icons/EmojiEvents';
 import Flight from '@material-ui/icons/Flight';
 import Tv from '@material-ui/icons/Tv';
 
@@ -20,6 +21,14 @@ export default function InteractiveList() {
             News
         </Typography>
             <List>
+                <ListItem button component="a" href="https://machinelearning.apple.com/updates/introducing-apple-scholars-aiml">
+                    <ListItemIcon>
+                        <EmojiEvents />
+                    </ListItemIcon>
+                    <ListItemText
+                        primary="I was awarded to be an Apple Scholar in AI/ML!"
+                    />
+                </ListItem>
                 <ListItem button component="a" href="https://www.schneier.com/blog/archives/2020/06/availability_at.html">
                     <ListItemIcon>
                         <CastConnected />
