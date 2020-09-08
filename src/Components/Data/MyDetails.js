@@ -35,12 +35,12 @@ export default ({styles}) =>
             <Typography variant="body" color="textSecondary" component="p" spacing="2">
                 I am currently a PhD student
                 at the Computer Lab of University of Cambridge,
-                suprversided by <Link href={robertUrl}>
+                supervised by <Link href={robertUrl}>
                 Dr. Robert Mullins
                 </Link>.
                 I finished my MPhil degree from
                 Cambridge and was
-                suprversided by Dr. Robert Mullins as well.
+                supervised by Dr. Robert Mullins as well.
                 Prior to that,
                 I obtained my Electrical and Electronic Engineering
                 BEng degree
