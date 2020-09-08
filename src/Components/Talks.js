@@ -11,6 +11,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import { tsParameterProperty } from '@babel/types';
 import Link from '@material-ui/core/Link';
+import ButtonAppBar from "./Data/Menubar"
 
 var mypaperdata = require('../data/my_talks/talk.json')
 
@@ -42,9 +43,6 @@ function MyTalkList(){
 
 const TalkList = ({ styles }) =>
     <Fragment>
-      <Box
-        m={10}
-      >
       <Paper
         style={styles.NewsPaper}
         m={10}
@@ -56,7 +54,6 @@ const TalkList = ({ styles }) =>
           <MyTalkList/>
         </List>
       </Paper>
-      </Box>
     </Fragment>
 
 
@@ -65,13 +62,15 @@ class Talks extends Component {
     return <Fragment>
       <Grid
         container
-        direction="row">
-        {/* justify="center"
-                alignItems="center"> */}
-        <Grid item xs={4}>
+        direction="row"
+        justify="center"
+        alignItems="center">
+        {/* <Grid item xs={4}>
           <Menu styles={menu_styles} />
-        </Grid>
+        </Grid> */}
         <Grid item xs={6}>
+          <Typography variant="h2">Aaron's Wiki</Typography>
+          <ButtonAppBar />
           <TalkList styles={styles} />
         </Grid>
       </Grid>

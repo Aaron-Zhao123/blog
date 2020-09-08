@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from '@material-ui/core/Link';
+import Button from '@material-ui/core/Button';
 import Contacts from '@material-ui/icons/Contacts';
 import Code from '@material-ui/icons/Code';
 import Print from '@material-ui/icons/Print';
@@ -34,22 +35,18 @@ export default function QuickClick() {
   const classes = useStyles();
 
   return (
-    <Paper elevation={0} className={classes.root}>
-      <Breadcrumbs aria-label="breadcrumb" separator=" ">
-        <Link color="inherit" href={scholarUrl}>
-          <Print className={classes.icon} />
-          Scholar
-        </Link>
-        <Link color="inherit" href={githubUrl}>
-          <Code className={classes.icon} />
-          Github
-        </Link>
-        <Link color="inherit" href={linkdinUrl}>
-          <Contacts className={classes.icon} />
-          LinkedIn
-        </Link>
-
-      </Breadcrumbs>
-    </Paper>
+    <React.Fragment>
+      <Link variant="outlined" href={scholarUrl}>
+        <Button variant="outlined">Google Scholar</Button>
+      </Link>
+      <Link variant="outlined" href={githubUrl}>
+        {/* <Code className={classes.icon} /> */}
+        <Button variant="outlined">Github</Button>
+      </Link>
+      <Link variant="outlined" href={linkdinUrl}>
+        {/* <Contacts className={classes.icon} /> */}
+        <Button variant="outlined">LinkedIn</Button>
+      </Link>
+    </React.Fragment>
   );
 }

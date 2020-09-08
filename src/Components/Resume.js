@@ -12,6 +12,7 @@ import CVpdf from '../data/cv.pdf';
 
 import Menu from "./Data/Menu"
 import {styles, menu_styles} from "./Layouts"
+import ButtonAppBar from "./Data/Menubar"
 
 
 
@@ -144,28 +145,25 @@ class Resume extends Component {
     return <Fragment>
       <Grid
         container
-        direction="row">
-        {/* justify="center"
-                alignItems="center"> */}
-        <Grid item xs={4}>
-          <Menu styles={menu_styles} />
-        </Grid>
+        direction="row"
+        justify="center"
+        alignItems="center">
         <Grid item xs={6}>
-            <Box m={10}>
-                <Grid>
-                    <EducationList styles={styles} />
-                </Grid>
-                <Grid>
-                    <AwardsList styles={styles} />
-                </Grid>
-                <Grid>
-                    <ExperienceList styles={styles} />
-                </Grid>
-                <Grid>
-                    <Link href={CVpdf} color="primary" variant="body3"> Download CV in PDF </Link>
-                    {/* <a href={CVpdf} target="_blank">Download CV in PDF</a> */}
-                </Grid>
-            </Box>
+            <Typography variant="h2">Aaron's Wiki</Typography>
+            <ButtonAppBar />
+            <Grid>
+                <EducationList styles={styles} />
+            </Grid>
+            <Grid>
+                <AwardsList styles={styles} />
+            </Grid>
+            <Grid>
+                <ExperienceList styles={styles} />
+            </Grid>
+            <Grid>
+                <Link href={CVpdf} color="primary" variant="body3"> Download CV in PDF </Link>
+                {/* <a href={CVpdf} target="_blank">Download CV in PDF</a> */}
+            </Grid>
         </Grid>
 
       </Grid>

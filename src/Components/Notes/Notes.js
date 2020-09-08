@@ -21,6 +21,7 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import RestoreIcon from '@material-ui/icons/Restore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+import ButtonAppBar from "../Data/Menubar"
 
 const MenuButton = withStyles({
   root: {
@@ -146,79 +147,79 @@ class Notes extends Component {
     return <Fragment>
       <Grid
         container
-        direction="row">
-        {/* justify="center"
-                alignItems="center"> */}
-        <Grid item xs={4}>
+        direction="row"
+        justify="center"
+        alignItems="center">
+        {/* <Grid item xs={4}>
           <Menu styles={menu_styles} />
         </Grid>
-
+ */}
         <Grid item xs={6}>
-          <Box m={10}>
-            <Paper style={styles.NewsPaper} m={10}>
-              <Typography variant="h5" color="text" component="p" spacing="2">
-                Warning
-              </Typography>
-              <Typography variant="h7">
-                This is a collection of my random notes.
-                Mostly serving as reminders for myself, the writeup is
-                therefore casual and subjective.
-              </Typography>
-            </Paper>
-            <Paper style={styles.NewsPaper} m={10}>
-              <Typography variant="h5" color="text" component="p" spacing="2">
-                Paper Notes
-              </Typography>
-              <Typography>
-                Notes on papers I've read, mainly focusing
-                on adversarial machine learning, graph neural networks,
-                FPGA/ASIC neural network accelerators and so on.
-              </Typography>
+          <Typography variant="h2">Aaron's Wiki</Typography>
+          <ButtonAppBar />
+          <Paper style={styles.NewsPaper} m={10}>
+            <Typography variant="h5" color="text" component="p" spacing="2">
+              Warning
+            </Typography>
+            <Typography variant="h7">
+              This is a collection of my random notes.
+              Mostly serving as reminders for myself, the writeup is
+              therefore casual and subjective.
+            </Typography>
+          </Paper>
+          <Paper style={styles.NewsPaper} m={10}>
+            <Typography variant="h5" color="text" component="p" spacing="2">
+              Paper Notes
+            </Typography>
+            <Typography>
+              Notes on papers I've read, mainly focusing
+              on adversarial machine learning, graph neural networks,
+              FPGA/ASIC neural network accelerators and so on.
+            </Typography>
 
-              <PaperNavigationAdv/>
-              <PaperNavigationEfficient/>
-              <PaperNavigationHardware/>
-              <PaperNavigationOthers/>
+            <PaperNavigationAdv/>
+            <PaperNavigationEfficient/>
+            <PaperNavigationHardware/>
+            <PaperNavigationOthers/>
 
-            </Paper>
+          </Paper>
 
-            <Paper style={styles.NewsPaper} m={10}>
-              <Typography variant="h5" color="text" component="p" spacing="2">
-                Talk Notes
-              </Typography>
-              <Typography component="h7">
-                I try my best to keep notes for the talks that
-                I've attended.
-                This includes all the conferences talks I've been
-                and also some casual seminar talks.
-              </Typography>
-              <Talks/>
+          <Paper style={styles.NewsPaper} m={10}>
+            <Typography variant="h5" color="text" component="p" spacing="2">
+              Talk Notes
+            </Typography>
+            <Typography component="h7">
+              I try my best to keep notes for the talks that
+              I've attended.
+              This includes all the conferences talks I've been
+              and also some casual seminar talks.
+            </Typography>
+            <Talks/>
 
-            </Paper>
+          </Paper>
 
-            <Paper style={styles.NewsPaper} m={10}>
-              <Typography variant="h5" color="text" component="p" spacing="2">
-                Book Notes
-              </Typography>
-              <Typography component="h7">
-                I read a range of books, the notes are only for CS related
-                matters.
-                Of course, my general reading is boarder than this.
-              </Typography>
-              <Books/>
-            </Paper>
+          <Paper style={styles.NewsPaper} m={10}>
+            <Typography variant="h5" color="text" component="p" spacing="2">
+              Book Notes
+            </Typography>
+            <Typography component="h7">
+              I read a range of books, the notes are only for CS related
+              matters.
+              Of course, my general reading is boarder than this.
+            </Typography>
+            <Books/>
+          </Paper>
 
-            <Paper style={styles.NewsPaper} m={10}>
-              <Typography variant="h5" color="text" component="p" spacing="2">
-                Coding Notes
-              </Typography>
-              <Typography component="h7">
-                Coding is hacking, so basically the hack tricks
-                I've learnt from places.
-              </Typography>
-              <PLs/>
-            </Paper>
-          </Box>
+          <Paper style={styles.NewsPaper} m={10}>
+            <Typography variant="h5" color="text" component="p" spacing="2">
+              Coding Notes
+            </Typography>
+            <Typography component="h7">
+              Coding is hacking, so basically the hack tricks
+              I've learnt from places.
+            </Typography>
+            <PLs/>
+          </Paper>
         </Grid>
       </Grid>
     </Fragment>

@@ -16,6 +16,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
+import ButtonAppBar from "./Data/Menubar"
 
 import Menu from "./Data/Menu"
 
@@ -130,16 +131,16 @@ class Project extends Component {
     return <Fragment>
       <Grid
         container
-        direction="row">
-        {/* justify="center"
-                alignItems="center"> */}
-        <Grid item xs={4}>
+        direction="row"
+        justify="center"
+        alignItems="center">
+        {/* <Grid item xs={4}>
           <Menu styles={menu_styles} />
-        </Grid>
+        </Grid> */}
         <Grid item xs={6}>
-          <Box m={10}>
-            <ProjectList styles={styles} />
-          </Box>
+          <Typography variant="h2">Aaron's Wiki</Typography>
+          <ButtonAppBar />
+          <ProjectList styles={styles} />
         </Grid>
       </Grid>
     </Fragment>

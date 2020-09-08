@@ -11,6 +11,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import { tsParameterProperty } from '@babel/types';
 import Link from '@material-ui/core/Link';
+import ButtonAppBar from "./Data/Menubar"
 
 var paper2020 = require('../data/my_papers/paper2020.json')
 var paper2019 = require('../data/my_papers/paper2019.json')
@@ -91,9 +92,6 @@ function PaperList2020() {
 
 const PublicationList = ({ styles }) =>
     <Fragment>
-      <Box
-        m={10}
-      >
       <Paper style={styles.NewsPaper} m={10}>
         <Typography variant="h5" color="text" component="p" spacing="2">
           List of Publications
@@ -122,7 +120,6 @@ const PublicationList = ({ styles }) =>
           <PaperList2018/>
         </List>
       </Paper>
-      </Box>
     </Fragment>
 
 
@@ -131,13 +128,13 @@ class Pub extends Component {
     return <Fragment>
       <Grid
         container
-        direction="row">
-        {/* justify="center"
-                alignItems="center"> */}
-        <Grid item xs={4}>
-          <Menu styles={menu_styles} />
-        </Grid>
+        direction="row"
+        justify="center"
+        alignItems="center">
+        
         <Grid item xs={6}>
+          <Typography variant="h2">Aaron's Wiki</Typography>
+          <ButtonAppBar />
           <PublicationList styles={styles} />
         </Grid>
       </Grid>
