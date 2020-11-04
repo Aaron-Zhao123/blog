@@ -16,19 +16,6 @@
         "link": ""
     },
     {
-        "name": "Blackbox Attacks on Reinforcement Learning Agents Using Approximated Temporal Information",
-        "authors": [
-            "Yiren Zhao*",
-            "Ilia Shumailov*",
-            "Han Cui*",
-            "Xitong Gao",
-            "Robert Mullins",
-            "Ross Anderson"
-        ],
-        "pub": "Preprint on Arxiv",
-        "link": "https://arxiv.org/abs/1909.02918"
-    },
-    {
         "name": "Focused Quantisation for Sparse DNNs",
         "authors": [
             "Yiren Zhao*",

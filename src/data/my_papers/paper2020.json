@@ -1,5 +1,17 @@
 [
     {
+        "name": "Learned Low Precision Graph Neural Networks",
+        "authors": [
+            "Yiren Zhao*",
+            "Duo Wang*",
+            "Robert Mullins",
+            "Pietro Lio",
+            "Mateja Jamniik"
+        ],
+        "pub": "Arxiv",
+        "link": "https://arxiv.org/abs/2009.09232"
+    },
+    {
         "name": "Sponge Examples: Energy-Latency Attacks on Neural Networks",
         "authors": [
             "Ilia Shumailov*",
@@ -33,8 +45,21 @@
             "Robert Mullins",
             "Ross Anderson"
         ],
-        "pub": "Arxiv",
+        "pub": "13th ACM Workshop on Artificial Intelligence and Security (AISEC2020)",
         "link": "https://arxiv.org/abs/2002.08740"
+    },
+    {
+        "name": "Blackbox Attacks on Reinforcement Learning Agents Using Approximated Temporal Information",
+        "authors": [
+            "Yiren Zhao*",
+            "Ilia Shumailov*",
+            "Han Cui*",
+            "Xitong Gao",
+            "Robert Mullins",
+            "Ross Anderson"
+        ],
+        "pub": "2020 50th Annual IEEE/IFIP International Conference on Dependable Systems and Networks Workshops (DSN-W)",
+        "link": "https://ieeexplore.ieee.org/abstract/document/9151835"
     },
     {
         "name": "Pay Attention to Features, Transfer Learn Faster CNNs",

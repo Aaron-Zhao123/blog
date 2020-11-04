@@ -21,6 +21,14 @@ export default function InteractiveList() {
             News
         </Typography>
             <List>
+                <ListItem button component="a" href="https://github.com/mitre/advmlthreatmatrix/blob/master/pages/adversarial-ml-threat-matrix.md#adversarial-ml-threat-matrix">
+                    <ListItemIcon>
+                        <EmojiEvents />
+                    </ListItemIcon>
+                    <ListItemText
+                        primary="Our sponge examples have been added to the MITRE attack framework for AI security!"
+                    />
+                </ListItem>
                 <ListItem button component="a" href="https://machinelearning.apple.com/updates/introducing-apple-scholars-aiml">
                     <ListItemIcon>
                         <EmojiEvents />
