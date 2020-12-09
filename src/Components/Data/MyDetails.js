@@ -53,6 +53,9 @@ export default ({styles}) =>
                 </Link>.
             </Typography>
             <Typography variant="body" color="textSecondary" component="p" spacing="2">
+                I review for a number of hardware, system and machine learning conferences, including ICLR, ICML, NeurIPS, CVPR, etc.
+            </Typography>
+            <Typography variant="body" color="textSecondary" component="p" spacing="2">
                 My current research focuses on efficient machine learning, secure machine learning and machine learning hardware designs.
             </Typography>
         </Paper>
