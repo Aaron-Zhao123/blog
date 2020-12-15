@@ -62,4 +62,15 @@ export default ({styles}) =>
         <Paper style={styles.NewsPaper}>
             <News/>
         </Paper>
+        <Paper style={styles.NewsPaper}>
+            <Typography variant="h5" color="text" component="p" spacing="2">
+                Contact
+            </Typography>
+            <Typography variant="body" color="textSecondary" component="p" spacing="2">
+                Email: yiren.zhao@cl.cam.ac.uk
+            </Typography>
+            <Typography variant="body" color="textSecondary" component="p" spacing="2">
+                Address: Computer Laboratory, University of Cambridge, 15 JJ Thomson Avenue, Cambridge CB3 0FD, United Kingdom
+            </Typography>
+        </Paper>
     </Fragment>
