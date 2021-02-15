@@ -21,6 +21,14 @@ export default function InteractiveList() {
             News
         </Typography>
             <List>
+                <ListItem button component="a" href="https://deep-learning-graphs.bitbucket.io/dlg-aaai21/">
+                    <ListItemIcon>
+                        <EmojiEvents />
+                    </ListItemIcon>
+                    <ListItemText
+                        primary="Our paper Probabilistic Dual Network Architecture Search on Graphs received the best student paper award at DLG-AAAI2021!"
+                    />
+                </ListItem>
                 <ListItem button component="a" href="https://github.com/mitre/advmlthreatmatrix/blob/master/pages/adversarial-ml-threat-matrix.md#adversarial-ml-threat-matrix">
                     <ListItemIcon>
                         <EmojiEvents />

@@ -1,4 +1,16 @@
 [
+        {
+        "name": "Nudge Attacks on Point-Cloud DNNs",
+        "authors": [
+            "Yiren Zhao*",
+            "Ilia Shumailov*",
+            "Yiren Zhao*",
+            "Robert Mullins",
+            "Ross Anderson"
+        ],
+        "pub": "Arxiv",
+        "link": "https://arxiv.org/abs/2011.11637"
+    },
     {
         "name": "Learned Low Precision Graph Neural Networks",
         "authors": [
@@ -34,8 +46,8 @@
             "Pietro Lio",
             "Mateja Jamniik"
         ],
-        "pub": "Arxiv",
-        "link": "https://arxiv.org/abs/2003.09676"
+        "pub": "35th AAAI Conference on Aritificial Intelligence Workshop of Deep Learning on Graphs: Methods and Applications (DLG-AAAI2021)",
+        "link": "https://deep-learning-graphs.bitbucket.io/dlg-aaai21/publications.html"
     },
     {
         "name": "Towards Certifiable Adversarial Sample Detection",
