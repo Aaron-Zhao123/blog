@@ -61,6 +61,9 @@ export default ({styles}) =>
             </Typography>
         </Paper>
         <Paper style={styles.NewsPaper}>
+            <News/>
+        </Paper>
+        <Paper style={styles.NewsPaper}>
             <Typography variant="h5" color="text" component="p" spacing="2">
                 Part II/III MPhil and Summer students Project suggestions
             </Typography>
@@ -97,9 +100,6 @@ export default ({styles}) =>
             <Typography variant="body" color="textSecondary" component="p" spacing="2">
                 It is surprising (or maybe not) that Deep Neural Networks are good at being over-confident on their predictions. Existing research has looked at developing methods that have uncertainty measurements (eg. model ensembles or bayesian neural networks). Most of these existing methods are expensive to compute, this project will investigate a further trade-off between the computation cost and the ability to provide uncertainty.
             </Typography>
-        </Paper>
-        <Paper style={styles.NewsPaper}>
-            <News/>
         </Paper>
         <Paper style={styles.NewsPaper}>
             <Typography variant="h5" color="text" component="p" spacing="2">
