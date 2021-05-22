@@ -1,0 +1,52 @@
+[
+        {
+        "name": "Nudge Attacks on Point-Cloud DNNs",
+        "authors": [
+            "Yiren Zhao*",
+            "Ilia Shumailov*",
+            "Yiren Zhao*",
+            "Robert Mullins",
+            "Ross Anderson"
+        ],
+        "pub": "Arxiv",
+        "link": "https://arxiv.org/abs/2011.11637"
+    },
+    {
+        "name": "Learned Low Precision Graph Neural Networks",
+        "authors": [
+            "Yiren Zhao*",
+            "Duo Wang*",
+            "Robert Mullins",
+            "Pietro Lio",
+            "Mateja Jamniik"
+        ],
+        "pub": "The 1st Workshop on Machine Learning and Systems (EuroMLSys)",
+        "link": "https://www.euromlsys.eu/#accepted-papers"
+    },
+    {
+        "name": "Sponge Examples: Energy-Latency Attacks on Neural Networks",
+        "authors": [
+            "Ilia Shumailov*",
+            "Yiren Zhao*",
+            "Daniel Bates",
+            "Nicolas Papernot",
+            "Robert Mullins",
+            "Ross Anderson"
+        ],
+        "pub": "6th IEEE European Symposium on Security and Privacy (EuroS&P 2021)",
+        "link": "http://www.ieee-security.org/TC/EuroSP2021/accepted.html"
+    },
+    {
+        "name": "Probabilistic Dual Network Architecture Search on Graphs",
+        "authors": [
+            "Yiren Zhao*",
+            "Duo Wang*",
+            "Xitong Gao*",
+            "Robert Mullins",
+            "Pietro Lio",
+            "Mateja Jamniik"
+        ],
+        "pub": "35th AAAI Conference on Aritificial Intelligence Workshop of Deep Learning on Graphs: Methods and Applications (DLG-AAAI2021, Best student paper award)",
+        "link": "https://deep-learning-graphs.bitbucket.io/dlg-aaai21/publications.html"
+    }
+]

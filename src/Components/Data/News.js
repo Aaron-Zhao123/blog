@@ -21,6 +21,30 @@ export default function InteractiveList() {
             News
         </Typography>
             <List>
+                <ListItem button component="a" href="https://icml.cc/">
+                    <ListItemIcon>
+                        <Whatshot />
+                    </ListItemIcon>
+                    <ListItemText
+                        primary="Our paper Markpainting: Adversarial Machine Learning meets Inpainting is accepted to ICML 2021!"
+                    />
+                </ListItem>
+                <ListItem button component="a" href="https://www.euromlsys.eu/#accepted-papers">
+                    <ListItemIcon>
+                        <Whatshot />
+                    </ListItemIcon>
+                    <ListItemText
+                        primary="Our paper Learned Low Precision Graph Neural Networks is accepted to EuroSys 2021!"
+                    />
+                </ListItem>
+                <ListItem button component="a" href="https://www.euromlsys.eu/#committees">
+                    <ListItemIcon>
+                        <CastConnected />
+                    </ListItemIcon>
+                    <ListItemText
+                        primary="I am serving as a PC member for the first EuroMLSys workshop (co-located with EuroSys 2021), looking forward to hear existing talks from the speakers!"
+                    />
+                </ListItem>
                 <ListItem button component="a" href="https://deep-learning-graphs.bitbucket.io/dlg-aaai21/">
                     <ListItemIcon>
                         <EmojiEvents />

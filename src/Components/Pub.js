@@ -13,6 +13,7 @@ import { tsParameterProperty } from '@babel/types';
 import Link from '@material-ui/core/Link';
 import ButtonAppBar from "./Data/Menubar"
 
+var paper2021 = require('../data/my_papers/paper2021.json')
 var paper2020 = require('../data/my_papers/paper2020.json')
 var paper2019 = require('../data/my_papers/paper2019.json')
 var paper2018 = require('../data/my_papers/paper2018.json')
@@ -90,6 +91,29 @@ function PaperList2020() {
   )
 }
 
+
+function PaperList2021() {
+  return paper2021.map(
+    (paper) =>
+      <ListItem>
+        <ListItemText
+          primary={paper.name}
+          secondary={
+            <div>
+              <div><AuthorList authors={paper.authors} /></div>
+              <div>
+                {paper.pub}
+                {'    '}
+                <Link href={paper.link}>
+                  pdf
+                </Link>
+              </div>
+            </div>
+          }
+        />
+      </ListItem>
+  )
+}
 const PublicationList = ({ styles }) =>
     <Fragment>
       <Paper style={styles.NewsPaper} m={10}>
@@ -99,6 +123,12 @@ const PublicationList = ({ styles }) =>
         <Typography component="h7">
         * indicates equal contribution.
         </Typography>
+        <Typography variant="h6" color="text" component="p" spacing="2">
+        2021
+        </Typography>
+        <List>
+          <PaperList2021/>
+        </List>
         <Typography variant="h6" color="text" component="p" spacing="2">
         2020
         </Typography>
