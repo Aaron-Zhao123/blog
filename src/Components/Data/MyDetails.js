@@ -28,7 +28,7 @@ export default ({styles}) =>
             <Typography variant="h4" color="text" component="p" spacing="2">
                 About Me
             </Typography>
-            <img src={require('../../images/aaron_zhao.png')} hspace="0" vspace="10" width="200" height="200" />
+            <img src={require('../../images/new_profile_image.jpeg')} hspace="0" vspace="10" width="200" height="200" />
             <Typography variant="body" color="textSecondary" component="p" spacing="2">
                 Hello, thanks for visiting my personal wiki.
                 My name is Yiren (Aaron) Zhao.
