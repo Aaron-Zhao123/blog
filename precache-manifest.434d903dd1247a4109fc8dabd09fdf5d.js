@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b3797a38a88b618b493a464ed571e6d8",
+    "revision": "ba8726896aa139175564c1b4402bfe70",
     "url": "/blog/index.html"
   },
   {
@@ -8,16 +8,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/blog/static/js/2.88a40de3.chunk.js"
   },
   {
-    "revision": "8fcc56e0a4c406d85bd7",
-    "url": "/blog/static/js/main.133cbac0.chunk.js"
+    "revision": "6e15acb59e80433d3e1b",
+    "url": "/blog/static/js/main.0b3b3db8.chunk.js"
   },
   {
     "revision": "777c8ebe5fb06d4517d6",
     "url": "/blog/static/js/runtime~main.daadfa58.js"
-  },
-  {
-    "revision": "a666553f6411daba4b5d4951e29761db",
-    "url": "/blog/static/media/aaron_zhao.a666553f.png"
   },
   {
     "revision": "cc487c46183cf00f19cb7c7e2feec0ad",
@@ -42,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "08dbf5926e8cb91524a024f2654a09c4",
     "url": "/blog/static/media/mayo.08dbf592.jpeg"
+  },
+  {
+    "revision": "3e087fabcfa6b9d5fb2e08caa7ca56cf",
+    "url": "/blog/static/media/new_profile_image.3e087fab.jpeg"
   },
   {
     "revision": "bb5e4617e913783bdfcfb4f03e55c461",
