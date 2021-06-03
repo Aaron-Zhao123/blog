@@ -34,7 +34,7 @@ export default function InteractiveList() {
                         <Whatshot />
                     </ListItemIcon>
                     <ListItemText
-                        primary="Our paper Learned Low Precision Graph Neural Networks is accepted to EuroSys 2021!"
+                        primary="Our paper Learned Low Precision Graph Neural Networks is accepted to EuroMLSys (EuroSys workshop) 2021!"
                     />
                 </ListItem>
                 <ListItem button component="a" href="https://www.euromlsys.eu/#committees">
