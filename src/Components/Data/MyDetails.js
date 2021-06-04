@@ -24,6 +24,8 @@ const metalarningUrl = 'https://lilianweng.github.io/lil-log/2018/11/30/meta-lea
 
 export default ({styles}) =>
     <Fragment>
+        <div className={styles.root}>
+
         <Paper style={styles.Paper}>
             <Typography variant="h6" color="text" component="p">
                 About Me
@@ -63,40 +65,40 @@ export default ({styles}) =>
         <Paper style={styles.NewsPaper}>
             <News/>
         </Paper>
-        <Paper style={styles.NewsPaper}>
-            <Typography variant="h5" color="text" component="p" spacing="2">
+        <Paper style={styles.Paper}>
+            <Typography variant="h6" color="text" component="p" spacing="2">
                 Part II/III MPhil and Summer students Project suggestions
             </Typography>
-            <Typography variant="h6" color="text" component="p" spacing="2">
+            <Typography variant="h7" color="text" component="p" spacing="2">
                 1. Quantised Meta-Learning [Vacant]
             </Typography>
             <Typography variant="body" color="textSecondary" component="p" spacing="2">
                 Meta-learning focuses on improving the ability of learning, Lilian Weng wrote a great overview article for  <Link href={metalarningUrl}>it</Link>.
                 This project will focus on developing hardware-aware meta-learning methods to enable few-shots learning with different hardware specialities.
             </Typography>
-            <Typography variant="h6" color="text" component="p" spacing="2">
+            <Typography variant="h7" color="text" component="p" spacing="2">
                 2. Accelerating GNNs using FPGAs [Vacant]
             </Typography>
             <Typography variant="body" color="textSecondary" component="p" spacing="2">
                 Graph neural networks are an interesting workload for custom computing, it has an irregular dataflow and might contain high sparsities.
                 This project will focus on developing custom accelerators for GNNs on FPGA devices, prior experience on FPGAs or great programming experience on C++ will be a plus. I might co-supervise this project with other hardware researchers from Microsoft Research.
             </Typography>
-            <Typography variant="h6" color="text" component="p" spacing="2">
+            <Typography variant="h7" color="text" component="p" spacing="2">
                 3. Tiny NAS [Vacant]
             </Typography>
             <Typography variant="body" color="textSecondary" component="p" spacing="2">
                 Neural Network Architecture Search (NAS) is a technique to automatically search for network architectures given a datasets.
                 This project will focus on looking at searching architectures that can run as fast as possible on small hardware platforms such as Raspberry Pis.
             </Typography>
-            <Typography variant="h6" color="text" component="p" spacing="2">
+            <Typography variant="h7" color="text" component="p" spacing="2">
                 4. Low-precision language models [Vacant]
             </Typography>
             <Typography variant="body" color="textSecondary" component="p" spacing="2">
                 Language models today are getting larger (GPT2 and GPT3) and having cross-domain applications (Vision transformers). This project will focus on applying some prior techniques of reducing computation costs of DNNs into large language models such as BERT. I might co-supervise this project with other NLP researchers.
             </Typography>
         </Paper>
-        <Paper style={styles.NewsPaper}>
-            <Typography variant="h5" color="text" component="p" spacing="2">
+        <Paper style={styles.Paper}>
+            <Typography variant="h6" color="text" component="p" spacing="2">
                 Contact
             </Typography>
             <Typography variant="body" color="textSecondary" component="p" spacing="2">
@@ -106,4 +108,5 @@ export default ({styles}) =>
                 Address: Computer Laboratory, University of Cambridge, 15 JJ Thomson Avenue, Cambridge CB3 0FD, United Kingdom
             </Typography>
         </Paper>
+        </div>
     </Fragment>
