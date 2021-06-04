@@ -25,7 +25,7 @@ const metalarningUrl = 'https://lilianweng.github.io/lil-log/2018/11/30/meta-lea
 export default ({styles}) =>
     <Fragment>
         <Paper style={styles.Paper}>
-            <Typography variant="h4" color="text" component="p" spacing="2">
+            <Typography variant="h6" color="text" component="p">
                 About Me
             </Typography>
             <img src={require('../../images/new_profile_image.jpeg')} hspace="0" vspace="10" width="200" height="200" />
@@ -68,7 +68,7 @@ export default ({styles}) =>
                 Part II/III MPhil and Summer students Project suggestions
             </Typography>
             <Typography variant="h6" color="text" component="p" spacing="2">
-                1. Hardware-aware Meta-Learning [Vacant]
+                1. Quantised Meta-Learning [Vacant]
             </Typography>
             <Typography variant="body" color="textSecondary" component="p" spacing="2">
                 Meta-learning focuses on improving the ability of learning, Lilian Weng wrote a great overview article for  <Link href={metalarningUrl}>it</Link>.
@@ -79,7 +79,7 @@ export default ({styles}) =>
             </Typography>
             <Typography variant="body" color="textSecondary" component="p" spacing="2">
                 Graph neural networks are an interesting workload for custom computing, it has an irregular dataflow and might contain high sparsities.
-                This project will focus on developing custom accelerators for GNNs on FPGA devices, prior experience on FPGAs or great programming experience on C++ will be a plus. I might co-supervise this project with other hardware researchers.
+                This project will focus on developing custom accelerators for GNNs on FPGA devices, prior experience on FPGAs or great programming experience on C++ will be a plus. I might co-supervise this project with other hardware researchers from Microsoft Research.
             </Typography>
             <Typography variant="h6" color="text" component="p" spacing="2">
                 3. Tiny NAS [Vacant]
@@ -93,12 +93,6 @@ export default ({styles}) =>
             </Typography>
             <Typography variant="body" color="textSecondary" component="p" spacing="2">
                 Language models today are getting larger (GPT2 and GPT3) and having cross-domain applications (Vision transformers). This project will focus on applying some prior techniques of reducing computation costs of DNNs into large language models such as BERT. I might co-supervise this project with other NLP researchers.
-            </Typography>
-            <Typography variant="h6" color="text" component="p" spacing="2">
-                4. Fast uncertainty measurements [Vacant]
-            </Typography>
-            <Typography variant="body" color="textSecondary" component="p" spacing="2">
-                It is surprising (or maybe not) that Deep Neural Networks are good at being over-confident on their predictions. Existing research has looked at developing methods that have uncertainty measurements (eg. model ensembles or bayesian neural networks). Most of these existing methods are expensive to compute, this project will investigate a further trade-off between the computation cost and the ability to provide uncertainty.
             </Typography>
         </Paper>
         <Paper style={styles.NewsPaper}>
