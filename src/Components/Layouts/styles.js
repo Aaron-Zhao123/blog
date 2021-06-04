@@ -1,6 +1,6 @@
 const styles = {
-    Paper: {padding: 2, marginTop:10, marginBottom:10},
-    NewsPaper: {padding: 2, marginTop:10, marginBottom:10},
+    Paper: {padding: 2, marginTop:10, marginBottom:10, xs:12, sm:12},
+    NewsPaper: {padding: 2, marginTop:10, marginBottom:10, xs:12, sm:12},
     card: {
         maxWidth: 200,
     },
