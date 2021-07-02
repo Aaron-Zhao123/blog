@@ -25,7 +25,7 @@ const metalarningUrl = 'https://lilianweng.github.io/lil-log/2018/11/30/meta-lea
 export default ({styles}) =>
     <Fragment>
         <div className={styles.root}>
-
+        <Container maxWidth="lg">
         <Paper style={styles.Paper}>
             <Typography variant="h6" color="text" component="p">
                 About Me
@@ -62,9 +62,11 @@ export default ({styles}) =>
                 My current research focuses on efficient machine learning, secure machine learning and machine learning hardware designs.
             </Typography>
         </Paper>
+
         <Paper style={styles.NewsPaper}>
             <News/>
         </Paper>
+
         <Paper style={styles.Paper}>
             <Typography variant="h6" color="text" component="p" spacing="2">
                 Part II/III MPhil and Summer students Project suggestions
@@ -108,5 +110,6 @@ export default ({styles}) =>
                 Address: Computer Laboratory, University of Cambridge, 15 JJ Thomson Avenue, Cambridge CB3 0FD, United Kingdom
             </Typography>
         </Paper>
+        </Container>
         </div>
     </Fragment>

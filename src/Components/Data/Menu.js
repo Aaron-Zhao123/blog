@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import QuickClick from './QuickClick';
 // import Pub from '../Pub'
 import { Link } from 'react-router-dom';
+import Container from '@material-ui/core/Container';
 // import { ThemeProvider } from '@material-ui/styles';
 // import { ThemeProvider } from 'styled-components'
 
@@ -58,6 +59,7 @@ export default function MenuButtons() {
     return (
         // <ThemeProvider theme={menu_theme}>
         <div>
+        <Container maxWidth="lg">
             <Grid
                 container
                 className={classes.root} spacing={5}
@@ -133,6 +135,7 @@ export default function MenuButtons() {
                     <QuickClick/>
                 </Grid>
             </Grid>
+        </Container>
         </div>
         // </ThemeProvider>
     )

@@ -2,8 +2,8 @@ const styles = {
     root: {
         flexGrow: 1,
     },
-    Paper: {padding: 2, marginTop:10, marginBottom:10, xs:12, sm:12},
-    NewsPaper: {padding: 2, marginTop:10, marginBottom:10, xs:12, sm:12, textAlign: 'center'},
+    Paper: {padding: 10, marginTop:10, marginBottom:10, xs:12},
+    NewsPaper: {padding: 10, marginTop:10, marginBottom:10, xs:12, textAlign: 'center'},
     card: {
         maxWidth: 200,
     },
