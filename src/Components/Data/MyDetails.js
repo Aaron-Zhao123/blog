@@ -25,7 +25,7 @@ const metalarningUrl = 'https://lilianweng.github.io/lil-log/2018/11/30/meta-lea
 export default ({styles}) =>
     <Fragment>
         <div className={styles.root}>
-        <Container maxWidth="lg">
+        <Container maxWidth="xl">
         <Paper style={styles.Paper}>
             <Typography variant="h6" color="text" component="p">
                 About Me

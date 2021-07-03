@@ -9,6 +9,8 @@ import Pub from './Components/Pub';
 import Resume from './Components/Resume';
 import Talks from './Components/Talks';
 import Project from './Components/Project';
+import AdvAttacks from "./Components/Notes/AdvAttacks";
+import AutoML from "./Components/Notes/AutoML";
 
 /**
  * All routes go here.
@@ -17,13 +19,11 @@ import Project from './Components/Project';
 export default (
     <Router>
         <Route exact path="/" component={App}>
-        <Route path="/resume" component={Pub} >
-        <Route path="/pub" component={Resume} >
+        <Route path="/pub" component={Pub} >
+        <Route path="/resume" component={Resume} >
         <Route path="/talks" component={Talks} >
         <Route path="/projects" component={Project} >
         <Route path="/notes" component={Pub} >
-        <Route path="/notes/papers/attacks" component={Pub} >
-        <Route path="/notes/attacks" component={Pub} >
         {/* <Route path="/resume" component={Resume} /> */}
     </Router>
 );

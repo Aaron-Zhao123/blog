@@ -25,7 +25,6 @@ import ButtonAppBar from "../Data/Menubar"
 
 const MenuButton = withStyles({
   root: {
-    background: 'white',
     borderRadius: 3,
     border: 0,
     height: 24,
@@ -43,105 +42,48 @@ const useStyles = makeStyles({
   },
 });
 
-function PaperNavigationAdv() {
-  const classes = useStyles();
+const automlUrl = 'https://github.com/Aaron-Zhao123/paper-reading-list/tree/master/automl';
+const mlsecurityUrl = 'https://github.com/Aaron-Zhao123/paper-reading-list/tree/master/ml_security';
+const mlcompressionUrl = 'https://github.com/Aaron-Zhao123/paper-reading-list/tree/master/ml_compression';
+const codingUrl = 'https://github.com/Aaron-Zhao123/Learn';
+const conferencesUrl = 'https://github.com/Aaron-Zhao123/paper-reading-list/tree/master/conferences';
 
-  return (
-    <BottomNavigation
-      showLabels
-      className={classes.root}
-    >
-      <BottomNavigationAction component={Link} label="Adversarial Attacks" to="/notes/papers/adversarial_attack" />} />
-      <BottomNavigationAction component={Link} label="Robust Networks" to="/notes/papers/robust_networks" />} />
-      <BottomNavigationAction component={Link} label="Certified Defense" to="/notes/papers/certified_defense" />} />
-    </BottomNavigation>
-  );
-}
-
-function PaperNavigationEfficient() {
+function PaperNavigation() {
   const classes = useStyles();
   return (
-    <BottomNavigation
-      showLabels
-      className={classes.root}
-    >
-      <BottomNavigationAction component={Link} label="Compression" to="/notes/papers/compression"/>} />
-      <BottomNavigationAction component={Link} label="AutoML" to="/notes/papers/automl"/>} />
-      <BottomNavigationAction component={Link} label="Efficient Training" to="/notes/papers/efficient_train"/>} />
-      <BottomNavigationAction component={Link} label="Transfer/Zero Shot" to="/notes/papers/automl"/>} />
-    </BottomNavigation>
-  );
+    <Grid container xs={24}>
+      <Grid item xs={4}>
+        <MenuButton
+          variant="contained"
+          href={automlUrl}
+          className={classes.button}
+        >
+        AutoML
+        </MenuButton>
+      </Grid>
+      <Grid item xs={4}>
+        <MenuButton
+          variant="contained"
+          href={mlsecurityUrl}
+          className={classes.button}
+        >
+          ML security 
+        </MenuButton>
+      </Grid>
+      <Grid item xs={4}>
+        <MenuButton
+          variant="contained"
+          href={mlcompressionUrl}
+          className={classes.button}
+        >
+          ML Compression 
+        </MenuButton>
+      </Grid>
+
+    </Grid>
+  )
 }
 
-function PaperNavigationHardware() {
-  const classes = useStyles();
-  return (
-    <BottomNavigation
-      showLabels
-      className={classes.root}
-    >
-      <BottomNavigationAction component={Link} label="FPGAs" to="/notes/papers/fpgas" />} />
-      <BottomNavigationAction component={Link} label="ASICs" to="/notes/papers/asic" />} />
-      <BottomNavigationAction component={Link} label="Distributed Systems" to="/notes/papers/asic" />} />
-    </BottomNavigation>
-  );
-}
-
-function PaperNavigationOthers() {
-  const classes = useStyles();
-  return (
-    <BottomNavigation
-      showLabels
-      className={classes.root}
-    >
-      <BottomNavigationAction component={Link} label="RL" to="/notes/papers/rl"/>} />
-      <BottomNavigationAction component={Link} label="Graph Networks" to="/notes/papers/gnn"/>} />
-    </BottomNavigation>
-  );
-}
-
-function Books() {
-  const classes = useStyles();
-  return (
-    <BottomNavigation
-      showLabels
-      className={classes.root}
-    >
-      <BottomNavigationAction component={Link} label="ML" to="/notes/papers/rl"/>} />
-      <BottomNavigationAction component={Link} label="Convex Optimization" to="/notes/papers/graph"/>} />
-    </BottomNavigation>
-  );
-}
-
-function Talks() {
-  const classes = useStyles();
-  return (
-    <BottomNavigation
-      showLabels
-      className={classes.root}
-    >
-      <BottomNavigationAction component={Link} label="Sysml2019" to="/notes/papers/rl"/>} />
-      <BottomNavigationAction component={Link} label="ICLR2019" to="/notes/papers/graph"/>} />
-      <BottomNavigationAction component={Link} label="Department" to="/notes/papers/graph"/>} />
-      <BottomNavigationAction component={Link} label="Others" to="/notes/papers/graph"/>} />
-    </BottomNavigation>
-  );
-}
-
-function PLs() {
-  const classes = useStyles();
-  return (
-    <BottomNavigation
-      showLabels
-      className={classes.root}
-    >
-      <BottomNavigationAction component={Link} label="Python" to="/notes/papers/rl"/>} />
-      <BottomNavigationAction component={Link} label="JS" to="/notes/papers/graph"/>} />
-      <BottomNavigationAction component={Link} label="Verilog" to="/notes/papers/graph"/>} />
-      <BottomNavigationAction component={Link} label="C++" to="/notes/papers/graph"/>} />
-    </BottomNavigation>
-  );
-}
 class Notes extends Component {
   render(){
     return <Fragment>
@@ -161,7 +103,7 @@ class Notes extends Component {
             <Typography variant="h5" color="text" component="p" spacing="2">
               Warning
             </Typography>
-            <Typography variant="h7">
+            <Typography variant="h7" spacing="2">
               This is a collection of my random notes.
               Mostly serving as reminders for myself, the writeup is
               therefore casual and subjective.
@@ -172,16 +114,10 @@ class Notes extends Component {
               Paper Notes
             </Typography>
             <Typography>
-              Notes on papers I've read, mainly focusing
-              on adversarial machine learning, graph neural networks,
-              FPGA/ASIC neural network accelerators and so on.
+              Notes on papers I've read, hosted on github in markdown formats.
             </Typography>
 
-            <PaperNavigationAdv/>
-            <PaperNavigationEfficient/>
-            <PaperNavigationHardware/>
-            <PaperNavigationOthers/>
-
+            <PaperNavigation/>
           </Paper>
 
           <Paper style={styles.NewsPaper} m={10}>
@@ -189,25 +125,19 @@ class Notes extends Component {
               Talk Notes
             </Typography>
             <Typography component="h7">
-              I try my best to keep notes for the talks that
+              I try my best to keep notes for the conferences that
               I've attended.
               This includes all the conferences talks I've been
               and also some casual seminar talks.
             </Typography>
-            <Talks/>
-
-          </Paper>
-
-          <Paper style={styles.NewsPaper} m={10}>
-            <Typography variant="h5" color="text" component="p" spacing="2">
-              Book Notes
-            </Typography>
-            <Typography component="h7">
-              I read a range of books, the notes are only for CS related
-              matters.
-              Of course, my general reading is boarder than this.
-            </Typography>
-            <Books/>
+            <Grid item xs={24}>
+              <MenuButton
+                variant="contained"
+                href={conferencesUrl}
+              >
+                Conferences notes
+              </MenuButton>
+            </Grid>
           </Paper>
 
           <Paper style={styles.NewsPaper} m={10}>
@@ -216,9 +146,16 @@ class Notes extends Component {
             </Typography>
             <Typography component="h7">
               Coding is hacking, so basically the hack tricks
-              I've learnt from places.
+              I've learnt from places. This is hosted in a private repo.
             </Typography>
-            <PLs/>
+            <Grid item xs={24}>
+              <MenuButton
+                variant="contained"
+                href={codingUrl}
+              >
+                Coding notes
+              </MenuButton>
+            </Grid>
           </Paper>
         </Grid>
       </Grid>
