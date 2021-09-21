@@ -59,6 +59,12 @@ const ExperienceList = ({ styles }) =>
         <List>
             <ListItem>
                 <ListItemText
+                    primary="St John's College, University of Cambridge, Research Fellow"
+                    secondary="Oct 2021 - Now"
+                />
+            </ListItem>
+            <ListItem>
+                <ListItemText
                     primary="Microsoft Research New England, Part-time Contractor"
                     secondary="Nov 2019 - Mar 2020, Supervised by Dr. Nicolo Fusi"
                 />
@@ -106,6 +112,12 @@ const AwardsList = ({ styles }) =>
                 Selected Awards
         </Typography>
             <List>
+                <ListItem>
+                    <ListItemText
+                        primary="Junior Research Fellowship at St John's College University of Cambridge"
+                        secondary="Receive support from St John's College for my research for three years."
+                    />
+                </ListItem>
                 <ListItem>
                     <ListItemText
                         primary="Apple Fellowship"

@@ -41,6 +41,9 @@ export default ({styles}) =>
                 supervised by <Link href={robertUrl}>
                 Dr. Robert Mullins
                 </Link>.
+                I am also a research fellow at St John's College University of Cambridge.
+            </Typography>
+            <Typography variant="body" color="textSecondary" component="p" spacing="2">
                 I finished my MPhil degree from
                 Cambridge and was
                 supervised by Dr. Robert Mullins as well.

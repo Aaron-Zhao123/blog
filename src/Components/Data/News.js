@@ -20,6 +20,14 @@ export default function InteractiveList() {
         <Typography variant="h6">
             News
         </Typography>
+                <ListItem button component="a" href="https://www.joh.cam.ac.uk/fellow-profile/2472">
+                    <ListItemIcon>
+                        <Whatshot />
+                    </ListItemIcon>
+                    <ListItemText
+                        primary="I am joining St John's College University of Cambridge as a research fellow starting from this October!"
+                    />
+                </ListItem>
             <List>
                 <ListItem button component="a" href="https://icml.cc/">
                     <ListItemIcon>
