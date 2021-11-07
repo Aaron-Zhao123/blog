@@ -13,6 +13,7 @@ import CVpdf from '../data/cv.pdf';
 import Menu from "./Data/Menu"
 import {styles, menu_styles} from "./Layouts"
 import ButtonAppBar from "./Data/Menubar"
+import Container from '@material-ui/core/Container';
 
 
 
@@ -160,23 +161,19 @@ class Resume extends Component {
         direction="row"
         justify="center"
         alignItems="center">
-        <Grid item xs={6}>
-            <Typography variant="h2">Aaron's Wiki</Typography>
-            <ButtonAppBar />
-            <Grid>
+            <Container maxWidth="md">
+                <Grid>
+                <Typography variant="h2">Aaron's Wiki</Typography>
+                <ButtonAppBar />
+                </Grid>
+            </Container>
+            <Container maxWidth="md">
                 <EducationList styles={styles} />
-            </Grid>
-            <Grid>
                 <AwardsList styles={styles} />
-            </Grid>
-            <Grid>
                 <ExperienceList styles={styles} />
-            </Grid>
-            <Grid>
                 <Link href={CVpdf} color="primary" variant="body3"> Download CV in PDF </Link>
                 {/* <a href={CVpdf} target="_blank">Download CV in PDF</a> */}
-            </Grid>
-        </Grid>
+            </Container>
 
       </Grid>
     </Fragment>

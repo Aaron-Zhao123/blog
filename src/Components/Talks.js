@@ -12,6 +12,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { tsParameterProperty } from '@babel/types';
 import Link from '@material-ui/core/Link';
 import ButtonAppBar from "./Data/Menubar"
+import Container from '@material-ui/core/Container';
+
 
 var mypaperdata = require('../data/my_talks/talk.json')
 
@@ -68,11 +70,13 @@ class Talks extends Component {
         {/* <Grid item xs={4}>
           <Menu styles={menu_styles} />
         </Grid> */}
-        <Grid item xs={6}>
+        <Container maxWidth="md">
+        <Grid>
           <Typography variant="h2">Aaron's Wiki</Typography>
           <ButtonAppBar />
           <TalkList styles={styles} />
         </Grid>
+        </Container>
       </Grid>
     </Fragment>
   }

@@ -16,10 +16,18 @@ const focused = 'https://www.cl.cam.ac.uk/~rdm34/';
 export default function InteractiveList() {
     return (
         <Fragment>
-
         <Typography variant="h6">
             News
         </Typography>
+            <List>
+                <ListItem button component="a" href="https://arxiv.org/abs/2111.00465">
+                    <ListItemIcon>
+                        <Whatshot />
+                    </ListItemIcon>
+                    <ListItemText
+                        primary="Our preprint DAdaQuant: Doubly-adaptive quantization for communication-efficient Federated Learning is now on arxiv!"
+                    />
+                </ListItem>
                 <ListItem button component="a" href="https://www.joh.cam.ac.uk/fellow-profile/2472">
                     <ListItemIcon>
                         <Whatshot />
@@ -28,7 +36,14 @@ export default function InteractiveList() {
                         primary="I am joining St John's College University of Cambridge as a research fellow starting from this October!"
                     />
                 </ListItem>
-            <List>
+                <ListItem button component="a" href="https://arxiv.org/abs/2104.09667">
+                    <ListItemIcon>
+                        <Whatshot />
+                    </ListItemIcon>
+                    <ListItemText
+                        primary="Our paper Manipulating SGD with Data Ordering Attacks is accepted to NeurIPS 2021!"
+                    />
+                </ListItem>
                 <ListItem button component="a" href="https://icml.cc/">
                     <ListItemIcon>
                         <Whatshot />

@@ -72,7 +72,7 @@ export default ({styles}) =>
 
         <Paper style={styles.Paper}>
             <Typography variant="h6" color="text" component="p" spacing="2">
-                Part II/III MPhil and Summer students Project suggestions
+                Part II, III, MPhil and Summer students project suggestions
             </Typography>
             <Typography variant="h7" color="text" component="p" spacing="2">
                 1. Quantised Meta-Learning [Vacant]

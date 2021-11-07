@@ -12,6 +12,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { tsParameterProperty } from '@babel/types';
 import Link from '@material-ui/core/Link';
 import ButtonAppBar from "./Data/Menubar"
+import Container from '@material-ui/core/Container';
 
 var paper2021 = require('../data/my_papers/paper2021.json')
 var paper2020 = require('../data/my_papers/paper2020.json')
@@ -161,12 +162,13 @@ class Pub extends Component {
         direction="row"
         justify="center"
         alignItems="center">
-        
-        <Grid item xs={6}>
+        <Container maxWidth="md">
+        <Grid>
           <Typography variant="h2">Aaron's Wiki</Typography>
           <ButtonAppBar />
           <PublicationList styles={styles} />
         </Grid>
+        </Container>
       </Grid>
     </Fragment>
   }

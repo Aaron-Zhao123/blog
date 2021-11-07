@@ -17,13 +17,13 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import ButtonAppBar from "./Data/Menubar"
-
+import Container from '@material-ui/core/Container';
 import Menu from "./Data/Menu"
 
 const ProjectList = ({ styles}) =>
     <Fragment>
 
-      <Box m={2}>
+      <Container maxWidth="md">
       <Card className={styles.card}>
         <CardActionArea>
           <CardMedia
@@ -54,9 +54,9 @@ const ProjectList = ({ styles}) =>
         </Button>
         </CardActions>
       </Card>
-      </Box>
+      </Container>
 
-      <Box m={2}>
+      <Container maxWidth="md">      
       <Card className={styles.card}>
         <CardActionArea>
           <CardMedia
@@ -88,9 +88,9 @@ const ProjectList = ({ styles}) =>
         </Button>
         </CardActions>
       </Card>
-      </Box>
+      </Container>
 
-      <Box m={2}>
+      <Container maxWidth="md">      
       <Card className={styles.card}>
         <CardActionArea>
           <CardMedia
@@ -120,7 +120,7 @@ const ProjectList = ({ styles}) =>
         </Button>
         </CardActions>
       </Card>
-      </Box>
+      </Container>
 
     </Fragment>
 
@@ -137,11 +137,13 @@ class Project extends Component {
         {/* <Grid item xs={4}>
           <Menu styles={menu_styles} />
         </Grid> */}
-        <Grid item xs={6}>
+        <Container maxWidth="md">
+        <Grid>
           <Typography variant="h2">Aaron's Wiki</Typography>
           <ButtonAppBar />
           <ProjectList styles={styles} />
         </Grid>
+        </Container>
       </Grid>
     </Fragment>
   }
