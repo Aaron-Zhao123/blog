@@ -22,6 +22,7 @@ import RestoreIcon from '@material-ui/icons/Restore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import ButtonAppBar from "../Data/Menubar"
+import Container from '@material-ui/core/Container';
 
 const MenuButton = withStyles({
   root: {
@@ -96,7 +97,7 @@ class Notes extends Component {
           <Menu styles={menu_styles} />
         </Grid>
  */}
-        <Grid item xs={6}>
+        <Container maxWidth="md">
           <Typography variant="h2">Aaron's Wiki</Typography>
           <ButtonAppBar />
           <Paper style={styles.NewsPaper} m={10}>
@@ -157,7 +158,7 @@ class Notes extends Component {
               </MenuButton>
             </Grid>
           </Paper>
-        </Grid>
+      </Container>
       </Grid>
     </Fragment>
   }

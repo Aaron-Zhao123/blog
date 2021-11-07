@@ -37,7 +37,7 @@ export default function QuickClick() {
   return (
     <React.Fragment>
       <Link variant="outlined" href={scholarUrl}>
-        <Button variant="outlined">Google Scholar</Button>
+        <Button variant="outlined">Scholar</Button>
       </Link>
       <Link variant="outlined" href={githubUrl}>
         {/* <Code className={classes.icon} /> */}
